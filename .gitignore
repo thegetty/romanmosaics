@@ -3,4 +3,5 @@
 /.cache
 /.sass-cache
 /build
+/workingcopy
 Gemfile.lock
