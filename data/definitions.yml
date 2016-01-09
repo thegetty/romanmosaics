@@ -1,0 +1,70 @@
+---
+- id: amphora
+  definition: "two-handled storage jar"
+
+- id: apodyterium
+  definition: "changing room in a Roman bath"
+
+- id: bouleuterion
+  definition: "assembly hall"
+
+- id: caldarium
+  definition: "hot-water pool in a Roman bath"
+
+- id: emblema
+  definition: "picture panel"
+
+- id: emblemata
+  definition: "picture panels (plural of <em>emblema</em>)"
+
+- id: frigidarium
+  definition: "cold-water pool in a Roman bath"
+
+- id: guilloche
+  definition: "pattern or border resembling braided or interlacing bands"
+
+- id: kantharoi
+  definition: "two-handled drinking cups (plural of <em>kantharos</em>)"
+
+- id: kantharos
+  definition: "two-handled drinking cup"
+
+- id: krater
+  definition: "vessel for holding wine"
+
+- id: missorium
+  definition: "large plate"
+
+- id: nymphaea
+  definition: "monuments dedicated to the nymphs that served as reservoirs, sanctuaries, and places for leisure (plural of <em>nymphaeum</em>)"
+
+- id: odeion
+  definition: "roofed theater for musical performances"
+
+- id: opus-mixtum
+  definition: "Roman construction technique consisting of a combination of different types of brickwork"
+
+- id: opus-sectile
+  definition: "Roman construction technique using larger pieces of cut stone than tesserae"
+
+- id: opus-signinum
+  definition: "Roman construction technique of mortar pavements mixed with crushed pottery or tile"
+
+- id: opus-vermiculatum
+  definition: "Roman construction technique in which tiny pieces of irregular stone were used to create extremely detailed picture mosaics that imitated the effects of painting"
+
+- id: terrazzo
+  definition: "pavement consisting of chips of stone, usually marble, set in concrete and polished to create a smooth surface"
+
+- id: situla
+  definition: "bucket"
+
+- id:  triclinium
+  definition: "dining room"
+
+- id: venatio
+  definition: "staged animal hunt in the arena"
+
+- id: venationes
+  definition: "staged animal hunts in the arena (plural for <em>venatio</em>)"
+---
