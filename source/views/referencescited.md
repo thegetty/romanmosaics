@@ -1,8 +1,7 @@
 ---
 title: References Cited
-cover:
-layout: page
-sort_order:
+layout: reference
+sort_order: 101
 ---
 <span style="font-variant:small-caps;">Aisenberg</span> 1994
 
