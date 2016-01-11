@@ -1,0 +1,353 @@
+---
+
+- id: loc_XXXX
+  pleiades:
+  tgn:
+  name: ‘Ain el-Bad (Syria)
+
+- id: loc_175
+  pleiades: 175
+  tgn:
+  name: Aix-en-Provence
+
+- id: loc_15898
+  pleiades: 15898
+  tgn:
+  name: Alexandria
+
+- id: loc_21094
+  pleiades: 21094
+  tgn:
+  name: Antioch
+
+- id: loc_21507
+  pleiades: 21507
+  tgn:
+  name: Apamea
+
+- id: loc_1468
+  pleiades: 1468
+  tgn:
+  name: Aquileia
+
+- id: loc_22558
+  pleiades: 22558
+  tgn:
+  name: Baiae
+
+- id: loc_21591
+  pleiades: 21591
+  tgn:
+  name: Bararus
+
+- id: loc_21149
+  pleiades: 21149
+  tgn:
+  name: Caesarea Maritima
+
+- id: loc_15897
+  pleiades: 15897
+  tgn:
+  name: Carthage
+
+- id: loc_22477
+  pleiades: 22477
+  tgn:
+  name: Centcelles
+
+- id: loc_5472
+  pleiades: 5472
+  tgn:
+  name: Constantinople
+
+- id: loc_20683
+  pleiades: 20683
+  tgn:
+  name: Corinium Dobunnorum
+
+- id: loc_17070
+  pleiades: 17070
+  tgn:
+  name: Corinth
+
+- id: loc_XXXX
+  pleiades:
+  tgn:
+  name: Dar Zmela (Tunisia)
+
+- id: loc_XXXX
+  pleiades:
+  tgn:
+  name: Deir el-‘Adas (Syria)
+
+- id: loc_XXXX
+  pleiades:
+  tgn:
+  name: Deir es-Sleib (Syria)
+
+- id: loc_21634
+  pleiades: 21634
+  tgn:
+  name: El Kef
+
+- id: loc_XXXX
+  pleiades:
+  tgn:
+  name: El-Maqerqesh (Israel)
+
+- id: loc_21719
+  pleiades: 21719
+  tgn:
+  name: Emesa
+
+- id: loc_21973
+  pleiades: 21973
+  tgn:
+  name: Eretria
+
+- id: loc_XXXX
+  pleiades:
+  tgn:
+  name: Erez (Israel)
+
+- id: loc_23007
+  pleiades: 23007
+  tgn:
+  name: Gadara
+
+- id: loc_21720
+  pleiades: 21720
+  tgn:
+  name: Hama
+
+- id: loc_21633
+  pleiades: 21633
+  tgn:
+  name: Hadrumetum
+
+- id: loc_22879
+  pleiades: 22879
+  tgn:
+  name: Heloros
+
+- id: loc_21626
+  pleiades: 21626
+  tgn:
+  name: Hippo Regius
+
+- id: loc_33200
+  pleiades: 33200
+  tgn:
+  name: Houad
+
+- id: loc_33201
+  pleiades: 33201
+  tgn:
+  name: Huarte
+
+- id: loc_15896
+  pleiades: 15896
+  tgn:
+  name: Jerusalem
+
+- id: loc_XXXX
+  pleiades:
+  tgn:
+  name: Khirbet Mukhayyat (Jordan)
+
+- id: loc_27746
+  pleiades: 27746
+  tgn:
+  name: Kibyra
+
+- id: loc_XXXX
+  pleiades:
+  tgn:
+  name: Kissufim (Israel)
+
+- id: loc_23373
+  pleiades: 23373
+  tgn:
+  name: Kisamos
+
+- id: loc_21127
+  pleiades: 21127
+  tgn:
+  name: Leptis Magna
+
+- id: loc_2051
+  pleiades: 2051
+  tgn:
+  name: Lillebonne
+
+- id: loc_21339
+  pleiades: 21339
+  tgn:
+  name: Lucus Feroniae
+
+- id: loc_105
+  pleiades: 105
+  tgn:
+  name: Lugdunum
+
+- id: loc_21685
+  pleiades: 21685
+  tgn:
+  name: Lydda
+
+- id: loc_XXXX
+  pleiades:
+  tgn:
+  name: Ma’arata (Syria. Alternate name Maarata)
+
+- id: loc_21755
+  pleiades: 21755
+  tgn:
+  name: Madaba
+
+- id: loc_216878
+  pleiades: 216878
+  tgn:
+  name: Marcianopolis 
+
+- id: loc_176
+  pleiades: 176
+  tgn:
+  name: Massalia
+
+- id: loc_XXXX
+  pleiades:
+  tgn:
+  name: Mezra’a el-‘Ulia (Syria)
+
+- id: loc_22634
+  pleiades: 22634
+  tgn:
+  name: Motya
+
+- id: loc_1524
+  pleiades: 1524
+  tgn:
+  name: Naples
+
+- id: loc_171
+  pleiades: 171
+  tgn:
+  name: Nimes
+
+- id: loc_15960
+  pleiades: 15960
+  tgn:
+  name: Ostia
+
+- id: loc_21602
+  pleiades: 21602
+  tgn:
+  name: Oudna
+
+- id: loc_16776
+  pleiades: 16776
+  tgn:
+  name: Palestrina
+
+- id: loc_21091
+  pleiades: 21091
+  tgn:
+  name: Palmyra
+
+- id: loc_21158
+  pleiades: 21158
+  tgn:
+  name: Pergamon
+
+- id: loc_21090
+  pleiades: 21090
+  tgn:
+  name: Petra
+
+- id: loc_21305
+  pleiades: 21305
+  tgn:
+  name: Piazza Armerina
+
+- id: loc_22389
+  pleiades: 22389
+  tgn:
+  name: Piraeus
+
+- id: loc_21352
+  pleiades: 21352
+  tgn:
+  name: Pompeii
+
+- id: loc_1452
+  pleiades: 1452
+  tgn:
+  name: Ravenna
+
+- id: loc_1438
+  pleiades: 1438
+  tgn:
+  name: Rome
+
+- id: loc_20221
+  pleiades: 20221
+  tgn:
+  name: Saint-Romain-en-Gal
+
+- id: loc_17935
+  pleiades: 17935
+  tgn:
+  name: Santa Marinella
+
+- id: loc_21663
+  pleiades: 21663
+  tgn:
+  name: Sepphoris
+
+- id: loc_21512
+  pleiades: 21512
+  tgn:
+  name: Shahba Philippopolis
+
+- id: loc_XXXX
+  pleiades:
+  tgn:
+  name: Temanaa (Syria. Alternate name Tamanah)
+
+- id: loc_21865
+  pleiades: 21865
+  tgn:
+  name: Thaenae
+
+- id: loc_XXXX
+  pleiades:
+  tgn:
+  name: Toprak-en-Narlidja (near Antioch)
+
+- id: loc_21592
+  pleiades: 21592
+  tgn:
+  name: Thysdrus
+
+- id: loc_33216
+  pleiades: 33216
+  tgn:
+  name: ‘Umm Hartaine
+
+- id: loc_21608
+  pleiades: 21608
+  tgn:
+  name: Utica
+
+- id: loc_106
+  pleiades: 106
+  tgn:
+  name: Vienne
+
+- id: loc_XXXX
+  pleiades:
+  tgn:
+  name: Villelaure (near Aix-en-Provence)
+
+---
