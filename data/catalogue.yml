@@ -13,317 +13,338 @@
   - 270
   dimensions_txt: "270 x 270 cm (106 1/2 x 106 1/2 in.)"
   material: Stone tesserae
-  culture: Roman, from Rome, Italy
+  culture: Roman
+  location: from Rome, Italy
 2:
   cat: 2
   title: Mosaic Floor with Bear Hunt
   inv: 72.AH.76
-  dor_id:
+  dor_id: 6916
   date:
   -
   -
   date_txt: fourth century AD
   dimensions:
-  -
-  -
+  - 660
+  - 870
   dimensions_txt: "660 x 870 cm (260 1/4 x 342 1/8 in.)"
   material: Stone tesserae
-  culture: Roman, near Baiae, Italy
+  culture: Roman
+  location: near Baiae, Italy
 3:
   cat: 3
   title: Mosaic Floor with Orpheus and Animals
   inv: 62.AH.2
-  dor_id:
+  dor_id: 6520
   date:
-  -
-  -
+  - 150
+  - 200
   date_txt: AD 150–200
   dimensions:
-  -
-  -
+  - 390
+  - 460
   dimensions_txt: "390 x 460 cm (151 15/16 x 179 15/16 in.)"
   material: Stone and glass tesserae
-  culture: Gallo-Roman, from Saint-Romain-en-Gal, France
+  culture: Gallo-Roman
+  location: from Saint-Romain-en-Gal, France
 4:
   cat: 4
   title: Mosaic Floor with Combat between Dares and Entellus
   inv: 71.AH.106
-  dor_id:
+  dor_id: 6573
   date:
-  -
-  -
+  - 175
+  - 200
   date_txt: AD 175–200
   dimensions:
-  -
-  -
+  - 210
+  - 210
   dimensions_txt: "210 x 210 cm (81 7/8 x 81 7/8 in.)"
   material: Stone and glass tesserae
-  culture: Gallo-Roman, from Villelaure, France
+  culture: Gallo-Roman
+  location: from Villelaure, France
 5:
   cat: 5
   title: Mosaic of a Lion Attacking an Onager
   inv: 73.AH.75
-  dor_id:
+  dor_id: 7069
   date:
   -
   -
   date_txt: late second century AD
   dimensions:
-  -
-  -
+  - 85
+  - 150
   dimensions_txt: "85 x 150 cm (33 3/4 x 57 3/16 in.)"
   material: Stone and glass tesserae
-  culture: Roman, from Hadrumetum (present-day Sousse), Tunisia
+  culture: Roman
+  location: from Hadrumetum (present-day Sousse), Tunisia
 6:
   cat: 6
   title: Mosaic Floor with Achilles and Briseis
   inv: 68.AH.12
-  dor_id:
+  dor_id: 6522
   date:
   -
   -
   date_txt: second–third century AD
   dimensions:
-  -
-  -
+  - 220
+  - 230
   dimensions_txt: "220 x 230 cm (85 7/16 x 89 3/8 in.)"
   material: Stone and glass tesserae
-  culture: Roman, from Syria
+  culture: Roman
+  location: from Syria
 7:
   cat: 7
   title: Mosaic Floor with Animals
   inv: 70.AH.96
-  dor_id:
+  dor_id: 6539
   date:
   -
   -
   date_txt: ca. AD 400
   dimensions:
-  -
-  -
+  - 260
+  - 680
   dimensions_txt: "260 x 680 cm (101 1/4 x 268 5/8 in.)"
   material: Stone tesserae
-  culture: Roman, from Antioch, Syria (present-day Antakya, Turkey)
+  culture: Roman
+  location: from Antioch, Syria (present-day Antakya, Turkey)
 8:
   cat: 8
   title: Mosaic Panel with a Griffin
   inv: 71.AH.113
-  dor_id:
+  dor_id: 6578
   date:
   -
   -
   date_txt: fifth century AD
   dimensions:
-  -
-  -
+  - 180
+  - 180
   dimensions_txt: "180 x 180 cm (72 1/16 x 72 1/16 in.)"
   material: Stone and glass tesserae
-  culture: Roman, from Syria
+  culture: Roman
+  location: from Syria
 9:
   cat: 9
   title: Mosaic Panel with Peacock Facing Left
   inv: 75.AH.121
-  dor_id:
+  dor_id: 7290
   date:
   -
   -
   date_txt: fifth–sixth century AD
   dimensions:
-  -
-  -
+  - 197
+  - 115.5
   dimensions_txt: "197 x 115.5 cm (77 9/16 x 45 1/2 in.)"
   material: Stone tesserae
-  culture: Roman, from Syria, possibly Emesa (present-day Homs)
+  culture: Roman
+  location: from Syria, possibly Emesa (present-day Homs)
   credit: Gift of William Wahler
 10:
   cat: 10
   title: Mosaic Panel with Peacock Facing Right
   inv: 75.AH.122
-  dor_id:
+  dor_id: 7291
   date:
   -
   -
   date_txt: fifth–sixth century AD
   dimensions:
-  -
-  -
+  - 200.6
+  - 116.8
   dimensions_txt: "200.6 x 116.8 cm (79 x 46 in.)"
   material: Stone tesserae
-  culture: Roman, from Syria, possibly Emesa (present-day Homs)
+  culture: Roman
+  location: from Syria, possibly Emesa (present-day Homs)
   credit: Gift of William Wahler
 11:
   cat: 11
   title: Mosaic Panel with Donkey and Bird
   inv: 75.AH.119
-  dor_id:
+  dor_id: 7288
   date:
   -
   -
   date_txt: fifth–sixth century AD
   dimensions:
-  -
-  -
+  - 91.4
+  - 106.7
   dimensions_txt: "91.4 x 106.7 cm (36 x 42 in.)"
   material: Stone tesserae
-  culture: Roman, from Syria, possibly Emesa (present-day Homs)
+  culture: Roman
+  location: from Syria, possibly Emesa (present-day Homs)
   credit: Gift of William Wahler
 12:
   cat: 12
   title: Mosaic Panel with Eagle
   inv: 75.AH.125
-  dor_id:
+  dor_id: 7294
   date:
   -
   -
   date_txt: fifth–sixth century AD
   dimensions:
-  -
-  -
+  - 81.3
+  - 57.2
   dimensions_txt: "81.3 x 57.2 cm (32 x 22 1/2 in.)"
   material: Stone tesserae
-  culture: Roman, from Syria, possibly Emesa (present-day Homs)
+  culture: Roman
+  location: from Syria, possibly Emesa (present-day Homs)
   credit: Gift of William Wahler
 13:
   cat: 13
   title: Mosaic Panel with Three Birds and a Tree
   inv: 75.AH.123
-  dor_id:
+  dor_id: 7292
   date:
   -
   -
   date_txt: fifth–sixth century AD
   dimensions:
-  -
-  -
+  - 96.5
+  - 127
   dimensions_txt: "96.5 x 127 cm (38 x 50 in.)"
   material: Stone tesserae
-  culture: Roman, from Syria, possibly Emesa (present-day Homs)
+  culture: Roman
+  location: from Syria, possibly Emesa (present-day Homs)
   credit: Gift of William Wahler
 14:
   cat: 14
   title: Mosaic Panel of Bull and Flowers
   inv: 75.AH.124
-  dor_id:
+  dor_id: 7293
   date:
   -
   -
   date_txt: fifth–sixth century AD
   dimensions:
-  -
-  -
+  - 109.2
+  - 75
   dimensions_txt: "109.2 x 75 cm (43 x 29 1/2 in.)"
   material: Stone tesserae
-  culture: Roman, from Syria, possibly Emesa (present-day Homs)
+  culture: Roman
+  location: from Syria, possibly Emesa (present-day Homs)
   credit: Gift of William Wahler
 15:
   cat: 15
   title: Mosaic Panel with Stag
   inv: 75.AH.120
-  dor_id:
+  dor_id: 7289
   date:
   -
   -
   date_txt: fifth–sixth century AD
   dimensions:
-  -
-  -
+  - 89
+  - 119.4
   dimensions_txt: "89 x 119.4 cm (35 1/16 x 47 in.)"
   material: Stone tesserae
-  culture: Roman, from Syria, possibly Emesa (present-day Homs)
+  culture: Roman
+  location: from Syria, possibly Emesa (present-day Homs)
   credit: Gift of William Wahler
 16:
   cat: 16
   title: Mosaic Panel with Horse
   inv: 75.AH.116
-  dor_id:
+  dor_id: 7285
   date:
   -
   -
   date_txt: fifth–sixth century AD
   dimensions:
-  -
-  -
+  - 147.3
+  - 146
   dimensions_txt: "147.3 x 146 cm (58 x 57 1/2 in.)"
   material: Stone tesserae
-  culture: Roman, from Syria, possibly Emesa (present-day Homs)
+  culture: Roman
+  location: from Syria, possibly Emesa (present-day Homs)
   credit: Gift of William Wahler
 17:
   cat: 17
   title: Mosaic Panel with Bull
   inv: 75.AH.117
-  dor_id:
+  dor_id: 7286
   date:
   -
   -
   date_txt: fifth–sixth century AD
   dimensions:
-  -
-  -
+  - 124.5
+  - 179
   dimensions_txt: "124.5 x 179 cm (49 x 70 1/2 in.)"
   material: Stone tesserae
-  culture: Roman, from Syria, possibly Emesa (present-day Homs)
+  culture: Roman
+  location: from Syria, possibly Emesa (present-day Homs)
   credit: Gift of William Wahler
 18:
   cat: 18
   title: Mosaic Panel with Rabbit
   inv: 75.AH.118
-  dor_id:
+  dor_id: 7287
   date:
   -
   -
   date_txt: fifth–sixth century AD
   dimensions:
-  -
-  -
+  - 68.6
+  - 114.3
   dimensions_txt: "68.6 x 114.3 cm (27 x 45 in.)"
   material: Stone tesserae
-  culture: Roman, from Syria, possibly Emesa (present-day Homs)
+  culture: Roman
+  location: from Syria, possibly Emesa (present-day Homs)
   credit: Gift of William Wahler
 19:
   cat: 19
   title: Mosaic Panel with a Lion Chasing a Bull
   inv: 75.AH.115
-  dor_id:
+  dor_id: 7284
   date:
   -
   -
   date_txt: fifth–sixth century AD
   dimensions:
-  -
-  -
+  - 82
+  - 150
   dimensions_txt: "82 x 150 cm (32 5/16 x 59 1/16 in.)"
   material: Stone tesserae
-  culture: Roman, from Syria, possibly Emesa (present-day Homs)
+  culture: Roman
+  location: from Syria, possibly Emesa (present-day Homs)
   credit: Gift of Joel Malter
 20:
   cat: 20
   title: Mosaic Panel with Head of a Season
   inv: 70.AH.95
-  dor_id:
+  dor_id: 6538
   date:
   -
   -
   date_txt: fifth–sixth century AD
   dimensions:
-  -
-  -
+  - 73.7
+  - 74.3
   dimensions_txt: "73.7 x 74.3 cm (29 x 29 1/4 in.)"
   material: Stone and glass tesserae
-  culture: Roman, from Syria (or possibly Jordan)
+  culture: Roman
+  location: from Syria (or possibly Jordan)
 21:
   cat: 21
   title: Mosaic Panel with Two Male Busts
   inv: 78.AH.399
-  dor_id:
+  dor_id: 8506
   date:
   -
   -
   date_txt: fifth–sixth century AD
   dimensions:
-  -
-  -
-  dimensions_txt: "48 cm (18 7/8 in.) x 68 cm (26 3/4 in.)"
+  - 48
+  - 68
+  dimensions_txt: "48 x 68 cm (18 7/8 x 26 3/4 in.)"
   material: Stone tesserae
-  culture: Roman, from Syria (or possibly Jordan)
+  culture: Roman
+  location: from Syria (or possibly Jordan)
   credit: Gift of Dr. Martin M. Orenstein
 ---
