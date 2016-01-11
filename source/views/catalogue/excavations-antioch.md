@@ -3,7 +3,7 @@ title: Antioch and the Bath of Apolausis
 subtitle: History of the Excavations
 cover:
 layout: sidebar
-sort_order:
+sort_order: 22
 ---
 Founded in 300 BC, Antioch (present-day Antakya, Turkey) was one of the most important political and cultural centers of the Greek East, and it became one of the great metropolises of the Roman Empire. Extensively excavated, the ancient site is recognized in particular for its widespread use of elaborate mosaic decoration, which adorned private houses, public buildings, and churches. During excavations in the 1930s at Antioch, its wealthy suburb Daphne, and the port city of Seleucia Pieria, archaeologists unearthed more than three hundred mosaic pavements.[^1] While the majority of the mosaics decorated private villas, mosaics also embellished public buildings such as bath complexes, which Antioch was renowned for in antiquity. Libanius and other ancient authors celebrated the clear and abundant waters of the city, as well as the great number and splendor of public and private baths, fountains, and <span class="popup definition" id="def_nymphaea">*nymphaea*</span>. The excavations at Antioch brought to light the long tradition of decorating such structures with impressive paintings and mosaics.
 

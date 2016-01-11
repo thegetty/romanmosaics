@@ -2,7 +2,7 @@
 title: Italy
 cover:
 layout: intro
-sort_order:
+sort_order: 11
 ---
 The mosaics of Italy first appeared in the late second century BC under the influence of the Hellenistic Greek pictorial tradition, in which tiny pieces of irregular stone were used to create narrative themes in detailed, colorful compositions that imitated the effects of painting.[^1] The earliest examples of this type, most of which were <span class="popup definition" id="def_emblemata">*emblemata*</span>, or picture panels, were either introduced to the region by Greek craftsmen or manufactured elsewhere and imported. Found predominantly in the cities around <span class="popup location" id="location_21352">Pompeii</span> and <span class="popup location" id="location_1438">Rome</span>, mosaics in this style, such as the well-known <span class="popup pic" id="pic_52">Alexander Mosaic</span> from the House of the Faun at Pompeii and the <span class="popup pic" id="pic_53">Nile Mosaic</span> from <span class="popup location" id="location_16776">Palestrina</span>, both dating to about 100 BC, were considered expensive luxury items, reserved exclusively for the decoration of the wealthiest private villas. Smaller *emblemata* were usually centerpieces of floors, and they were typically surrounded by plain white tesserae or framed by simple decorative patterns. On some later floors, the figural scene was set in a more elaborate design, such as in the House of the Labyrinth at Pompeii, which features an *emblema* of Theseus and the Minotaur dating to about 70–60 BC framed by a black-and-white labyrinth pattern.[^2]
 

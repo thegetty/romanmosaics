@@ -3,7 +3,7 @@ title: Villelaure
 subtitle: History of the Excavations
 cover:
 layout: sidebar
-sort_order:
+sort_order: 16
 ---
 <figure markdown="0" class="inline-figure" id="fig11">
   <img src='<%= image_path("figures/fig11.jpg") %>' alt="Figure 11: Plan of the Gallo-Roman Villa at Villelaure" />
