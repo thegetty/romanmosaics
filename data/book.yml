@@ -1,0 +1,124 @@
+# Book Data (ISBN, etc) should live here
+
+title:
+  main: Roman Mosaics in the J. Paul Getty Museum
+  subtitle:
+  edition:
+  short:
+  extended:
+  file_as:
+pub_date: 2016-03
+creators:
+  - first_name: Alexis
+    last_name: Belis
+    role: aut
+    bio:
+contributors:
+  - first_name: Nicole
+    last_name: Budrovich
+    role: ctb
+    bio:
+  - first_name: Christine
+    last_name: Kondoleon
+    role: ctb
+    bio:
+  - first_name: Kenneth
+    last_name: Lapatin
+    role: ctb
+    bio:
+  - first_name: Sean
+    last_name: Leatherbury
+    role: ctb
+    bio:
+author_as_it_appears: "Alexis Belis, with contributions by Nicole Budrovich, Christine Kondoleon, Kenneth Lapatin, and Sean Leatherbury"
+author_description:
+project_team: |
+  - Nola Butler, *Project Editors*
+  - Rachel Barth and Nola Butler, *Copy Editors*
+  - Elizabeth Chapin Kahn, *Production*
+  - Eric Gardner, *Designer &#38; Developer*
+  - Greg Albers, *Project Manager*
+editions:
+  - name: Online
+    type: InteractiveResource
+    format: text/html
+    isbn: 978-1-60606-499-3
+    permalink: http://www.getty.edu/publications/romanmosaics
+    additional_description:
+  - name: EPUB
+    type: Text
+    format: application/epub+zip
+    isbn: 978-1-60606-498-6
+    file_size_mb:
+    file_name: RomanMosaics_Belis.epub
+    additional_description:
+  - name: MOBI/KINDLE
+    type: Text
+    format: application/mobi
+    isbn: 978-1-60606-498-6
+    file_size_mb:
+    file_name: RomanMosaics_Belis.mobi
+    additional_description:
+  - name: PDF
+    type: Text
+    format: application/pdf
+    isbn: 978-1-60606-497-9
+    file_size_mb:
+    file_name: RomanMosaics_Belis.pdf
+    additional_description:
+  - name: Print-on-Demand
+    type: PhyiscalObject
+    format: paperback
+    isbn: 978-1-60606-497-9
+    pages:
+    illustrations:
+    gettystore: http://shop.getty.edu/products/roman-mosaics-in-the-j-paul-getty-museum-978-1606064979
+    additional_description:
+other_downloads:
+  - name:
+    file_size_mb:
+    file_name:
+publisher: Getty Publications
+imprint: J. Paul Getty Museum
+publisher_short: Getty P
+publisher_location: Los Angeles
+rights: © 2016 J. Paul Getty Trust
+cc_license: Creative Commons Attribution 4.0 International License
+cc_license_link: http://creativecommons.org/licenses/by/4.0/
+cc_license_exceptions:
+description_main:
+description_short:
+toc: |
+  - Director’s Foreword, *Timothy Potts*
+  - Preface, *Alexis Belis*
+  - Acknowledgments
+  - Introduction, *Christine Kondoleon*
+  - Map
+  - Note to the Reader
+  - Catalogue
+      - "Introduction to Italy"
+      - "1. Mosaic Floor with Head of Medusa"
+      - "2. Mosaic Floor with Bear Hunt"
+      - "Introduction to Gaul"
+      - "3. Mosaic Floor with Orpheus and Animals"
+      - "Villelaure: History of the Excavations"
+      - "4. Mosaic Floor with Combat between Dares and Entellus"
+      - "Introduction to North Africa"
+      - "5. Mosaic of a Lion Attacking an Onager"
+      - "Introduction to Syria"
+      - "6. Mosaic Floor with Achilles and Briseis"
+      - "Antioch and the Bath of Apolausis: History of the Excavations"
+      - "7. Mosaic Floor with Animals"
+      - "8. Mosaic Panel with Griffin"
+      - "9–19. Mosaic Panels with Animals from Church Floors"
+      - "20. Mosaic Panel with Head of a Season"
+      - "21. Mosaic Panel with Two Male Busts"
+  - References Cited
+  - Contributors
+cip_data:
+sales_catalog_category:
+subject_location_date_coverage:
+keywords:
+bisac:
+  - code:
+    subject:
