@@ -1,332 +1,375 @@
 ---
 
 - id: pic_01
+  file: pic_01_mosaic-from-corinth.jpg
   title: Mosaic from Corinth
-  source_credit: "http://ancientrome.ru"
-  url: "http://ancientrome.ru/art/artworken/img.htm?id=6074"
+  source_credit: © Carole Raddato / Wikimedia Commons
+  url: "https://commons.wikimedia.org/wiki/File:Dionysos_with_fruit_and_ivy_in_his_hair,_Archaeological_Museum_of_Ancient_Corinth,_Greece.jpg"
 
 - id: pic_02
+  file: pic_02_house-of-piraeus.jpg
   title: Mosaic from Piraeus
-  source_credit: "http://ancientrome.ru"
-  url: "http://ancientrome.ru/art/artworken/img.htm?id=6076"
+  source_credit: © RBerteig / Flickr
+  url: "https://flic.kr/p/cPDiP"
 
 - id: pic_03
+  file: pic_03_mosaic-from-pergamon.jpg
   title: Mosaic from Pergamon
-  source_credit: Bergama (Pergamon) Museum
-  url: "http://www.pergamonguide.com/Pergamon/tabid/62/articleType/ArticleView/articleId/70/categoryId/5/Pergamon-Museum.aspx"
+  source_credit: © Ken and Nyetta / Flickr
+  url: "https://flic.kr/p/bnPb57"
 
 - id: pic_04
+  file: pic_04_house-of-the-red-pavement.jpg
   title: House of the Red Pavement at Antioch
-  source_credit: Princeton University Art Museum
+  source_credit: Gift of the Committee for the Excavation of Antioch to Princeton University / Princeton University Art Museum
   url: "http://artmuseum.princeton.edu/collections/objects/29576"
 
 - id: pic_05
+  file: pic_05_house-of-antiope.jpg
   title: House of Antiope at Marcianopolis
-  source_credit: Wikimedia Commons
+  source_credit: © Spiritia / Wikimedia Commons
   url: "https://commons.wikimedia.org/wiki/File:Devnya-mosaics-museum-gorgon-medusa-1.jpg"
 
 - id: pic_06
+  file: pic_06_mosaic-from-dar-zmela.jpg
   title: Mosaic from Dar Zmela
-  source_credit: "Ad Meskens / Wikimedia Commons"
-  url: "https://commons.wikimedia.org/wiki/File:Sousse\_mosaic\_Gorgon.JPG"
+  source_credit: © Ad Meskens / Wikimedia Commons
+  url: "https://commons.wikimedia.org/wiki/File:Sousse_mosaic_Gorgon.JPG"
 
 - id: pic_07
+  file: pic_07_floor-of-the-orchestra.j
   title: Mosaic from Kibyra
   source_credit: Wikimedia Commons
-  url: "https://commons.wikimedia.org/wiki/File:Medusa\_mosaic\_of\_Kibyra.jpg"
+  url: "https://commons.wikimedia.org/wiki/File:Medusa_mosaic_of_Kibyra.jpg"
 
 - id: pic_08
+  file: pic_08_gardens-of-licinius.jpg
   title: Mosaic from the Gardens of Licinius
-  source_credit: "Musei Capitolini, Centrale Montemartini"
+  source_credit: Musei Capitolini, Centrale Montemartini
   url: "http://en.centralemontemartini.org/collezioni/percorsi_per_sale/sala_caldaie/horti_liciniani/mosaico_con_scene_di_caccia"
 
 - id: pic_09
+  file: pic_09_small-hunt.jpg
   title: Small Hunt Mosaic from Piazza Armerina
-  source_credit: Wikimedia Commons
+  source_credit: © José Luiz Bernardes Ribeiro / CC-BY-SA-4.0 / Wikimedia Commons
   url: "https://commons.wikimedia.org/wiki/File:Small_hunt_mosaic_-_Villa_Romana_del_Casale_-_Italy_2015_(2).JPG"
 
 - id: pic_10
+  file: pic_10_villa-del-tellaro.jpg
   title: Mosaic from the Villa del Tellaro
-  source_credit: Wikimedia Commons
+  source_credit: © Gmelfi / Wikimedia Commons
   url: "https://commons.wikimedia.org/wiki/File:Villa_romana_del_Tellaro_004.jpg"
 
 - id: pic_11
+  file: pic_11_large-mosaic.jpg
   title: Hunting Mosaic from Lillebonne
-  source_credit: Wikimedia Commons
+  source_credit: © Gérard / Wikimedia Commons
   url: "https://commons.wikimedia.org/wiki/File:Lillebonne_mosa%C3%AFque_12.JPG"
 
 - id: pic_12
+  file: pic_12_orpheus-mosaic-from-saint-romain-en-gal.jpg
   title: Orpheus Mosaic from Saint-Romain-en-Gal
-  source_credit: Wikimedia Commons
-  url: https://commons.wikimedia.org/wiki/File:Mus%C3%A9e\_GR\_de\_Saint-Romain-en-Gal\_27\_07\_2011\_20\_Orph%C3%A9e.jpg
+  source_credit: © Vassil / Wikimedia Commons
+  url: "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_GR_de_Saint-Romain-en-Gal_27_07_2011_20_Orph%C3%A9e.jpg"
 
 - id: pic_13
+  file: pic_13_house-of-orpheus.jpg
   title: House of Orpheus
-  source_credit: Wikimedia Commons
+  source_credit: © Vassil / Wikimedia Commons
   url: "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_GR_de_Saint-Romain-en-Gal_27_07_2011_20_Orph%C3%A9e.jpg"
 
 - id: pic_14
+  file: pic_14_bust-of-orpheus.jpg
   title: Orpheus Mosaic from El-Djem
-  source_credit: Wikimedia Commons
+  source_credit: © Cimoi / Wikimedia Commons
   url: "https://commons.wikimedia.org/wiki/File:Mosaique_Orph%C3%A9e_El_Jem.jpg"
 
 - id: pic_15
+  file: pic_15_house-of-the-mosaics.jpg
   title: House of the Mosaics at Eretria
   source_credit: Swiss School of Archaeology in Greece
   url: "http://www.unil.ch/files/live//sites/esag/files/shared/images/high_res/Eretria_Mosaic.jpg"
 
 - id: pic_16
+  file: pic_16_peristyle-of-the-house-of-the-mosaics.jpg
   title: House of the Mosaics at Motya
   source_credit: Wikimedia Commons
   url: "https://commons.wikimedia.org/wiki/File:Casa_dei_mosaici.jpg"
 
 - id: pic_17
+  file: pic_17_wild-cats-and-centaurs.jpg
   title: Mosaic from Hadrian’s Villa
-  source_credit: Wikimedia Commons
+  source_credit: © Carole Raddato / Wikimedia Commons
   url: "https://commons.wikimedia.org/wiki/File:Mosaic-_Pair_of_Centaurs_Fighting_Cats_of_Prey_from_Hadrian's_Villa,_c._130_AD,_Altes_Museum_Berlin_%2813508199953%29.jpg"
 
 - id: pic_18
+  file: pic_18_tiger-and-two-onagers.jpg
   title: Tiger Mosaic from the House of the Dionysiac Procession
-  source_credit: Wikimedia Commons
+  source_credit: © Effi Schweizer / Wikimedia Commons
   url: "https://commons.wikimedia.org/wiki/File:El_Jem_Museum_%289%29.JPG"
 
 - id: pic_19
+  file: pic_19_two-lions-on-either-side-of-a-boar.jpg
   title: Lion Mosaic from the House of the Dionysiac Procession
-  source_credit: Wikimedia Commons
+  source_credit: © damian entwistle / Wikimedia Commons
   url: "https://commons.wikimedia.org/wiki/File:El_Jem_Museum_lions_boar_mosaics.jpg"
 
 - id: pic_20
+  file: pic_20_lion-mosaic-from-carthage.jpg
   title: Lion Mosaic from Carthage
-  source_credit: Smithsonian Institution National Museum of Natural History
-  url: "http://collections.nmnh.si.edu/search/anth/"
+  source_credit: National Museum of Natural History, Smithsonian Institution
+  url: "http://collections.nmnh.si.edu/search/anth/?ark=ark:/65665/3b7b423b4fd4c496b96cf25f1beb8a1e4"
 
 - id: pic_21
+  file: pic_21_house-of-the-tragic-poet.jpg
   title: Fresco from the House of the Tragic Poet
-  source_credit: Wikimedia Commons
+  source_credit: © Marie-Lan Nguyen / Wikimedia Commons
   url: "https://commons.wikimedia.org/wiki/File:Achilles_Briseis_MAN_Napoli_Inv9105_n01.jpg"
 
 - id: pic_22
+  file: pic_22_bronze-sheath.jpg
   title: Bronze Sheath in the British Museum
   source_credit: British Museum
   url: "http://www.britishmuseum.org/research/collection_online/collection_object_details.aspx?objectId=459046&partId=1&searchText=achilles+and+briseis&page=1"
 
 - id: pic_23
+  file: pic_23_silver.jpg
   title: Silver Missorium in Paris
   source_credit: Wikimedia Commons
   url: "https://commons.wikimedia.org/wiki/File:Bouclier_de_Scipion_Cdm_Paris_344.jpg"
 
 - id: pic_24
+  file: pic_24_soteria.jpg
   title: Mosaic of *Soteria*
-  source_credit: Nevit Dilmen / Wikimedia Commons
+  source_credit: © Nevit Dilmen / Wikimedia Commons
   url: "https://commons.wikimedia.org/wiki/File:Antakya_Arkeoloji_Muzesi_1250308_nevit.jpg"
 
 - id: pic_25
+  file: pic_25_mosaic-of-apolausis.jpg
   title: Mosaic of *Apolausis*
   source_credit: Dumbarton Oaks Research Library and Collection
   url: "http://museum.doaks.org/Obj30420?sid=677610&x=14620472&port=2615"
 
 - id: pic_26
+  file: pic_26_basilica-at-aquileia.jpg
   title: Basilica at Aquileia
-  source_credit: Wikimedia Commons
+  source_credit: © I, Sailko / Wikimedia Commons
   url: "https://commons.wikimedia.org/wiki/File:Basilica_di_aquilieia,_mosaici,_animals_right_carpet_02.JPG"
 
 - id: pic_27
+  file: pic_27_mosaic-from-lod.jpg
   title: Mosaic from Lod
-  source_credit: Wikimedia Commons
+  source_credit: © Ralph Daily / Wikimedia Commons
   url: "https://commons.wikimedia.org/wiki/File:Mosa%C3%AFque_Li%C3%A8vre_croquant_du_raisin.jpg"
 
 - id: pic_28
+  file: pic_28_mosaic-from-corinium-dobunnorum.jpg
   title: Mosaic from Corinium Dobunnorum
-  source_credit: Corinium Museum
-  url: "https://coriniummuseum.culturalspot.org/asset-viewer/hare-mosaic/2gFnzFsi_LPKtg?exhibitId=JgKyVT_xdPpnIw"
+  source_credit: © Nilfanion / Wikimedia Commons
+  url: "https://commons.wikimedia.org/wiki/File:Corinium_Museum_04.jpg"
 
 - id: pic_29
+  file: pic_29_egyptian-mould.jpg
   title: Egyptian Mould
   source_credit: British Museum
   url: "http://www.britishmuseum.org/research/collection_online/collection_object_details.aspx?objectId=450685&partId=1&searchText=griffin+egypt&page=1"
 
 - id: pic_30
+  file: pic_30_faience-egyptian-statuette.jpg
   title: Faience Egyptian statuette
-  source_credit: Brooklyn Museum
+  source_credit: Charles Edwin Wilbour Fund / Brooklyn Museum
   url: "https://www.brooklynmuseum.org/opencollection/objects/67370/Statuette_of_Nemesis_in_Form_of_Female_Griffin_with_Wings?referring-q=nemesis+griffin"
 
 - id: pic_31
+  file: pic_31_bronze-egyptian-statuette.jpg
   title: Bronze Egyptian Statuette
-  source_credit: Museum of Fine Arts, Boston
+  source_credit: Gift of Jerome M. Eisenberg / Museum of Fine Arts, Boston
   url: "http://www.mfa.org/collections/object/griffin-with-the-wheel-of-nemesis-152811"
 
-- id: pic_32
-  title: Statue from Erez
-  source_credit: Israel Museum, Jerusalem
-  url: "http://www.imj.org.il/imagine/galleries/viewItemE.asp?case=5&itemNum=396722"
-
 - id: pic_33
+  file: pic_33_griffin-and-bull-mosaic-from-huarte.jpg
   title: Griffin and Bull Mosaic from Huarte
-  source_credit: "Sean Leatherbury/Manar al-Athar"
+  source_credit: Sean Leatherbury/Manar al-Athar
   url: "http://www.manar-al-athar.ox.ac.uk/dams/pages/view.php?ref=23244&search=huarte+mosaic&order_by=field8&sort=ASC&offset=0&archive=0&k"
 
 - id: pic_34
+  file: pic_34_great-palace-griffin-mosaic.jpg
   title: Great Palace Griffin Mosaic
-  source_credit: Wikimedia Commons
-  url: "https://commons.wikimedia.org/wiki/File:Istanbul_Museo_Mosaici_13.JPG"
+  source_credit: © Laurom / Wikimedia Commons
+  url: https://commons.wikimedia.org/wiki/File:Istanbul_Museo_Mosaici_13.JPG"
 
 - id: pic_35
+  file: pic_35_peacock-mosaic-in-jerusalem.jpg
   title: Peacock Mosaic in Jerusalem
-  source_credit: "Sean Leatherbury/Manar al-Athar"
+  source_credit: Sean Leatherbury/Manar al-Athar
   url: "http://www.manar-al-athar.ox.ac.uk/dams/pages/view.php?ref=50074&search=musrara+mosaic&offset=0&order_by=field8&sort=ASC&archive=0&k=&"
 
 - id: pic_36
+  file: pic_36_mosaics-of-a-church-at-maarata.jpg
   title: Mosaics of a Church at Ma’arata
-  source_credit: "Sean Leatherbury/Manar al-Athar"
+  source_credit: Sean Leatherbury /Manar al-Athar
   url: "http://www.manar-al-athar.ox.ac.uk/dams/pages/view.php?ref=23024&search=%21related23020"
 
 - id: pic_37
+  file: pic_37_mosaics-of-the-church-and-temanaa.jpg
   title: Mosaics of the Church at Temanaa
-  source_credit: "Sean Leatherbury/Manar al-Athar"
+  source_credit: Sean Leatherbury/Manar al-Athar
   url: "http://www.manar-al-athar.ox.ac.uk/dams/pages/view.php?ref=28318&search=tamanah%2C+mosaic&order_by=field8&sort=ASC&offset=0&archive=0&k"
 
 - id: pic_38
+  file: pic_38_lion-and-bull-mosaic-from-houad.jpg
   title: Lion and Bull mosaic from Houad
   source_credit: Sean Leatherbury/Manar al-Athar
   url: "http://www.manar-al-athar.ox.ac.uk/dams/pages/view.php?ref=23269&search=%21related23253"
 
 - id: pic_39
+  file: pic_39_apse-mosaic-from-church-at-umm-hartaine.jpg
   title: Apse Mosaic from Church at ‘Umm Hartaine
-  source_credit: "Sean Leatherbury/Manar al-Athar"
+  source_credit: Sean Leatherbury/Manar al-Athar
   url: "http://www.manar-al-athar.ox.ac.uk/dams/pages/view.php?ref=23192&search=Umm+Hartaine&order_by=field8&sort=ASC&offset=0&archive=0&k"
 
 - id: pic_40
+  file: pic_40_nave-mosaic-from-church-at-umm-hartaine.jpg
   title: Nave Mosaic from Church at ‘Umm Hartaine
-  source_credit: "Sean Leatherbury/Manar al-Athar"
+  source_credit: Sean Leatherbury/Manar al-Athar
   url: "http://www.manar-al-athar.ox.ac.uk/dams/pages/view.php?ref=23208&search=Umm+Hartaine&order_by=field8&sort=ASC&offset=0&archive=0&k"
 
 - id: pic_41
+  file: pic_41_aisle-mosaics-of-church-of-saint-george-at-houad.jpg
   title: Aisle Mosaics of Church of Saint George at Houad
-  source_credit: "Sean Leatherbury/Manar al-Athar"
-  url: "http://www.manar-al-athar.ox.ac.uk/dams/pages/preview.php?ref=23267&ext=jpg&k=&search=hudide+church+george&offset=0&order_by=field8&sort=ASC&archive=0&"
+  source_credit: Sean Leatherbury/Manar al-Athar
+  url: "http://www.manar-al-athar.ox.ac.uk/dams/pages/view.php?ref=23267&search=hudide+church+george&offset=0&order_by=field8&sort=ASC&archive=0&k=&"
 
 - id: pic_42
+  file: pic_42_nave-mosaics-of-church-of-saint-george-at-houad.jpg
   title: Nave Mosaics of Church of Saint George at Houad
-  source_credit: "Sean Leatherbury/Manar al-Athar"
+  source_credit: Sean Leatherbury/Manar al-Athar
   url: "http://www.manar-al-athar.ox.ac.uk/dams/pages/view.php?ref=23252&search=%21related23254"
 
 - id: pic_43
+  file: pic_43_mosaic-from-church-near-hama.jpg
   title: Mosaic from Church near Hama
-  source_credit: "Sean Leatherbury/Manar al-Athar"
+  source_credit: Sean Leatherbury/Manar al-Athar
   url: "http://www.manar-al-athar.ox.ac.uk/dams/pages/view.php?ref=28293&search=%21related28307"
 
 - id: pic_44
+  file: pic_44_nile-festival-mosaic-from-sepphoris.jpg
   title: Nile Festival Mosaic (detail) from Sepphoris
-  source_credit: Wikimedia Commons
+  source_credit: © Oren Rozen / Wikimedia Commons
   url: "https://commons.wikimedia.org/wiki/File:Sepphoris_(Tzippori)_290314_05.jpg"
 
 - id: pic_45
+  file: pic_45_hippolytus-hall-mosaic-from-madaba.jpg
   title: Hippolytus Hall Mosaic from Madaba
-  source_credit: Wikimedia Commons
+  source_credit: © Bernard Gagnon / Wikimedia Commons
   url: "https://commons.wikimedia.org/wiki/File:Hippolytus_mosaic_02.jpg"
 
 - id: pic_46
+  file: pic_46_mosaic-of-ktsis-from-the-metropolitan-museum-of-art.jpg
   title: Mosaic of Ktisis from the Metropolitan Museum of Art
-  source_credit: Metropolitan Museum of Art
-  url: "http://www.metmuseum.org/collection/the-collection-online/search/469960?rpp=30&pg=1&ft=1998.69&pos=1"
+  source_credit: "Harris Bribane Dick Fund and Fletcher Fund, 1998; Purchase, Lila Acheson Wallace Gift, Dodge Fund, and Rogers Fund, 1999 / Metropolitan Museum of Art"
+  url: "http://www.metmuseum.org/collection/the-collection-online/search/469960"
 
 - id: pic_47
+  file: pic_47_seasons-mosaic-from-petra.jpg
   title: Seasons Mosaic from Petra
-  source_credit: Wikimedia Commons
+  source_credit: © Jean Housen / Wikimedia Commons
   url: "https://commons.wikimedia.org/wiki/File:20100926_petra279.jpg"
 
 - id: pic_48
+  file: pic_48_mosaic-from-church-at-khirbet-al-mukhayyat.jpg
   title: Mosaic from Church of Saints Lot and Procopius at Khirbet al-Mukhayyat
-  source_credit: Wikimedia Commons
+  source_credit: © Jean Housen / Wikimedia Commons
   url: "https://commons.wikimedia.org/wiki/File:20100924_st_lot09a.jpg"
 
 - id: pic_49
+  file: pic_49_adam-and-eve.jpg
   title: Mosaic of Adam and Eve
-  source_credit: Cleveland Museum of Art
-  url: "http://www.clevelandart.org/art/1969.115?collection_search_query=Mosaic&op=search&form_build_id=form-z9Rj4PenMWskGKBtubmYQOYa75q2lDnhkNurnvmd-OQ&form_id=clevelandart_collection_search_form"
-
-- id: pic_50
-  title: Mosaic of a Hunter in a Church at Kissufim
-  source_credit: Israel Museum, Jerusalem
-  url: "http://www.imj.org.il/imagine/galleries/viewItemE.asp?case=6&itemNum=198090"
+  source_credit: © rocor / Flickr
+  url: "https://flic.kr/p/9obHFL"
 
 - id: pic_51
+  file: pic_51_hunting-mosaic-from-carthage.jpg
   title: Hunting Mosaic from Carthage
   source_credit: Wikimedia Commons
   url: "https://commons.wikimedia.org/wiki/File:Chasse_sanglier_Carthage_Bardo_National_Museum.JPG"
 
 - id: pic_52
+  file: pic_52_alexander-mosaic.jpg
   title: Alexander Mosaic
-  source_credit: Wikimedia Commons
+  source_credit: © Carole Raddato \[CC BY-SA 2.0\] / Wikimedia Commons
   url: "https://commons.wikimedia.org/wiki/File:The_Alexander_Mosaic_depicting_the_Battle_of_Issus_between_Alexander_the_Great_%26_Darius_III_of_Persia,_from_the_House_of_the_Faun_in_Pompeii,_Naples_Archaeological_Museum_(15045954695).jpg"
 
 - id: pic_53
+  file: pic_53_nile-mosaic-from-palestrina.jpg
   title: Nile Mosaic from Palestrina
-  source_credit: Wikimedia Commons
+  source_credit: © WolfgangRieger / Wikimedia Commons
   url: "https://commons.wikimedia.org/wiki/File:Nile_Mosaic.jpg"
 
 - id: pic_54
+  file: pic_54_mosaic-from-the-hospitalia-at-hadrians-villa.jpg
   title: Mosaic from the Hospitalia at Hadrian’s Villa
   source_credit: Wikimedia Commons
   url: "https://commons.wikimedia.org/wiki/File:Pavement_Hospitalia_Villa_Hadriana_n6.jpg"
 
 - id: pic_55
+  file: pic_55_palazzo-imperiale-at-ostia.jpg
   title: Palazzo Imperiale at Ostia
-  source_credit: Wikimedia Commons
+  source_credit: © Udimu / Wikimedia Commons
   url: "https://commons.wikimedia.org/wiki/File:Palazzo_Imperiale.jpg"
 
 - id: pic_56
+  file: pic_56_great-hunt-mosaic-at-piazza-armerina.jpg
   title: Great Hunt Mosaic at Piazza Armerina
-  source_credit: Wikimedia Commons
+  source_credit: © Jerzy Strzelecki / Wikimedia Commons
   url: "https://commons.wikimedia.org/wiki/File:Great_Hunt_mosaics,_Villa_del_Casale,_by_Jerzy_Strzelecki.jpg"
 
-- id: pic_57
-  title: Hunting Mosaic from Carthage
-  source_credit: Wikimedia Commons
-  url: "https://commons.wikimedia.org/wiki/File:Chasse_sanglier_Carthage_Bardo_National_Museum.JPG"
-
 - id: pic_58
+  file: pic_58_drunkenness-of-herakles-mosaic-from-vienne.jpg
   title: Drunkenness of Herakles Mosaic from Vienne
-  source_credit: Wikimedia Commons
+  source_credit: © Hélène Rival / Wikimedia Commons
   url: "https://commons.wikimedia.org/wiki/File:Mosa%C3%AFque,-Lyon.png"
 
 - id: pic_59
+  file: pic_59_calendar-mosaic-from-el-djem.jpg
   title: Calendar Mosaic from El Djem
-  source_credit: Wikimedia Commons
+  source_credit: © Ad Meskens / Wikimedia Commons
   url: "https://commons.wikimedia.org/wiki/File:Sousse_mosaic_calendar.JPG"
 
-- id: pic_60
-  title: Hunting Mosaic from Carthage
-  source_credit: Wikimedia Commons
-  url: "https://commons.wikimedia.org/wiki/File:Chasse_sanglier_Carthage_Bardo_National_Museum.JPG"
-
 - id: pic_61
+  file: pic_61_el-djem-amphiteater-mosaic.jpg
   title: El Djem Amphitheater Mosaic
-  source_credit: Wikimedia Commons
+  source_credit: © Wael Ghabara / Wikimedia Commons
   url: "https://commons.wikimedia.org/wiki/File:Sousse_museum_38.jpg"
 
 - id: pic_62
+  file: pic_62_mosaic-of-the-worcester-hunt.jpg
   title: Mosaic of the Worcester Hunt
   source_credit: Wikimedia Commons
   url: "https://commons.wikimedia.org/wiki/File:Mosaics,_Worcester_Art_Museum_-_IMG_7451.JPG"
 
 - id: pic_63
+  file: pic_63_mosaic-of-megalopsychia.jpg
   title: Mosaic of Megalopsychia
-  source_credit: Hatay Archaeology Museum
-  url: "http://www.hatayarkeolojimuzesi.gov.tr/HatayMuzeWeb/faces/jsp/layouts/inventoryCollectionDetail.jsp?inventoryid=3791&Lang=en"
+  source_credit: © Jacqueline Poggi / Flickr
+  url: "https://flic.kr/p/or3SRk"
 
 - id: pic_64
+  file: pic_64_aphrodite-and-adonis-mosaic-from-the-atrium-house.jpg
   title: Aphrodite and Adonis Mosaic from the Atrium House
-  source_credit: Princeton University Art Museum
+  source_credit: Gift of the Committee for the Excavation of Antioch to Princeton University / Princeton University Art Museum
   url: "http://artmuseum.princeton.edu/collections/objects/21416"
 
 - id: pic_65
+  file: pic_65_judgment-of-paris-mosaic-from-the-atrium-house.jpg
   title: Judgment of Paris Mosaic from the Atrium House
-  source_credit: Wikimedia Commons
+  source_credit: © Mbzt / Wikimedia Commons
   url: "https://commons.wikimedia.org/wiki/File:P1170845_Louvre_jugement_de_P%C3%A2ris_Ma3443_rwk.jpg"
 
 - id: pic_66
+  file: pic_66_drinking-contest-from-the-atrium-house.jpg
   title: Drinking Contest between Dionysos and Herakles from the Atrium House
-  source_credit: Wikimedia Commons
+  source_credit: © Daderot / Wikimedia Commons
   url: "https://commons.wikimedia.org/wiki/Category:Mosaics_in_the_Worcester_Art_Museum#/media/File:Mosaics,_Worcester_Art_Museum_-_IMG_7580_(cropped).JPG"
+
 ---
