@@ -1,6 +1,6 @@
 ---
 
-- id: loc_XXXX
+- id: loc_0001
   pleiades:
   tgn:
   name: ‘Ain el-Bad (Syria)
@@ -70,17 +70,17 @@
   tgn:
   name: Corinth
 
-- id: loc_XXXX
+- id: loc_0002
   pleiades:
   tgn:
   name: Dar Zmela (Tunisia)
 
-- id: loc_XXXX
+- id: loc_0003
   pleiades:
   tgn:
   name: Deir el-‘Adas (Syria)
 
-- id: loc_XXXX
+- id: loc_0004
   pleiades:
   tgn:
   name: Deir es-Sleib (Syria)
@@ -90,7 +90,7 @@
   tgn:
   name: El Kef
 
-- id: loc_XXXX
+- id: loc_0005
   pleiades:
   tgn:
   name: El-Maqerqesh (Israel)
@@ -105,7 +105,7 @@
   tgn:
   name: Eretria
 
-- id: loc_XXXX
+- id: loc_0006
   pleiades:
   tgn:
   name: Erez (Israel)
@@ -150,7 +150,7 @@
   tgn:
   name: Jerusalem
 
-- id: loc_XXXX
+- id: loc_0007
   pleiades:
   tgn:
   name: Khirbet Mukhayyat (Jordan)
@@ -160,7 +160,7 @@
   tgn:
   name: Kibyra
 
-- id: loc_XXXX
+- id: loc_0008
   pleiades:
   tgn:
   name: Kissufim (Israel)
@@ -195,7 +195,7 @@
   tgn:
   name: Lydda
 
-- id: loc_XXXX
+- id: loc_0009
   pleiades:
   tgn:
   name: Ma’arata (Syria. Alternate name Maarata)
@@ -215,7 +215,7 @@
   tgn:
   name: Massalia
 
-- id: loc_XXXX
+- id: loc_0010
   pleiades:
   tgn:
   name: Mezra’a el-‘Ulia (Syria)
@@ -310,7 +310,7 @@
   tgn:
   name: Shahba Philippopolis
 
-- id: loc_XXXX
+- id: loc_0011
   pleiades:
   tgn:
   name: Temanaa (Syria. Alternate name Tamanah)
@@ -320,7 +320,7 @@
   tgn:
   name: Thaenae
 
-- id: loc_XXXX
+- id: loc_0012
   pleiades:
   tgn:
   name: Toprak-en-Narlidja (near Antioch)
@@ -345,7 +345,7 @@
   tgn:
   name: Vienne
 
-- id: loc_XXXX
+- id: loc_0013
   pleiades:
   tgn:
   name: Villelaure (near Aix-en-Provence)
