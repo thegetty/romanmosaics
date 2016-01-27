@@ -1,6 +1,5 @@
 ---
-1:
-  cat: 1
+- cat: 1
   title: Mosaic Floor with Head of Medusa
   inv: 71.AH.110
   dor_id: 6576
@@ -15,8 +14,7 @@
   material: Stone tesserae
   culture: Roman
   location: from Rome, Italy
-2:
-  cat: 2
+- cat: 2
   title: Mosaic Floor with Bear Hunt
   inv: 72.AH.76
   dor_id: 6916
@@ -31,8 +29,7 @@
   material: Stone tesserae
   culture: Roman
   location: near Baiae, Italy
-3:
-  cat: 3
+- cat: 3
   title: Mosaic Floor with Orpheus and Animals
   inv: 62.AH.2
   dor_id: 6520
@@ -47,8 +44,7 @@
   material: Stone and glass tesserae
   culture: Gallo-Roman
   location: from Saint-Romain-en-Gal, France
-4:
-  cat: 4
+- cat: 4
   title: Mosaic Floor with Combat between Dares and Entellus
   inv: 71.AH.106
   dor_id: 6573
@@ -63,8 +59,7 @@
   material: Stone and glass tesserae
   culture: Gallo-Roman
   location: from Villelaure, France
-5:
-  cat: 5
+- cat: 5
   title: Mosaic of a Lion Attacking an Onager
   inv: 73.AH.75
   dor_id: 7069
@@ -79,8 +74,7 @@
   material: Stone and glass tesserae
   culture: Roman
   location: from Hadrumetum (present-day Sousse), Tunisia
-6:
-  cat: 6
+- cat: 6
   title: Mosaic Floor with Achilles and Briseis
   inv: 68.AH.12
   dor_id: 6522
@@ -95,8 +89,7 @@
   material: Stone and glass tesserae
   culture: Roman
   location: from Syria
-7:
-  cat: 7
+- cat: 7
   title: Mosaic Floor with Animals
   inv: 70.AH.96
   dor_id: 6539
@@ -111,8 +104,7 @@
   material: Stone tesserae
   culture: Roman
   location: from Antioch, Syria (present-day Antakya, Turkey)
-8:
-  cat: 8
+- cat: 8
   title: Mosaic Panel with a Griffin
   inv: 71.AH.113
   dor_id: 6578
@@ -127,8 +119,7 @@
   material: Stone and glass tesserae
   culture: Roman
   location: from Syria
-9:
-  cat: 9
+- cat: 9
   title: Mosaic Panel with Peacock Facing Left
   inv: 75.AH.121
   dor_id: 7290
@@ -144,8 +135,7 @@
   culture: Roman
   location: from Syria, possibly Emesa (present-day Homs)
   credit: Gift of William Wahler
-10:
-  cat: 10
+- cat: 10
   title: Mosaic Panel with Peacock Facing Right
   inv: 75.AH.122
   dor_id: 7291
@@ -161,8 +151,7 @@
   culture: Roman
   location: from Syria, possibly Emesa (present-day Homs)
   credit: Gift of William Wahler
-11:
-  cat: 11
+- cat: 11
   title: Mosaic Panel with Donkey and Bird
   inv: 75.AH.119
   dor_id: 7288
@@ -178,8 +167,7 @@
   culture: Roman
   location: from Syria, possibly Emesa (present-day Homs)
   credit: Gift of William Wahler
-12:
-  cat: 12
+- cat: 12
   title: Mosaic Panel with Eagle
   inv: 75.AH.125
   dor_id: 7294
@@ -195,8 +183,7 @@
   culture: Roman
   location: from Syria, possibly Emesa (present-day Homs)
   credit: Gift of William Wahler
-13:
-  cat: 13
+- cat: 13
   title: Mosaic Panel with Three Birds and a Tree
   inv: 75.AH.123
   dor_id: 7292
@@ -212,8 +199,7 @@
   culture: Roman
   location: from Syria, possibly Emesa (present-day Homs)
   credit: Gift of William Wahler
-14:
-  cat: 14
+- cat: 14
   title: Mosaic Panel of Bull and Flowers
   inv: 75.AH.124
   dor_id: 7293
@@ -229,8 +215,7 @@
   culture: Roman
   location: from Syria, possibly Emesa (present-day Homs)
   credit: Gift of William Wahler
-15:
-  cat: 15
+- cat: 15
   title: Mosaic Panel with Stag
   inv: 75.AH.120
   dor_id: 7289
@@ -246,8 +231,7 @@
   culture: Roman
   location: from Syria, possibly Emesa (present-day Homs)
   credit: Gift of William Wahler
-16:
-  cat: 16
+- cat: 16
   title: Mosaic Panel with Horse
   inv: 75.AH.116
   dor_id: 7285
@@ -263,8 +247,7 @@
   culture: Roman
   location: from Syria, possibly Emesa (present-day Homs)
   credit: Gift of William Wahler
-17:
-  cat: 17
+- cat: 17
   title: Mosaic Panel with Bull
   inv: 75.AH.117
   dor_id: 7286
@@ -280,8 +263,7 @@
   culture: Roman
   location: from Syria, possibly Emesa (present-day Homs)
   credit: Gift of William Wahler
-18:
-  cat: 18
+- cat: 18
   title: Mosaic Panel with Rabbit
   inv: 75.AH.118
   dor_id: 7287
@@ -297,8 +279,7 @@
   culture: Roman
   location: from Syria, possibly Emesa (present-day Homs)
   credit: Gift of William Wahler
-19:
-  cat: 19
+- cat: 19
   title: Mosaic Panel with a Lion Chasing a Bull
   inv: 75.AH.115
   dor_id: 7284
@@ -314,8 +295,7 @@
   culture: Roman
   location: from Syria, possibly Emesa (present-day Homs)
   credit: Gift of Joel Malter
-20:
-  cat: 20
+- cat: 20
   title: Mosaic Panel with Head of a Season
   inv: 70.AH.95
   dor_id: 6538
@@ -330,8 +310,7 @@
   material: Stone and glass tesserae
   culture: Roman
   location: from Syria (or possibly Jordan)
-21:
-  cat: 21
+- cat: 21
   title: Mosaic Panel with Two Male Busts
   inv: 78.AH.399
   dor_id: 8506
