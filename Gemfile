@@ -14,3 +14,11 @@ gem "middleman-livereload", "~> 3.4"
 gem "middleman-sprockets", "= 4.0.0.rc.1"
 gem "neat", "~> 1.7"
 gem "sassc", "~> 1.8"
+
+# Experimental: sprockets-es6
+gem "sprockets-es6"
+
+# Testing
+group :test do
+
+end
