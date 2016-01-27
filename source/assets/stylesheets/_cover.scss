@@ -94,8 +94,7 @@
 
 .cover-copy,
 .cover-highlights,
-.cover-map-inner,
-.cover-colophon {
+.cover-map-inner {
   @extend .body-copy;
   @extend .container;
   margin-bottom: 1em;
@@ -109,6 +108,29 @@
 }
 
 .cover-colophon {
+  background-color: $light-gray;
   font-family: $heading-font-family;
   font-weight: 400;
+  padding-bottom: 1.5em;
+  padding-top: 1.5em;
+}
+
+.cover-colophon-inner {
+  @extend .container;
+}
+
+.colophon-text {
+  @include media($large-screen-up) {
+    float: left;
+  }
+
+  p { margin-bottom: 0; }
+}
+
+.colophon-logo {
+  width: 70px;
+  
+  @include media($large-screen-up) {
+    float: right;
+  }
 }

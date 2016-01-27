@@ -20,5 +20,14 @@
   .cover-colophon
     .cover-colophon-inner
       .colophon-text
-        = lorem.sentences 3
+        :markdown
+          Online collection catalogue published by the J. Paul Getty Museum, <br />
+          and licensed under a [Creative Commons Attribution 4.0 International 
+          License](http://creativecommons.org/licenses/by/4.0/){:rel="license"}
+        = link_to "About", "/about.html"
+        %span &#124; 
+        = link_to "Privacy Policy", "http://www.getty.edu/legal/privacy.html", :target => "blank"
+        %span &#124; 
+        = link_to "Terms of Use", "http://www.getty.edu/legal/copyright.html", :target => "blank"
       .colophon-logo
+        = tag :img, :src => image_path("getty_logo.svg"), :alt => "Getty Logo"
