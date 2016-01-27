@@ -1,0 +1,27 @@
+---
+title: Table of Contents
+layout: application
+sort_order: 1
+---
+.toc.container.body-copy
+  - contents = sitemap.resources.find_all {|p| p.data.sort_order }
+  - sorted_contents = contents.sort_by {|p| p.data.sort_order }
+  %ul
+    - sorted_contents.each do |item|
+      - if item.data.cat.is_a? Array
+        - multiple_entries = item.data.cat
+        - multiple_entries.each do |num|
+          - current_entry = data.catalogue.find { |entry| entry.cat == num }
+          %li= link_to current_entry.title, item.path
+      - elsif item.data.cat
+        - current_entry = data.catalogue.find { |entry| entry.cat == item.data.cat }
+        %li= link_to current_entry.title, item.path
+      - else
+        %li
+          - if item.data.intro
+            %hr
+          - if item.data.sort_order == 101
+            %hr
+          = link_to item.data.title, item.path
+          - if item.data.author_last_name
+            %h6.toc-entry-author= "#{item.data.author_first_name} #{item.data.author_last_name}"

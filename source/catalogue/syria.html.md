@@ -3,6 +3,7 @@ title: Syria
 cover:
 layout: intro
 sort_order: 20
+intro: true
 ---
 Although few mosaic pavements in Syria dating before the first century AD survive, there can be little doubt that mosaic production in the region, one of the wealthiest provinces of the eastern Roman Empire and formerly the center of the Greek Seleucid kingdom, evolved directly from Hellenistic Greek traditions. Unlike Gaul and North Africa in the first and second centuries AD, where the style of mosaics was strongly influenced by the presence of immigrant Italian craftsmen who introduced the black-and-white style popular in Italy at that time, Syria preferred the Hellenistic style of <span class="popup definition" id="def_emblemata">*emblemata*</span>—detailed narrative mosaics that imitated paintings. The abundance of Roman mosaics preserved at various sites, notably at the great metropolis of <span class="popup location" id="loc_21094">Antioch</span> (present-day Antakya, Turkey), demonstrates that the pictorial style remained dominant in Syria until at least the end of the fourth century AD.[^1]
 
