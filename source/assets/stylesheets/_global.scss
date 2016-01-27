@@ -1,0 +1,23 @@
+.body-copy {
+  p {
+    font-size: $base-font-size * 1.25;
+    margin-bottom: 0;
+  }
+
+  ol,
+  ul {
+    font-size: $base-font-size * 1.25;
+  }
+
+  p + p { text-indent: $base-spacing; }
+}
+
+.container {
+  @include outer-container;
+  max-width: $large-screen;
+  padding: 0 1rem;
+
+  @include media($large-screen-up) {
+    padding: 0;
+  }
+}
