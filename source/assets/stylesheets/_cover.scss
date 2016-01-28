@@ -1,13 +1,14 @@
 $gradient-start: hsla(0, 0%, 0%, 0);
-$gradient-stop1: hsla(0, 0%, 0%, 0.75);
-$gradient-stop2: hsla(0, 0%, 0%, 0.85);
+$gradient-stop1: hsla(0, 0%, 0%, 0.9);
+$gradient-stop2: hsla(0, 0%, 0%, 0.9);
 
 $rgb-gradient-stop1: rgba(0, 0, 0, 0.75);
 $rgb-gradient-stop2: rgba(0, 0, 0, 0.85);
 
 .cover {
   background-color: $dark-gray;
-  background-position: center 65%;
+  background-image: url(image_path("cover_option1.jpg"));
+  background-position: center 75%;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -15,37 +16,39 @@ $rgb-gradient-stop2: rgba(0, 0, 0, 0.85);
 
 .cover-inner {
   // Gradient layer
-  // Small
+  // Small/Universal
   @include background-image(linear-gradient($gradient-start 0%, $gradient-stop1 100%));
   background-image: -moz-linear-gradient(transparent 0%, $rgb-gradient-stop1 100%);
   color: $white;
-  height: 55vh;
-  padding: 1rem;
+  height: 65vh;
+  padding: 6rem 0.5rem 0;
   position: absolute;
   text-align: center;
-  top: 45vh;
+  text-shadow: 3px 3px 5px $rgb-gradient-stop1;
+  top: 35vh;
   width: 100%;
 
   // Medium
   @include media($medium-screen-up) {
     @include background-image(linear-gradient($gradient-start 0%, $gradient-stop2 100%));
     background-image: -moz-linear-gradient(transparent 0%, $rgb-gradient-stop2 100%);
-    height: 55vh;
-    padding: 0 3rem;
+    height: 50vh;
+    padding: 7rem 2rem 0;
     position: absolute;
-    top: 45vh;
+    top: 50vh;
   }
 
   // Large
   @include media($large-screen-up) {
     height: 50vh;
+    padding: 12rem 1rem 0;
     top: 50vh;
   }
 }
 
 .cover-title {
   font-family: $base-font-family;
-  font-size: 2.75em;
+  font-size: 2.25em;
   font-weight: 400;
   letter-spacing: 1px;
   margin-bottom: 0;
@@ -76,7 +79,7 @@ $rgb-gradient-stop2: rgba(0, 0, 0, 0.85);
 }
 
 .cover-author {
-  font-size: 1.25em;
+  font-size: 1.125em;
   font-weight: 400;
   max-width: 30em;
 
@@ -103,6 +106,14 @@ $rgb-gradient-stop2: rgba(0, 0, 0, 0.85);
     display: table;
     font-family: $heading-font-family;
     margin: 2em auto;
+  }
+}
+
+.cover-copy-inner,
+.cover-highlights-inner {
+  @include media($medium-screen-up) {
+    @include span-columns(10);
+    @include shift(1);
   }
 }
 
