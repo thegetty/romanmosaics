@@ -2,7 +2,7 @@
 title: Introduction
 author_first_name: Christine
 author_last_name: Kondoleon
-cover:
+cover: true
 layout: page
 sort_order: 5
 ---
