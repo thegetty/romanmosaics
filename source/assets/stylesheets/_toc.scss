@@ -1,0 +1,29 @@
+.toc {
+
+}
+
+.toc-entry-author {
+  color: $medium-gray;
+  display: block;
+  font-size: 0.85em;
+  font-weight: 400;
+}
+
+.toc-item {
+  margin-bottom: $small-spacing / 2;
+
+  @include media($medium-screen-up) {
+    margin-bottom: $small-spacing;
+  }
+}
+
+.toc-section-intro {
+  border-top: $base-border;
+  margin-bottom: $small-spacing / 2;
+  padding-top: $small-spacing / 2;
+
+  @include media($medium-screen-up) {
+    margin-bottom: $small-spacing;
+    padding-top: $small-spacing;
+  }
+}

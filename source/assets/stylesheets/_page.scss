@@ -1,0 +1,29 @@
+.page {
+  @extend .container;
+}
+
+.page-cover {
+  background-color: $light-gray;
+  height: 400px;
+}
+
+.page-header,
+.page-content {
+  @include media($medium-screen-up) {
+    @include span-columns(10);
+    @include shift(1);
+  }
+
+  @include media($large-screen-up) {
+    @include span-columns(8);
+    @include shift(2);
+  }
+}
+
+.page-header {
+  margin-top: $base-spacing;
+}
+
+.page-content {
+  @extend .body-copy;
+}
