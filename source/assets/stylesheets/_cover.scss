@@ -1,3 +1,10 @@
+$gradient-start: hsla(0, 0%, 0%, 0);
+$gradient-stop1: hsla(0, 0%, 0%, 0.75);
+$gradient-stop2: hsla(0, 0%, 0%, 0.85);
+
+$rgb-gradient-stop1: rgba(0, 0, 0, 0.75);
+$rgb-gradient-stop2: rgba(0, 0, 0, 0.85);
+
 .cover {
   background-color: $dark-gray;
   background-position: center 65%;
@@ -9,12 +16,8 @@
 .cover-inner {
   // Gradient layer
   // Small
-  @include background-image(linear-gradient(
-    hsla(0, 0%, 0%, 0) 0%,
-    hsla(0, 0%, 0%, 0.75) 100%));
-  background-image: -moz-linear-gradient(
-    transparent 0%,
-    rgba(0, 0, 0, 0.75) 100%);
+  @include background-image(linear-gradient($gradient-start 0%, $gradient-stop1 100%));
+  background-image: -moz-linear-gradient(transparent 0%, $rgb-gradient-stop1 100%);
   color: $white;
   height: 55vh;
   padding: 1rem;
@@ -25,12 +28,8 @@
 
   // Medium
   @include media($medium-screen-up) {
-    @include background-image(linear-gradient(
-      hsla(0, 0%, 0%, 0) 0%,
-      hsla(0, 0%, 0%, 0.85) 100%));
-    background-image: -moz-linear-gradient(
-      transparent 0%,
-      rgba(0, 0, 0, 0.85) 100%);
+    @include background-image(linear-gradient($gradient-start 0%, $gradient-stop2 100%));
+    background-image: -moz-linear-gradient(transparent 0%, $rgb-gradient-stop2 100%);
     height: 55vh;
     padding: 0 3rem;
     position: absolute;
@@ -63,8 +62,8 @@
 
 .cover-subtitle {
   font-family: "Freight Text Pro SC";
-  font-weight: 400;
   font-size: 1.5em;
+  font-weight: 400;
   letter-spacing: 3px;
 
   @include media($medium-screen-up) {
@@ -129,7 +128,7 @@
 
 .colophon-logo {
   width: 70px;
-  
+
   @include media($large-screen-up) {
     float: right;
   }

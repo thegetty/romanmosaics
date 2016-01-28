@@ -1,23 +1,53 @@
+// scss-lint:disable SingleLinePerSelector
+
 .body-copy {
   p {
-    font-size: $base-font-size * 1.25;
     margin-bottom: 0;
+    + p { text-indent: $base-spacing; }
+    + h3 { margin-top: $base-spacing; }
   }
 
-  ol,
-  ul {
-    font-size: $base-font-size * 1.25;
+  p, ol, ul { font-size: 1.25rem; }
+  ol { @extend %default-ol; }
+
+  @include media($medium-screen-up) {
+    p, ol, ul { font-size: 1.35rem; }
   }
 
-  p + p { text-indent: $base-spacing; }
+  @include media($large-screen-up) {
+    p, ol, ul { font-size: 1.45rem; }
+  }
 }
 
 .container {
   @include outer-container;
-  max-width: $large-screen;
-  padding: 0 1rem;
+  padding: 0 $small-spacing;
 
   @include media($large-screen-up) {
     padding: 0;
   }
 }
+
+.footnotes {
+  border-top: $base-border;
+  margin-top: $base-spacing;
+  padding-top: $small-spacing;
+  text-align: center;
+
+  &:before {
+    content: "Notes";
+    font-family: "Freight Text Pro SC";
+    font-size: 1.35em;
+    letter-spacing: 2px;
+    text-transform: lowercase;
+  }
+
+  ol { margin-top: $small-spacing; }
+
+  p, ol, ul {
+    font-size: 1rem;
+    text-align: left;
+  }
+}
+
+// scss-lint:enable SingleLinePerSelector
