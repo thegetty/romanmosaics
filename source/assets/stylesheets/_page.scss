@@ -21,7 +21,7 @@
 }
 
 .page-header {
-  margin-top: $base-spacing;
+  margin-top: em($navbar-height) + $base-spacing;
 }
 
 .page-content {

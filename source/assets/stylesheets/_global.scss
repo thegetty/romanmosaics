@@ -49,5 +49,10 @@
     text-align: left;
   }
 }
-
 // scss-lint:enable SingleLinePerSelector
+
+.hide-on-mobile {
+  @include media($small-screen) {
+    display: none;
+  }
+}

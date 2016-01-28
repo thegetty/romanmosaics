@@ -1,0 +1,16 @@
+%nav.navbar
+  .navbar-left
+    %a#navbar-search{ :href => "javascript:void(0);" }
+      %i.navbar-search-icon
+  .navbar-center
+    %a#navbar-prev-link{ :href => "javascript:void(0);" }
+      %i.navbar-prev-link
+    .navbar-center-info
+      =link_to data.book.title.short, "/index.html", { :class => "navbar-site-title"}
+      %i.navbar-breadcrumb
+      %span.navbar-page-title= current_page.data.title
+    %a#navbar-next-link{ :href => "javascript:void(0);" }
+      %i.navbar-next-link
+  .navbar-right
+    %a#navbar-menu{ :href => "javascript:void(0);" }
+      %i.navbar-menu-icon
