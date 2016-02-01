@@ -1,14 +1,14 @@
-$gradient-start: hsla(0, 0%, 0%, 0);
-$gradient-stop1: hsla(0, 0%, 0%, 0.9);
-$gradient-stop2: hsla(0, 0%, 0%, 0.9);
+$gr-start: hsla(0, 0%, 0%, 0);
+$gr-stop1: hsla(0, 0%, 0%, 0.9);
+$gr-stop2: hsla(0, 0%, 0%, 0.9);
 
-$rgb-gradient-stop1: rgba(0, 0, 0, 0.75);
-$rgb-gradient-stop2: rgba(0, 0, 0, 0.85);
+$rgb-gr-stop1: rgba(0, 0, 0, 0.75);
+$rgb-gr-stop2: rgba(0, 0, 0, 0.85);
 
 .cover {
   background-color: $dark-gray;
   background-image: url(image_path("cover_option1.jpg"));
-  background-position: center 75%;
+  background-position: center 50%;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -17,21 +17,21 @@ $rgb-gradient-stop2: rgba(0, 0, 0, 0.85);
 .cover-inner {
   // Gradient layer
   // Small/Universal
-  @include background-image(linear-gradient($gradient-start 0%, $gradient-stop1 100%));
-  background-image: -moz-linear-gradient(transparent 0%, $rgb-gradient-stop1 100%);
+  @include background-image(linear-gradient($gr-start 0%, $gr-stop1 100%));
+  background-image: -moz-linear-gradient(transparent 0%, $rgb-gr-stop1 100%);
   color: $white;
   height: 65vh;
   padding: 6rem 0.5rem 0;
   position: absolute;
   text-align: center;
-  text-shadow: 3px 3px 5px $rgb-gradient-stop1;
+  text-shadow: 3px 3px 5px $rgb-gr-stop1;
   top: 35vh;
   width: 100%;
 
   // Medium
   @include media($medium-screen-up) {
-    @include background-image(linear-gradient($gradient-start 0%, $gradient-stop2 100%));
-    background-image: -moz-linear-gradient(transparent 0%, $rgb-gradient-stop2 100%);
+    @include background-image(linear-gradient($gr-start 0%, $gr-stop2 100%));
+    background-image: -moz-linear-gradient(transparent 0%, $rgb-gr-stop2 100%);
     height: 50vh;
     padding: 7rem 2rem 0;
     position: absolute;
@@ -41,7 +41,7 @@ $rgb-gradient-stop2: rgba(0, 0, 0, 0.85);
   // Large
   @include media($large-screen-up) {
     height: 50vh;
-    padding: 12rem 1rem 0;
+    padding: 8rem 1rem 0;
     top: 50vh;
   }
 }
