@@ -7,27 +7,23 @@ sort_order: 1
   - sorted_contents = sort_catalogue_contents
   %ul
     - sorted_contents.each do |item|
-      -# Item has multiple cat numbers
       - if item.data.cat.is_a? Array
         - multiple_entries = item.data.cat
         - multiple_entries.each do |num|
           - current_entry = lookup_entry(num)
           %li.toc-item= link_to current_entry.title, item.path
-      -# Item has one cat number
       - elsif item.data.cat
         - current_entry = lookup_entry(item.data.cat)
         %li.toc-item= link_to current_entry.title, item.path
-      -# Item is not a cat entry
       - else
         %li.toc-item
-          -# Item is an intro section
           - if item.data.intro
             %h5.toc-section-intro= link_to item.data.title, item.path
-          -# sort_order 101 is the beginning of post-catalogue materials
           - elsif item.data.sort_order == 101
             .toc-section-intro= link_to item.data.title, item.path
-          -# Item is a general page
           - else
             = link_to item.data.title, item.path
           - if item.data.author_last_name
-            %span.toc-entry-author= "#{item.data.author_first_name} #{item.data.author_last_name}"
+            - first_name = item.data.author_first_name
+            - last_name = item.data.author_last_name
+            %span.toc-entry-author= "#{first_name} #{last_name}"
