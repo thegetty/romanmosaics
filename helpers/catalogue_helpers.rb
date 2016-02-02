@@ -12,4 +12,23 @@ module CatalogueHelpers
   def lookup_entry(cat)
     data.catalogue.find { |entry| entry.cat == cat }
   end
+
+  def prev_chapter_path
+    return false unless current_page.data.sort_order
+    curr = current_page.data.sort_order
+    prev_chapter = sitemap.resources.find { |p| p.data.sort_order == curr - 1 }
+
+    prev_chapter ? prev_chapter.url : false
+  end
+
+  # Next Chapter link
+  # does not expect an argument (pulls data from current_page)
+  # returns the path of the next chapter or false if next chapter does not exist
+  def next_chapter_path
+    return false unless current_page.data.sort_order
+    curr = current_page.data.sort_order
+    next_chapter = sitemap.resources.find { |p| p.data.sort_order == curr + 1 }
+
+    next_chapter ? next_chapter.url : false
+  end
 end
