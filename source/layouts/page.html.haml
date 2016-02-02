@@ -3,6 +3,11 @@
     %header.page-cover
   %article.page
     %header.page-header
+      - if current_page.data.cat
+        - current_entry = lookup_entry(current_page.data.cat)
+        %h3.cat-num= current_entry.cat
+        %h1.page-title= current_entry.title
+        %h4.cat-dates= current_entry.date_txt
       %h1.page-title= current_page.data.title
     %main.page-content
       = yield
