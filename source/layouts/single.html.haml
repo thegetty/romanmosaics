@@ -3,7 +3,9 @@
   = partial "partials/cat_image"
   .cat-entry
     %header.cat-entry-header
-      %h1.cat-entry-title= current_cat.title
+      .cat-entry-header-inner
+        %h1.cat-entry-title= current_cat.title
     %article.cat-entry-content
-      = partial "partials/cat_details"
-      = yield
+      .cat-entry-content-inner
+        = partial "partials/cat_details"
+        = yield

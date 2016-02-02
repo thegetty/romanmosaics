@@ -7,10 +7,50 @@
 }
 
 .cat-entry-header {
-  background-color: white;
+  background-color: #fff;
   bottom: 0;
-  height: 85px;
-  padding: 1em;
   position: absolute;
   width: 100%;
+}
+
+.cat-entry-header-inner {
+  @extend .body-copy;
+  @extend .container;
+  padding: $base-spacing 0;
+}
+
+.cat-entry-title {
+  margin: 0;
+
+  @include media($medium-screen-up) {
+    @include span-columns(10);
+    @include shift(1);
+  }
+
+  @include media($large-screen-up) {
+    @include span-columns(8);
+    @include shift(2);
+  }
+}
+
+.cat-entry-content {
+  @extend .body-copy;
+  @extend .container;
+}
+
+.cat-entry-content-inner {
+  @include media($medium-screen-up) {
+    @include span-columns(10);
+    @include shift(1);
+  }
+
+  @include media($large-screen-up) {
+    @include span-columns(8);
+    @include shift(2);
+  }
+}
+
+.cat-details {
+  font-family: $heading-font-family;
+  margin: $base-spacing 0 ($base-spacing * 1.5);
 }
