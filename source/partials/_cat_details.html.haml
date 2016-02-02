@@ -1,0 +1,23 @@
+- current_cat = lookup_entry(current_page.data.cat)
+%table.cat-details
+  %tbody
+    %tr
+      %td
+        %strong Catalogue Number
+      %td
+        %strong= current_cat.cat
+    %tr
+      %td Inventory Number
+      %td= current_cat.inv
+    %tr
+      %td Materials
+      %td= current_cat.material
+    %tr
+      %td Culture
+      %td= current_cat.culture
+    %tr
+      %td Location
+      %td= current_cat.location
+    %tr
+      %td Dimensions
+      %td= "#{current_cat.dimensions[0]} cm x #{current_cat.dimensions[1]} cm"
