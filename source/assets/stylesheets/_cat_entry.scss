@@ -1,13 +1,10 @@
-.cat-entry {
-}
-
 .cat-entry-image {
   background-color: $light-gray;
   height: 100vh;
 }
 
 .cat-entry-header {
-  background-color: #fff;
+  background-color: $white;
   bottom: 0;
   position: absolute;
   width: 100%;
@@ -16,11 +13,15 @@
 .cat-entry-header-inner {
   @extend .body-copy;
   @extend .container;
-  padding: $base-spacing 0;
+  padding: $base-spacing $small-spacing;
+
+  @include media($large-screen-up) {
+    padding: $base-spacing 0;
+  }
 }
 
 .cat-entry-title {
-  margin: 0;
+  margin-bottom: 0;
 
   @include media($medium-screen-up) {
     @include span-columns(10);
@@ -30,6 +31,7 @@
   @include media($large-screen-up) {
     @include span-columns(8);
     @include shift(2);
+    padding: 0;
   }
 }
 
