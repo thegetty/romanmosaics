@@ -3,7 +3,7 @@ module CatalogueHelpers
   # returns an array of resource objects ordered by sort_order attribute
   def sort_catalogue_contents
     contents        = sitemap.resources.find_all {|p| p.data.sort_order }
-    sorted_contents = contents.sort_by {|p| p.data.sort_order }
+    contents.sort_by {|p| p.data.sort_order }
   end
 
   # Lookup Catalogue Entry
