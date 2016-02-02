@@ -1,3 +1,9 @@
-= wrap_layout :page do
-  = partial "partials/cat_details"
-  = yield
+- current_cat = lookup_entry(current_page.data.cat)
+= wrap_layout :application do
+  = partial "partials/cat_image"
+  .cat-entry
+    %header.cat-entry-header
+      %h1.cat-entry-title= current_cat.title
+    %article.cat-entry-content
+      = partial "partials/cat_details"
+      = yield
