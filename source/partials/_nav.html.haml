@@ -3,13 +3,16 @@
     %a#navbar-search{ :href => "javascript:void(0);" }
       %i.navbar-search-icon
   .navbar-center
-    %a#navbar-prev-link{ :href => "javascript:void(0);" }
+    = link_to prev_chapter_path do
       %i.navbar-prev-link
     .navbar-center-info
       =link_to data.book.title.short, "/index.html", { :class => "navbar-site-title"}
       %i.navbar-breadcrumb
-      %span.navbar-page-title= current_page.data.title
-    %a#navbar-next-link{ :href => "javascript:void(0);" }
+      - if current_page.data.cat
+        %span.navbar-page-title= "Cat. #{current_page.data.cat}"
+      - else
+        %span.navbar-page-title= current_page.data.title
+    = link_to next_chapter_path do
       %i.navbar-next-link
   .navbar-right
     %a#navbar-menu{ :href => "javascript:void(0);" }
