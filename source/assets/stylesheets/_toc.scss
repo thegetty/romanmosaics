@@ -13,7 +13,8 @@
   }
 }
 
-.toc-section-intro {
+// These rules should only appear on the "Contents" page
+.contents-page .toc-section-intro {
   border-top: $base-border;
   margin-bottom: $small-spacing / 2;
   padding-top: $small-spacing / 2;
