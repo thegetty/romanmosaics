@@ -1,3 +1,4 @@
+$sliding-panel-position: 'left';        // "left" or "right"
 $sliding-panel-bg-color: $medium-gray;
 $sliding-panel-width: 20rem;
 $sliding-panel-z-index: 99999;
@@ -10,10 +11,19 @@ $sliding-panel-color-hover: #fff;
 $sliding-panel-background-focus: lighten($sliding-panel-background, 5%);
 
 .nav-contents {
-  @include position(fixed, 0 0 0 auto);
+
+  // Right oriented by default
+  @if $sliding-panel-position == 'left' {
+    @include position(fixed, 0 auto 0 0);
+    @include transform(translateX(-$sliding-panel-width));
+  } @else {
+    @include position(fixed, 0 0 0 auto);
+    @include transform(translateX($sliding-panel-width));
+  }
+
   @include size($sliding-panel-width 100%);
-  @include transform(translateX($sliding-panel-width));
   @include transition(all .2s ease-in-out);
+
   background-color: $sliding-panel-background;
   -webkit-overflow-scrolling: touch;
   overflow-y: auto;
