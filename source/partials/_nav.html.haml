@@ -4,7 +4,7 @@
       %i.navbar-search-icon
   .navbar-center
     - if prev_chapter_path
-      = link_to prev_chapter_path do
+      = link_to prev_chapter_path, { :id => "prev-link" } do
         %i.navbar-prev-link
     .navbar-center-info
       =link_to data.book.title.short, "/index.html", { :class => "navbar-site-title"}
@@ -14,7 +14,7 @@
       - else
         %span.navbar-page-title= current_page.data.title
     - if next_chapter_path
-      = link_to next_chapter_path do
+      = link_to next_chapter_path, { :id => "next-link" } do
         %i.navbar-next-link
   .navbar-right
     %a#navbar-menu{ :href => "javascript:void(0);" }
