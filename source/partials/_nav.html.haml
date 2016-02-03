@@ -3,8 +3,9 @@
     %a#navbar-search{ :href => "javascript:void(0);" }
       %i.navbar-search-icon
   .navbar-center
-    = link_to prev_chapter_path do
-      %i.navbar-prev-link
+    - if prev_chapter_path
+      = link_to prev_chapter_path do
+        %i.navbar-prev-link
     .navbar-center-info
       =link_to data.book.title.short, "/index.html", { :class => "navbar-site-title"}
       %i.navbar-breadcrumb
@@ -12,8 +13,9 @@
         %span.navbar-page-title= "Cat. #{current_page.data.cat}"
       - else
         %span.navbar-page-title= current_page.data.title
-    = link_to next_chapter_path do
-      %i.navbar-next-link
+    - if next_chapter_path
+      = link_to next_chapter_path do
+        %i.navbar-next-link
   .navbar-right
     %a#navbar-menu{ :href => "javascript:void(0);" }
       %i.navbar-menu-icon
