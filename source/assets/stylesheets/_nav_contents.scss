@@ -1,0 +1,56 @@
+$sliding-panel-bg-color: $medium-gray;
+$sliding-panel-width: 20rem;
+$sliding-panel-z-index: 99999;
+$sliding-panel-border-color: $dark-gray;
+$sliding-panel-background: lighten($sliding-panel-border-color, 5%);
+$sliding-panel-color: #fff;
+$sliding-panel-border: 1px solid $sliding-panel-border-color;
+$sliding-panel-background-hover: $action-color;
+$sliding-panel-color-hover: #fff;
+$sliding-panel-background-focus: lighten($sliding-panel-background, 5%);
+
+.nav-contents {
+  @include position(fixed, 0 0 0 auto);
+  @include size($sliding-panel-width 100%);
+  @include transform(translateX($sliding-panel-width));
+  @include transition(all .2s ease-in-out);
+  background-color: $sliding-panel-background;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: auto;
+  z-index: $sliding-panel-z-index;
+
+  &.is-visible {
+    @include transform(translateX(0));
+  }
+
+  .toc {
+    color: $sliding-panel-color;
+    font-family: $heading-font-family;
+    font-size: .9em;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+  }
+
+  .toc-item {
+    border-bottom: $sliding-panel-border;
+    color: $sliding-panel-color;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0;
+    padding: 1em;
+    text-decoration: none;
+
+    a { color: $sliding-panel-color; }
+
+    &:focus {
+      background-color: $sliding-panel-background-focus;
+    }
+
+    &:hover {
+      background-color: $sliding-panel-background-hover;
+      color: $sliding-panel-color-hover;
+    }
+  }
+}
+
