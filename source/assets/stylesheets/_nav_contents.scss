@@ -9,6 +9,7 @@ $sliding-panel-border: 1px solid $sliding-panel-border-color;
 $sliding-panel-background-hover: $action-color;
 $sliding-panel-color-hover: #fff;
 $sliding-panel-background-focus: lighten($sliding-panel-background, 5%);
+$sliding-panel-fade-screen-bg: #000;
 
 .nav-contents {
 
@@ -22,7 +23,7 @@ $sliding-panel-background-focus: lighten($sliding-panel-background, 5%);
   }
 
   @include size($sliding-panel-width 100%);
-  @include transition(all .2s ease-in-out);
+  @include transition(all 0.2s ease-in-out);
 
   background-color: $sliding-panel-background;
   -webkit-overflow-scrolling: touch;
@@ -36,7 +37,7 @@ $sliding-panel-background-focus: lighten($sliding-panel-background, 5%);
   .toc {
     color: $sliding-panel-color;
     font-family: $heading-font-family;
-    font-size: .9em;
+    font-size: 0.9em;
     font-weight: normal;
     margin: 0;
     padding: 0;
@@ -64,3 +65,16 @@ $sliding-panel-background-focus: lighten($sliding-panel-background, 5%);
   }
 }
 
+.sliding-panel-fade-screen {
+  @include position(fixed, 0 0 0 0);
+  @include transition;
+  background: $sliding-panel-fade-screen-bg;
+  opacity: 0;
+  visibility: hidden;
+  z-index: ($sliding-panel-z-index - 1);
+
+  &.is-visible {
+    opacity: 0.4;
+    visibility: visible;
+  }
+}
