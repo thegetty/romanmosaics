@@ -1,4 +1,4 @@
-$sliding-panel-position: 'left';        // "left" or "right"
+$sliding-panel-position: "left";        // "left" or "right"
 $sliding-panel-bg-color: $medium-gray;
 $sliding-panel-width: 20rem;
 $sliding-panel-z-index: 99999;
@@ -14,7 +14,7 @@ $sliding-panel-fade-screen-bg: #000;
 .nav-contents {
 
   // Right oriented by default
-  @if $sliding-panel-position == 'left' {
+  @if $sliding-panel-position == "left" {
     @include position(fixed, 0 auto 0 0);
     @include transform(translateX(-$sliding-panel-width));
   } @else {

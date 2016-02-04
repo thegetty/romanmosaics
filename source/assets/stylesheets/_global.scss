@@ -35,8 +35,8 @@
   text-align: center;
 
   &::before {
-    content: 'Notes';
-    font-family: 'Freight Text Pro SC';
+    content: "Notes";
+    font-family: "Freight Text Pro SC";
     font-size: 1.35em;
     letter-spacing: 2px;
     text-transform: lowercase;
@@ -55,4 +55,9 @@
   @include media($small-screen) {
     display: none;
   }
+}
+
+.smcaps {
+  @include font-feature-settings("c2sc", "smcp", "kern");
+  font-variant: all-small-caps;
 }
