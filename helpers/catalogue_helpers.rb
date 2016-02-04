@@ -2,23 +2,23 @@ module CatalogueHelpers
   # Sort Catalogue Contents
   # returns an array of resource objects ordered by sort_order attribute
   def sort_catalogue_contents
-    contents        = sitemap.resources.find_all {|p| p.data.sort_order }
-    contents.sort_by {|p| p.data.sort_order }
+    contents = sitemap.resources.find_all { |p| p.data.sort_order }
+    contents.sort_by { |p| p.data.sort_order }
   end
 
   # Get Catalogue Sections
   # Returns 3 arrays of resource objects (frontmatter, catalogue, backmatter)
-  def get_catalogue_sections
+  def catalogue_sections
     contents    = sort_catalogue_contents
-    frontmatter = contents.find_all {|p| p.data.sort_order <= 10 }
-    backmatter  = contents.find_all {|p| p.data.sort_order > 100 }
+    frontmatter = contents.find_all { |p| p.data.sort_order <= 10 }
+    backmatter  = contents.find_all { |p| p.data.sort_order > 100 }
     catalogue   = contents.find_all do |p|
       p.data.sort_order > 10 && p.data.sort_order <= 100
     end
 
-    frontmatter.sort_by! {|p| p.data.sort_order }
-    catalogue.sort_by! {|p| p.data.sort_order }
-    backmatter.sort_by! {|p| p.data.sort_order }
+    frontmatter.sort_by! { |p| p.data.sort_order }
+    catalogue.sort_by! { |p| p.data.sort_order }
+    backmatter.sort_by! { |p| p.data.sort_order }
 
     return frontmatter, catalogue, backmatter
   end
@@ -38,7 +38,7 @@ module CatalogueHelpers
   def prev_chapter_path
     return false unless current_page.data.sort_order
     curr = current_page.data.sort_order
-    frontmatter, catalogue, backmatter = get_catalogue_sections
+    frontmatter, catalogue, backmatter = catalogue_sections
     case curr
     when frontmatter.first.data.sort_order
       prev_chapter = false
@@ -61,7 +61,7 @@ module CatalogueHelpers
   def next_chapter_path
     return false unless current_page.data.sort_order
     curr = current_page.data.sort_order
-    frontmatter, catalogue, backmatter = get_catalogue_sections
+    frontmatter, catalogue, backmatter = catalogue_sections
     case curr
     when frontmatter.last.data.sort_order
       next_chapter = catalogue.first
