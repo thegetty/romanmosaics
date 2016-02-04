@@ -8,8 +8,14 @@ AllCops:
     - 'client/node_modules/**/*'
     - 'bin/**/*'
 
+Metrics/AbcSize:
+  Max: 25
+
 Metrics/LineLength:
   Max: 80
+
+Style/EmptyLinesAroundAccessModifier:
+  Enabled: false
 
 Style/HashSyntax:
   Enabled: false
