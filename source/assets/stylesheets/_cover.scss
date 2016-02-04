@@ -5,6 +5,12 @@ $gr-stop2: hsla(0, 0%, 0%, 0.9);
 $rgb-gr-stop1: rgba(0, 0, 0, 0.75);
 $rgb-gr-stop2: rgba(0, 0, 0, 0.85);
 
+// For some reason Bourbon's background-image mixin does not seem to output a
+// linear gradient compatible with Firefox, so this has to be done manually.
+// In addition, the image_path function follows a ruby naming convention since
+// it comes from Sprockets; ignore the name rule for this case.
+// scss-lint:disable VendorPrefix
+// scss-lint:disable NameFormat
 .cover {
   background-color: $dark-gray;
   background-image: url(image_path("cover_option1.jpg"));
@@ -45,6 +51,8 @@ $rgb-gr-stop2: rgba(0, 0, 0, 0.85);
     top: 50vh;
   }
 }
+// scss-lint:enable VendorPrefix
+// scss-lint:enable NameFormat
 
 .cover-title {
   font-family: $base-font-family;

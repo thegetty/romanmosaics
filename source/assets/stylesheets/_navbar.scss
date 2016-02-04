@@ -51,7 +51,7 @@ $navbar-icon-size: 24px;
 .navbar-next-link,
 .navbar-prev-link {
   @extend .hide-on-mobile;
-  font-size: $navbar-icon-size * .75;
+  font-size: $navbar-icon-size * 0.75;
 }
 
 .navbar-prev-link {
