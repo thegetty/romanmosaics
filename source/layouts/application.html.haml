@@ -11,9 +11,9 @@
     = stylesheet_link_tag "application"
 
   %body{class: page_classes}
-    = partial "partials/nav"
-    %main#page-content
+    %main#main
+      = partial "partials/nav"
       = yield
-    .sliding-panel-fade-screen
+      .sliding-panel-fade-screen
     = javascript_include_tag "https://code.jquery.com/jquery-2.1.1.min.js"
     = javascript_include_tag "application"
