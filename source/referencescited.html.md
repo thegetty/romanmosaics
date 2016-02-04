@@ -1,6 +1,6 @@
 ---
 title: References Cited
-layout: reference
+layout: page
 sort_order: 101
 ---
 - <span class="smcaps">Aisenberg 1994</span>
