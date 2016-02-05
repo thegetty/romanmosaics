@@ -1,3 +1,6 @@
+require "extensions/search"
+
+activate :search
 activate :directory_indexes
 activate :autoprefixer
 
@@ -8,9 +11,9 @@ set :images_dir, "assets/images"
 set :fonts_dir, "assets/fonts"
 set :layout, "layouts/application"
 
-page '/*.xml', layout: false
-page '/*.json', layout: false
-page '/*.txt', layout: false
+page "/*.xml", layout: false
+page "/*.json", layout: false
+page "/*.txt", layout: false
 
 configure :development do
   activate :livereload
