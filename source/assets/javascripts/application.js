@@ -2,8 +2,7 @@
 
 $(document).ready(function() {
   // set up UI
-  keyboardNav();
-  offCanvasNav();
+  uiSetup();
 
   // smoothState init
   $("#main").smoothState({
@@ -21,8 +20,7 @@ $(document).ready(function() {
       }
     },
     onAfter: function($container, $newContent) {
-      keyboardNav();
-      offCanvasNav();
+      uiSetup();
     }
   });
 });

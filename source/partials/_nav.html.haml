@@ -19,5 +19,10 @@
   .navbar-right
     %a#navbar-menu{ :href => "javascript:void(0);" }
       %i.navbar-menu-icon
+  .search-input
+    %input.search-field{ :placeholder => "search", :name => "search" }
+  .search-close 
+    %a#search-close{ :href => "javascript:void(0);" }
+      %i.search-close-icon
 %nav.nav-contents
   = partial "partials/contents_list"
