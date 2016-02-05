@@ -2,6 +2,7 @@ $navbar-bg-color: #fff;
 $navbar-border: $base-border;
 $navbar-height: 60px;
 $navbar-icon-size: 24px;
+$navbar-z-index: 9999;
 
 .navbar {
   @include display(flex);
@@ -17,7 +18,7 @@ $navbar-icon-size: 24px;
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 9999;
+  z-index: $navbar-z-index;
 }
 
 // Top-level units
