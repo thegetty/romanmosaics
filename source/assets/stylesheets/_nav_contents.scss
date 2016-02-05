@@ -23,7 +23,7 @@ $sliding-panel-fade-screen-bg: #000;
   }
 
   @include size($sliding-panel-width 100%);
-  @include transition(all 0.2s ease-in-out);
+  @include transition(all 0.1s ease-in-out);
 
   background-color: $sliding-panel-background;
   -webkit-overflow-scrolling: touch;

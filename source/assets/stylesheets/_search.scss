@@ -35,7 +35,6 @@ $search-text-color: $base-font-color;
   @include align-items(flex-start);
   background-color: $search-bg;
   color: $search-text-color;
-  // padding: $small-spacing;
 
   .navbar-center,
   .navbar-right {
@@ -48,3 +47,17 @@ $search-text-color: $base-font-color;
   }
 }
 
+.search-results {
+  background-image: $search-bg;
+  @include transform(translateY(-100%));
+  @include transition(all 0.1s ease-in-out);
+  @include size(100% 100%);
+  @include position(fixed);
+  -webkit-overflow-scrolling: touch;
+  overflow-y: auto;
+  z-index: ($navbar-z-index - 1);
+
+  &.search-active {
+    @include transform(translateY(0));
+  }
+}

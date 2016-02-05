@@ -44,19 +44,23 @@ function searchSetup() {
   var $searchButton = $("#navbar-search");
   var $searchCloseButton = $("#search-close");
   var $navbar = $(".navbar");
+  var $results = $(".search-results");
 
   $searchButton.on("click touchstart", function() {
     $navbar.toggleClass("search-active");
+    $results.toggleClass("search-active");
   });
 
   $searchCloseButton.on("click touchstart", function() {
     $navbar.removeClass("search-active");
+    $results.removeClass("search-active");
   });
 
   // bind escape key to search close if search is active
   $(document).keydown(function(event) {
     if (event.which === 27 && $navbar.hasClass("search-active")) {
       $navbar.removeClass("search-active");
+      $results.removeClass("search-active");
     }
   });
 }
