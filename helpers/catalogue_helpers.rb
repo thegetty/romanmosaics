@@ -50,7 +50,7 @@ module CatalogueHelpers
       prev_chapter = sitemap.resources.find { |p| p.data.sort_order == curr - 1 }
     end
 
-    prev_chapter ? prev_chapter.url : false
+    prev_chapter ? prev_chapter : false
   end
 
   # Next Chapter Path
@@ -73,6 +73,6 @@ module CatalogueHelpers
       next_chapter = sitemap.resources.find { |p| p.data.sort_order == curr + 1 }
     end
 
-    next_chapter ? next_chapter.url : false
+    next_chapter ? next_chapter : false
   end
 end
