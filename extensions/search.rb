@@ -1,7 +1,7 @@
 require_relative "search_index_resource"
 
 class Search < Middleman::Extension
-  option :index_path, 'search.json'
+  option :index_path, "search.json"
 
   def initialize(app, options_hash = {}, &block)
     super
