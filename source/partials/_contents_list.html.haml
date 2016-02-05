@@ -5,18 +5,18 @@
       - multiple_entries = item.data.cat
       - multiple_entries.each do |num|
         - current_entry = lookup_entry(num)
-        %li.toc-item= link_to current_entry.title, item.url
+        %li.toc-item= link_to current_entry.title, item
     - elsif item.data.cat
       - current_entry = lookup_entry(item.data.cat)
-      %li.toc-item= link_to current_entry.title, item.url
+      %li.toc-item= link_to current_entry.title, item
     - else
       %li.toc-item
         - if item.data.intro
-          %h5.toc-section-intro= link_to item.data.title, item.url
+          %h5.toc-section-intro= link_to item.data.title, item
         - elsif item.data.sort_order == 101
-          .toc-section-intro= link_to item.data.title, item.url
+          .toc-section-intro= link_to item.data.title, item
         - else
-          = link_to item.data.title, item.url
+          = link_to item.data.title, item
         - if item.data.author_last_name
           - first_name = item.data.author_first_name
           - last_name = item.data.author_last_name
