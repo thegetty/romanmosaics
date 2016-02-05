@@ -48,16 +48,29 @@ $search-text-color: $base-font-color;
 }
 
 .search-results {
-  background-image: $search-bg;
   @include transform(translateY(-100%));
   @include transition(all 0.1s ease-in-out);
   @include size(100% 100%);
   @include position(fixed);
+  background-image: $search-bg;
+  font-family: $heading-font-family;
+  line-height: 2.5;
   -webkit-overflow-scrolling: touch;
   overflow-y: auto;
+  padding-top: $navbar-height;
   z-index: ($navbar-z-index - 1);
 
   &.search-active {
     @include transform(translateY(0));
   }
+}
+
+.search-results-inner {
+  padding: $small-spacing $base-spacing;
+}
+
+.search-results-list-item {
+  @include padding(null $base-spacing);
+  border-bottom: $base-border;
+  font-size: 1.25em;
 }
