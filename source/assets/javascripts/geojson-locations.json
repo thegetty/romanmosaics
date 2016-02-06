@@ -11,6 +11,7 @@
 		"province": "Narbonensis II",
 		"country": "FR",
 		"type": "city",
+		"id": "loc_175",
 		"dare": 175,
 		"pleiades": 148053,
 		"tgn": ""
@@ -28,6 +29,7 @@
 		"province": "",
 		"country": "EG",
 		"type": "city",
+		"id": "loc_15898",
 		"dare": 15898,
 		"pleiades": 727070,
 		"tgn": ""
@@ -45,6 +47,7 @@
 		"province": "Syria I",
 		"country": "TR",
 		"type": "city",
+		"id": "loc_21094",
 		"dare": 21094,
 		"pleiades": 658381,
 		"tgn": ""
@@ -62,6 +65,7 @@
 		"province": "Syria II",
 		"country": "SY",
 		"type": "city",
+		"id": "loc_21507",
 		"dare": 21507,
 		"pleiades": 668335,
 		"tgn": ""
@@ -79,6 +83,7 @@
 		"province": "Aquileia",
 		"country": "IT",
 		"type": "city",
+		"id": "loc_1468",
 		"dare": 1468,
 		"pleiades": 187290,
 		"tgn": ""
@@ -96,6 +101,7 @@
 		"province": "",
 		"country": "IT",
 		"type": "town",
+		"id": "loc_22558",
 		"dare": 22558,
 		"pleiades": 432716,
 		"tgn": ""
@@ -113,6 +119,7 @@
 		"province": "Byzacena",
 		"country": "TN",
 		"type": "city",
+		"id": "loc_21591",
 		"dare": 21591,
 		"pleiades": 324673,
 		"tgn": ""
@@ -130,6 +137,7 @@
 		"province": "Palaestina I",
 		"country": "IL",
 		"type": "city",
+		"id": "loc_21149",
 		"dare": 21149,
 		"pleiades": 678401,
 		"tgn": ""
@@ -147,6 +155,7 @@
 		"province": "Africa Proconsularis",
 		"country": "TN",
 		"type": "city",
+		"id": "loc_15897",
 		"dare": 15897,
 		"pleiades": 314921,
 		"tgn": ""
@@ -164,6 +173,7 @@
 		"province": "",
 		"country": "ES",
 		"type": "villa",
+		"id": "loc_22477",
 		"dare": 22477,
 		"pleiades": 250017,
 		"tgn": ""
@@ -181,6 +191,7 @@
 		"province": "",
 		"country": "TR",
 		"type": "city",
+		"id": "loc_5472",
 		"dare": 5472,
 		"pleiades": 520985,
 		"tgn": ""
@@ -198,6 +209,7 @@
 		"province": "Britannia",
 		"country": "GB",
 		"type": "city",
+		"id": "loc_20683",
 		"dare": 20683,
 		"pleiades": 79549,
 		"tgn": ""
@@ -215,6 +227,7 @@
 		"province": "",
 		"country": "GR",
 		"type": "city",
+		"id": "loc_17070",
 		"dare": 17070,
 		"pleiades": 570182,
 		"tgn": ""
@@ -232,6 +245,7 @@
 		"province": "Africa Proconsularis",
 		"country": "TN",
 		"type": "city",
+		"id": "loc_21634",
 		"dare": 21634,
 		"pleiades": 315152,
 		"tgn": ""
@@ -249,6 +263,7 @@
 		"province": "Phoenice Libanensis",
 		"country": "SY",
 		"type": "city",
+		"id": "loc_21719",
 		"dare": 21719,
 		"pleiades": 668261,
 		"tgn": ""
@@ -266,6 +281,7 @@
 		"province": "",
 		"country": "GR",
 		"type": "city",
+		"id": "loc_21973",
 		"dare": 21973,
 		"pleiades": 579925,
 		"tgn": ""
@@ -283,6 +299,7 @@
 		"province": "",
 		"country": "JO",
 		"type": "town",
+		"id": "loc_23007",
 		"dare": 23007,
 		"pleiades": 697665,
 		"tgn": ""
@@ -300,6 +317,7 @@
 		"province": "Syria II",
 		"country": "SY",
 		"type": "city",
+		"id": "loc_21720",
 		"dare": 21720,
 		"pleiades": 668182,
 		"tgn": ""
@@ -317,6 +335,7 @@
 		"province": "Byzacena",
 		"country": "TN",
 		"type": "city",
+		"id": "loc_21633",
 		"dare": 21633,
 		"pleiades": 324716,
 		"tgn": ""
@@ -334,6 +353,7 @@
 		"province": "",
 		"country": "IT",
 		"type": "town",
+		"id": "loc_22879",
 		"dare": 22879,
 		"pleiades": 462234,
 		"tgn": ""
@@ -351,6 +371,7 @@
 		"province": "Numidia Cirtensis",
 		"country": "DZ",
 		"type": "city",
+		"id": "loc_21626",
 		"dare": 21626,
 		"pleiades": 305090,
 		"tgn": ""
@@ -368,6 +389,7 @@
 		"province": "",
 		"country": "SY",
 		"type": "town",
+		"id": "loc_33200",
 		"dare": 33200,
 		"pleiades": 668265,
 		"tgn": ""
@@ -385,6 +407,7 @@
 		"province": "",
 		"country": "SY",
 		"type": "town",
+		"id": "loc_33201",
 		"dare": 33201,
 		"pleiades": 668266,
 		"tgn": ""
@@ -402,6 +425,7 @@
 		"province": "Palaestina I",
 		"country": "IL",
 		"type": "city",
+		"id": "loc_15896",
 		"dare": 15896,
 		"pleiades": 687928,
 		"tgn": ""
@@ -419,6 +443,7 @@
 		"province": "",
 		"country": "TR",
 		"type": "town",
+		"id": "loc_27746",
 		"dare": 27746,
 		"pleiades": 638917,
 		"tgn": ""
@@ -436,6 +461,7 @@
 		"province": "",
 		"country": "GR",
 		"type": "city",
+		"id": "loc_23373",
 		"dare": 23373,
 		"pleiades": 589870,
 		"tgn": ""
@@ -453,6 +479,7 @@
 		"province": "Tripolitania",
 		"country": "LY",
 		"type": "city",
+		"id": "loc_21127",
 		"dare": 21127,
 		"pleiades": 344448,
 		"tgn": ""
@@ -470,6 +497,7 @@
 		"province": "",
 		"country": "FR",
 		"type": "town",
+		"id": "loc_2051",
 		"dare": 2051,
 		"pleiades": 109069,
 		"tgn": ""
@@ -487,6 +515,7 @@
 		"province": "",
 		"country": "IT",
 		"type": "city",
+		"id": "loc_21339",
 		"dare": 21339,
 		"pleiades": 413184,
 		"tgn": ""
@@ -504,6 +533,7 @@
 		"province": "Lugdunensis I",
 		"country": "FR",
 		"type": "city",
+		"id": "loc_105",
 		"dare": 105,
 		"pleiades": 167717,
 		"tgn": ""
@@ -521,6 +551,7 @@
 		"province": "Palaestina I",
 		"country": "IL",
 		"type": "city",
+		"id": "loc_21685",
 		"dare": 21685,
 		"pleiades": 687953,
 		"tgn": ""
@@ -538,6 +569,7 @@
 		"province": "Arabia",
 		"country": "JO",
 		"type": "city",
+		"id": "loc_21755",
 		"dare": 21755,
 		"pleiades": 697701,
 		"tgn": ""
@@ -555,6 +587,7 @@
 		"province": "",
 		"country": "BG",
 		"type": "city",
+		"id": "loc_18989",
 		"dare": 18989,
 		"pleiades": 216878,
 		"tgn": ""
@@ -572,6 +605,7 @@
 		"province": "Viennensis",
 		"country": "FR",
 		"type": "city",
+		"id": "loc_176",
 		"dare": 176,
 		"pleiades": 148127,
 		"tgn": ""
@@ -589,6 +623,7 @@
 		"province": "",
 		"country": "IT",
 		"type": "city",
+		"id": "loc_22634",
 		"dare": 22634,
 		"pleiades": 462373,
 		"tgn": ""
@@ -606,6 +641,7 @@
 		"province": "",
 		"country": "IT",
 		"type": "city",
+		"id": "loc_1524",
 		"dare": 1524,
 		"pleiades": 433014,
 		"tgn": ""
@@ -623,6 +659,7 @@
 		"province": "Narbonensis I",
 		"country": "FR",
 		"type": "city",
+		"id": "loc_171",
 		"dare": 171,
 		"pleiades": 148142,
 		"tgn": ""
@@ -640,6 +677,7 @@
 		"province": "",
 		"country": "IT",
 		"type": "city",
+		"id": "loc_15960",
 		"dare": 15960,
 		"pleiades": 422995,
 		"tgn": ""
@@ -657,6 +695,7 @@
 		"province": "Africa Proconsularis",
 		"country": "TN",
 		"type": "city",
+		"id": "loc_21602",
 		"dare": 21602,
 		"pleiades": 315247,
 		"tgn": ""
@@ -674,6 +713,7 @@
 		"province": "",
 		"country": "IT",
 		"type": "city",
+		"id": "loc_16776",
 		"dare": 16776,
 		"pleiades": 423013,
 		"tgn": ""
@@ -691,6 +731,7 @@
 		"province": "Phoenice Libanensis",
 		"country": "SY",
 		"type": "city",
+		"id": "loc_21091",
 		"dare": 21091,
 		"pleiades": 668331,
 		"tgn": ""
@@ -708,6 +749,7 @@
 		"province": "",
 		"country": "TR",
 		"type": "city",
+		"id": "loc_21158",
 		"dare": 21158,
 		"pleiades": 550812,
 		"tgn": ""
@@ -725,6 +767,7 @@
 		"province": "Palaestina III",
 		"country": "JO",
 		"type": "city",
+		"id": "loc_21090",
 		"dare": 21090,
 		"pleiades": 697725,
 		"tgn": ""
@@ -742,6 +785,7 @@
 		"province": "",
 		"country": "IT",
 		"type": "villa",
+		"id": "loc_21305",
 		"dare": 21305,
 		"pleiades": 462435,
 		"tgn": ""
@@ -759,6 +803,7 @@
 		"province": "",
 		"country": "GR",
 		"type": "city",
+		"id": "loc_22389",
 		"dare": 22389,
 		"pleiades": 580062,
 		"tgn": ""
@@ -776,6 +821,7 @@
 		"province": "",
 		"country": "IT",
 		"type": "city",
+		"id": "loc_21352",
 		"dare": 21352,
 		"pleiades": 433032,
 		"tgn": ""
@@ -793,6 +839,7 @@
 		"province": "",
 		"country": "IT",
 		"type": "city",
+		"id": "loc_1452",
 		"dare": 1452,
 		"pleiades": 393480,
 		"tgn": ""
@@ -810,6 +857,7 @@
 		"province": "",
 		"country": "IT",
 		"type": "city",
+		"id": "loc_1438",
 		"dare": 1438,
 		"pleiades": 423025,
 		"tgn": ""
@@ -827,6 +875,7 @@
 		"province": "",
 		"country": "FR",
 		"type": "villa",
+		"id": "loc_20221",
 		"dare": 20221,
 		"pleiades": 0,
 		"tgn": ""
@@ -844,6 +893,7 @@
 		"province": "",
 		"country": "IT",
 		"type": "town",
+		"id": "loc_17935",
 		"dare": 17935,
 		"pleiades": 433010,
 		"tgn": ""
@@ -861,6 +911,7 @@
 		"province": "Palaestina II",
 		"country": "IL",
 		"type": "city",
+		"id": "loc_21663",
 		"dare": 21663,
 		"pleiades": 678387,
 		"tgn": ""
@@ -878,6 +929,7 @@
 		"province": "",
 		"country": "SY",
 		"type": "city",
+		"id": "loc_21512",
 		"dare": 21512,
 		"pleiades": 678332,
 		"tgn": ""
@@ -895,6 +947,7 @@
 		"province": "Byzacena",
 		"country": "TN",
 		"type": "city",
+		"id": "loc_21865",
 		"dare": 21865,
 		"pleiades": 324825,
 		"tgn": ""
@@ -911,6 +964,7 @@
 		"province": "Byzacena",
 		"country": "TN",
 		"type": "city",
+		"id": "loc_21592",
 		"dare": 21592,
 		"pleiades": 324835,
 		"tgn": ""
@@ -928,6 +982,7 @@
 		"province": "",
 		"country": "SY",
 		"type": "town",
+		"id": "loc_33216",
 		"dare": 33216,
 		"pleiades": 668328,
 		"tgn": ""
@@ -945,6 +1000,7 @@
 		"province": "Africa Proconsularis",
 		"country": "TN",
 		"type": "city",
+		"id": "loc_21608",
 		"dare": 21608,
 		"pleiades": 315248,
 		"tgn": ""
@@ -962,6 +1018,7 @@
 		"province": "Viennensis",
 		"country": "FR",
 		"type": "city",
+		"id": "loc_106",
 		"dare": 106,
 		"pleiades": 167719,
 		"tgn": ""
