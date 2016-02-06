@@ -22,7 +22,7 @@ var Search = {
     contents: [],
     query: "",
     loaded: false,
-    url: "http://gettypubs.github.io/mosaics/search.json"
+    url: "/search.json"
   },
   computed: {
     searchResults: function () {
@@ -33,7 +33,7 @@ var Search = {
       SearchIndex.search(query).forEach(function(result) {
         var item = {
           title: contents[result.ref].title,
-          url: "http://gettypubs.github.io/mosaics" + contents[result.ref].url
+          url: contents[result.ref].url
         };
 
         results.push(item);
