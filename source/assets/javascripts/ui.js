@@ -17,7 +17,6 @@ function keyboardNav(){
 }
 
 function offCanvasNav() {
-  // Sidebar nav toggle
   var $sidebar = $(".nav-contents");
   var $menuButton = $("#navbar-menu");
   var $curtain = $(".sliding-panel-fade-screen");
@@ -31,4 +30,45 @@ function offCanvasNav() {
     $sidebar.removeClass("is-visible");
     $curtain.removeClass("is-visible");
   });
+
+  // bind escape key to menu close if menu is open
+  $(document).keydown(function(event) {
+    if (event.which === 27 && $sidebar.hasClass("is-visible")) {
+      $sidebar.removeClass("is-visible");
+      $curtain.removeClass("is-visible");
+    }
+  });
+}
+
+function searchSetup() {
+  var $searchButton = $("#navbar-search");
+  var $searchCloseButton = $("#search-close");
+  var $navbar = $(".navbar");
+  var $results = $(".search-results");
+
+  $searchButton.on("click touchstart", function() {
+    $navbar.toggleClass("search-active");
+    $results.toggleClass("search-active");
+  });
+
+  $searchCloseButton.on("click touchstart", function() {
+    $navbar.removeClass("search-active");
+    $results.removeClass("search-active");
+  });
+
+  // bind escape key to search close if search is active
+  $(document).keydown(function(event) {
+    if (event.which === 27 && $navbar.hasClass("search-active")) {
+      $navbar.removeClass("search-active");
+      $results.removeClass("search-active");
+    }
+  });
+}
+
+// Use this function as "export"
+// Calls all other functions defined here inside of this one
+function uiSetup() {
+  keyboardNav();
+  offCanvasNav();
+  searchSetup();
 }

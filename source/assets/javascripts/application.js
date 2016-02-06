@@ -2,8 +2,9 @@
 
 $(document).ready(function() {
   // set up UI
-  keyboardNav();
-  offCanvasNav();
+  uiSetup();
+  var vueSearch;
+  vueSearch = new Vue(Search);
 
   // smoothState init
   $("#main").smoothState({
@@ -11,6 +12,7 @@ $(document).ready(function() {
       duration: 400,
       render: function($container) {
         $container.velocity('fadeOut', { duration: 200 });
+        vueSearch.$destroy();
       }
     },
     onReady: {
@@ -21,8 +23,8 @@ $(document).ready(function() {
       }
     },
     onAfter: function($container, $newContent) {
-      keyboardNav();
-      offCanvasNav();
+      uiSetup();
+      vueSearch = new Vue(Search);
     }
   });
 });
