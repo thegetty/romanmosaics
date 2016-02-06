@@ -37,7 +37,7 @@ var Search = {
         };
 
         results.push(item);
-      })
+      });
 
       return this.loaded ? results : [];
     }
@@ -46,7 +46,7 @@ var Search = {
     // Stash search.json data into contents array to cross-reference against
     // search results
     contentList: function (data) {
-      this.$set("contents", data)
+      this.$set("contents", data);
     },
     // Load the search.json data via AJAX and feed it to the Lunr index instance
     // This function should only be called through explicit action on the part
@@ -76,4 +76,4 @@ var Search = {
     this.$set("query", "");
     console.log("Destroyed successfully");
   }
-}
+};
