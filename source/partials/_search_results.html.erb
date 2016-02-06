@@ -1,0 +1,8 @@
+<div class="search-results-inner">
+  <!-- If there are results to display -->
+  <ul v-cloak v-if="searchResults.length > 0" class="search-results-list">
+    <li v-for="item in searchResults" class="search-results-list-item">
+      <a href="{{item.url}}">{{ item.title }}</a>
+    </li>
+  </ul>
+</div>
