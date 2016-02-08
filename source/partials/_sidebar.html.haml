@@ -1,0 +1,27 @@
+%header.nav-sidebar-header
+  %h2.nav-sidebar-title= data.book.title.main
+  %h3.nav-sidebar-author= author_name
+.nav-sidebar-content
+  %ul.nav-sidebar-toc
+    %li= link_to "Table of Contents", "/contents.html"
+    %li
+      %h4.nav-sidebar-toc-section Catalogue
+      %ul
+        %li= link_to "Italy", "/catalogue/italy.html"
+        %li= link_to "Gaul", "/catalogue/gaul.html"
+        %li= link_to "North Africa", "/catalogue/northafrica.html"
+        %li= link_to "Syria", "/catalogue/syria.html"
+  .nav-sidebar-downloads
+    %h4 Downloads
+  .nav-sidebar-cite
+    %h4 Cite This Page
+%footer.nav-sidebar-footer
+  :markdown
+    Online collection catalogue published by the J. Paul Getty Museum, and licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/){:rel="license"}
+  = link_to "About", "/about.html"
+  = link_to "Privacy", "http://www.getty.edu/legal/privacy.html", { target: "blank" }
+  = link_to "Terms of Use", "http://www.getty.edu/legal/copyright.html", { target: "blank" }
+  .nav-logo
+    = tag :img,
+      src: image_path("getty_logo.svg"), class: "nav-logo", alt: "Getty Logo"
+

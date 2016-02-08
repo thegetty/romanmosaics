@@ -17,7 +17,7 @@ function keyboardNav(){
 }
 
 function offCanvasNav() {
-  var $sidebar = $(".nav-contents");
+  var $sidebar = $(".nav-sidebar");
   var $menuButton = $("#navbar-menu");
   var $curtain = $(".sliding-panel-fade-screen");
 
