@@ -1,353 +1,283 @@
 ---
 
 - id: loc_0001
-  pleiades:
-  tgn:
-  name: ‘Ain el-Bad (Syria)
+  dare:
+  custom_name: ‘Ain el-Bad (Syria)
 
 - id: loc_175
-  pleiades: 175
-  tgn:
-  name: Aix-en-Provence
+  dare: 175
+  custom_name: Aix-en-Provence
 
 - id: loc_15898
-  pleiades: 15898
-  tgn:
-  name: Alexandria
+  dare: 15898
+  custom_name: Alexandria
 
 - id: loc_21094
-  pleiades: 21094
-  tgn:
-  name: Antioch
+  dare: 21094
+  custom_name: Antioch
 
 - id: loc_21507
-  pleiades: 21507
-  tgn:
-  name: Apamea
+  dare: 21507
+  custom_name: Apamea
 
 - id: loc_1468
-  pleiades: 1468
-  tgn:
-  name: Aquileia
+  dare: 1468
+  custom_name: Aquileia
 
 - id: loc_22558
-  pleiades: 22558
-  tgn:
-  name: Baiae
+  dare: 22558
+  custom_name: Baiae
 
 - id: loc_21591
-  pleiades: 21591
-  tgn:
-  name: Bararus
+  dare: 21591
+  custom_name: Bararus
 
 - id: loc_21149
-  pleiades: 21149
-  tgn:
-  name: Caesarea Maritima
+  dare: 21149
+  custom_name: Caesarea Maritima
 
 - id: loc_15897
-  pleiades: 15897
-  tgn:
-  name: Carthage
+  dare: 15897
+  custom_name: Carthage
 
 - id: loc_22477
-  pleiades: 22477
-  tgn:
-  name: Centcelles
+  dare: 22477
+  custom_name: Centcelles
 
 - id: loc_5472
-  pleiades: 5472
-  tgn:
-  name: Constantinople
+  dare: 5472
+  custom_name: Constantinople
 
 - id: loc_20683
-  pleiades: 20683
-  tgn:
-  name: Corinium Dobunnorum
+  dare: 20683
+  custom_name: Corinium Dobunnorum
 
 - id: loc_17070
-  pleiades: 17070
-  tgn:
-  name: Corinth
+  dare: 17070
+  custom_name: Corinth
 
 - id: loc_0002
-  pleiades:
-  tgn:
-  name: Dar Zmela (Tunisia)
+  dare:
+  custom_name: Dar Zmela (Tunisia)
 
 - id: loc_0003
-  pleiades:
-  tgn:
-  name: Deir el-‘Adas (Syria)
+  dare:
+  custom_name: Deir el-‘Adas (Syria)
 
 - id: loc_0004
-  pleiades:
-  tgn:
-  name: Deir es-Sleib (Syria)
+  dare:
+  custom_name: Deir es-Sleib (Syria)
 
 - id: loc_21634
-  pleiades: 21634
-  tgn:
-  name: El Kef
+  dare: 21634
+  custom_name: El Kef
 
 - id: loc_0005
-  pleiades:
-  tgn:
-  name: El-Maqerqesh (Israel)
+  dare:
+  custom_name: El-Maqerqesh (Israel)
 
 - id: loc_21719
-  pleiades: 21719
-  tgn:
-  name: Emesa
+  dare: 21719
+  custom_name: Emesa
 
 - id: loc_21973
-  pleiades: 21973
-  tgn:
-  name: Eretria
+  dare: 21973
+  custom_name: Eretria
 
 - id: loc_0006
-  pleiades:
-  tgn:
-  name: Erez (Israel)
+  dare:
+  custom_name: Erez (Israel)
 
 - id: loc_23007
-  pleiades: 23007
-  tgn:
-  name: Gadara
+  dare: 23007
+  custom_name: Gadara
 
 - id: loc_21720
-  pleiades: 21720
-  tgn:
-  name: Hama
+  dare: 21720
+  custom_name: Hama
 
 - id: loc_21633
-  pleiades: 21633
-  tgn:
-  name: Hadrumetum
+  dare: 21633
+  custom_name: Hadrumetum
 
 - id: loc_22879
-  pleiades: 22879
-  tgn:
-  name: Heloros
+  dare: 22879
+  custom_name: Heloros
 
 - id: loc_21626
-  pleiades: 21626
-  tgn:
-  name: Hippo Regius
+  dare: 21626
+  custom_name: Hippo Regius
 
 - id: loc_33200
-  pleiades: 33200
-  tgn:
-  name: Houad
+  dare: 33200
+  custom_name: Houad
 
 - id: loc_33201
-  pleiades: 33201
-  tgn:
-  name: Huarte
+  dare: 33201
+  custom_name: Huarte
 
 - id: loc_15896
-  pleiades: 15896
-  tgn:
-  name: Jerusalem
+  dare: 15896
+  custom_name: Jerusalem
 
 - id: loc_0007
-  pleiades:
-  tgn:
-  name: Khirbet Mukhayyat (Jordan)
+  dare:
+  custom_name: Khirbet Mukhayyat (Jordan)
 
 - id: loc_27746
-  pleiades: 27746
-  tgn:
-  name: Kibyra
+  dare: 27746
+  custom_name: Kibyra
 
 - id: loc_0008
-  pleiades:
-  tgn:
-  name: Kissufim (Israel)
+  dare:
+  custom_name: Kissufim (Israel)
 
 - id: loc_23373
-  pleiades: 23373
-  tgn:
-  name: Kisamos
+  dare: 23373
+  custom_name: Kisamos
 
 - id: loc_21127
-  pleiades: 21127
-  tgn:
-  name: Leptis Magna
+  dare: 21127
+  custom_name: Leptis Magna
 
 - id: loc_2051
-  pleiades: 2051
-  tgn:
-  name: Lillebonne
+  dare: 2051
+  custom_name: Lillebonne
 
 - id: loc_21339
-  pleiades: 21339
-  tgn:
-  name: Lucus Feroniae
+  dare: 21339
+  custom_name: Lucus Feroniae
 
 - id: loc_105
-  pleiades: 105
-  tgn:
-  name: Lugdunum
+  dare: 105
+  custom_name: Lugdunum
 
 - id: loc_21685
-  pleiades: 21685
-  tgn:
-  name: Lydda
+  dare: 21685
+  custom_name: Lydda
 
 - id: loc_0009
-  pleiades:
-  tgn:
-  name: Ma’arata (Syria. Alternate name Maarata)
+  dare:
+  custom_name: Ma’arata (Syria. Alternate name Maarata)
 
 - id: loc_21755
-  pleiades: 21755
-  tgn:
-  name: Madaba
+  dare: 21755
+  custom_name: Madaba
 
-- id: loc_216878
-  pleiades: 216878
-  tgn:
-  name: Marcianopolis 
+- id: loc_18989
+  dare: 18989
+  custom_name: Marcianopolis 
 
 - id: loc_176
-  pleiades: 176
-  tgn:
-  name: Massalia
+  dare: 176
+  custom_name: Massalia
 
 - id: loc_0010
-  pleiades:
-  tgn:
-  name: Mezra’a el-‘Ulia (Syria)
+  dare:
+  custom_name: Mezra’a el-‘Ulia (Syria)
 
 - id: loc_22634
-  pleiades: 22634
-  tgn:
-  name: Motya
+  dare: 22634
+  custom_name: Motya
 
 - id: loc_1524
-  pleiades: 1524
-  tgn:
-  name: Naples
+  dare: 1524
+  custom_name: Naples
 
 - id: loc_171
-  pleiades: 171
-  tgn:
-  name: Nimes
+  dare: 171
+  custom_name: Nimes
 
 - id: loc_15960
-  pleiades: 15960
-  tgn:
-  name: Ostia
+  dare: 15960
+  custom_name: Ostia
 
 - id: loc_21602
-  pleiades: 21602
-  tgn:
-  name: Oudna
+  dare: 21602
+  custom_name: Oudna
 
 - id: loc_16776
-  pleiades: 16776
-  tgn:
-  name: Palestrina
+  dare: 16776
+  custom_name: Palestrina
 
 - id: loc_21091
-  pleiades: 21091
-  tgn:
-  name: Palmyra
+  dare: 21091
+  custom_name: Palmyra
 
 - id: loc_21158
-  pleiades: 21158
-  tgn:
-  name: Pergamon
+  dare: 21158
+  custom_name: Pergamon
 
 - id: loc_21090
-  pleiades: 21090
-  tgn:
-  name: Petra
+  dare: 21090
+  custom_name: Petra
 
 - id: loc_21305
-  pleiades: 21305
-  tgn:
-  name: Piazza Armerina
+  dare: 21305
+  custom_name: Piazza Armerina
 
 - id: loc_22389
-  pleiades: 22389
-  tgn:
-  name: Piraeus
+  dare: 22389
+  custom_name: Piraeus
 
 - id: loc_21352
-  pleiades: 21352
-  tgn:
-  name: Pompeii
+  dare: 21352
+  custom_name: Pompeii
 
 - id: loc_1452
-  pleiades: 1452
-  tgn:
-  name: Ravenna
+  dare: 1452
+  custom_name: Ravenna
 
 - id: loc_1438
-  pleiades: 1438
-  tgn:
-  name: Rome
+  dare: 1438
+  custom_name: Rome
 
 - id: loc_20221
-  pleiades: 20221
-  tgn:
-  name: Saint-Romain-en-Gal
+  dare: 20221
+  custom_name: Saint-Romain-en-Gal
 
 - id: loc_17935
-  pleiades: 17935
-  tgn:
-  name: Santa Marinella
+  dare: 17935
+  custom_name: Santa Marinella
 
 - id: loc_21663
-  pleiades: 21663
-  tgn:
-  name: Sepphoris
+  dare: 21663
+  custom_name: Sepphoris
 
 - id: loc_21512
-  pleiades: 21512
-  tgn:
-  name: Shahba Philippopolis
+  dare: 21512
+  custom_name: Shahba Philippopolis
 
 - id: loc_0011
-  pleiades:
-  tgn:
-  name: Temanaa (Syria. Alternate name Tamanah)
+  dare:
+  custom_name: Temanaa (Syria. Alternate name Tamanah)
 
 - id: loc_21865
-  pleiades: 21865
-  tgn:
-  name: Thaenae
+  dare: 21865
+  custom_name: Thaenae
 
 - id: loc_0012
-  pleiades:
-  tgn:
-  name: Toprak-en-Narlidja (near Antioch)
+  dare:
+  custom_name: Toprak-en-Narlidja (near Antioch)
 
 - id: loc_21592
-  pleiades: 21592
-  tgn:
-  name: Thysdrus
+  dare: 21592
+  custom_name: Thysdrus
 
 - id: loc_33216
-  pleiades: 33216
-  tgn:
-  name: ‘Umm Hartaine
+  dare: 33216
+  custom_name: ‘Umm Hartaine
 
 - id: loc_21608
-  pleiades: 21608
-  tgn:
-  name: Utica
+  dare: 21608
+  custom_name: Utica
 
 - id: loc_106
-  pleiades: 106
-  tgn:
-  name: Vienne
+  dare: 106
+  custom_name: Vienne
 
 - id: loc_0013
-  pleiades:
-  tgn:
-  name: Villelaure (near Aix-en-Provence)
+  dare:
+  custom_name: Villelaure (near Aix-en-Provence)
 
 ---
