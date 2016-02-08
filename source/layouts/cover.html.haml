@@ -1,10 +1,10 @@
 = wrap_layout :application do
   .cover
-  .cover-inner
-    %h1.cover-title= data.book.title.short
-    - unless data.book.title.subtitle.nil?
-      %h2.cover-subtitle= data.book.title.subtitle
-    %h3.cover-author= data.book.author_as_it_appears
+    .cover-inner
+      %h1.cover-title= data.book.title.short
+      - unless data.book.title.subtitle.nil?
+        %h2.cover-subtitle= data.book.title.subtitle
+      %h3.cover-author= data.book.author_as_it_appears
   .cover-copy
     .cover-copy-inner
       %p= data.book.description_short ||= lorem.paragraph

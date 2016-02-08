@@ -12,6 +12,10 @@ $rgb-gr-stop2: rgba(0, 0, 0, 0.85);
 // scss-lint:disable VendorPrefix
 // scss-lint:disable NameFormat
 .cover {
+  @include display(flex);
+  @include flex-direction(column);
+  @include flex-wrap(nowrap);
+  @include justify-content(flex-end);
   background-color: $dark-gray;
   background-image: url(image_path("cover_option1.jpg"));
   background-position: center 50%;
@@ -22,34 +26,21 @@ $rgb-gr-stop2: rgba(0, 0, 0, 0.85);
 }
 
 .cover-inner {
-  // Gradient layer
-  // Small/Universal
   @include background-image(linear-gradient($gr-start 0%, $gr-stop1 100%));
   background-image: -moz-linear-gradient(transparent 0%, $rgb-gr-stop1 100%);
   color: $white;
-  height: 65vh;
-  padding: 6rem 0.5rem 0;
-  position: absolute;
+  padding: 2em 0.5em;
   text-align: center;
   text-shadow: 3px 3px 5px $rgb-gr-stop1;
-  top: 35vh;
   width: 100%;
 
-  // Medium
   @include media($medium-screen-up) {
+    padding: 4em 2em;
     @include background-image(linear-gradient($gr-start 0%, $gr-stop2 100%));
     background-image: -moz-linear-gradient(transparent 0%, $rgb-gr-stop2 100%);
-    height: 50vh;
-    padding: 7rem 2rem 0;
-    position: absolute;
-    top: 50vh;
   }
 
-  // Large
   @include media($large-screen-up) {
-    height: 50vh;
-    padding: 8rem 1rem 0;
-    top: 50vh;
   }
 }
 // scss-lint:enable VendorPrefix
@@ -61,6 +52,7 @@ $rgb-gr-stop2: rgba(0, 0, 0, 0.85);
   font-weight: 400;
   letter-spacing: 1px;
   margin-bottom: 0;
+  margin-top: 6rem;
   text-transform: uppercase;
 
   @include media($medium-screen-up) {
@@ -74,9 +66,9 @@ $rgb-gr-stop2: rgba(0, 0, 0, 0.85);
 
 .cover-subtitle {
   font-family: "Freight Text Pro SC";
-  font-size: 1.5em;
+  font-size: 1.4em;
   font-weight: 400;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
 
   @include media($medium-screen-up) {
     font-size: 2em;
@@ -88,8 +80,9 @@ $rgb-gr-stop2: rgba(0, 0, 0, 0.85);
 }
 
 .cover-author {
-  font-size: 1.125em;
+  font-size: 1em;
   font-weight: 400;
+  margin: 0 auto;
   max-width: 30em;
 
   @include media($medium-screen-up) {
