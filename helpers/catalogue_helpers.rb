@@ -1,4 +1,9 @@
 module CatalogueHelpers
+  def author_name
+    author = data.book.creators.first
+    "#{author.first_name} #{author.last_name}"
+  end
+
   # Sort Catalogue Contents
   # returns an array of resource objects ordered by sort_order attribute
   def sort_catalogue_contents
