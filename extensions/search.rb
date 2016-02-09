@@ -8,12 +8,16 @@ class Search < Middleman::Extension
   end
 
   def manipulate_resource_list(resources)
-    resources.push Middleman::Sitemap::SearchIndexResource.new(@app.sitemap, @options[:index_path])
+    resources.push Middleman::Sitemap::SearchIndexResource.new(
+      @app.sitemap,
+      @options[:index_path])
     resources
   end
 
   def search_index_path
-    "/" + sitemap.find_resource_by_path(extensions[:search].options[:index_path]).destination_path
+    "/" + sitemap.find_resource_by_path(
+      extensions[:search].options[:index_path]
+    ).destination_path
   end
 
 end
