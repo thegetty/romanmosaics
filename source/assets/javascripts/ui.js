@@ -19,7 +19,11 @@ function keyboardNav(){
 function mapSetup() {
   if ($("#map").length) {
     var centerPoint = $("#map").data("center");
-    new GeoMap(centerPoint);
+    var map = new GeoMap(centerPoint);
+
+    if ($("#map").parent().hasClass("cover-map")) {
+      map.map.setZoom(5);
+    }
   }
 }
 
