@@ -1,6 +1,8 @@
 require "extensions/search"
+require "extensions/catalogue"
 
 activate :search
+activate :catalogue
 activate :directory_indexes
 activate :autoprefixer
 
