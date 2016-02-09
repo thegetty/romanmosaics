@@ -61,3 +61,12 @@
   @include font-feature-settings("c2sc", "smcp", "kern");
   font-variant: all-small-caps;
 }
+
+.map-fullscreen {
+  height: 100vh;
+
+  .leaflet-control-container {
+    position: relative;
+    top: 60px;
+  }
+}

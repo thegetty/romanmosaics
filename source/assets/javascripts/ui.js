@@ -16,6 +16,13 @@ function keyboardNav(){
   });
 }
 
+function mapSetup() {
+  if ($("#map").length) {
+    var centerPoint = $("#map").data("center");
+    new GeoMap(centerPoint);
+  }
+}
+
 function offCanvasNav() {
   var $sidebar = $(".nav-sidebar");
   var $menuButton = $("#navbar-menu");
@@ -71,4 +78,5 @@ function uiSetup() {
   keyboardNav();
   offCanvasNav();
   searchSetup();
+  mapSetup();
 }
