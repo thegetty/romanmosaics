@@ -20,6 +20,7 @@ GeoMap.prototype = {
   init: function(center) {
     this.map = L.map(this.el, { maxZoom: this.maxZoom, minZoom: this.minZoom })
                 .setView(center, this.defaultZoom);
+    this.map.scrollWheelZoom.disable();
   },
   addTiles: function() {
     L.tileLayer(this.tiles, { attribution: this.attribution }).addTo(this.map);
