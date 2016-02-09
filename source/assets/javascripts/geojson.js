@@ -8,7 +8,6 @@ var geojsonFeature = {
         "coordinates": ["5.447301", "43.531883"]
       },
       "properties": {
-        "catalogue": "",
         "custom_name": "Aix-en-Provence",
         "name": "Aix-en-Provence",
         "ancient": "Col. Aquae Sextiae",
@@ -27,7 +26,6 @@ var geojsonFeature = {
         "coordinates": ["29.904133", "31.195371"]
       },
       "properties": {
-        "catalogue": "",
         "custom_name": "Alexandria",
         "name": "Alexandria",
         "ancient": "Alexandria",
@@ -46,7 +44,7 @@ var geojsonFeature = {
         "coordinates": ["36.165318", "36.200663"]
       },
       "properties": {
-        "catalogue": 7,
+        "catalogue": [7],
         "custom_name": "Antioch",
         "name": "Antakya",
         "ancient": "Antiochia/Theoupolis",
@@ -65,7 +63,6 @@ var geojsonFeature = {
         "coordinates": ["36.402509", "35.422241"]
       },
       "properties": {
-        "catalogue": "",
         "custom_name": "Apamea",
         "name": "Afamiyah",
         "ancient": "Apamea/Pella",
@@ -84,7 +81,6 @@ var geojsonFeature = {
         "coordinates": ["13.370946", "45.769631"]
       },
       "properties": {
-        "catalogue": "",
         "custom_name": "Aquileia",
         "name": "Aquileia",
         "ancient": "Aquileia",
@@ -103,7 +99,7 @@ var geojsonFeature = {
         "coordinates": ["14.070213", "40.817271"]
       },
       "properties": {
-        "catalogue": 2,
+        "catalogue": [2],
         "custom_name": "Baiae",
         "name": "Baia, Bacoli",
         "ancient": "Baiae",
@@ -122,7 +118,6 @@ var geojsonFeature = {
         "coordinates": ["10.791179", "35.211896"]
       },
       "properties": {
-        "catalogue": "",
         "custom_name": "Bararus",
         "name": "Henchir-Rougga",
         "ancient": "Bararus",
@@ -141,7 +136,6 @@ var geojsonFeature = {
         "coordinates": ["34.8912663", "32.4987775"]
       },
       "properties": {
-        "catalogue": "",
         "custom_name": "Caesarea Maritima",
         "name": "Caesarea",
         "ancient": "Caesarea/Stratonos Pyrgos",
@@ -160,7 +154,6 @@ var geojsonFeature = {
         "coordinates": ["10.323056", "36.853056"]
       },
       "properties": {
-        "catalogue": "",
         "custom_name": "Carthage",
         "name": "Carthago",
         "ancient": "Carthago",
@@ -179,7 +172,6 @@ var geojsonFeature = {
         "coordinates": ["1.226133", "41.1557687"]
       },
       "properties": {
-        "catalogue": "",
         "custom_name": "Centcelles",
         "name": "Centcelles, Constant\u00ed",
         "ancient": "",
@@ -198,7 +190,6 @@ var geojsonFeature = {
         "coordinates": ["28.975926", "41.012379"]
       },
       "properties": {
-        "catalogue": "",
         "custom_name": "Constantinople",
         "name": "Istanbul",
         "ancient": "Byzantium/Constantinopolis",
@@ -217,7 +208,6 @@ var geojsonFeature = {
         "coordinates": ["-1.965215", "51.714026"]
       },
       "properties": {
-        "catalogue": "",
         "custom_name": "Corinium Dobunnorum",
         "name": "Cirencester",
         "ancient": "Korinion/Cironium",
@@ -236,7 +226,6 @@ var geojsonFeature = {
         "coordinates": ["22.878721", "37.906045"]
       },
       "properties": {
-        "catalogue": "",
         "custom_name": "Corinth",
         "name": "Korinthos",
         "ancient": "Corinthus/Korinthos",
@@ -255,7 +244,6 @@ var geojsonFeature = {
         "coordinates": ["8.714315", "36.18228"]
       },
       "properties": {
-        "catalogue": "",
         "custom_name": "El Kef",
         "name": "El Kef",
         "ancient": "Sicca Veneria",
@@ -293,7 +281,6 @@ var geojsonFeature = {
         "coordinates": ["23.790535", "38.398169"]
       },
       "properties": {
-        "catalogue": "",
         "custom_name": "Eretria",
         "name": "Eretria",
         "ancient": "Eretria",
@@ -312,7 +299,6 @@ var geojsonFeature = {
         "coordinates": ["35.716993", "32.022341"]
       },
       "properties": {
-        "catalogue": "",
         "custom_name": "Gadara",
         "name": "Tell Jadur",
         "ancient": "Gadara",
@@ -331,7 +317,6 @@ var geojsonFeature = {
         "coordinates": ["36.7495", "35.1359"]
       },
       "properties": {
-        "catalogue": "",
         "custom_name": "Hama",
         "name": "Hamah",
         "ancient": "Amathe/Epiphaneia",
@@ -350,7 +335,7 @@ var geojsonFeature = {
         "coordinates": ["10.637786", "35.824966"]
       },
       "properties": {
-        "catalogue": 5,
+        "catalogue": [5],
         "custom_name": "Hadrumetum",
         "name": "Sousse",
         "ancient": "Hadrumetum/Iustinianopolis",
@@ -369,7 +354,6 @@ var geojsonFeature = {
         "coordinates": ["15.107016", "36.84241"]
       },
       "properties": {
-        "catalogue": "",
         "custom_name": "Heloros",
         "name": "Eloro, Noto",
         "ancient": "Helorus",
@@ -388,7 +372,6 @@ var geojsonFeature = {
         "coordinates": ["7.747415", "36.881305"]
       },
       "properties": {
-        "catalogue": "",
         "custom_name": "Hippo Regius",
         "name": "Annaba",
         "ancient": "Hippo Regius",
@@ -407,7 +390,6 @@ var geojsonFeature = {
         "coordinates": ["36.54053", "35.296738"]
       },
       "properties": {
-        "catalogue": "",
         "custom_name": "Houad",
         "name": "Houad",
         "ancient": "",
@@ -426,7 +408,6 @@ var geojsonFeature = {
         "coordinates": ["36.44289", "35.57643"]
       },
       "properties": {
-        "catalogue": "",
         "custom_name": "Huarte",
         "name": "Huarte",
         "ancient": "",
@@ -445,7 +426,6 @@ var geojsonFeature = {
         "coordinates": ["35.234167", "31.776667"]
       },
       "properties": {
-        "catalogue": "",
         "custom_name": "Jerusalem",
         "name": "Jerusalem",
         "ancient": "Ierusalem/Hierosolyma/Col. Aelia Capitolina",
@@ -464,7 +444,6 @@ var geojsonFeature = {
         "coordinates": ["31.659825", "36.659851"]
       },
       "properties": {
-        "catalogue": "",
         "custom_name": "Kibyra",
         "name": "Karaburun",
         "ancient": "Kibyra Mikra",
@@ -483,7 +462,6 @@ var geojsonFeature = {
         "coordinates": ["23.660727", "35.495307"]
       },
       "properties": {
-        "catalogue": "",
         "custom_name": "Kisamos",
         "name": "Kastelli Kisamou",
         "ancient": "Kisamos",
@@ -502,7 +480,6 @@ var geojsonFeature = {
         "coordinates": ["14.290556", "32.639167"]
       },
       "properties": {
-        "catalogue": "",
         "custom_name": "Leptis Magna",
         "name": "Leptis Magna, Khoms",
         "ancient": "Lepcis Magna/Neapolis",
@@ -521,7 +498,6 @@ var geojsonFeature = {
         "coordinates": ["0.5360583", "49.517863"]
       },
       "properties": {
-        "catalogue": "",
         "custom_name": "Lillebonne",
         "name": "Lillebonne",
         "ancient": "Iuliobona",
@@ -540,7 +516,6 @@ var geojsonFeature = {
         "coordinates": ["12.596872", "42.129717"]
       },
       "properties": {
-        "catalogue": "",
         "custom_name": "Lucus Feroniae",
         "name": "Lucus Feronia, Capena",
         "ancient": "Lucus Feroniae",
@@ -559,7 +534,6 @@ var geojsonFeature = {
         "coordinates": ["4.819827", "45.759683"]
       },
       "properties": {
-        "catalogue": "",
         "custom_name": "Lugdunum",
         "name": "Lyon",
         "ancient": "Col. Lugdunum/Lugudunum",
@@ -578,7 +552,6 @@ var geojsonFeature = {
         "coordinates": ["34.893068", "31.950908"]
       },
       "properties": {
-        "catalogue": "",
         "custom_name": "Lydda",
         "name": "Lod",
         "ancient": "Lydda/Diospolis/Georgioupolis",
@@ -597,7 +570,6 @@ var geojsonFeature = {
         "coordinates": ["35.794078", "31.717693"]
       },
       "properties": {
-        "catalogue": "",
         "custom_name": "Madaba",
         "name": "Madeba",
         "ancient": "Madaba",
@@ -616,7 +588,6 @@ var geojsonFeature = {
         "coordinates": ["27.585", "43.225"]
       },
       "properties": {
-        "catalogue": "",
         "custom_name": "Marcianopolis",
         "name": "Devnya",
         "ancient": "Marcianopolis",
@@ -635,7 +606,6 @@ var geojsonFeature = {
         "coordinates": ["5.365307", "43.299467"]
       },
       "properties": {
-        "catalogue": "",
         "custom_name": "Massalia",
         "name": "Marseille",
         "ancient": "Massalia/Massilia",
@@ -654,7 +624,6 @@ var geojsonFeature = {
         "coordinates": ["12.46829", "37.86747"]
       },
       "properties": {
-        "catalogue": "",
         "custom_name": "Motya",
         "name": "Isola San Pantaleo (Mozia), Marsala",
         "ancient": "Motya",
@@ -673,7 +642,6 @@ var geojsonFeature = {
         "coordinates": ["14.2528707", "40.8399968"]
       },
       "properties": {
-        "catalogue": "",
         "custom_name": "Naples",
         "name": "Napoli",
         "ancient": "Neapolis/Parthenope",
@@ -692,7 +660,6 @@ var geojsonFeature = {
         "coordinates": ["4.36041", "43.83837"]
       },
       "properties": {
-        "catalogue": "",
         "custom_name": "Nimes",
         "name": "N\u00eemes",
         "ancient": "Nemausus",
@@ -711,7 +678,6 @@ var geojsonFeature = {
         "coordinates": ["12.287656", "41.7548549"]
       },
       "properties": {
-        "catalogue": "",
         "custom_name": "Ostia",
         "name": "Ostia Antica",
         "ancient": "Ostia",
@@ -730,7 +696,6 @@ var geojsonFeature = {
         "coordinates": ["10.172291", "36.607458"]
       },
       "properties": {
-        "catalogue": "",
         "custom_name": "Oudna",
         "name": "Oudna",
         "ancient": "Uthina",
@@ -749,7 +714,6 @@ var geojsonFeature = {
         "coordinates": ["12.89207", "41.839064"]
       },
       "properties": {
-        "catalogue": "",
         "custom_name": "Palestrina",
         "name": "Palestrina",
         "ancient": "Praeneste",
@@ -768,7 +732,6 @@ var geojsonFeature = {
         "coordinates": ["38.26148", "34.55357"]
       },
       "properties": {
-        "catalogue": "",
         "custom_name": "Palmyra",
         "name": "Tadmur",
         "ancient": "Palmyra/Thadamora/Hadrianopolis",
@@ -787,7 +750,6 @@ var geojsonFeature = {
         "coordinates": ["27.184167", "39.1325"]
       },
       "properties": {
-        "catalogue": "",
         "custom_name": "Pergamon",
         "name": "Bergama, \u0130zmir",
         "ancient": "Pergamum",
@@ -806,7 +768,6 @@ var geojsonFeature = {
         "coordinates": ["35.4464006", "30.3273975"]
       },
       "properties": {
-        "catalogue": "",
         "custom_name": "Petra",
         "name": "Petra",
         "ancient": "Petra",
@@ -825,7 +786,6 @@ var geojsonFeature = {
         "coordinates": ["14.334722", "37.364722"]
       },
       "properties": {
-        "catalogue": "",
         "custom_name": "Piazza Armerina",
         "name": "Casale, Piazza Armerina",
         "ancient": "",
@@ -844,7 +804,6 @@ var geojsonFeature = {
         "coordinates": ["23.644609", "37.937222"]
       },
       "properties": {
-        "catalogue": "",
         "custom_name": "Piraeus",
         "name": "Peiraieus/Piraeus",
         "ancient": "Peiraieus/Piraeus",
@@ -863,7 +822,6 @@ var geojsonFeature = {
         "coordinates": ["14.485429", "40.74941"]
       },
       "properties": {
-        "catalogue": "",
         "custom_name": "Pompeii",
         "name": "Pompei",
         "ancient": "Pompeii",
@@ -882,7 +840,6 @@ var geojsonFeature = {
         "coordinates": ["12.19702", "44.41536"]
       },
       "properties": {
-        "catalogue": "",
         "custom_name": "Ravenna",
         "name": "Ravenna",
         "ancient": "Ravenna",
@@ -901,7 +858,7 @@ var geojsonFeature = {
         "coordinates": ["12.4843457", "41.89262"]
       },
       "properties": {
-        "catalogue": 1,
+        "catalogue": [1],
         "custom_name": "Rome",
         "name": "Roma",
         "ancient": "Roma",
@@ -920,7 +877,7 @@ var geojsonFeature = {
         "coordinates": ["4.870291", "45.529792"]
       },
       "properties": {
-        "catalogue": 3,
+        "catalogue": [3],
         "custom_name": "Saint-Romain-en-Gal",
         "name": "Saint-Romain-en-Gal",
         "ancient": "",
@@ -939,7 +896,6 @@ var geojsonFeature = {
         "coordinates": ["11.873762", "42.038416"]
       },
       "properties": {
-        "catalogue": "",
         "custom_name": "Santa Marinella",
         "name": "Santa Marinella",
         "ancient": "Panapio/Punicum",
@@ -958,7 +914,6 @@ var geojsonFeature = {
         "coordinates": ["35.279123", "32.753079"]
       },
       "properties": {
-        "catalogue": "",
         "custom_name": "Sepphoris",
         "name": "Tsipori",
         "ancient": "Sepphoris/Diocaesarea",
@@ -977,7 +932,6 @@ var geojsonFeature = {
         "coordinates": ["36.62822", "32.853937"]
       },
       "properties": {
-        "catalogue": "",
         "custom_name": "Shahba Philippopolis",
         "name": "Shahba",
         "ancient": "Philippopolis",
@@ -996,7 +950,6 @@ var geojsonFeature = {
         "coordinates": ["10.68578", "34.65026"]
       },
       "properties": {
-        "catalogue": "",
         "custom_name": "Thaenae",
         "name": "Henchir-Thina",
         "ancient": "Thaenae",
@@ -1032,7 +985,6 @@ var geojsonFeature = {
         "coordinates": ["36.997142", "35.270406"]
       },
       "properties": {
-        "catalogue": "",
         "custom_name": "Umm Harteine",
         "name": "Oumm Harteine",
         "ancient": "",
@@ -1051,7 +1003,6 @@ var geojsonFeature = {
         "coordinates": ["10.059444", "37.056032"]
       },
       "properties": {
-        "catalogue": "",
         "custom_name": "Utica",
         "name": "Henchir-bou-Chateur",
         "ancient": "Utica",
@@ -1070,7 +1021,6 @@ var geojsonFeature = {
         "coordinates": ["4.873247", "45.524204"]
       },
       "properties": {
-        "catalogue": "",
         "custom_name": "Vienne",
         "name": "Vienne",
         "ancient": "Col. Vienna",
@@ -1089,7 +1039,7 @@ var geojsonFeature = {
         "coordinates": ["5.4307", "43.7132"]
       },
       "properties": {
-        "catalogue": 4,
+        "catalogue": [4],
         "custom_name": "Villelaure",
         "name": "",
         "ancient": "",
