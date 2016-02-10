@@ -5,7 +5,7 @@
 // Underscore utility mixin
 _.mixin({
   capitalize: function(string) {
-    return string.charAt(0).toUpperCase() + string.substring(1).toLowerCase();
+    return string.charAt(0).toUpperCase() + string.substring(1);
   }
 });
 
