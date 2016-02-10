@@ -2,6 +2,13 @@
 //= require vendor/underscore-min
 //= require geojson
 
+// Underscore utility mixin
+_.mixin({
+  capitalize: function(string) {
+    return string.charAt(0).toUpperCase() + string.substring(1).toLowerCase();
+  }
+});
+
 // GeoMap Properties
 function GeoMap(center) {
   this.map         = {};
@@ -19,7 +26,6 @@ function GeoMap(center) {
   // Run these methods on instantiation
   this.init(center);
   this.addTiles();
-  console.log(this.catalogue);
 
   // Populate map
   var catalogueLabels = L.geoJson(this.geojson, {
@@ -55,37 +61,38 @@ GeoMap.prototype = {
   },
   // Add Popup content
   addPopups: function(feature, layer) {
-    var props         = feature.properties;
-    var popupMsg      = "<h4 class='feature-name'>" + props.custom_name + "</h4>";
-    var linkedEntries = props.catalogue;
-    var pleiadesUrl   = "http://pleiades.stoa.org/places/" + props.pleiades;
-    var popupOptions  = { minWidth: 100, maxHeight: 250 };
+    var props, popupMsg, cat_ids, linkedEntries, pleiadesUrl, popupOptions;
+    var locationName;
+    props         = feature.properties;
+    locationName  = props.customName;
+    popupMsg      = "<h4 class='feature-name'>" + props.custom_name + "</h4>";
+    cat_ids       = props.catalogue;
+    pleiadesUrl   = "http://pleiades.stoa.org/places/" + props.pleiades;
+    popupOptions  = { minWidth: 100, maxHeight: 250 };
 
-    if (linkedEntries) {
-      popupMsg += "<strong>Catalogue Entries:</strong><ul>";
+    linkedEntries = _.filter(window.CATALOGUE, function(entry) {
+      return _.includes(cat_ids, entry.cat);
+    });
 
-      linkedEntries.forEach(function(num) {
+    if (linkedEntries.length > 0) {
+      locationName = _(linkedEntries[0].location).capitalize();
+      popupMsg     = "<h4 class='feature-name'>" + locationName + "</h4>";
+      popupMsg     += "<strong>Catalogue Entries:</strong><ul>";
+
+      linkedEntries.forEach(function(entry) {
         var entryURL, currentEntry;
-
-        currentEntry = _.find(window.CATALOGUE, function(entry) {
-          return entry.cat == num;
-        });
-
-        if (currentEntry.cat < 9 || currentEntry.cat > 19) {
-          entryURL = "/catalogue/" + currentEntry.cat + "/";
+        if ( entry.cat < 9 || entry.cat > 19) {
+          entryURL = "/catalogue/" + entry.cat + "/";
         } else {
           entryURL = "/catalogue/9-19/";
         }
-
         popupMsg += "<li><a href='" + entryURL + "'>";
-        popupMsg += currentEntry.cat + ". ";
-        popupMsg += currentEntry.title;
+        popupMsg += entry.cat + ". ";
+        popupMsg += entry.title;
         popupMsg += "</a></li>";
       });
-
       popupMsg += "</ul>";
     }
-
     layer.bindPopup(popupMsg, popupOptions);
   }
 };
