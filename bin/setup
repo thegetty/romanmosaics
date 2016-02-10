@@ -10,7 +10,7 @@ fi
 
 # Set up Ruby dependencies via Bundler
 echo "Installing Dependencies..."
-bundle install
+bundle install --without test
 
 # Remove Git remote if it's still the default repo
 if [ "$(git config --get remote.origin.url)" = "git@github.com:thoughtbot/proteus-middleman.git" ]; then
