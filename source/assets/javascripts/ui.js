@@ -18,12 +18,19 @@ function keyboardNav(){
 
 function mapSetup() {
   if ($("#map").length) {
-    var centerPoint = $("#map").data("center");
-    var map = new GeoMap(centerPoint);
-
-    if ($("#map").parent().hasClass("cover-map")) {
-      map.map.setZoom(5);
-    }
+    // Get Catalogue data
+    $.getJSON("/catalogue.json", function(data){
+      // Stash catalogue json data for later use
+      window.CATALOGUE = data;
+      // Instantiate map
+      var centerPoint = $("#map").data("center");
+      var map = new GeoMap(centerPoint);
+      if ($("#map").parent().hasClass("cover-map")) {
+        map.map.setZoom(5);
+      }
+    }).fail(function() {
+      console.log("Failed to load catalogue json");
+    });
   }
 }
 

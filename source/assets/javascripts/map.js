@@ -1,5 +1,5 @@
 //= require vendor/leaflet
-//= require vendor/leaflet.markercluster
+//= require vendor/underscore-min
 //= require geojson
 
 // GeoMap Properties
@@ -19,6 +19,7 @@ function GeoMap(center) {
   // Run these methods on instantiation
   this.init(center);
   this.addTiles();
+  console.log(this.catalogue);
 
   // Populate map
   var catalogueLabels = L.geoJson(this.geojson, {
@@ -63,12 +64,25 @@ GeoMap.prototype = {
     if (linkedEntries) {
       popupMsg += "<strong>Catalogue Entries:</strong><ul>";
 
-      linkedEntries.forEach(function(entry) {
-        var entryURL = "#";
+      linkedEntries.forEach(function(num) {
+        var entryURL, currentEntry;
+
+        currentEntry = _.find(window.CATALOGUE, function(entry) {
+          return entry.cat == num;
+        });
+
+        if (currentEntry.cat < 9 || currentEntry.cat > 19) {
+          entryURL = "/catalogue/" + currentEntry.cat + "/";
+        } else {
+          entryURL = "/catalogue/9-19/";
+        }
+
         popupMsg += "<li><a href='" + entryURL + "'>";
-        popupMsg += "Cat. " + entry;
+        popupMsg += currentEntry.cat + ". ";
+        popupMsg += currentEntry.title;
         popupMsg += "</a></li>";
       });
+
       popupMsg += "</ul>";
     }
 
