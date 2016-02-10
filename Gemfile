@@ -21,4 +21,8 @@ gem "sprockets-es6"
 
 # Testing
 group :test do
+  gem "rspec"
+  gem "capybara"
+  gem "capybara-webkit"
+  gem "selenium-webdriver"
 end
