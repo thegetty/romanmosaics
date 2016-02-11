@@ -31,6 +31,13 @@ describe "index", :type => :feature, js: true do
     page.should have_selector ".nav-sidebar"
   end
 
+  it "should go to the TOC page when TOC link is clicked" do
+    within ".cover-copy" do
+      click_link "Contents"
+      current_path.should eq("/contents/")
+    end
+  end
+
   it "should open the nav menu when icon is clicked", :driver => :selenium do
     page.find("#navbar-menu").click
     page.should have_selector ".nav-sidebar.is-visible"
@@ -38,12 +45,5 @@ describe "index", :type => :feature, js: true do
 
   it "successfully initializes leaflet.js", :driver => :selenium do
     page.should have_selector ".leaflet-container"
-  end
-
-  it "should go to the TOC page when TOC link is clicked" do
-    within ".cover-copy" do
-      click_link "Contents"
-      current_path.should eq("/contents/")
-    end
   end
 end

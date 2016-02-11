@@ -36,4 +36,5 @@ end
 
 RSpec.configure do |config|
   config.color = true
+  config.expect_with(:rspec) { |c| c.syntax = :should }
 end
