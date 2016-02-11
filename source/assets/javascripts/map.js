@@ -82,9 +82,9 @@ GeoMap.prototype = {
       linkedEntries.forEach(function(entry) {
         var entryURL, currentEntry;
         if ( entry.cat < 9 || entry.cat > 19) {
-          entryURL = "/catalogue/" + entry.cat + "/";
+          entryURL = "http://gettypubs.github.io/mosaics/catalogue/" + entry.cat + "/";
         } else {
-          entryURL = "/catalogue/9-19/";
+          entryURL = "http://gettypubs.github.io/mosaics/catalogue/9-19/";
         }
         popupMsg += "<li><a href='" + entryURL + "'>";
         popupMsg += entry.cat + ". ";

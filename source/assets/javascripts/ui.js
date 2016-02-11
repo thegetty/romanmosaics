@@ -19,7 +19,7 @@ function keyboardNav(){
 function mapSetup() {
   if ($("#map").length) {
     // Get Catalogue data
-    $.getJSON("/catalogue.json", function(data){
+    $.getJSON("http://gettypubs.github.io/mosaics/catalogue.json", function(data){
       // Stash catalogue json data for later use
       window.CATALOGUE = data;
       // Instantiate map
