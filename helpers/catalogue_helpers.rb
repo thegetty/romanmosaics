@@ -28,6 +28,10 @@ module CatalogueHelpers
     return frontmatter, catalogue, backmatter
   end
 
+  def define_term(term)
+    data.definitions.find { |entry| entry.id == term }.definition
+  end
+
   # Lookup Catalogue Entry
   # expects a cat number (int)
   # returns a hash of entry data or nil if no entry is found
