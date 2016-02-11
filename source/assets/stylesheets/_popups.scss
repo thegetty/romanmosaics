@@ -1,0 +1,26 @@
+.popup[data-definition] {
+  border-bottom: 1.5px solid tint($action-color, 65%);
+  display: inline-block;
+  position: relative;
+
+  &::after {
+    @include position(absolute, 2.5rem null null 0);
+    @include transition($base-transition);
+    background-color: $base-background-color;
+    border: 1px solid $light-gray;
+    box-shadow: $base-box-shadow;
+    content: attr(data-definition);
+    display: inline-block;
+    font-family: $heading-font-family;
+    font-size: 0.85rem;
+    min-width: 8rem;
+    opacity: 0;
+    padding: 0.75rem;
+  }
+}
+
+.popup[data-definition]:hover {
+  &::after {
+    opacity: 1;
+  }
+}
