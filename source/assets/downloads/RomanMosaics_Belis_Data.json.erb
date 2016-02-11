@@ -14,7 +14,7 @@
     "TGN Web View": "",
     "Begin Date": <% if entry.date[0].nil? %>""<% else %><%= entry.date[0] %><% end %>,
     "End Date": <% if entry.date[1].nil? %>""<% else %><%= entry.date[1] %><% end %>,
-    "Date": "<%= entry.date_txt %>",
+    "Date": "<%= entry.date_txt.gsub("–", "-") %>",
     "Classification": "",
     "Typology": "",
     "Object Name": "",
