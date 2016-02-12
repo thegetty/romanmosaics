@@ -15,7 +15,7 @@ Anderson, John Kinloch. *Hunting in the Ancient World*. Berkeley: University of 
 
 Armstrong, Arthur H. *Classical Mediterranean Spirituality: Egyptian, Greek, Roman*. New York: Crossroad, 1986.
 
-*ARV^2^*
+- <span class="smcaps">*ARV^2^*</span>
 
 Beazley, John Davidson. *Attic Red-Figure Vase-Painters*. 2nd ed. Oxford: Clarendon Press, 1963.
 
@@ -87,9 +87,9 @@ Boriello, M., and A. D’Ambrosio. *Baiae-Misenum*. Florence: L. S. Olschki, 197
 
 Brett, Gerard. *The Great Palace of the Byzantine Emperors, First Report*. London: Oxford University Press, 1947.
 
-*- <span class="smcaps">Bulletin de la Société nationale des antiquaires de France</span>* 1900
+- <span class="smcaps">*Bulletin de la Société nationale des antiquaires de France* 1900</span>
 
-Bulletin de la Société nationale des antiquaires de France. - <span class="smcaps">“</span>Séance du 18 Avril,” *Bulletin de la Société nationale des antiquaires de France* (1900): 165–67.
+Bulletin de la Société nationale des antiquaires de France. “Séance du 18 Avril,” *Bulletin de la Société nationale des antiquaires de France* (1900): 165–67.
 
 - <span class="smcaps">Campbell 1988</span>
 
@@ -123,9 +123,9 @@ Clarke, John. *Roman Black-and-White Figural Mosaics*. New York: New York Univer
 
 Clarke, John. *The Houses of Roman Italy 100 BC–AD 250: Ritual, Space, and Decoration*. Berkeley: University of California Press, 1991
 
-*- <span class="smcaps">Comptes-rendus de l’Academie des inscriptions et belles-lettres</span>* 1900
+- <span class="smcaps">*Comptes-rendus de l’Academie des inscriptions et belles-lettres* 1900</span>
 
-Comptes-rendus de l’Académie des inscriptions et belles-lettres. - <span class="smcaps">“</span>Séance du 20 Avril,” *Comptes-rendus de l’Académie des inscriptions et belles-lettres* 44, no. 2 (1900): 222–28.
+Comptes-rendus de l’Académie des inscriptions et belles-lettres. “Séance du 20 Avril,” *Comptes-rendus de l’Académie des inscriptions et belles-lettres* 44, no. 2 (1900): 222–28.
 
 - <span class="smcaps">Comstock and Vermeule 1971</span>
 
@@ -195,7 +195,7 @@ Egea, Michel. “Entente et Dares sauves de la terre.” *Le Provencal*, Februar
 
 Elia, Olga. “Lo stibadio dionisiaco in pitture pompeiane.” *Mitteilungen des deutschen archäologischen Instituts. Römische Abteilung* 69 (1962): 118–27.
 
-*- <span class="smcaps">Elvehjem Art Center</span>* 1972–73
+- <span class="smcaps">*Elvehjem Art Center* 1972–73</span>
 
 Elvehjem Art Center. “Part Three. Donors and Acquisitions,” *Elvehjem Art Center Bulletin* (1972–73): 37–47.
 
@@ -343,7 +343,7 @@ Hornum, Michael B. *Nemesis, the Roman State and the Games*. New York: E. J. Bri
 
 Ingholt, Harald, Henri Seyrig, and Jean Starcky. *Recueil des tessères de Palmyre*. Paris: Paul Geuthner, 1955.
 
-*IG* VII
+- <span class="smcaps">*IG* VII</span>
 
 Dittenberger, Guilelmus, ed. *Inscriptiones Graecae*. Vol. 7, *Inscriptiones Megaridis et Boeotiae*. Berlin: Walter de Gruyter, 1978.
 
@@ -467,7 +467,7 @@ Leader-Newby, Ruth. “Personifications and *Paideia* in Late Antique Mosaics fr
 
 Leader-Newby, Ruth. “Heroes, Lions, and Vandals: Four Late Roman Missoria.” In *The Berthouville Silver Treasure and Roman Luxury*, edited by Kenneth Lapatin, 89–105. Los Angeles: Getty Publications, 2014.
 
-*- <span class="smcaps">Le bien public</span>* 1961
+- <span class="smcaps">*Le bien public* 1961</span>
 
 *Le bien public*, 19 April 1961.
 
@@ -660,10 +660,8 @@ Sauze, Élisabeth, and Jean-Pierre Muret. *Villelaure et ses châteaux*. Lauri
 Scheibelreiter-Gail, Veronika. *Die Mosaiken Westkleinasiens: Tessellate des 2. Jahrhunderts v. Chr. bis Anfang des 7. Jahrhunderts n. Chr*. Vienna: Österreichisches Archäologisches Institut, 2011.
 
 - <span class="smcaps">Schwarzmaier, Scholl, and Maischberger 2012</span>
------------------------------------------------------------------------------------------
 
 Schwarzmaier, Agnes, Andreas Scholl, and Martin Maischberger, eds. *Die Antikensammlung: Altes Museum, Neues Museum, Pergamonmuseum*. Darmstadt: Philipp von Zabern, 2012.
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 - <span class="smcaps">Seignoret 1987</span>
 
@@ -740,7 +738,6 @@ von Boeselager, Dela. *Antike Mosaiken in Sizilien: Hellenismus und römische Ka
 - <span class="smcaps">von Gonzenbach 1975</span>
 
 von Gonzenbach, Victorine. “Ein neues Briseismosaik.” In *La mosaïque gréco-romaine II: IIe Colloque international pour l’étude de la mosaïque antique, Vienne, 30 août–4 septembre 1971*, edited by Henri Stern and Marcel Le Glay, 401–8. Paris: A. & J. Picard, 1975.
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 - <span class="smcaps">Weiss 2009</span>
 
