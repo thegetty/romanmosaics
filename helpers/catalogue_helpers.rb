@@ -32,6 +32,10 @@ module CatalogueHelpers
     data.definitions.find { |entry| entry.id == term }.definition
   end
 
+  def location(loc_id)
+    data.locations.find { |loc| loc.id == loc_id }.id
+  end
+
   # Lookup Catalogue Entry
   # expects a cat number (int)
   # returns a hash of entry data or nil if no entry is found
