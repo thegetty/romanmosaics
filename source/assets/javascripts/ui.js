@@ -92,7 +92,7 @@ function popupSetup() {
     // Definition Popup--------------------------------------------------------
     // ------------------------------------------------------------------------
     if ($popup.data("definition")) {
-      var $el = $("<span>", {class: "popup-content"});
+      var $el = $("<div>", {class: "popup-content"});
       $el.html($popup.data("definition"));
       $popup.append($el);
       $popup.on("click", function() {
@@ -132,8 +132,15 @@ function popupSetup() {
     // Image Popup ------------------------------------------------------------
     // ------------------------------------------------------------------------
     } else if ($popup.data("pic")) {
-      // TODO: Add pop-up images here
-      // Should have same full-width appearance as map elements
+      var picData = JSON.parse($popup.data("pic"));
+      var $el     = $("<div>", {
+        class: "popup-content",
+        style: "background-image: url('/assets/images/pics/" + picData.file + "')"
+      });
+      $popup.append($el);
+      $popup.on("click", function() {
+        $popup.find(".popup-content").toggleClass("visible");
+      });
     }
   });
 }
