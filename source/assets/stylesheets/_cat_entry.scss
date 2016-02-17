@@ -57,3 +57,24 @@
   font-family: $heading-font-family;
   margin: $base-spacing 0 ($base-spacing * 1.5);
 }
+
+.cat-details td:nth-child(1) {
+  width: 48%;
+}
+
+.cat-details-scale {
+  min-height: 85px;
+}
+
+.cat-details-scale-person {
+  display: inline-block;
+  background-image: url('../images/silhouette.png');
+  margin-left: ($small-spacing / 2);
+  height: 85px;
+  width: 24px;
+}
+
+.cat-details-scale-mosaic {
+    display: inline-block;
+    background-color: $light-gray;
+}
