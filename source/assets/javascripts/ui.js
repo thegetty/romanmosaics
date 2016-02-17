@@ -133,10 +133,18 @@ function popupSetup() {
     // ------------------------------------------------------------------------
     } else if ($popup.data("pic")) {
       var picData = JSON.parse($popup.data("pic"));
-      var $el     = $("<div>", {
-        class: "popup-content",
-        style: "background-image: url('/assets/images/pics/" + picData.file + "')"
-      });
+      console.log(picData);
+      var $el     = $("<figure>", {class: "popup-content"});
+      var $img    = $("<img>", {src: "/assets/images/pics/" + picData.file });
+      var $figcap = $("<figcaption>");
+
+      $figcap.html(
+        "<a href='" + picData.url + "' target='blank'>" +
+        picData.title + "</a>. " + 
+        picData.source_credit
+      );
+      $el.append($img);
+      $el.append($figcap);
       $popup.append($el);
       $popup.on("click", function() {
         $popup.find(".popup-content").toggleClass("visible");

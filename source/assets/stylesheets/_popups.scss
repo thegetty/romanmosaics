@@ -56,14 +56,31 @@
 }
 
 .popup-pic {
-  .popup-content {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  // Specificity hack needed to override default img/fig styles
+  .popup-content.popup-content {
+    margin: 0 0 -30px;
+    text-align: center;
+
+    img {
+      height: 0;
+      max-height: 0;
+    }
 
     &.visible {
       height: 300px;
+      margin-bottom: $small-spacing;
+      margin-top: $small-spacing;
       max-height: 300px;
+
+      img {
+        height: 75%;
+        max-height: 75%;
+
+        @include media($medium-screen-up) {
+          height: 87%;
+          max-height: 87%;
+        }
+      }
     }
   }
 }
