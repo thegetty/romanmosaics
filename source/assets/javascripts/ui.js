@@ -111,15 +111,13 @@ function popupSetup() {
         console.log("No location data for " + $popup.text());
         $popup.removeClass("popup popup-location");
       } else {
-        var $el, map, coords, label;
-
+        var $el, map, coords, label, marker;
         $el = $("<div>", {class: "popup-content"});
         $popup.append($el);
 
         coords = mapLocation.geometry.coordinates.reverse();
         map    = new PopupMap(coords, $popup.find(".popup-content")[0]).map;
-
-        var marker = L.marker(coords).addTo(map);
+        marker = L.marker(coords).addTo(map);
         marker.bindPopup(mapLocation.properties.custom_name);
 
         $popup.on("click", function() {
