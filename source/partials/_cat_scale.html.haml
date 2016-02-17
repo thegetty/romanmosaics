@@ -1,0 +1,4 @@
+- current_cat = lookup_entry(current_page.data.cat)
+%div.cat-details-scale{ :style => "height: #{current_cat.dimensions[1] / 2}px;" }
+  %div.cat-details-scale-mosaic{ :style => "width: #{current_cat.dimensions[0] / 2}px; height: #{current_cat.dimensions[1] / 2}px;" }
+  %div.cat-details-scale-person
