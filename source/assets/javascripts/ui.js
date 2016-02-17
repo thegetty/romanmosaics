@@ -83,6 +83,76 @@ function searchSetup() {
   });
 }
 
+function popupSetup() {
+  var $popups = $(".popup");
+  $popups.each(function(index) {
+
+    var $popup = $(this);
+
+    // Definition Popup--------------------------------------------------------
+    // ------------------------------------------------------------------------
+    if ($popup.data("definition")) {
+      var $el = $("<div>", {class: "popup-content"});
+      $el.html($popup.data("definition"));
+      $popup.append($el);
+      $popup.on("click", function() {
+        $popup.find(".popup-content").toggleClass("visible");
+      });
+
+    // Location Popup ---------------------------------------------------------
+    // ------------------------------------------------------------------------
+    } else if ($popup.data("location")) {
+      var mapLocation;
+      // Look for location that corresponds to data-location ID
+      mapLocation = _.find(geojsonFeature.features, function(loc) {
+        return loc.properties.id == $popup.data("location");
+      });
+      if (mapLocation == undefined) {
+        console.log("No location data for " + $popup.text());
+        $popup.removeClass("popup popup-location");
+      } else {
+        var $el, map, coords, label, marker;
+        $el = $("<div>", {class: "popup-content"});
+        $popup.append($el);
+
+        coords = mapLocation.geometry.coordinates.reverse();
+        map    = new PopupMap(coords, $popup.find(".popup-content")[0]).map;
+        marker = L.marker(coords).addTo(map);
+        marker.bindPopup(mapLocation.properties.custom_name);
+
+        $popup.on("click", function() {
+          if (!$popup.find(".popup-content").hasClass("visible")) {
+            map.setView(coords, 10);
+            $popup.find(".popup-content").addClass("visible");
+            window.setTimeout(function() { map.invalidateSize(); }, 200);
+          }
+        });
+      }
+
+    // Image Popup ------------------------------------------------------------
+    // ------------------------------------------------------------------------
+    } else if ($popup.data("pic")) {
+      var picData = JSON.parse($popup.data("pic"));
+      console.log(picData);
+      var $el     = $("<figure>", {class: "popup-content"});
+      var $img    = $("<img>", {src: "/assets/images/pics/" + picData.file });
+      var $figcap = $("<figcaption>");
+
+      $figcap.html(
+        "<a href='" + picData.url + "' target='blank'>" +
+        picData.title + "</a>. " + 
+        picData.source_credit
+      );
+      $el.append($img);
+      $el.append($figcap);
+      $popup.append($el);
+      $popup.on("click", function() {
+        $popup.find(".popup-content").toggleClass("visible");
+      });
+    }
+  });
+}
+
 // Use this function as "export"
 // Calls all other functions defined here inside of this one
 function uiSetup() {
@@ -90,4 +160,5 @@ function uiSetup() {
   offCanvasNav();
   searchSetup();
   mapSetup();
+  popupSetup();
 }

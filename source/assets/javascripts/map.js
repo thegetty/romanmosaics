@@ -9,7 +9,77 @@ _.mixin({
   }
 });
 
-// GeoMap Properties
+// Custom button
+L.Control.Close = L.Control.extend({
+  options: {
+    position: 'topright',
+  },
+
+  onAdd: function (map) {
+    var controlDiv, controlUI;
+    controlDiv = L.DomUtil.create('div', 'leaflet-bar leaflet-control');
+    controlUI  = L.DomUtil.create('i', 'ion-android-close', controlDiv);
+
+    controlDiv.style.backgroundColor = "white";
+    controlDiv.style.width           = '26px';
+    controlDiv.style.height          = '26px';
+    controlDiv.style.cursor          = 'pointer';
+    controlUI.style.fontSize         = '20px';
+    controlUI.style.lineHeight       = '1.35';
+    controlUI.style.margin           = '7px';
+
+    L.DomEvent
+      .addListener(controlDiv, 'click', L.DomEvent.stopPropagation)
+      .addListener(controlDiv, 'click', L.DomEvent.preventDefault)
+      .addListener(controlDiv, 'click', function () {
+        $(this).closest(".visible").removeClass("visible");
+      });
+
+    controlUI.title = 'Close';
+    return controlDiv;
+  }
+});
+
+L.Control.close = function(options) {
+  return new L.Control.Close(options);
+}
+
+// Pop-up map class
+// Inset map bound to a particular location
+// ----------------------------------------------------------------------------
+function PopupMap(center, domElement) {
+  this.map         = {};
+  this.center      = center;
+  this.defaultZoom = 9;
+  this.maxZoom     = 12;
+  this.minZoom     = 5;
+  this.geojson     = geojsonFeature;
+  this.tiles       = "http://pelagios.org/tilesets/imperium/{z}/{x}/{y}.png";
+  this.attribution = "Tiles: Pelagios/DARE";
+  this.init(center, domElement);
+  this.addTiles();
+}
+
+PopupMap.prototype = {
+  init: function(center, domElement) {
+    this.map = L.map(domElement, { 
+      maxZoom: this.maxZoom, 
+      minZoom: this.minZoom 
+    }).setView(center, this.defaultZoom);
+    this.map.scrollWheelZoom.disable();
+    var closeButton = L.Control.close();
+    this.map.addControl(closeButton);
+  },
+  addTiles: function() {
+    L.tileLayer(this.tiles, {
+      attribution: this.attribution
+    }).addTo(this.map);
+  }
+}
+
+// GeoMap Class
+// Large/full-screen map initialized on the #map element on a page
+// ----------------------------------------------------------------------------
 function GeoMap(center) {
   this.map         = {};
   this.el          = 'map';

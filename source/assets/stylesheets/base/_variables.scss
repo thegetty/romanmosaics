@@ -34,6 +34,12 @@ $base-border: 1px solid $base-border-color;
 $base-background-color: #fff;
 $secondary-background-color: tint($base-border-color, 75%);
 
+// Shadows
+$base-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
+
+// Transitions
+$base-transition: all 0.2s ease-in-out;
+
 // Forms
 $form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
 $form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);

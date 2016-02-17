@@ -74,6 +74,15 @@
   }
 }
 
+.force-wrap {
+  @include prefixer(hyphens, auto, webkit moz ms spec);
+  overflow-wrap: break-word;
+  // word-break: break-all;
+  -ms-word-break: break-all;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+
 .map-intro {
   @extend .map-fullscreen;
 
