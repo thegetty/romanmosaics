@@ -55,9 +55,7 @@ function PopupMap(center, domElement) {
   this.minZoom     = 5;
   this.geojson     = geojsonFeature;
   this.tiles       = "http://pelagios.org/tilesets/imperium/{z}/{x}/{y}.png";
-  this.attribution = "Tiles <a href='http://dare.ht.lu.se/'>Pelagios/DARE</a>" +
-                     "<a href='http://creativecommons.org/licenses/by-sa/3.0/'>" +
-                     "CC-BY-SA 3.0</a>";
+  this.attribution = "Tiles: Pelagios/DARE";
   this.init(center, domElement);
   this.addTiles();
 }
