@@ -44,7 +44,44 @@ L.Control.close = function(options) {
   return new L.Control.Close(options);
 }
 
-// GeoMap Properties
+// Pop-up map class
+// Inset map bound to a particular location
+// ----------------------------------------------------------------------------
+function PopupMap(center, domElement) {
+  this.map         = {};
+  this.center      = center;
+  this.defaultZoom = 9;
+  this.maxZoom     = 12;
+  this.minZoom     = 5;
+  this.geojson     = geojsonFeature;
+  this.tiles       = "http://pelagios.org/tilesets/imperium/{z}/{x}/{y}.png";
+  this.attribution = "Tiles <a href='http://dare.ht.lu.se/'>Pelagios/DARE</a>" +
+                     "<a href='http://creativecommons.org/licenses/by-sa/3.0/'>" +
+                     "CC-BY-SA 3.0</a>";
+  this.init(center, domElement);
+  this.addTiles();
+}
+
+PopupMap.prototype = {
+  init: function(center, domElement) {
+    this.map = L.map(domElement, { 
+      maxZoom: this.maxZoom, 
+      minZoom: this.minZoom 
+    }).setView(center, this.defaultZoom);
+    this.map.scrollWheelZoom.disable();
+    var closeButton = L.Control.close();
+    this.map.addControl(closeButton);
+  },
+  addTiles: function() {
+    L.tileLayer(this.tiles, {
+      attribution: this.attribution
+    }).addTo(this.map);
+  }
+}
+
+// GeoMap Class
+// Large/full-screen map initialized on the #map element on a page
+// ----------------------------------------------------------------------------
 function GeoMap(center) {
   this.map         = {};
   this.el          = 'map';
