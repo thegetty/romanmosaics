@@ -1,51 +1,114 @@
 .popup {
-  border-bottom: 1.5px solid tint($action-color, 65%);
-  display: inline-block;
+  @include transition($base-transition);
+  border-bottom: 1.5px solid tint($action-color, 80%);
+  cursor: pointer;
   position: relative;
   text-indent: 0;
-}
 
-.popup[data-location] {
-}
-
-.popup[data-pic] {
-  &::after {
-    @include position(absolute, 2.5rem null null 0);
-    @include transition($base-transition);
-    background-color: $base-background-color;
-    border: 1px solid $light-gray;
-    box-shadow: $base-box-shadow;
-    content: url(image_path("pics/pic_01_mosaic-from-corinth.jpg"));
-    display: inline-block;
-    font-family: $heading-font-family;
-    font-size: 0.85rem;
-    height: 3rem;
-    opacity: 0;
-    overflow: hidden;
-    padding: 0.75rem;
-    max-width: 8rem;
+  &:hover {
+    border-bottom: 2.5px solid tint($action-color, 20%);
   }
 }
 
-.popup[data-definition] {
-  &::after {
-    @include position(absolute, 2.5rem null null 0);
-    @include transition($base-transition);
-    background-color: $base-background-color;
-    border: 1px solid $light-gray;
-    box-shadow: $base-box-shadow;
-    content: attr(data-definition);
-    display: inline-block;
-    font-family: $heading-font-family;
-    font-size: 0.85rem;
-    min-width: 8rem;
-    opacity: 0;
-    padding: 0.75rem;
-  }
-}
+.popup-content {
+  @include transition($base-transition);
+  background-color: $base-background-color;
+  border: 1px solid $light-gray;
+  border-bottom: 2.5px solid tint($action-color, 20%);
+  box-shadow: $base-box-shadow;
+  display: inline-block;
+  float: left;
+  font-family: $heading-font-family;
+  font-size: 0.85rem;
+  left: -25%;
+  opacity: 0;
+  padding: $small-spacing;
+  pointer-events: none;
+  position: absolute;
+  top: 2.25rem;
+  width: 150%;
+  z-index: 10;
 
-.popup:hover {
-  &::after {
+  &.visible {
     opacity: 1;
+    pointer-events: auto;
   }
 }
+
+.popup-location {
+
+  .popup-map-close {
+    background-color: $base-background-color;
+    height: 20px;
+    position: relative;
+    float: right;
+    top: 10px;
+    width: 20px;
+    z-index: 9999;
+  }
+
+  .popup-content {
+    display: inline-block;
+    left: 0;
+    margin-bottom: -30px;
+    max-height: 0;
+    position: relative;
+    top: 0;
+    width: 100%;
+
+    &.visible {
+      height: 300px;
+      left: 0;
+      margin-bottom: $small-spacing;
+      margin-top: $small-spacing;
+      max-height: 300px;
+      top: 0;
+      width: 100%;
+    }
+  }
+}
+
+// scss-lint:disable NameFormat
+/* .popup[data-pic] { */
+/*   &::after { */
+/*     @include position(absolute, 2.5rem null null 0); */
+/*     @include transition($base-transition); */
+/*     background-color: $base-background-color; */
+/*     border: 1px solid $light-gray; */
+/*     box-shadow: $base-box-shadow; */
+/*     content: url(image_path("pics/pic_01_mosaic-from-corinth.jpg")); */
+/*     display: inline-block; */
+/*     font-family: $heading-font-family; */
+/*     font-size: 0.85rem; */
+/*     height: 3rem; */
+/*     max-width: 8rem; */
+/*     opacity: 0; */
+/*     overflow: hidden; */
+/*     padding: 0.75rem; */
+/*     z-index: 10; */
+/*   } */
+/* } // scss-lint:enable NameFormat */
+
+/* .popup[data-definition] { */
+/*   &::after { */
+/*     @include position(absolute, 2.5rem null null 0); */
+/*     @include transition($base-transition); */
+/*     background-color: $base-background-color; */
+/*     border: 1px solid $light-gray; */
+/*     box-shadow: $base-box-shadow; */
+/*     content: attr(data-definition); */
+/*     display: inline-block; */
+/*     font-family: $heading-font-family; */
+/*     font-size: 0.85rem; */
+/*     min-width: 8rem; */
+/*     opacity: 0; */
+/*     padding: 0.75rem; */
+/*     z-index: 10; */
+/*   } */
+/* } */
+
+/* .popup:hover { */
+/*   &::after { */
+/*     opacity: 1; */
+/*   } */
+/* } */
