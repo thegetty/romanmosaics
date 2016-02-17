@@ -36,6 +36,10 @@ module CatalogueHelpers
     data.locations.find { |loc| loc.id == loc_id }.id
   end
 
+  def pic(pic_id)
+    data.pics.find { |pic| pic.id == pic_id }.to_json
+  end
+
   # Lookup Catalogue Entry
   # expects a cat number (int)
   # returns a hash of entry data or nil if no entry is found
