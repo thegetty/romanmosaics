@@ -9,6 +9,41 @@ _.mixin({
   }
 });
 
+// Custom button
+L.Control.Close = L.Control.extend({
+  options: {
+    position: 'topright',
+  },
+
+  onAdd: function (map) {
+    var controlDiv, controlUI;
+    controlDiv = L.DomUtil.create('div', 'leaflet-bar leaflet-control');
+    controlUI  = L.DomUtil.create('i', 'ion-android-close', controlDiv);
+
+    controlDiv.style.backgroundColor = "white";
+    controlDiv.style.width           = '26px';
+    controlDiv.style.height          = '26px';
+    controlDiv.style.cursor          = 'pointer';
+    controlUI.style.fontSize         = '20px';
+    controlUI.style.lineHeight       = '1.35';
+    controlUI.style.margin           = '7px';
+
+    L.DomEvent
+      .addListener(controlDiv, 'click', L.DomEvent.stopPropagation)
+      .addListener(controlDiv, 'click', L.DomEvent.preventDefault)
+      .addListener(controlDiv, 'click', function () {
+        $(this).closest(".visible").removeClass("visible");
+      });
+
+    controlUI.title = 'Close';
+    return controlDiv;
+  }
+});
+
+L.Control.close = function(options) {
+  return new L.Control.Close(options);
+}
+
 // GeoMap Properties
 function GeoMap(center) {
   this.map         = {};

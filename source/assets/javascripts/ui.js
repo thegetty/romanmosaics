@@ -1,3 +1,5 @@
+//= require geojson
+
 function keyboardNav(){
   $(document).keydown(function(event) {
     var prev, next;
@@ -83,6 +85,64 @@ function searchSetup() {
   });
 }
 
+function popupSetup() {
+  var $popups = $(".popup");
+  $popups.each(function(index) {
+
+    var $popup = $(this);
+
+    // Definition Popup--------------------------------------------------------
+    // ------------------------------------------------------------------------
+    if ($popup.data("definition")) {
+      var $el = $("<span>", {class: "popup-content"});
+      $el.html($popup.data("definition"));
+      $popup.append($el);
+      $popup.on("click touchstart", function() {
+        $popup.find(".popup-content").toggleClass("visible");
+      });
+
+    // Location Popup ---------------------------------------------------------
+    // ------------------------------------------------------------------------
+    } else if ($popup.data("location")) {
+      var mapLocation;
+      // Look for location that corresponds to data-location ID
+      mapLocation = _.find(geojsonFeature.features, function(loc) {
+        return loc.properties.id == $popup.data("location");
+      });
+      if (mapLocation == undefined) {
+        console.log("No location data for " + $popup.text());
+        $popup.removeClass("popup popup-location");
+      } else {
+        var $el, map, coordinates, closeButton;
+        $el = $("<div>", {class: "popup-content"});
+        $popup.append($el);
+        closeButton = L.Control.close();
+        coordinates = mapLocation.geometry.coordinates.reverse();
+        map = L.map($popup.find(".popup-content")[0], { maxZoom: 12, minZoom: 5 })
+        map.scrollWheelZoom.disable()
+        map.addControl(closeButton);
+        L.tileLayer("http://pelagios.org/tilesets/imperium/{z}/{x}/{y}.png")
+          .addTo(map);
+        // Add event handler
+        $popup.on("click touchstart", function() {
+          // Only trigger if popup is not in expanded state
+          if (!$popup.find(".popup-content").hasClass("visible")) {
+            map.setView(coordinates, 10);
+            $popup.find(".popup-content").addClass("visible");
+            window.setTimeout(function() { map.invalidateSize(); }, 200);
+          }
+        });
+      }
+
+    // Image Popup ------------------------------------------------------------
+    // ------------------------------------------------------------------------
+    } else if ($popup.data("pic")) {
+      // TODO: Add pop-up images here
+      // Should have same full-width appearance as map elements
+    }
+  });
+}
+
 // Use this function as "export"
 // Calls all other functions defined here inside of this one
 function uiSetup() {
@@ -90,4 +150,5 @@ function uiSetup() {
   offCanvasNav();
   searchSetup();
   mapSetup();
+  popupSetup();
 }
