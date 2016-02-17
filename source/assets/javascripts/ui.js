@@ -1,5 +1,3 @@
-//= require geojson
-
 function keyboardNav(){
   $(document).keydown(function(event) {
     var prev, next;
@@ -97,7 +95,7 @@ function popupSetup() {
       var $el = $("<span>", {class: "popup-content"});
       $el.html($popup.data("definition"));
       $popup.append($el);
-      $popup.on("click touchstart", function() {
+      $popup.on("click", function() {
         $popup.find(".popup-content").toggleClass("visible");
       });
 
@@ -113,21 +111,20 @@ function popupSetup() {
         console.log("No location data for " + $popup.text());
         $popup.removeClass("popup popup-location");
       } else {
-        var $el, map, coordinates, closeButton;
+        var $el, map, coords, label;
+
         $el = $("<div>", {class: "popup-content"});
         $popup.append($el);
-        closeButton = L.Control.close();
-        coordinates = mapLocation.geometry.coordinates.reverse();
-        map = L.map($popup.find(".popup-content")[0], { maxZoom: 12, minZoom: 5 })
-        map.scrollWheelZoom.disable()
-        map.addControl(closeButton);
-        L.tileLayer("http://pelagios.org/tilesets/imperium/{z}/{x}/{y}.png")
-          .addTo(map);
-        // Add event handler
-        $popup.on("click touchstart", function() {
-          // Only trigger if popup is not in expanded state
+
+        coords = mapLocation.geometry.coordinates.reverse();
+        map    = new PopupMap(coords, $popup.find(".popup-content")[0]).map;
+
+        var marker = L.marker(coords).addTo(map);
+        marker.bindPopup(mapLocation.properties.custom_name);
+
+        $popup.on("click", function() {
           if (!$popup.find(".popup-content").hasClass("visible")) {
-            map.setView(coordinates, 10);
+            map.setView(coords, 10);
             $popup.find(".popup-content").addClass("visible");
             window.setTimeout(function() { map.invalidateSize(); }, 200);
           }
