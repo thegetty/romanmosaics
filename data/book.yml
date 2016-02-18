@@ -30,7 +30,9 @@ contributors:
     last_name: Leatherbury
     role: ctb
     bio:
-author_as_it_appears: "Alexis Belis, with contributions by Nicole Budrovich, Christine Kondoleon, Kenneth Lapatin, and Sean Leatherbury"
+author_as_it_appears:
+  - "Alexis Belis"
+  - "with contributions by Nicole Budrovich, Christine Kondoleon, Kenneth Lapatin, and Sean Leatherbury"
 author_description:
 project_team: |
   - Nola Butler, *Project Editors*

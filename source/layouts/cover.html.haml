@@ -4,9 +4,10 @@
       %h1.cover-title= data.book.title.short
       - unless data.book.title.subtitle.nil?
         %h2.cover-subtitle= data.book.title.subtitle
-      %h3.cover-author= data.book.author_as_it_appears
+      %h3.cover-author= data.book.author_as_it_appears[0]
   .cover-copy
     .cover-copy-inner
+      %h3.cover-contributors= data.book.author_as_it_appears[1]
       %p= data.book.description_short ||= lorem.paragraph
       = link_to 'Contents', '/contents.html', :class => "button"
   .cover-map
