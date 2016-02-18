@@ -6,7 +6,6 @@ class Catalogue < Middleman::Extension
 
   def initialize(app, options_hash = {}, &block)
     super
-    puts @app
   end
 
   def manipulate_resource_list(resources)
@@ -73,6 +72,13 @@ class Catalogue < Middleman::Extension
     # returns a hash of entry data or nil if no entry is found
     def lookup_entry(cat)
       data.catalogue.find { |entry| entry.cat == cat }
+    end
+
+    # Lookup Catalogue Entries (plural)
+    # expects an array of cat numbers (int)
+    # returns an array of entry data hashes or nil if no entry is found
+    def lookup_entries(group)
+      data.catalogue.find_all { |entry| group.include? entry.cat }
     end
 
     # Previous Chapter Path
