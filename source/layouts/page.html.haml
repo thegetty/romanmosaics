@@ -8,6 +8,12 @@
         %h3.cat-num= current_entry.cat
         %h1.page-title= current_entry.title
         %h4.cat-dates= current_entry.date_txt
+      - if current_page.data.sidebar_type
+        %h3.page-type= current_page.data.sidebar_type
       %h1.page-title= current_page.data.title
+      - if current_page.data.author_first_name
+        - first_name = current_page.data.author_first_name
+        - last_name = current_page.data.author_last_name
+        %h3.page-author= "#{first_name} #{last_name}"
     %main.page-content
       = yield
