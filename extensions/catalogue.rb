@@ -32,11 +32,7 @@ class Catalogue < Middleman::Extension
     catalogue   = contents.find_all do |p|
       p.data.sort_order > 10 && p.data.sort_order <= 100
     end
-    frontmatter.sort_by! { |p| p.data.sort_order }
-    catalogue.sort_by! { |p| p.data.sort_order }
-    backmatter.sort_by! { |p| p.data.sort_order }
-
-    return frontmatter, catalogue, backmatter
+    [frontmatter, catalogue, backmatter]
   end
 
   helpers do
@@ -44,7 +40,7 @@ class Catalogue < Middleman::Extension
       author = data.book.creators.first
       "#{author.first_name} #{author.last_name}"
     end
-    # ---------------------------------------------------------------------------
+    # --------------------------------------------------------------------------
     # Data attribute methods
     # The following helper methods provide data which can be stashed in data-
     # attributes of elements in templates. Use them to store information from
@@ -90,16 +86,15 @@ class Catalogue < Middleman::Extension
       frontmatter, catalogue, backmatter = catalogue_sections
       case curr
       when frontmatter.first.data.sort_order
-        prev_chapter = false
+        prev_chap = false
       when catalogue.first.data.sort_order
-        prev_chapter = frontmatter.last
+        prev_chap = frontmatter.last
       when backmatter.first.data.sort_order
-        prev_chapter = catalogue.last
+        prev_chap = catalogue.last
       else
-        prev_chapter = sitemap.resources.find { |p| p.data.sort_order == curr - 1 }
+        prev_chap = sitemap.resources.find { |p| p.data.sort_order == curr - 1 }
       end
-
-      prev_chapter ? prev_chapter : false
+      prev_chap ? prev_chap : false
     end
 
     # Next Chapter Path
@@ -113,16 +108,15 @@ class Catalogue < Middleman::Extension
       frontmatter, catalogue, backmatter = catalogue_sections
       case curr
       when frontmatter.last.data.sort_order
-        next_chapter = catalogue.first
+        next_chap = catalogue.first
       when catalogue.last.data.sort_order
-        next_chapter = backmatter.first
+        next_chap = backmatter.first
       when backmatter.last.data.sort_order
-        next_chapter = false
+        next_chap = false
       else
-        next_chapter = sitemap.resources.find { |p| p.data.sort_order == curr + 1 }
+        next_chap = sitemap.resources.find { |p| p.data.sort_order == curr + 1 }
       end
-
-      next_chapter ? next_chapter : false
+      next_chap ? next_chap : false
     end
   end
 end
