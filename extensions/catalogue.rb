@@ -9,15 +9,17 @@ class Catalogue < Middleman::Extension
     super
     output_path = options.output_path
 
-    app.after_build do |builder|
-      input_path  = "extensions/filelist.txt"
-      puts `prince --input-list=#{input_path} -o #{output_path}`
-      puts `rm #{input_path}`
+    if app.environment? :pdf
+      app.after_build do |builder|
+        input_path  = "extensions/filelist.txt"
+        puts `prince --input-list=#{input_path} -o #{output_path}`
+        puts `rm #{input_path}`
+      end
     end
   end
 
   def manipulate_resource_list(resources)
-    generate_pagelist
+    generate_pagelist if app.environment? :pdf
 
     resources.push Middleman::Sitemap::CatalogueResource.new(
       @app.sitemap,
