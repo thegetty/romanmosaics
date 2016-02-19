@@ -4,7 +4,7 @@ author_first_name: Christine
 author_last_name: Kondoleon
 cover: true
 layout: page
-sort_order: 5
+sort_order: 4
 ---
 The mosaics in the collection of the J. Paul Getty Museum span the second through the sixth centuries AD and reflect the diversity of compositions found throughout the Roman Empire during this period. Several of the mosaics in the Getty collection can be traced to specific discoveries made in the nineteenth and early twentieth centuries in Italy, Gaul, North Africa, and Syria. While the Greeks introduced the medium, using pebbles embedded in mortar, it was really the Romans with their use of tesserae, in a technique called *opus tessellatum*, who fully explored it as suitable ornamentation for their architecture. In fact, mosaic floors are closely aligned with Roman culture, and because of their durability they have survived in greater numbers than paintings and sculptures and testify to a lively and imaginative practice of decorative and figurative arts.
 
