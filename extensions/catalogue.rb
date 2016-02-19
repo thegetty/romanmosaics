@@ -146,9 +146,18 @@ class Catalogue < Middleman::Extension
     frontmatter, catalogue, backmatter = catalogue_sections
     # remove index page for now
     frontmatter.shift
-    frontmatter.each { |p| f.puts baseurl + p.destination_path.gsub(".html", str) }
-    catalogue.each   { |p| f.puts baseurl + p.destination_path.gsub(".html", str) }
-    backmatter.each  { |p| f.puts baseurl + p.destination_path.gsub(".html", str) }
+
+    # Do not include pages in PDF if pdf_output: false is set in metadata
+    [frontmatter, catalogue, backmatter].each do |array|
+      array.reject! { |page| page.data.pdf_output == false }
+    end
+
+    # Write the pages to the filelist for use by Prince
+    [frontmatter, catalogue, backmatter].each do |array|
+      array.each do |p|
+        f.puts baseurl + p.destination_path.gsub(".html", str)
+      end
+    end
     f.close
   end
 end
