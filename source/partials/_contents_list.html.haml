@@ -20,6 +20,8 @@
     %li.toc-item= link_to "Syria", "../../build/catalogue/syria/index.html"
     %li.toc-item= link_to "References Cited", "../../build/referencescited/index.html"
     %li.toc-item= link_to "Contributors", "../../build/contributors/index.html"
+    %li.toc-item= link_to "Index", "../../build/bookindex/index.html"
+    %li.toc-item= link_to "About", "../../build/about/index.html"
   - else
     - sorted_contents.each do |item|
       - if item.data.cat.is_a? Array
