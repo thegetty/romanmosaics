@@ -12,24 +12,24 @@ creators:
   - first_name: Alexis
     last_name: Belis
     role: aut
-    bio:
+    bio: Alexis Belis is assistant curator of antiquities at the J. Paul Getty Museum.
 contributors:
   - first_name: Nicole
     last_name: Budrovich
     role: ctb
-    bio:
+    bio: Nicole Budrovich is curatorial assistant at the J. Paul Getty Museum.
   - first_name: Christine
     last_name: Kondoleon
     role: ctb
-    bio:
+    bio: Christine Kondoleon is the George D. and Margo Behrakis Curator of Greek and Roman Art at the Museum of Fine Arts, Boston.
   - first_name: Kenneth
     last_name: Lapatin
     role: ctb
-    bio:
+    bio: Kenneth Lapatin is associate curator of antiquities at the J. Paul Getty Museum.
   - first_name: Sean
     last_name: Leatherbury
     role: ctb
-    bio:
+    bio: Sean Leatherbury is assistant professor of ancient art and culture at Bowling Green State University.
 author_as_it_appears:
   - "Alexis Belis"
   - "with contributions by Nicole Budrovich, Christine Kondoleon, Kenneth Lapatin, and Sean Leatherbury"
