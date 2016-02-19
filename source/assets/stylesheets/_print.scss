@@ -162,7 +162,6 @@ $light-gray: transparentize($print-text-color, 0.5);
   .references.references {
     column-count: 1;
     font-size: 8pt;
-    margin-left: -($print-base-spacing * 2);
     padding: 0;
 
     p {
@@ -198,10 +197,22 @@ $light-gray: transparentize($print-text-color, 0.5);
     }
     // scss-lint:enable PropertySpelling
 
-    h3 { font-size: $print-base-font-size; font-weight: bold; }
-    h4 { font-size: $print-base-font-size * 0.875; font-weight: bold; }
+    h3 {
+      font-size: $print-base-font-size;
+      font-weight: bold;
+    }
+
+    h4 {
+      font-size: $print-base-font-size * 0.875;
+      font-weight: bold;
+    }
+
     .inline-figure figcaption { font-size: $footnote-size; }
-    .footnotes { font-size: $footnote-size; }
+
+    .footnotes {
+      font-size: $footnote-size;
+      ol, ul { padding-left: ($print-base-spacing * 2); }
+    }
 
     p {
       line-height: $print-base-line-height;
@@ -210,6 +221,11 @@ $light-gray: transparentize($print-text-color, 0.5);
     }
 
     ul,
-    ol { margin-left: 0; padding-left: ($print-base-spacing * 2); }
+    ol {
+      margin-left: 0;
+      padding-left: 0;
+      text-indent: 0;
+      /* padding-left: ($print-base-spacing * 2); */
+    }
   }
 }
