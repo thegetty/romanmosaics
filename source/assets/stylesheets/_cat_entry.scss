@@ -53,7 +53,8 @@
   }
 }
 
-.cat-details {
-  font-family: $heading-font-family;
-  margin: $base-spacing 0 ($base-spacing * 1.5);
+.cat-entry-scale {
+  width: 100%;
+  vertical-align: middle;
+  fill: $light-gray;
 }
