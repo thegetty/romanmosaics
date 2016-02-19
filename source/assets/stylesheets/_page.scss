@@ -32,7 +32,7 @@
   margin-bottom: $small-spacing;
 }
 
-.referencescited .page-content {
+.page-content .references {
   @include prefixer(column-count, 2, webkit moz spec);
   @include prefixer(column-gap, 2.5rem, webkit moz spec);
 
