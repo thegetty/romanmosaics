@@ -1,23 +1,44 @@
 - sorted_contents = sort_catalogue_contents
 %ul.toc
-  - sorted_contents.each do |item|
-    - if item.data.cat.is_a? Array
-      - multiple_entries = item.data.cat
-      - multiple_entries.each do |num|
-        - current_entry = lookup_entry(num)
+  - if environment? :pdf
+    %li.toc-item= link_to "Contents", "../../build/contents/index.html"
+    %li.toc-item
+      = link_to "Director's Foreword", "../../build/foreword/index.html"
+      %span.toc-entry-author Timothy Potts
+    %li.toc-item
+      = link_to "Preface", "../../build/preface/index.html"
+      %span.toc-entry-author Alexis Belis
+    %li.toc-item= link_to "Acknowledgments", "../../build/acknowledgments/index.html"
+    %li.toc-item
+      = link_to "Introduction", "../../build/introduction/index.html"
+      %span.toc-entry-author Christine Kondoleon
+    %li.toc-item= link_to "Map", "../../build/map/index.html"
+    %li.toc-item= link_to "Note to the Reader", "../../build/readernote/index.html"
+    %li.toc-item= link_to "Italy", "../../build/catalogue/italy/index.html"
+    %li.toc-item= link_to "Gaul", "../../build/catalogue/gaul/index.html"
+    %li.toc-item= link_to "North Africa", "../../build/catalogue/northafrica/index.html"
+    %li.toc-item= link_to "Syria", "../../build/catalogue/syria/index.html"
+    %li.toc-item= link_to "References Cited", "../../build/referencescited/index.html"
+    %li.toc-item= link_to "Contributors", "../../build/contributors/index.html"
+  - else
+    - sorted_contents.each do |item|
+      - if item.data.cat.is_a? Array
+        - multiple_entries = item.data.cat
+        - multiple_entries.each do |num|
+          - current_entry = lookup_entry(num)
+          %li.toc-item= link_to current_entry.title, item
+      - elsif item.data.cat
+        - current_entry = lookup_entry(item.data.cat)
         %li.toc-item= link_to current_entry.title, item
-    - elsif item.data.cat
-      - current_entry = lookup_entry(item.data.cat)
-      %li.toc-item= link_to current_entry.title, item
-    - else
-      %li.toc-item
-        - if item.data.intro
-          %h5.toc-section-intro= link_to item.data.title, item
-        - elsif item.data.sort_order == 101
-          .toc-section-intro= link_to item.data.title, item
-        - else
-          = link_to item.data.title, item
-        - if item.data.author_last_name
-          - first_name = item.data.author_first_name
-          - last_name = item.data.author_last_name
-          %span.toc-entry-author= "#{first_name} #{last_name}"
+      - else
+        %li.toc-item
+          - if item.data.intro
+            %h5.toc-section-intro= link_to item.data.title, item
+          - elsif item.data.sort_order == 101
+            .toc-section-intro= link_to item.data.title, item
+          - else
+            = link_to item.data.title, item
+          - if item.data.author_last_name
+            - first_name = item.data.author_first_name
+            - last_name = item.data.author_last_name
+            %span.toc-entry-author= "#{first_name} #{last_name}"

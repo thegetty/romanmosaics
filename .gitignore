@@ -3,6 +3,7 @@
 /.cache
 /.sass-cache
 /build
+/dist/*
 /workingcopy
 Gemfile.lock
 *.swp
