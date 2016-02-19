@@ -57,6 +57,14 @@
   }
 }
 
+.entry-author {
+  display: block;
+  text-indent: 0;
+  &:before {
+    content: "&mdash;"
+  }
+}
+
 .smcaps {
   @include font-feature-settings("c2sc", "smcp", "kern");
   font-variant: all-small-caps;
