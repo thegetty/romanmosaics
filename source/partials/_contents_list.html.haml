@@ -13,13 +13,15 @@
       = link_to "Introduction", "../../build/introduction/index.html"
       %span.toc-entry-author Christine Kondoleon
     %li.toc-item= link_to "Map", "../../build/map/index.html"
-    %li.toc-item= link_to "Note to the Reader", "../../build/readernote/index.html"
+    %li.toc-item= link_to "Note to the Reader", "../../build/catalogue/index.html"
     %li.toc-item= link_to "Italy", "../../build/catalogue/italy/index.html"
     %li.toc-item= link_to "Gaul", "../../build/catalogue/gaul/index.html"
     %li.toc-item= link_to "North Africa", "../../build/catalogue/northafrica/index.html"
     %li.toc-item= link_to "Syria", "../../build/catalogue/syria/index.html"
     %li.toc-item= link_to "References Cited", "../../build/referencescited/index.html"
     %li.toc-item= link_to "Contributors", "../../build/contributors/index.html"
+    %li.toc-item= link_to "Index", "../../build/bookindex/index.html"
+    %li.toc-item= link_to "About", "../../build/about/index.html"
   - else
     - sorted_contents.each do |item|
       - if item.data.cat.is_a? Array
