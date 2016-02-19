@@ -59,9 +59,10 @@
 
 .entry-author {
   display: block;
+  text-align: right;
   text-indent: 0;
   &:before {
-    content: "&mdash;"
+    content: "–"
   }
 }
 
