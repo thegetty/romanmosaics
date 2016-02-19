@@ -19,7 +19,7 @@ function keyboardNav(){
 function mapSetup() {
   if ($("#map").length) {
     // Get Catalogue data
-    $.getJSON("/catalogue.json", function(data){
+    $.getJSON("http://gettypubs.github.io/mosaics/catalogue.json", function(data){
       // Stash catalogue json data for later use
       window.CATALOGUE = data;
       // Instantiate map
@@ -135,7 +135,7 @@ function popupSetup() {
       var picData = JSON.parse($popup.data("pic"));
       console.log(picData);
       var $el     = $("<figure>", {class: "popup-content"});
-      var $img    = $("<img>", {src: "/assets/images/pics/" + picData.file });
+      var $img    = $("<img>", {src: "http://gettypubs.github.io/mosaics/assets/images/pics/" + picData.file });
       var $figcap = $("<figcaption>");
 
       $figcap.html(
