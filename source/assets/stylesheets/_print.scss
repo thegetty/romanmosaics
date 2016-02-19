@@ -135,12 +135,28 @@ $light-gray: transparentize($print-text-color, 0.5);
 
   // Section-specific
   // ---------------------------------------------------------------------------
+  .contents-page {
+    a::after {
+      content: leader(dotted) " " target-counter(attr(href, url), page);
+    }
 
-  // Catalogue Entries
-  .cat-entry-header {
-    position: static;
+    li {
+      font-size: 11pt;
+      margin-bottom: 0.15in;
+    }
   }
 
+  .referencescited { font-size: 8pt;}
+  .cat-entry-header { position: static; }
+
+  .introduction .page-content,
+  .foreword .page-content,
+  .acknowledgments .page-content,
+  .readernote .page-content,
+  .preface .page-content,
+  .catalogue .page-content,
+  .referencescited .page-content,
+  .about .page-content,
   .cat-entry-content {
     color: $print-text-color;
     column-count: 2;
@@ -154,16 +170,10 @@ $light-gray: transparentize($print-text-color, 0.5);
     }
     // scss-lint:enable PropertySpelling
 
-    .inline-figure figcaption {
-      font-size: $footnote-size;
-    }
-
-    .footnotes {
-      font-size: $footnote-size;
-    }
-
     h3 { font-size: $print-base-font-size; font-weight: bold; }
     h4 { font-size: $print-base-font-size * 0.875; font-weight: bold; }
+    .inline-figure figcaption { font-size: $footnote-size; }
+    .footnotes { font-size: $footnote-size; }
 
     p {
       line-height: $print-base-line-height;
