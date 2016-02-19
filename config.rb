@@ -12,6 +12,7 @@ set :js_dir, "assets/javascripts"
 set :images_dir, "assets/images"
 set :fonts_dir, "assets/fonts"
 set :layout, "layouts/application"
+set :markdown, :parse_block_html => true
 
 page "/*.xml", layout: false
 page "/*.json", layout: false
