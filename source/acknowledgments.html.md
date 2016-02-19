@@ -1,7 +1,7 @@
 ---
 title: Acknowledgments
 layout: page
-sort_order: 4
+sort_order: 3
 ---
 I extend my sincere thanks to the staff of the many departments in the J. Paul Getty Museum who were involved in the production of this catalogue, and in particular to Jeffrey Spier, senior curator of antiquities, for his support in completing this project. I am especially grateful to the other authors—Christine Kondoleon, Kenneth Lapatin, Nicole Budrovich, and Sean Leatherbury—who contributed their scholarly knowledge of the mosaics in the Getty’s collection, and to Judith Barr for her ongoing research on the provenance of the mosaics. I would also like to acknowledge the contributions of André Girod and the association of Villa Laurus en Luberon, who provided invaluable material on the archaeological site near Villelaure where the Getty Museum’s mosaic of Dares and Entellus was discovered.
 
