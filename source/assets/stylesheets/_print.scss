@@ -133,6 +133,17 @@ $light-gray: transparentize($print-text-color, 0.5);
     display: none;
   }
 
+  .reversefootnote {
+    display: none;
+  }
+
+  // Global
+  // ---------------------------------------------------------------------------
+  .smcaps {
+    font-family: "Freight Text Pro SC";
+    text-transform: lowercase;
+  }
+
   // Section-specific
   // ---------------------------------------------------------------------------
   .contents-page {
@@ -146,8 +157,24 @@ $light-gray: transparentize($print-text-color, 0.5);
     }
   }
 
-  .referencescited { font-size: 8pt;}
   .cat-entry-header { position: static; }
+
+  .references.references {
+    column-count: 1;
+    font-size: 8pt;
+    margin-left: -($print-base-spacing * 2);
+    padding: 0;
+
+    p {
+      font-size: 8pt;
+      line-height: $print-base-line-height;
+    }
+
+    li {
+      margin-bottom: ($print-base-spacing) / 2;
+      page-break-inside: avoid;
+    }
+  }
 
   .introduction .page-content,
   .foreword .page-content,
@@ -157,6 +184,7 @@ $light-gray: transparentize($print-text-color, 0.5);
   .catalogue .page-content,
   .referencescited .page-content,
   .about .page-content,
+  .contributors .page-content,
   .cat-entry-content {
     color: $print-text-color;
     column-count: 2;
