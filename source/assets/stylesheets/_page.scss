@@ -27,3 +27,7 @@
 .page-content {
   @extend .body-copy;
 }
+
+.contributor-bios li {
+  margin-bottom: $small-spacing;
+}

@@ -4,10 +4,13 @@
       %h1.cover-title= data.book.title.short
       - unless data.book.title.subtitle.nil?
         %h2.cover-subtitle= data.book.title.subtitle
-      %h3.cover-author= data.book.author_as_it_appears
+      %h3.cover-author= data.book.author_as_it_appears[0]
   .cover-copy
     .cover-copy-inner
-      %p= data.book.description_short ||= lorem.paragraph
+      %h3.cover-contributors= data.book.author_as_it_appears[1]
+      %p
+        :markdown
+          In Roman décor, elaborate mosaics transformed entire rooms into spectacular settings of vibrant color, figural imagery, and abstract design. Intricate patterns and figural compositions were created by setting tesserae—small pieces of stone or glass—into floors and walls. The mosaics in the collection of the J. Paul Getty Museum span the second through the sixth centuries AD and reveal the diversity of compositions found throughout the empire during this period. Recovered from various archaeological contexts, these mosaics provide a glimpse into the richly embellished architecture of the ancient world.
       = link_to 'Contents', '/contents.html', :class => "button"
   .cover-map
     #map.map{:data => {:center => current_page.data.map_center }}

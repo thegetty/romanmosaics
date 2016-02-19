@@ -19,8 +19,8 @@
   inv: 72.AH.76
   dor_id: 6916
   date:
-  -
-  -
+  - 300
+  - 400
   date_txt: fourth century AD
   dimensions:
   - 660
@@ -64,8 +64,8 @@
   inv: 73.AH.75
   dor_id: 7069
   date:
-  -
-  -
+  - 175
+  - 200
   date_txt: late second century AD
   dimensions:
   - 85
@@ -79,8 +79,8 @@
   inv: 68.AH.12
   dor_id: 6522
   date:
-  -
-  -
+  - 100
+  - 300
   date_txt: second–third century AD
   dimensions:
   - 220
@@ -94,8 +94,8 @@
   inv: 70.AH.96
   dor_id: 6539
   date:
-  -
-  -
+  - 375
+  - 425
   date_txt: ca. AD 400
   dimensions:
   - 260
@@ -109,8 +109,8 @@
   inv: 71.AH.113
   dor_id: 6578
   date:
-  -
-  -
+  - 400
+  - 500
   date_txt: fifth century AD
   dimensions:
   - 180
@@ -124,8 +124,8 @@
   inv: 75.AH.121
   dor_id: 7290
   date:
-  -
-  -
+  - 400
+  - 600
   date_txt: fifth–sixth century AD
   dimensions:
   - 197
@@ -140,8 +140,8 @@
   inv: 75.AH.122
   dor_id: 7291
   date:
-  -
-  -
+  - 400
+  - 600
   date_txt: fifth–sixth century AD
   dimensions:
   - 200.6
@@ -156,8 +156,8 @@
   inv: 75.AH.119
   dor_id: 7288
   date:
-  -
-  -
+  - 400
+  - 600
   date_txt: fifth–sixth century AD
   dimensions:
   - 91.4
@@ -172,8 +172,8 @@
   inv: 75.AH.125
   dor_id: 7294
   date:
-  -
-  -
+  - 400
+  - 600
   date_txt: fifth–sixth century AD
   dimensions:
   - 81.3
@@ -188,8 +188,8 @@
   inv: 75.AH.123
   dor_id: 7292
   date:
-  -
-  -
+  - 400
+  - 600
   date_txt: fifth–sixth century AD
   dimensions:
   - 96.5
@@ -204,8 +204,8 @@
   inv: 75.AH.124
   dor_id: 7293
   date:
-  -
-  -
+  - 400
+  - 600
   date_txt: fifth–sixth century AD
   dimensions:
   - 109.2
@@ -220,8 +220,8 @@
   inv: 75.AH.120
   dor_id: 7289
   date:
-  -
-  -
+  - 400
+  - 600
   date_txt: fifth–sixth century AD
   dimensions:
   - 89
@@ -236,8 +236,8 @@
   inv: 75.AH.116
   dor_id: 7285
   date:
-  -
-  -
+  - 400
+  - 600
   date_txt: fifth–sixth century AD
   dimensions:
   - 147.3
@@ -252,8 +252,8 @@
   inv: 75.AH.117
   dor_id: 7286
   date:
-  -
-  -
+  - 400
+  - 600
   date_txt: fifth–sixth century AD
   dimensions:
   - 124.5
@@ -268,8 +268,8 @@
   inv: 75.AH.118
   dor_id: 7287
   date:
-  -
-  -
+  - 400
+  - 600
   date_txt: fifth–sixth century AD
   dimensions:
   - 68.6
@@ -284,8 +284,8 @@
   inv: 75.AH.115
   dor_id: 7284
   date:
-  -
-  -
+  - 400
+  - 600
   date_txt: fifth–sixth century AD
   dimensions:
   - 82
@@ -300,8 +300,8 @@
   inv: 70.AH.95
   dor_id: 6538
   date:
-  -
-  -
+  - 400
+  - 600
   date_txt: fifth–sixth century AD
   dimensions:
   - 73.7
@@ -315,8 +315,8 @@
   inv: 78.AH.399
   dor_id: 8506
   date:
-  -
-  -
+  - 400
+  - 600
   date_txt: fifth–sixth century AD
   dimensions:
   - 48

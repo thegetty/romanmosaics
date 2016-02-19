@@ -1,4 +1,4 @@
 Catalogue/Guide Number,DOR ID,Inventory Number,Artist/Maker,Title,Group,Location,Site,Pleiades,TGN,TGN Web View,Begin Date,End Date,Date,Classification,Typology,Object Name,Medium,AAT,AAT Web View,Munsell,Height (cm),Width (cm),Depth (cm),Length (cm),Diameter (cm),Dimensions,Object Description,Culture,Image URL,Collection Page URL
 <% data.catalogue.entries.each do | entry | %>
-<%= entry.cat %>,<%= entry.dor_id %>,<%= entry.inv %>,,<%= entry.title %>,,"<%= entry.location %>",,,,,<%= entry.date[0] %>,<%= entry.date[1] %>,<%= entry.date_txt.gsub("–", "-") %>,,,,<%= entry.material %>,,,,<%= entry.dimensions[1] %>,<%= entry.dimensions[0] %>,,,,<%= entry.dimensions_txt %>,,<%= entry.culture %>,,http://www.getty.edu/art/collection/objects/<%= entry.dor_id %>
+<%= entry.cat %>,<%= entry.dor_id %>,<%= entry.inv %>,,<%= entry.title %>,,"<%= entry.location %>",,,,,<%= entry.date[0] %>,<%= entry.date[1] %>,<%= entry.date_txt.gsub("–", "-") %>,,,,<%= entry.material %>,,,,<%= entry.dimensions[0] %>,<%= entry.dimensions[1] %>,,,,<%= entry.dimensions_txt %>,,<%= entry.culture %>,,http://www.getty.edu/art/collection/objects/<%= entry.dor_id %>
 <% end %>

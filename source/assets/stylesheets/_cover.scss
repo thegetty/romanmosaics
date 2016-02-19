@@ -79,7 +79,7 @@ $rgb-gr-stop2: rgba(0, 0, 0, 0.85);
   }
 }
 
-.cover-author {
+.cover-author, .cover-contributors  {
   font-size: 1em;
   font-weight: 400;
   margin: 0 auto;
@@ -89,6 +89,10 @@ $rgb-gr-stop2: rgba(0, 0, 0, 0.85);
     font-size: 1.5em;
     margin: 1em auto;
   }
+}
+
+.cover-contributors {
+  text-align: center;
 }
 
 .cover-map .map {
