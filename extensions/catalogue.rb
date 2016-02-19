@@ -12,7 +12,9 @@ class Catalogue < Middleman::Extension
     if app.environment? :pdf
       app.after_build do |builder|
         input_path  = "extensions/filelist.txt"
-        puts `prince --input-list=#{input_path} -o #{output_path}`
+        flags       = "--no-artificial-fonts"
+        # --no-artificial-fonts flag needed to prevent faux italics
+        puts `prince --input-list=#{input_path} -o #{output_path} #{flags}`
         puts `rm #{input_path}`
       end
     end
