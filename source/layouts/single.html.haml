@@ -7,5 +7,5 @@
         %h1.cat-entry-title= current_cat.title
     %article.cat-entry-content
       .cat-entry-content-inner
-        = partial "partials/cat_details"
+        = partial "partials/cat_details", :locals => { :current_cat => current_cat }
         = yield

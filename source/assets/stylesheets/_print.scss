@@ -1,0 +1,187 @@
+// Variables
+// -----------------------------------------------------------------------------
+$page-width: 8.5in;
+$page-height: 11in;
+
+$bleed: 0.125in;
+$bleed-height: 11.25in;
+$bleed-width: 8.75in;
+
+$bottom-margin: 1in;
+$top-margin: 0.875in;
+$inner-margin: 1in;
+$outer-margin: 0.75in;
+
+$inner-width: $page-width - ($inner-margin + $outer-margin);
+$inner-height: $page-height - ($top-margin + $bottom-margin);
+
+$print-base-font-size: 9.5pt;
+$print-base-spacing: 0.125in;
+$print-base-line-height: 1.3;
+$print-paragraph-indent: 0.25in;
+
+$print-background-color: #fff;
+$print-text-color: #000;
+
+$page-number-size: 7.5pt;
+$footnote-size: 7.5pt;
+
+$medium-gray: transparentize($print-text-color, 0.5);
+$light-gray: transparentize($print-text-color, 0.5);
+
+// Default page setup
+// -----------------------------------------------------------------------------
+// scss-lint:disable PropertySpelling
+// @prince-pdf { prince-pdf-page-layout: two-column-right; }
+
+@page {
+  size: $page-width $page-height;
+  bleed: $bleed;
+  prince-trim: 0.25in;
+  marks: crop;
+}
+
+@page:left {
+  margin-bottom: $bottom-margin;
+  margin-left: $outer-margin;
+  margin-right: $inner-margin;
+  margin-top: $top-margin;
+
+  @bottom-left {
+    //content: counter(page) "\2003" string(doctitle);
+    content: counter(page);
+    font-family: $base-font-family;
+    font-size: $page-number-size;
+  }
+}
+
+@page:right {
+  margin-bottom: $bottom-margin;
+  margin-left: $inner-margin;
+  margin-right: $outer-margin;
+  margin-top: $top-margin;
+
+  @bottom-right {
+    content: counter(page);
+    font-family: $base-font-family;
+    font-size: $page-number-size;
+  }
+}
+
+@page bleed {
+  margin: 0;
+  @bottom-left { content: none; }
+  @bottom-right { content: none; }
+}
+
+@page frontmatter:left {
+  margin-bottom: $bottom-margin;
+  margin-left: $outer-margin;
+  margin-right: $inner-margin;
+  margin-top: $top-margin;
+  @bottom-left { content: counter(page, lower-roman); }
+}
+
+@page frontmatter:right {
+  margin-bottom: $bottom-margin;
+  margin-left: $inner-margin;
+  margin-right: $outer-margin;
+  margin-top: $top-margin;
+  @bottom-right { content: counter(page, lower-roman); }
+}
+
+@page no-footer:left {
+  margin-bottom: $bottom-margin;
+  margin-left: $outer-margin;
+  margin-right: $inner-margin;
+  margin-top: $top-margin;
+  @bottom-left { content: none; }
+  @bottom-right { content: none; }
+}
+
+@page no-footer:right {
+  margin-bottom: $bottom-margin;
+  margin-left: $inner-margin;
+  margin-right: $outer-margin;
+  margin-top: $top-margin;
+  @bottom-left { content: none; }
+  @bottom-right { content: none; }
+}
+
+// scss-lint:enable PropertySpelling
+
+// Print Styles
+// -----------------------------------------------------------------------------
+@media print {
+
+  // Remove unneeded elements
+  .navbar,
+  .search-results,
+  .nav-sidebar,
+  .sliding-panel-fade-screen {
+    display: none;
+  }
+
+  .popup,
+  .popup-definition,
+  .popup-location,
+  .popup-pic {
+    border: 0;
+  }
+
+  .popup-content {
+    display: none;
+  }
+
+  // Section-specific
+  // ---------------------------------------------------------------------------
+  .contents-page {
+    a::after {
+      content: leader(dotted) " " target-counter(attr(href, url), page);
+    }
+
+    li {
+      font-size: 11pt;
+      margin-bottom: 0.15in;
+    }
+  }
+
+  .referencescited { font-size: 8pt;}
+  .cat-entry-header { position: static; }
+
+  .introduction .page-content,
+  .foreword .page-content,
+  .acknowledgments .page-content,
+  .readernote .page-content,
+  .preface .page-content,
+  .catalogue .page-content,
+  .referencescited .page-content,
+  .about .page-content,
+  .cat-entry-content {
+    color: $print-text-color;
+    column-count: 2;
+    column-gap: ($print-base-spacing * 2);
+    font-size: $print-base-font-size;
+    // scss-lint:disable PropertySpelling
+    a[href] {
+      color: $print-text-color;
+      prince-link: none;
+      text-decoration: none;
+    }
+    // scss-lint:enable PropertySpelling
+
+    h3 { font-size: $print-base-font-size; font-weight: bold; }
+    h4 { font-size: $print-base-font-size * 0.875; font-weight: bold; }
+    .inline-figure figcaption { font-size: $footnote-size; }
+    .footnotes { font-size: $footnote-size; }
+
+    p {
+      line-height: $print-base-line-height;
+      margin: 0;
+      + p { text-indent: $print-paragraph-indent; }
+    }
+
+    ul,
+    ol { margin-left: 0; padding-left: ($print-base-spacing * 2); }
+  }
+}

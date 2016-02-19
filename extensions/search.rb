@@ -13,13 +13,6 @@ class Search < Middleman::Extension
       @options[:index_path])
     resources
   end
-
-  def search_index_path
-    "/" + sitemap.find_resource_by_path(
-      extensions[:search].options[:index_path]
-    ).destination_path
-  end
-
 end
 
 ::Middleman::Extensions.register(:search, Search)
