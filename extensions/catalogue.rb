@@ -2,13 +2,23 @@ require_relative "catalogue_resource"
 
 class Catalogue < Middleman::Extension
   option :catalogue_path, "catalogue.json"
+  option :output_path, "dist/book.pdf"
   expose_to_template :sort_catalogue_contents, :catalogue_sections
 
   def initialize(app, options_hash = {}, &block)
     super
+    output_path = options.output_path
+
+    app.after_build do |builder|
+      input_path  = "extensions/filelist.txt"
+      puts `prince --input-list=#{input_path} -o #{output_path}`
+      puts `rm #{input_path}`
+    end
   end
 
   def manipulate_resource_list(resources)
+    generate_pagelist
+
     resources.push Middleman::Sitemap::CatalogueResource.new(
       @app.sitemap,
       @options[:catalogue_path])
@@ -124,6 +134,20 @@ class Catalogue < Middleman::Extension
       end
       next_chap ? next_chap : false
     end
+  end
+
+  private
+  def generate_pagelist
+    f = File.new("./extensions/filelist.txt", "w")
+    baseurl = "build/"
+    str = "/index.html"
+    frontmatter, catalogue, backmatter = catalogue_sections
+    # remove index page for now
+    frontmatter.shift
+    frontmatter.each { |p| f.puts baseurl + p.destination_path.gsub(".html", str) }
+    catalogue.each   { |p| f.puts baseurl + p.destination_path.gsub(".html", str) }
+    backmatter.each  { |p| f.puts baseurl + p.destination_path.gsub(".html", str) }
+    f.close
   end
 end
 
