@@ -5,7 +5,9 @@ sort_order: 103
 pdf_output: false
 ---
 
-Description text to go here.
+Mosaics decorated domestic and public buildings across the broad expanse of the Roman Empire. Scenes drawn from mythology, daily life, nature, and spectacles in the arena enlivened interior spaces and reflected the cultural ambitions of wealthy patrons. Dating from the second through the sixth centuries AD, the mosaics in the collection of the J. Paul Getty Museum exemplify Roman mosaic production from its center in Italy to major workshops in North Africa, southern Gaul (present-day France), and ancient Syria (present-day Turkey and modern Syria). In addition to its comprehensive catalogue entries, this publication provides a detailed examination of the contexts in which the mosaics were discovered and excavated.
+
+This volume documents all twenty-one mosaics in the J. Paul Getty Museum’s collection, presenting their artistry in new color photography. The online edition includes zoomable high-resolution reproductions of the works in the collection, links to comparable sites and mosaics on the Web, a map drawn from the Digital Atlas of the Roman Empire, and other special interactive features. The complete catalogue can be downloaded for free in multiple formats. For readers who prefer a bound reference copy, a paperback edition is available for sale.
 
 ## Citation Information
 
