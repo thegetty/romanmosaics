@@ -1,7 +1,9 @@
 require_relative "catalogue_resource"
+require_relative "plates_resource"
 
 class Catalogue < Middleman::Extension
   option :catalogue_path, "catalogue.json"
+  option :plates_path, "plates.json"
   option :output_path, "dist/book.pdf"
   expose_to_template :sort_catalogue_contents, :catalogue_sections
 
@@ -26,6 +28,10 @@ class Catalogue < Middleman::Extension
     resources.push Middleman::Sitemap::CatalogueResource.new(
       @app.sitemap,
       @options[:catalogue_path])
+
+    resources.push Middleman::Sitemap::PlatesResource.new(
+      @app.sitemap,
+      @options[:plates_path])
     resources
   end
 
