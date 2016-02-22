@@ -3,6 +3,7 @@
   title: Mosaic Floor with Head of Medusa
   inv: 71.AH.110
   dor_id: 6576
+  plate_image_id: 00766501
   date:
   - 115
   - 150
@@ -18,6 +19,7 @@
   title: Mosaic Floor with Bear Hunt
   inv: 72.AH.76
   dor_id: 6916
+  plate_image_id: 00800701
   date:
   - 300
   - 400
@@ -33,6 +35,7 @@
   title: Mosaic Floor with Orpheus and Animals
   inv: 62.AH.2
   dor_id: 6520
+  plate_image_id: 00760601
   date:
   - 150
   - 200
@@ -48,6 +51,7 @@
   title: Mosaic Floor with Combat between Dares and Entellus
   inv: 71.AH.106
   dor_id: 6573
+  plate_image_id: 00766201
   date:
   - 175
   - 200
@@ -63,6 +67,7 @@
   title: Mosaic of a Lion Attacking an Onager
   inv: 73.AH.75
   dor_id: 7069
+  plate_image_id: 00816201
   date:
   - 175
   - 200
@@ -78,6 +83,7 @@
   title: Mosaic Floor with Achilles and Briseis
   inv: 68.AH.12
   dor_id: 6522
+  plate_image_id: 007608F1V1
   date:
   - 100
   - 300
@@ -93,6 +99,7 @@
   title: Mosaic Floor with Animals
   inv: 70.AH.96
   dor_id: 6539
+  plate_image_id: 00762801
   date:
   - 375
   - 425
@@ -108,6 +115,7 @@
   title: Mosaic Panel with a Griffin
   inv: 71.AH.113
   dor_id: 6578
+  plate_image_id: 007668T1V1
   date:
   - 400
   - 500
@@ -123,6 +131,7 @@
   title: Mosaic Panel with Peacock Facing Left
   inv: 75.AH.121
   dor_id: 7290
+  plate_image_id: 00838501
   date:
   - 400
   - 600
@@ -139,6 +148,7 @@
   title: Mosaic Panel with Peacock Facing Right
   inv: 75.AH.122
   dor_id: 7291
+  plate_image_id: 00838601
   date:
   - 400
   - 600
@@ -155,6 +165,7 @@
   title: Mosaic Panel with Donkey and Bird
   inv: 75.AH.119
   dor_id: 7288
+  plate_image_id: 00838301
   date:
   - 400
   - 600
@@ -171,6 +182,7 @@
   title: Mosaic Panel with Eagle
   inv: 75.AH.125
   dor_id: 7294
+  plate_image_id: 00838901
   date:
   - 400
   - 600
@@ -187,6 +199,7 @@
   title: Mosaic Panel with Three Birds and a Tree
   inv: 75.AH.123
   dor_id: 7292
+  plate_image_id: 00838701
   date:
   - 400
   - 600
@@ -203,6 +216,7 @@
   title: Mosaic Panel of Bull and Flowers
   inv: 75.AH.124
   dor_id: 7293
+  plate_image_id: 00838801
   date:
   - 400
   - 600
@@ -219,6 +233,7 @@
   title: Mosaic Panel with Stag
   inv: 75.AH.120
   dor_id: 7289
+  plate_image_id: 00838401
   date:
   - 400
   - 600
@@ -235,6 +250,7 @@
   title: Mosaic Panel with Horse
   inv: 75.AH.116
   dor_id: 7285
+  plate_image_id: 00838001
   date:
   - 400
   - 600
@@ -251,6 +267,7 @@
   title: Mosaic Panel with Bull
   inv: 75.AH.117
   dor_id: 7286
+  plate_image_id: 00838101
   date:
   - 400
   - 600
@@ -267,6 +284,7 @@
   title: Mosaic Panel with Rabbit
   inv: 75.AH.118
   dor_id: 7287
+  plate_image_id: 00838201
   date:
   - 400
   - 600
@@ -283,6 +301,7 @@
   title: Mosaic Panel with a Lion Chasing a Bull
   inv: 75.AH.115
   dor_id: 7284
+  plate_image_id: 00837901
   date:
   - 400
   - 600
@@ -299,6 +318,7 @@
   title: Mosaic Panel with Head of a Season
   inv: 70.AH.95
   dor_id: 6538
+  plate_image_id: 00762701
   date:
   - 400
   - 600
@@ -314,6 +334,7 @@
   title: Mosaic Panel with Two Male Busts
   inv: 78.AH.399
   dor_id: 8506
+  plate_image_id: 00968201
   date:
   - 400
   - 600
