@@ -1,0 +1,86 @@
+---
+# Min/max zoom levels for plates
+- id: 1
+  min_zoom: 0
+  max_zoom: 5
+
+- id: 2
+  min_zoom: 0
+  max_zoom: 6
+  
+- id: 3
+  min_zoom: 0
+  max_zoom: 4
+  
+- id: 4
+  min_zoom: 0
+  max_zoom: 6
+  
+- id: 5
+  min_zoom: 0
+  max_zoom: 6
+  
+- id: 6
+  min_zoom: 0
+  max_zoom: 4
+  
+- id: 7
+  min_zoom: 0
+  max_zoom: 5
+  
+- id: 8
+  min_zoom: 0
+  max_zoom: 5
+  
+- id: 9
+  min_zoom: 0
+  max_zoom: 6
+  
+- id: 10
+  min_zoom: 0
+  max_zoom: 6
+  
+- id: 11
+  min_zoom: 0
+  max_zoom: 6
+  
+- id: 12
+  min_zoom: 0
+  max_zoom: 6
+  
+- id: 13
+  min_zoom: 0
+  max_zoom: 5
+  
+- id: 14
+  min_zoom: 0
+  max_zoom: 6
+  
+- id: 15
+  min_zoom: 0
+  max_zoom: 6
+  
+- id: 16
+  min_zoom: 0
+  max_zoom: 5
+  
+- id: 17
+  min_zoom: 0
+  max_zoom: 6
+  
+- id: 18
+  min_zoom: 0
+  max_zoom: 6
+  
+- id: 19
+  min_zoom: 0
+  max_zoom: 6
+  
+- id: 21
+  min_zoom: 0
+  max_zoom: 5
+  
+- id: 22
+  min_zoom: 0
+  max_zoom: 5
+  
