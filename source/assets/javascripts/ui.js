@@ -24,14 +24,33 @@ function mapSetup() {
       window.CATALOGUE = data;
       // Instantiate map
       var centerPoint = $("#map").data("center");
-      var map = new GeoMap(centerPoint);
+      var regionMap = new GeoMap(centerPoint);
       if ($("#map").parent().hasClass("cover-map")) {
-        map.map.setZoom(5);
+        regionMap.map.setZoom(5);
       }
     }).fail(function() {
       console.log("Failed to load catalogue json");
     });
   }
+}
+
+function plateSetup() {
+  if ($("#plate").length) {
+    // Get zoom data
+    $.getJSON("/plates.json", function(data){
+      // stash plates json data for later use
+      window.PLATES = data;
+      // Instantiate deepZoom
+      var catNum   = $("#plate").data("cat");
+      var zoomData = _.find(window.PLATES, function(entry) {
+        return entry.id == catNum;
+      });
+      var plate = new DeepZoom(catNum, zoomData);
+    }).fail(function() {
+      console.log("Failed to load plates json");
+    });
+  }
+
 }
 
 function offCanvasNav() {
@@ -107,19 +126,21 @@ function popupSetup() {
       mapLocation = _.find(geojsonFeature.features, function(loc) {
         return loc.properties.id == $popup.data("location");
       });
+
       if (mapLocation == undefined) {
         console.log("No location data for " + $popup.text());
         $popup.removeClass("popup popup-location");
+
       } else {
         var $el, map, coords, label, marker;
         $el = $("<div>", {class: "popup-content"});
         $popup.append($el);
 
-        coords = mapLocation.geometry.coordinates.reverse();
+        coords = L.latLng([ mapLocation.geometry.coordinates[1], mapLocation.geometry.coordinates[0]]);
         map    = new PopupMap(coords, $popup.find(".popup-content")[0]).map;
         marker = L.marker(coords).addTo(map);
-        marker.bindPopup(mapLocation.properties.custom_name);
 
+        marker.bindPopup(mapLocation.properties.custom_name);
         $popup.on("click", function() {
           if (!$popup.find(".popup-content").hasClass("visible")) {
             map.setView(coords, 10);
@@ -133,14 +154,13 @@ function popupSetup() {
     // ------------------------------------------------------------------------
     } else if ($popup.data("pic")) {
       var picData = JSON.parse($popup.data("pic"));
-      console.log(picData);
       var $el     = $("<figure>", {class: "popup-content"});
       var $img    = $("<img>", {src: "/assets/images/pics/" + picData.file });
       var $figcap = $("<figcaption>");
 
       $figcap.html(
         "<a href='" + picData.url + "' target='blank'>" +
-        picData.title + "</a>. " + 
+        picData.title + "</a>. " +
         picData.source_credit
       );
       $el.append($img);
@@ -160,5 +180,6 @@ function uiSetup() {
   offCanvasNav();
   searchSetup();
   mapSetup();
+  plateSetup();
   popupSetup();
 }
