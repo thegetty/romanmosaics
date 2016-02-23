@@ -153,9 +153,9 @@ GeoMap.prototype = {
       linkedEntries.forEach(function(entry) {
         var entryURL, currentEntry;
         if ( entry.cat < 9 || entry.cat > 19) {
-          entryURL = "/catalogue/" + entry.cat + "/";
+          entryURL = "/mosaics/catalogue/" + entry.cat + "/";
         } else {
-          entryURL = "/catalogue/9-19/";
+          entryURL = "/mosaics/catalogue/9-19/";
         }
         popupMsg += "<li><a href='" + entryURL + "'>";
         popupMsg += entry.cat + ". ";
