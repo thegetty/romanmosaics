@@ -3,6 +3,8 @@
 
 // Deep Zoom Class
 // ----------------------------------------------------------------------------
+
+// Properties
 function DeepZoom(catnum, zoomData) {
   this.baseurl = "http://gettypubs.github.io/maptiles/mosaics/";
   this.bounds  = {};
@@ -10,7 +12,7 @@ function DeepZoom(catnum, zoomData) {
   this.height  = zoomData.height;
   this.map     = {};
   this.maxZoom = zoomData.max_zoom;
-  this.minZoom = 2;
+  this.minZoom = 1;
   this.width   = zoomData.width;
 
   // Run on instantiation
@@ -18,6 +20,7 @@ function DeepZoom(catnum, zoomData) {
   this.addTiles();
 }
 
+// Methods
 DeepZoom.prototype = {
   init: function() {
     // Create map
@@ -35,6 +38,7 @@ DeepZoom.prototype = {
     this.map.fitBounds(this.bounds);
     this.map.scrollWheelZoom.disable();
   },
+
   addTiles: function() {
     L.tileLayer(this.baseurl + this.cat + "/{z}/{x}/{y}.png",
       {
