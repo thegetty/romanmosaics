@@ -1,0 +1,128 @@
+---
+# Min/max zoom levels for plates
+- id: 1
+  min_zoom: 0
+  max_zoom: 5
+  height: 4096
+  width: 4352
+
+- id: 2
+  min_zoom: 0
+  max_zoom: 6
+  height: 7168
+  width: 9216
+  
+- id: 3
+  min_zoom: 0
+  max_zoom: 4
+  height: 3584
+  width: 3584
+  
+- id: 4
+  min_zoom: 0
+  max_zoom: 6
+  height: 10752
+  width: 10496
+  
+- id: 5
+  min_zoom: 0
+  max_zoom: 6
+  height: 6912
+  width: 10752
+  
+- id: 6
+  min_zoom: 0
+  max_zoom: 4
+  height: 3584
+  width: 3840
+  
+- id: 7
+  min_zoom: 0
+  max_zoom: 5
+  height: 3328
+  width: 8192
+  
+- id: 8
+  min_zoom: 0
+  max_zoom: 5
+  height: 7424
+  width: 7680
+
+- id: 9
+  min_zoom: 0
+  max_zoom: 6
+  height: 9984
+  width: 6400
+  
+- id: 10
+  min_zoom: 0
+  max_zoom: 6
+  height: 10496
+  width: 7168
+  
+- id: 11
+  min_zoom: 0
+  max_zoom: 6
+  height: 6912
+  width: 8448
+  
+- id: 12
+  min_zoom: 0
+  max_zoom: 6
+  height: 9728
+  width: 7424
+  
+- id: 13
+  min_zoom: 0
+  max_zoom: 5
+  height: 6656
+  width: 5376
+  
+- id: 14
+  min_zoom: 0
+  max_zoom: 6
+  height: 6144
+  width: 8448
+  
+- id: 15
+  min_zoom: 0
+  max_zoom: 6
+  height: 8960
+  width: 7168
+  
+- id: 16
+  min_zoom: 0
+  max_zoom: 5
+  height: 6656
+  width: 6912
+  
+- id: 17
+  min_zoom: 0
+  max_zoom: 6
+  height: 7680
+  width: 10240
+  
+- id: 18
+  min_zoom: 0
+  max_zoom: 6
+  height: 5888
+  width: 9472
+  
+- id: 19
+  min_zoom: 0
+  max_zoom: 6
+  height: 5888
+  width: 9984
+
+- id: 20
+  min_zoom: 0
+  max_zoom: 5
+  height: 7168
+  width: 7168
+  
+- id: 21
+  min_zoom: 0
+  max_zoom: 5
+  height: 7424
+  width: 8192
+
