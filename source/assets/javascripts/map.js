@@ -62,9 +62,9 @@ function PopupMap(center, domElement) {
 
 PopupMap.prototype = {
   init: function(center, domElement) {
-    this.map = L.map(domElement, { 
-      maxZoom: this.maxZoom, 
-      minZoom: this.minZoom 
+    this.map = L.map(domElement, {
+      maxZoom: this.maxZoom,
+      minZoom: this.minZoom
     }).setView(center, this.defaultZoom);
     this.map.scrollWheelZoom.disable();
     var closeButton = L.Control.close();
@@ -122,7 +122,8 @@ GeoMap.prototype = {
   // Add Tiles
   addTiles: function() {
     L.tileLayer(this.tiles, {
-      attribution: this.attribution
+      attribution: this.attribution,
+      errorTileUrl: "/assets/images/empty.png",
     }).addTo(this.map);
   },
   // Add Labels
