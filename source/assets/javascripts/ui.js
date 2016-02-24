@@ -43,7 +43,8 @@ function plateSetup() {
       // Instantiate deepZoom
       var catNum   = $("#plate").data("cat");
       var zoomData = _.find(window.PLATES, function(entry) {
-        return entry.id == catNum;
+        // If catNum is an array, just pass zoom data of first value
+        return entry.id == parseInt(catNum);
       });
       var plate = new DeepZoom(catNum, zoomData);
     }).fail(function() {
