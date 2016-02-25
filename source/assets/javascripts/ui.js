@@ -57,14 +57,20 @@ function plateSetup() {
 function offCanvasNav() {
   var $sidebar = $(".nav-sidebar");
   var $menuButton = $("#navbar-menu");
+  var $closeButton = $("#nav-menu-close");
   var $curtain = $(".sliding-panel-fade-screen");
 
-  $menuButton.on("click touchstart", function() {
+  $menuButton.on("click", function() {
     $sidebar.toggleClass("is-visible");
     $curtain.toggleClass("is-visible");
   });
 
-  $curtain.on("click touchstart", function() {
+  $closeButton.on("click", function() {
+    $sidebar.removeClass("is-visible");
+    $curtain.removeClass("is-visible");
+  });
+
+  $curtain.on("click", function() {
     $sidebar.removeClass("is-visible");
     $curtain.removeClass("is-visible");
   });
@@ -84,7 +90,7 @@ function searchSetup() {
   var $navbar = $(".navbar");
   var $results = $(".search-results");
 
-  $searchButton.on("click touchstart", function() {
+  $searchButton.on("click", function() {
     $navbar.toggleClass("search-active");
     $results.toggleClass("search-active");
   });
