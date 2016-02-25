@@ -63,6 +63,9 @@ function offCanvasNav() {
   $menuButton.on("click", function() {
     $sidebar.toggleClass("is-visible");
     $curtain.toggleClass("is-visible");
+    // Force css repaint to deal with webkit "losing" the menu contents
+    // on mobile devices
+    $('<style></style>').appendTo($(document.body)).remove();
   });
 
   $closeButton.on("click", function() {

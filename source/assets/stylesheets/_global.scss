@@ -1,5 +1,7 @@
 // scss-lint:disable SingleLinePerSelector
 
+html { min-height: 100vh; }
+
 .body-copy {
   p {
     margin-bottom: 0;
@@ -72,16 +74,22 @@
   font-variant: all-small-caps;
 }
 
-.cat-entry-image,
 .map-fullscreen {
-  height: 100vh;
+  height: 100%;
 
   .leaflet-control-container {
-    bottom: 0;
-    position: absolute;
-    top: 60px;
-    width: 100%;
-    // z-index: 400;
+    display: none;
+
+    @include media($medium-screen-up) {
+      bottom: 4rem;
+      position: absolute;
+      top: 60px;
+      width: 100%;
+    }
+
+    @include media($large-screen-up) {
+      bottom: 5.45rem;
+    }
   }
 }
 
@@ -95,13 +103,7 @@
 }
 
 .map-intro {
-  @extend .map-fullscreen;
-
-  .leaflet-control-container {
-    bottom: 4.7rem;
-
-    @include media($medium-screen-up) {
-      bottom: 5.45rem;
-    }
+  .cat-entry-content {
+    padding-top: $base-spacing;
   }
 }
