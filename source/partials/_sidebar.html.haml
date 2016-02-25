@@ -1,13 +1,14 @@
-%header.nav-sidebar-header
+%header.nav-sidebar-header.nav-sidebar-toc-section
   %h2.nav-sidebar-title= data.book.title.main
   %h3.nav-sidebar-author= author_name
   %a.nav-sidebar-close{:href => "javascript:void(0);", :id => "nav-menu-close"}
     %i.ion-android-close
 .nav-sidebar-content
   %ul.nav-sidebar-toc
-    %li= link_to "Table of Contents", "/contents.html"
     %li
-      %h4.nav-sidebar-toc-section Catalogue
+      = link_to "/contents.html" do
+        %h4 Table of Contents
+    %li.nav-sidebar-toc-section
       %ul
         %li= link_to "Italy", "/catalogue/italy.html"
         %li= link_to "Gaul", "/catalogue/gaul.html"

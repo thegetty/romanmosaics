@@ -91,9 +91,13 @@ $sliding-panel-fade-screen-bg: #000;
 }
 
 .nav-sidebar-toc {
-  li {
-    margin-bottom: 0.5rem;
-  }
+  margin: $base-spacing 0;
+
+  li { margin-bottom: 0.5rem; }
+}
+
+.nav-sidebar-toc-section {
+  border-bottom: solid 1px transparentize($sliding-panel-color, 0.75);
 }
 
 .nav-sidebar-downloads,
