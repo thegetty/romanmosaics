@@ -1,6 +1,9 @@
 - current_cat = lookup_entry(current_page.data.cat)
 = wrap_layout :application do
-  = partial "partials/cat_image"
+  - if environment? :pdf
+    .bleed{ :data => { :catalogue => current_page.data.cat }}
+  - else
+    = partial "partials/cat_image"
   .cat-entry
     %header.cat-entry-header
       .cat-entry-header-inner
