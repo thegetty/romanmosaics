@@ -5,23 +5,16 @@ cover: true
 sort_order: 6
 pdf_output: false
 ---
-%ul.toc
-  - if environment? :pdf
-    %li.toc-item= link_to "Italy, Cats. 1–2", "../../build/catalogue/italy/index.html"
-    %li.toc-item= link_to "Gaul, Cats. 3–4", "../../build/catalogue/gaul/index.html"
-    %li.toc-item= link_to "North Africa, Cat. 5", "../../build/catalogue/northafrica/index.html"
-    %li.toc-item= link_to "Syria, Cats. 6–21", "../../build/catalogue/syria/index.html"
-  - else
+- if environment? :pdf
+  .print-catalogue-intro
+- else
+  %ul.toc
     %li.toc-item= link_to "Italy, Cats. 1–2", "/catalogue/italy.html"
     %li.toc-item= link_to "Gaul, Cats. 3–4", "/catalogue/gaul.html"
     %li.toc-item= link_to "North Africa, Cat. 5", "/catalogue/northafrica.html"
     %li.toc-item= link_to "Syria, Cats. 6–21", "/catalogue/syria.html"
-%hr
-%h4 History of the Excavations
-%ul.toc
-  - if environment? :pdf
-    %li.toc-item= link_to "Villelaure", "../../build/catalogue/excavations-villelaure/index.html"
-    %li.toc-item= link_to "Antioch and the Bath of Apolausis", "../../build/excavations-antioch/index.html"
-  - else
+  %hr
+  %h4 History of the Excavations
+  %ul.toc
     %li.toc-item= link_to "Villelaure", "/catalogue/excavations-villelaure.html"
     %li.toc-item= link_to "Antioch and the Bath of Apolausis", "/catalogue/excavations-antioch.html"

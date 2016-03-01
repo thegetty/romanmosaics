@@ -6,14 +6,15 @@
     %meta{name: "viewport", content: "width=device-width, initial-scale=1"}
     / Book Metadata
     = partial "partials/metadata"
-
     %title= current_page.data.title || "The Middleman"
     = stylesheet_link_tag "application"
-
   %body{class: page_classes}
     %main#main
-      = partial "partials/nav"
+      - unless environment? :pdf
+        = partial "partials/nav"
       = yield
-      .sliding-panel-fade-screen
-    = javascript_include_tag "https://code.jquery.com/jquery-2.1.1.min.js"
-    = javascript_include_tag "application"
+      - unless environment? :pdf
+        .sliding-panel-fade-screen
+    - unless environment? :pdf
+      = javascript_include_tag "https://code.jquery.com/jquery-2.1.1.min.js"
+      = javascript_include_tag "application"

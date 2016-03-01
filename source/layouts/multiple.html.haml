@@ -1,6 +1,10 @@
 -cat_group = lookup_entries(current_page.data.cat)
 = wrap_layout :application do
-  = partial "partials/cat_image"
+  - if environment? :pdf
+    .group-bleed-left
+    .group-bleed-right
+  - else
+    = partial "partials/cat_image"
   .cat-entry
     %header.cat-entry-header
       .cat-entry-header-inner
