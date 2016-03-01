@@ -1,0 +1,88 @@
+- path = current_path.gsub("index.html", "")
+
+.expander
+  %a{ :href => "javascript:void(0);", :class => "expander-trigger" }
+    %h5
+      %i.ion-bookmark.mr2
+      Cite this Page
+  .expander-content.nav-cite
+    - if current_page.data.cat
+      / Page is catalogue entry
+      - entry = lookup_entry(current_page.data.cat)
+      %h6 Chicago
+      - if current_page.data.author_first_name
+        / Entry has co-author
+        %p
+          #{data.book.creators.first.last_name}, #{data.book.creators.first.first_name}
+          and #{current_page.data.author_first_name} #{current_page.data.author_last_name}.
+          “Cat. #{entry.cat}: #{entry.title}.” In
+          <em>#{data.book.title.main}</em>, by #{data.book.creators.first.last_name}.
+          #{data.book.publisher_location}:
+          #{data.book.publisher}, #{year_published}.
+          <span class='force-wrap'>#{data.book.editions.first.permalink}/#{path}</span>
+        %h6 MLA
+        %p
+          #{data.book.creators.first.last_name}, #{data.book.creators.first.first_name}
+          and #{current_page.data.author_first_name} #{current_page.data.author_last_name}.
+          “Cat. #{entry.cat}: #{entry.title}.”
+          <em>#{data.book.title.main}</em>. By #{author_name}.
+          #{data.book.publisher_location}:
+          #{data.book.publisher_short}, #{year_published}.
+          <span class="cite-current-date">DD Mon. YYYY</span>
+          <<span class='force-wrap'>#{data.book.editions.first.permalink}/#{path}</span>>.
+      - else
+        / Entry has no co-author
+        %p
+          #{data.book.creators.first.last_name}, #{data.book.creators.first.first_name}.
+          “Cat. #{entry.cat}: #{entry.title}.” In
+          <em>#{data.book.title.main}</em>, by #{author_name}.
+          #{data.book.publisher_location}:
+          #{data.book.publisher}, #{year_published}.
+          <span class='force-wrap'>#{data.book.editions.first.permalink}/#{path}</span>
+        %h6 MLA
+        %p
+          #{data.book.creators.first.last_name}, #{data.book.creators.first.first_name}.
+          “Cat. #{entry.cat}: #{entry.title}.”
+          <em>#{data.book.title.main}</em>. By #{author_name}.
+          #{data.book.publisher_location}:
+          #{data.book.publisher_short}, #{year_published}.
+          <span class="cite-current-date">DD Mon. YYYY</span>
+          <<span class='force-wrap'>#{data.book.editions.first.permalink}/#{path}</span>>.
+    - elsif current_page.data.author_first_name
+      / Page has author
+      %h6 Chicago
+      %p
+        #{data.book.creators.first.last_name}, #{data.book.creators.first.first_name}
+        and #{current_page.data.author_first_name} #{current_page.data.author_last_name}.
+        “#{current_page.data.title}.” In
+        <em>#{data.book.title.main}</em>, by #{data.book.creators.first.last_name}.
+        #{data.book.publisher_location}:
+        #{data.book.publisher}, #{year_published}.
+        <span class='force-wrap'>#{data.book.editions.first.permalink}/#{path}</span>
+      %h6 MLA
+      %p
+        #{data.book.creators.first.last_name}, #{data.book.creators.first.first_name}
+        and #{current_page.data.author_first_name} #{current_page.data.author_last_name}.
+        “#{current_page.data.title}.” <em>#{data.book.title.main}</em>.
+        By #{author_name}. #{data.book.publisher_location}:
+        #{data.book.publisher_short}, #{year_published}.
+        <span class="cite-current-date">DD Mon. YYYY</span>
+        <<span class='force-wrap'>#{data.book.editions.first.permalink}/#{path}</span>>.
+    - else
+      / All other pages
+      %h6 Chicago
+      %p
+        #{data.book.creators.first.last_name}, #{data.book.creators.first.first_name}.
+        “#{current_page.data.title}.” In <em>#{data.book.title.main}</em>,
+        by #{author_name}. #{data.book.publisher_location}:
+        #{data.book.publisher}, #{year_published}.
+        <span class='force-wrap'>#{data.book.editions.first.permalink}/#{path}</span>
+      %h6 MLA
+      %p
+        #{data.book.creators.first.last_name}, #{data.book.creators.first.first_name}.
+        “#{current_page.data.title}.” <em>#{data.book.title.main}</em>.
+        By #{author_name}. #{data.book.publisher_location}:
+        #{data.book.publisher_short}, #{year_published}.
+        <span class="cite-current-date">DD Mon. YYYY</span>
+        <<span class='force-wrap'>#{data.book.editions.first.permalink}/#{path}</span>>.
+    = link_to "Full Catalogue Citation", "/about.html"
