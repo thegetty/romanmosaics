@@ -5,8 +5,10 @@
   .cat-entry
     = partial "partials/intro_map", :locals => {:center => current_page.data.map_center}
     %header.cat-entry-header
-      .cat-entry-header-inner
-        %h1.cat-entry-title= current_page.data.title
+      = partial "partials/intro_map", :locals => {:center => current_page.data.map_center}
+      .cat-entry-header-titlebar
+        .cat-entry-header-titlebar-inner
+          %h1.cat-entry-title= current_page.data.title
     %article.cat-entry-content
       .cat-entry-content-inner
         = yield
