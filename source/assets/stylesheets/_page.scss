@@ -5,6 +5,10 @@
 .page-cover {
   background-color: $light-gray;
   height: 400px;
+
+  + .page .page-header {
+    margin-top: $base-spacing;
+  }
 }
 
 .page-header,
@@ -21,7 +25,25 @@
 }
 
 .page-header {
+  margin-bottom: $base-spacing * 1.5;
   margin-top: em($navbar-height) + $base-spacing;
+}
+
+.page-title {
+  margin-bottom: 0;
+}
+
+.page-type {
+  color: $medium-gray;
+  margin-bottom: 0;
+}
+
+.page-author {
+  color: $medium-gray;
+  font-size: 1.5em;
+  font-weight: normal;
+  margin-bottom: 0;
+  margin-top: 0.25rem;
 }
 
 .page-content {
