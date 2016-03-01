@@ -1,11 +1,14 @@
-%header.nav-sidebar-header
+%header.nav-sidebar-header.nav-sidebar-toc-section
   %h2.nav-sidebar-title= data.book.title.main
   %h3.nav-sidebar-author= author_name
+  %a.nav-sidebar-close{:href => "javascript:void(0);", :id => "nav-menu-close"}
+    %i.ion-android-close
 .nav-sidebar-content
   %ul.nav-sidebar-toc
-    %li= link_to "Table of Contents", "/contents.html"
     %li
-      %h4.nav-sidebar-toc-section Catalogue
+      = link_to "/contents.html" do
+        %h4 Table of Contents
+    %li.nav-sidebar-toc-section
       %ul
         %li= link_to "Italy", "/catalogue/italy.html"
         %li= link_to "Gaul", "/catalogue/gaul.html"
@@ -17,7 +20,9 @@
     %h4 Cite This Page
 %footer.nav-sidebar-footer
   :markdown
-    Online collection catalogue published by the J. Paul Getty Museum, and licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/){:rel="license"}
+    Online collection catalogue published by the J. Paul Getty Museum,
+    and licensed under a [Creative Commons Attribution 4.0 International
+    License](http://creativecommons.org/licenses/by/4.0/){:rel="license"}
   = link_to "About", "/about.html"
   = link_to "Privacy", "http://www.getty.edu/legal/privacy.html", { target: "blank" }
   = link_to "Terms of Use", "http://www.getty.edu/legal/copyright.html", { target: "blank" }

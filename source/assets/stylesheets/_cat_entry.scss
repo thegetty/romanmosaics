@@ -1,20 +1,40 @@
+.cat-entry-header {
+  @include position(relative);
+  background-color: $dark-gray;
+  height: 90vh;
+  width: 100%;
+
+  @include media($large-screen-up) {
+    height: 100vh;
+  }
+}
+
 .cat-entry-image {
   background-color: $dark-gray;
-  height: 100vh;
+  height: 100%;
+
+  .leaflet-control-container {
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    // z-index: 400;
+  }
 }
 
-.cat-entry-header {
-  background-color: $white;
-  bottom: 0;
-  position: absolute;
+.cat-entry-header-titlebar {
+  @include position(absolute, null null 0 null);
+  background-color: $base-background-color;
   width: 100%;
   z-index: 1000;
+
+  @include media($large-screen-up) {
+  }
 }
 
-.cat-entry-header-inner {
+.cat-entry-header-titlebar-inner {
   @extend .body-copy;
   @extend .container;
-  padding: $base-spacing $small-spacing;
+  padding: $base-spacing $small-spacing 0;
 
   @include media($large-screen-up) {
     padding: $base-spacing 0;
