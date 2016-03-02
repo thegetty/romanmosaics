@@ -3,7 +3,6 @@
     .region-intro
       %h1.region-intro-title= current_page.data.title
   .cat-entry
-    = partial "partials/intro_map", :locals => {:center => current_page.data.map_center}
     %header.cat-entry-header
       = partial "partials/intro_map", :locals => {:center => current_page.data.map_center}
       .cat-entry-header-titlebar
