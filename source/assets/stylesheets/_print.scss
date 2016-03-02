@@ -278,6 +278,10 @@ $light-gray: transparentize($print-text-color, 0.5);
   }
   // scss-lint:enable NameFormat
 
+  .cat-entry-header-titlebar {
+    position: static;
+  }
+
   .cat-entry-header {
     margin-bottom: 0.5in;
     position: static;
