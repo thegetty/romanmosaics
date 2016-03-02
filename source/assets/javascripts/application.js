@@ -1,5 +1,5 @@
 //= require_tree .
-L.Icon.Default.imagePath = '/mosaics/assets/stylesheets/vendor/leaflet/images';
+L.Icon.Default.imagePath = '/assets/stylesheets/vendor/leaflet/images';
 
 $(document).ready(function() {
   // set up UI
