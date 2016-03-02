@@ -8,7 +8,12 @@
   .expander-content.nav-cite
     - if current_page.data.cat
       / Page is catalogue entry
-      - entry = lookup_entry(current_page.data.cat)
+      - if current_page.data.cat.is_a? Array
+        - entry = lookup_entries(current_page.data.cat).first
+        - entry.cat = "9-19"
+        - entry.title = current_page.data.title
+      -else
+        - entry = lookup_entry(current_page.data.cat)
       %h6 Chicago
       - if current_page.data.author_first_name
         / Entry has co-author
