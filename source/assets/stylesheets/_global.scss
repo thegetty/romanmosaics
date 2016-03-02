@@ -107,3 +107,10 @@ html { min-height: 100vh; }
     padding-top: $base-spacing;
   }
 }
+
+.expander {
+  @include transition($base-transition);
+  .expander-trigger { display: block; }
+  .expander-content { margin-bottom: $base-spacing; }
+  .expander--hidden { display: none;}
+}
