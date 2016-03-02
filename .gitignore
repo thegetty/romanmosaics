@@ -8,3 +8,4 @@
 Gemfile.lock
 *.swp
 .tern-port
+/source/assets/downloads/*.pdf
