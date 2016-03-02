@@ -87,6 +87,20 @@ function offCanvasNav() {
   });
 }
 
+function expanderSetup() {
+  var $expanderContent  = $(".expander-content");
+  var $expanderTriggers = $(".expander-trigger");
+
+  $($expanderContent).addClass("expander--hidden");
+
+  $expanderTriggers.on("click", function() {
+    var $target = $(this).parent().find(".expander-content");
+    $target.slideToggle("fast", function() {
+      $target.toggleClass("expander--hidden");
+    });
+  });
+}
+
 function searchSetup() {
   var $searchButton = $("#navbar-search");
   var $searchCloseButton = $("#search-close");
@@ -192,4 +206,5 @@ function uiSetup() {
   mapSetup();
   plateSetup();
   popupSetup();
+  expanderSetup();
 }
