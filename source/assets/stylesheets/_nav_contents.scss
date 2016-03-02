@@ -11,21 +11,10 @@ $sliding-panel-background-focus: lighten($sliding-panel-background, 5%);
 $sliding-panel-fade-screen-bg: #000;
 
 .nav-sidebar {
-  // Right oriented by default
-  @if $sliding-panel-position == "left" {
-    @include position(fixed, 0 auto 0 0);
-    @include transform(translateX(-$sliding-panel-width));
-  } @else {
-    @include position(fixed, 0 0 0 auto);
-    @include transform(translateX($sliding-panel-width));
-  }
-
-  @include size($sliding-panel-width 100%);
+  @include position(fixed, 0 auto 0 0);
+  @include size(100% 100%);
+  @include transform(translateX(-100%));
   @include transition(all 0.1s ease-in-out);
-
-  @include display(flex);
-  @include flex-direction(column);
-  @include justify-content(center);
 
   background-color: $sliding-panel-background;
   color: $sliding-panel-color;
@@ -34,6 +23,20 @@ $sliding-panel-fade-screen-bg: #000;
   overflow-y: auto;
   padding: 1rem;
   z-index: $sliding-panel-z-index;
+
+  @include media($medium-screen-up) {
+    @include display(flex);
+    @include flex-direction(column);
+    @include justify-content(center);
+    // Right oriented by default
+    @if $sliding-panel-position == "left" {
+      @include transform(translateX(-$sliding-panel-width));
+    } @else {
+      @include position(fixed, 0 0 0 auto);
+      @include transform(translateX($sliding-panel-width));
+    }
+    @include size($sliding-panel-width 100%);
+  }
 
   &.is-visible {
     @include transform(translateX(0));
@@ -50,8 +53,28 @@ $sliding-panel-fade-screen-bg: #000;
   }
 }
 
+.nav-sidebar-close {
+  font-size: 1.5em;
+  position: absolute;
+  top: 0.9rem;
+  right: 1.6rem;
+
+  @include media($medium-screen-up) {
+    display: none;
+  }
+}
+
+.nav-sidebar-header {
+  margin-top: 2em;
+
+  @include media($medium-screen-up) {
+    margin-top: 0;
+  }
+}
+
 .nav-sidebar-title {
   font-size: 1.25rem;
+  margin-right: 3rem;
 
   @include media($medium-screen-up) {
     font-size: 1.5rem;
@@ -68,21 +91,39 @@ $sliding-panel-fade-screen-bg: #000;
 }
 
 .nav-sidebar-toc {
-  li {
-    margin-bottom: 0.5rem;
-  }
+  margin: $base-spacing 0;
+
+  li { margin-bottom: 0.5rem; }
+}
+
+.nav-sidebar-toc-section {
+  border-bottom: solid 1px transparentize($sliding-panel-color, 0.75);
 }
 
 .nav-sidebar-downloads,
 .nav-sidebar-cite {
   h4 {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
+}
+
+.nav-cite {
+  background-color: $dark-gray;
+  font-size: 0.85em;
+  padding: $small-spacing;
+}
+
+.nav-sidebar-footer {
+  font-size: 0.8125em;
 }
 
 .nav-logo {
   margin: 1rem auto;
-  width: 4.5rem;
+  width: 2.5rem;
+
+  @include media($medium-screen-up) {
+    width: 4.5rem;
+  }
 }
 
 .sliding-panel-fade-screen {

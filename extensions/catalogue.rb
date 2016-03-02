@@ -59,6 +59,10 @@ class Catalogue < Middleman::Extension
       author = data.book.creators.first
       "#{author.first_name} #{author.last_name}"
     end
+
+    def year_published
+      data.book.pub_date.slice(0, 4)
+    end
     # --------------------------------------------------------------------------
     # Data attribute methods
     # The following helper methods provide data which can be stashed in data-
@@ -159,6 +163,9 @@ class Catalogue < Middleman::Extension
     [frontmatter, catalogue, backmatter].each do |array|
       array.reject! { |page| page.data.pdf_output == false }
     end
+
+    # Add print frontmatter page manually
+    f.puts baseurl + "print-frontmatter/index.html"
 
     # Write the pages to the filelist for use by Prince
     [frontmatter, catalogue, backmatter].each do |array|

@@ -1,0 +1,21 @@
+---
+title: Roman Mosaics in the J. Paul Getty Museum
+layout: false
+---
+!!!
+%html
+  %head
+    %meta{ charset: "utf-8" }
+    %title= current_page.data.title
+    = stylesheet_link_tag "application"
+  %body
+    / Print Frontmatter
+    .print-cover
+    .print-halftitle
+      %h1.print-halftitle-title= data.book.title.short
+      %h2.print-halftitle-subtitle= data.book.title.subtitle
+    .print-title-left
+    .print-title-right
+    .print-copyright
+      :markdown
+        ## Copyright page info goes here
