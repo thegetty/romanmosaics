@@ -113,7 +113,17 @@ $light-gray: transparentize($print-text-color, 0.5);
 // Print Styles
 // -----------------------------------------------------------------------------
 @media print {
-
+  // Full page image placeholder
+  %full-page-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: $bleed-height;
+    margin-left: -($bleed);
+    margin-top: -($bleed);
+    page: bleed;
+    page-break-after: always;
+    width: $bleed-width;
+  }
   // Remove unneeded elements
   .navbar,
   .search-results,
@@ -129,13 +139,8 @@ $light-gray: transparentize($print-text-color, 0.5);
     border: 0;
   }
 
-  .popup-content {
-    display: none;
-  }
-
-  .reversefootnote {
-    display: none;
-  }
+  .popup-content { display: none; }
+  .reversefootnote { display: none; }
 
   // Global
   // ---------------------------------------------------------------------------
@@ -146,6 +151,65 @@ $light-gray: transparentize($print-text-color, 0.5);
 
   // Section-specific
   // ---------------------------------------------------------------------------
+
+  // Frontmatter
+  .print-cover {
+    @extend %full-page-image;
+    background-image: url(image_path("print/cover.jpg"));
+  }
+
+  .print-halftitle {
+    counter-reset: page 1;
+    margin-right: 0;
+    margin-top: 4in;
+    page: no-footer;
+    page-break-before: right;
+    text-transform: lowercase;
+  }
+
+  .print-halftitle-title {
+    font-family: "Freight Text Pro SC";
+    font-size: 28pt;
+    font-weight: normal;
+    letter-spacing: 0;
+    line-height: 1;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: right;
+  }
+
+  .print-halftitle-subtitle {
+    color: $medium-gray;
+    font-family: "Freight Text Pro SC";
+    font-size: 15pt;
+    font-weight: normal;
+    letter-spacing: 0;
+    line-height: 1;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: right;
+  }
+
+  // scss-lint:disable NameFormat
+  .print-title-left {
+    @extend %full-page-image;
+    background-image: url(image_path("print/title-a.jpg"));
+  }
+
+  .print-title-right {
+    @extend %full-page-image;
+    background-image: url(image_path("print/title-b.jpg"));
+  }
+
+  .print-copyright {
+    font-family: $heading-font-family;
+    font-size: 8pt;
+    margin-right: 2.25in;
+    page: no-footer;
+    page-break-after: always;
+  }
+  // scss-lint:enable NameFormat
+
   .contents-page {
     a::after {
       content: leader(dotted) " " target-counter(attr(href, url), page);
@@ -157,8 +221,73 @@ $light-gray: transparentize($print-text-color, 0.5);
     }
   }
 
-  .cat-entry-header { position: static; }
+  .page-header { margin-bottom: 0.5in; }
 
+  .page-type {
+    color: $light-gray;
+    margin-bottom: 0;
+  }
+
+  .page-author {
+    color: $light-gray;
+  }
+
+  .page-title {
+    margin-bottom: 0;
+  }
+
+  .print-catalogue-intro {
+    @extend %full-page-image;
+    background-color: $light-gray;
+  }
+
+  // Regional sections
+  .region-intro {
+    margin-top: 4in;
+    page: no-footer;
+  }
+
+  .region-intro-title {
+    @extend .print-halftitle-title;
+    font-size: 28pt;
+    text-align: center;
+  }
+
+  // Cat entries
+  // scss-lint:disable NameFormat
+  .bleed {
+    @extend %full-page-image;
+    page-break-before: left;
+
+    @for $i from 1 through 21 {
+      &[data-catalogue="#{$i}"] {
+        background-image: url(image_path("print/cat#{$i}.jpg"));
+      }
+    }
+  }
+
+  .group-bleed-left {
+    @extend %full-page-image;
+    background-image: url(image_path("print/cat9-19a.jpg"));
+    page-break-before: left;
+  }
+
+  .group-bleed-right {
+    @extend %full-page-image;
+    background-image: url(image_path("print/cat9-19b.jpg"));
+  }
+  // scss-lint:enable NameFormat
+
+  .cat-entry-header-titlebar {
+    position: static;
+  }
+
+  .cat-entry-header {
+    margin-bottom: 0.5in;
+    position: static;
+  }
+
+  // Backmatter
   .references.references {
     column-count: 1;
     font-size: 8pt;
@@ -175,6 +304,7 @@ $light-gray: transparentize($print-text-color, 0.5);
     }
   }
 
+  // General content styles
   .introduction .page-content,
   .foreword .page-content,
   .acknowledgments .page-content,
@@ -200,6 +330,7 @@ $light-gray: transparentize($print-text-color, 0.5);
     h3 {
       font-size: $print-base-font-size;
       font-weight: bold;
+      margin-top: 0.125in;
     }
 
     h4 {

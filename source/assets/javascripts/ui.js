@@ -57,14 +57,23 @@ function plateSetup() {
 function offCanvasNav() {
   var $sidebar = $(".nav-sidebar");
   var $menuButton = $("#navbar-menu");
+  var $closeButton = $("#nav-menu-close");
   var $curtain = $(".sliding-panel-fade-screen");
 
-  $menuButton.on("click touchstart", function() {
+  $menuButton.on("click", function() {
     $sidebar.toggleClass("is-visible");
     $curtain.toggleClass("is-visible");
+    // Force css repaint to deal with webkit "losing" the menu contents
+    // on mobile devices
+    $('<style></style>').appendTo($(document.body)).remove();
   });
 
-  $curtain.on("click touchstart", function() {
+  $closeButton.on("click", function() {
+    $sidebar.removeClass("is-visible");
+    $curtain.removeClass("is-visible");
+  });
+
+  $curtain.on("click", function() {
     $sidebar.removeClass("is-visible");
     $curtain.removeClass("is-visible");
   });
@@ -78,13 +87,27 @@ function offCanvasNav() {
   });
 }
 
+function expanderSetup() {
+  var $expanderContent  = $(".expander-content");
+  var $expanderTriggers = $(".expander-trigger");
+
+  $($expanderContent).addClass("expander--hidden");
+
+  $expanderTriggers.on("click", function() {
+    var $target = $(this).parent().find(".expander-content");
+    $target.slideToggle("fast", function() {
+      $target.toggleClass("expander--hidden");
+    });
+  });
+}
+
 function searchSetup() {
   var $searchButton = $("#navbar-search");
   var $searchCloseButton = $("#search-close");
   var $navbar = $(".navbar");
   var $results = $(".search-results");
 
-  $searchButton.on("click touchstart", function() {
+  $searchButton.on("click", function() {
     $navbar.toggleClass("search-active");
     $results.toggleClass("search-active");
   });
@@ -183,4 +206,5 @@ function uiSetup() {
   mapSetup();
   plateSetup();
   popupSetup();
+  expanderSetup();
 }
