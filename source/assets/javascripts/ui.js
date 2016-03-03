@@ -197,6 +197,17 @@ function popupSetup() {
   });
 }
 
+function lightBoxSetup() {
+  if ($(".inline-figure")) {
+    $figures = $(".inline-figure img");
+    $figures.on("click", function() {
+      lightBox();
+      console.log("lightbox called");
+    });
+
+  }
+}
+
 // Use this function as "export"
 // Calls all other functions defined here inside of this one
 function uiSetup() {
@@ -207,4 +218,5 @@ function uiSetup() {
   plateSetup();
   popupSetup();
   expanderSetup();
+  lightBoxSetup();
 }
