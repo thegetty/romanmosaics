@@ -14,6 +14,7 @@
         = partial "partials/nav"
       = yield
       - unless environment? :pdf
+        = partial "partials/photoswipe"
         .sliding-panel-fade-screen
     - unless environment? :pdf
       = javascript_include_tag "https://code.jquery.com/jquery-2.1.1.min.js"
