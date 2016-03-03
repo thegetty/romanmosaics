@@ -1,7 +1,8 @@
 ---
 title: Introduction
-author_first_name: Christine
-author_last_name: Kondoleon
+author:
+ - first_name: Christine
+   last_name: Kondoleon
 cover: true
 layout: page
 sort_order: 4

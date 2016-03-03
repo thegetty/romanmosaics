@@ -34,7 +34,6 @@
             .toc-section-intro= link_to item.data.title, item
           - else
             = link_to item.data.title, item
-          - if item.data.author_last_name
-            - first_name = item.data.author_first_name
-            - last_name = item.data.author_last_name
-            %span.toc-entry-author= "#{first_name} #{last_name}"
+          - if item.data.author and item.data.sidebar_type != "History of the Excavations"
+            - item.data.author.each do |author|
+              %span.toc-entry-author= "#{author.first_name} #{author.last_name}"
