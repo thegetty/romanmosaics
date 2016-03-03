@@ -1,0 +1,13 @@
+- data.book.editions.each do |edition|
+  - if edition.name == "Online"
+    - @permalink = edition.link
+- book_info = "<em>#{data.book.title.main}</em>. #{data.book.publisher_location}: #{data.book.publisher},
+#{data.book.pub_date.year}. #{@permalink}"
+- if data.book.creators.size == 1
+  %p #{data.book.creators[0].last_name}, #{data.book.creators[0].first_name}. #{book_info}
+- if data.book.creators.size == 2
+  %p #{data.book.creators[0].last_name}, #{data.book.creators[0].first_name}, and #{data.book.creators[1].first_name} #{data.book.creators[1].last_name}. #{book_info}
+- if data.book.creators.size == 3
+  %p #{data.book.creators[0].last_name}, #{data.book.creators[0].first_name}, #{data.book.creators[1].first_name} #{data.book.creators[1].last_name}, and #{data.book.creators[2].first_name} #{data.book.creators[2].last_name}. #{book_info}
+- if data.book.creators.size > 3
+  %p #{data.book.creators[0].first_name} #{data.book.creators[0].last_name} et al. #{book_info}

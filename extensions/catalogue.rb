@@ -61,7 +61,7 @@ class Catalogue < Middleman::Extension
     end
 
     def year_published
-      data.book.pub_date.slice(0, 4)
+      data.book.pub_date.year
     end
     # --------------------------------------------------------------------------
     # Data attribute methods

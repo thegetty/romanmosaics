@@ -1,0 +1,17 @@
+.copyright
+  %p= data.book.rights
+.license
+  - if data.book.license.type != nil
+    .cc-logo
+    = tag :img,
+      src: image_path("#{data.book.license.logo}"), class: "nav-logo", alt: "CC License Logo"
+    - if data.book.license.exceptions.online == nil and data.book.license.exceptions.both == nil
+      %p This work is licensed under a <a href="#{data.book.license.link}" rel="license">#{data.book.license.type}</a>.
+    - if data.book.license.exceptions.online != nil or data.book.license.exceptions.both != nil
+      %p Except where otherwise noted, this work is licensed under a <a href="#{data.book.license.link}" rel="license">#{data.book.license.type}</a>.
+      - if data.book.license.exceptions.online != nil
+        - data.book.license.exceptions.online.each do |exception|
+          %p= exception
+      - if data.book.license.exceptions.both != nil
+        - data.book.license.exceptions.both.each do |exception|
+          %p= exception
