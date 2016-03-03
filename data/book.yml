@@ -7,7 +7,7 @@ title:
   short: Roman Mosaics
   extended:
   file_as:
-pub_date: 2016-30-03
+pub_date: 2016-03-30
 creators:
   - first_name: Alexis
     last_name: Belis
@@ -32,8 +32,8 @@ contributors:
     bio: Sean Leatherbury is assistant professor of ancient art and culture at Bowling Green State University.
 author_as_it_appears:
   - "Alexis Belis"
-  - "with contributions by Nicole Budrovich, Christine Kondoleon, Kenneth Lapatin, and Sean Leatherbury"
-author_description:
+  - "introduction by Christine Kondoleon"
+  - "contributions by Nicole Budrovich, Kenneth Lapatin, and Sean Leatherbury"
 project_team: |
   - Nola Butler, *Project Editors*
   - Rachel Barth and Nola Butler, *Copy Editors*
@@ -45,49 +45,69 @@ editions:
     type: InteractiveResource
     format: text/html
     isbn: 978-1-60606-499-3
-    permalink: http://www.getty.edu/publications/romanmosaics
+    link: http://www.getty.edu/publications/romanmosaics
     additional_description:
   - name: EPUB
     type: Text
     format: application/epub+zip
     isbn: 978-1-60606-498-6
     file_size_mb:
-    file_name: RomanMosaics_Belis.epub
+    link: http://www.getty.edu/publications/romanmosaics/assets/downloads/RomanMosaics_Belis.epub
     additional_description:
   - name: MOBI/KINDLE
     type: Text
     format: application/mobi
     isbn: 978-1-60606-498-6
     file_size_mb:
-    file_name: RomanMosaics_Belis.mobi
+    link: http://www.getty.edu/publications/romanmosaics/assets/downloads/RomanMosaics_Belis.mobi
     additional_description:
   - name: PDF
     type: Text
     format: application/pdf
     isbn: 978-1-60606-497-9
     file_size_mb:
-    file_name: RomanMosaics_Belis.pdf
+    link: http://www.getty.edu/publications/romanmosaics/assets/downloads/RomanMosaics_Belis.pdf
     additional_description:
-  - name: Print-on-Demand
+  - name: Paperback
     type: PhyiscalObject
     format: paperback
     isbn: 978-1-60606-497-9
     pages:
     illustrations:
-    gettystore: http://shop.getty.edu/products/roman-mosaics-in-the-j-paul-getty-museum-978-1606064979
+    link: http://shop.getty.edu/products/roman-mosaics-in-the-j-paul-getty-museum-978-1606064979
     additional_description:
-other_downloads:
-  - name:
+other_resources:
+  - name: CSV
+    type: data
     file_size_mb:
-    file_name:
+    link: http://www.getty.edu/publications/romanmosaics/assets/downloads/RomanMosaics_Belis_Data.csv
+  - name: JSON
+    type: data
+    file_size_mb:
+    link: http://www.getty.edu/publications/romanmosaics/assets/downloads/RomanMosaics_Belis_Data.json
+  - name: JPG
+    type: image
+    file_size_mb:
+    link: http://www.getty.edu/publications/romanmosaics/assets/downloads/RomanMosaics_Belis_Images.zip
+  - name: PPT
+    type: image
+    file_size_mb:
+    link: http://www.getty.edu/publications/romanmosaics/assets/downloads/RomanMosaics_Belis_Images.ppt
 publisher: Getty Publications
 imprint: J. Paul Getty Museum
 publisher_short: Getty P
 publisher_location: Los Angeles
 rights: © 2016 J. Paul Getty Trust
-cc_license: Creative Commons Attribution 4.0 International License
-cc_license_link: http://creativecommons.org/licenses/by/4.0/
-cc_license_exceptions:
+license:
+  type: Creative Commons Attribution 4.0 International License
+  link: http://creativecommons.org/licenses/by/4.0/
+  logo: cc-by.png
+  exceptions:
+    online:
+      - "Map tiles courtesy Pelagios and the <a href=\"http://dare.ht.lu.se\" target=\"_blank\">Digital Atlas of the Roman Empire (DARE)</a>. Licensed under a <a href=\"http://creativecommons.org/licenses/by-sa/3.0/\" target=\"_blank\">Creative Commons Attribution-ShareAlike 3.0 License</a>."
+    print:
+    both:
+      - "The following figures are excluded from the Creative Commons license: fig. XX: (c) YYYYY; fig. XX: (c) ZZZZZ; [etc.]. All rights reserved."
 description_main:
 description_short:
 toc: |
@@ -117,10 +137,30 @@ toc: |
       - "21. Mosaic Panel with Two Male Busts"
   - References Cited
   - Contributors
-cip_data:
-sales_catalog_category:
-subject_location_date_coverage:
+library_of_congress_cip_data: |
+  Library of Congress Cataloging-in-Publication Data
+
+  - Names: J. Paul Getty Museum, author, issuing body. \| Ferruzza, Maria Lucia, editor.
+  - Title: Ancient terracottas from South Italy and Sicily in the J. Paul Getty Museum / Maria Lucia Ferruzza.
+  - Description: Los Angeles : J. Paul Getty Museum, [2016] \| ©2016 \| Includes bibliographical references.
+  - Identifiers: LCCN 2015042795 (print) \| LCCN 2015048344 (ebook) \| ISBN 9781606064863 (pbk.) \| ISBN 9781606064856 (epub) \| ISBN 9781606061237 (online)
+  - Subjects: LCSH: Terra-cotta sculpture, Ancient&mdash;Italy, Southern&mdash;Catalogs. \| Terra-cotta sculpture, Ancient&mdash;Italy&mdash;Sicily&mdash;Catalogs. \| J. Paul Getty Museum&mdash;Catalogs. \| Terra-cotta sculpture&mdash;California&mdash;Los Angeles&mdash;Catalogs.
+  - Classification: LCC NB145 .J27 2016 (print) \| LCC NB145 (ebook) \| DDC 733/.309377--dc23
+  - LC record available at [http://lccn.loc.gov/2015042795](http://lccn.loc.gov/2015042795){:target="blank"}
+categories:
+  - Antiquities
+coverage:
+  - Italy
+  - Gaul
+  - North Africa
+  - Syria
+  - 100-600 AD
 keywords:
 bisac:
   - code:
     subject:
+revision_history:
+  - date: March 30, 2016
+    summary:
+      - First edition
+repository_url: https://www.github.com/gettypubs/romanmosaics
