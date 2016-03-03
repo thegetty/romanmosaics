@@ -60,9 +60,10 @@ class Catalogue < Middleman::Extension
       "#{author.first_name} #{author.last_name}"
     end
 
-    def year_published
-      data.book.pub_date.slice(0, 4)
+    def permalink
+        data.book.editions.find { |edition| edition.name == "Online" }.link
     end
+
     # --------------------------------------------------------------------------
     # Data attribute methods
     # The following helper methods provide data which can be stashed in data-
