@@ -1,0 +1,38 @@
+.catalogue-regions {}
+
+%catalogue-region {
+  @include display(flex);
+  @include flex-direction(column);
+  @include justify-content(flex-end);
+  background-color: $light-gray;
+  border-radius: $base-border-radius;
+  height: 200px;
+  margin-bottom: $base-spacing;
+
+  a {
+    background-color: transparentize(#000, 0.5);
+    border-radius: 0 0 $base-border-radius $base-border-radius;
+    color: transparentize(#fff, 0.35);
+    padding: $small-spacing;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+.catalogue-region-italy {
+  @extend %catalogue-region;
+}
+
+.catalogue-region-gaul {
+  @extend %catalogue-region;
+}
+
+.catalogue-region-northafrica {
+  @extend %catalogue-region;
+}
+
+.catalogue-region-syria {
+  @extend %catalogue-region;
+}
