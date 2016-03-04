@@ -10,15 +10,16 @@
   height: 12rem;
   margin-bottom: $base-spacing;
 
-  a {
+  span {
+    @include transition($base-transition);
     background-color: transparentize(#000, 0.25);
     border-radius: 0 0 $base-border-radius $base-border-radius;
     color: transparentize(#fff, 0.35);
     padding: $small-spacing;
+  }
 
-    &:hover {
-      color: #fff;
-    }
+  &:hover {
+    span { color: #fff }
   }
 
   @include media($large-screen-up) {
