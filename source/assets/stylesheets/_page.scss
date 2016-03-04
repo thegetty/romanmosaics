@@ -1,10 +1,21 @@
 .page {
   @extend .container;
+  margin-bottom: $base-spacing * 2;
 }
 
 .page-cover {
   background-color: $light-gray;
-  height: 400px;
+  background-position: center top;
+  background-size: cover;
+  height: 300px;
+
+  @include media($medium-screen-up) {
+    height: 400px;
+  }
+
+  @include media($medium-screen-up) {
+    height: 550px;
+  }
 
   + .page .page-header {
     margin-top: $base-spacing;

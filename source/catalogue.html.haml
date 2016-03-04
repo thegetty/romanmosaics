@@ -1,20 +1,15 @@
 ---
 title: Catalogue
 layout: page
-cover: true
+cover: false
 sort_order: 5
 pdf_output: false
 ---
 - if environment? :pdf
   .print-catalogue-intro
 - else
-  %ul.toc
-    %li.toc-item= link_to "Italy, Cats. 1–2", "/catalogue/italy.html"
-    %li.toc-item= link_to "Gaul, Cats. 3–4", "/catalogue/gaul.html"
-    %li.toc-item= link_to "North Africa, Cat. 5", "/catalogue/northafrica.html"
-    %li.toc-item= link_to "Syria, Cats. 6–21", "/catalogue/syria.html"
-  %hr
-  %h4 History of the Excavations
-  %ul.toc
-    %li.toc-item= link_to "Villelaure", "/catalogue/excavations-villelaure.html"
-    %li.toc-item= link_to "Antioch and the Bath of Apolausis", "/catalogue/excavations-antioch.html"
+  %ul.catalogue-regions
+    %li.catalogue-region-italy= link_to "Italy, Cats. 1–2", "/catalogue/italy.html"
+    %li.catalogue-region-gaul= link_to "Gaul, Cats. 3–4", "/catalogue/gaul.html"
+    %li.catalogue-region-northafrica= link_to "North Africa, Cat. 5", "/catalogue/northafrica.html"
+    %li.catalogue-region-syria= link_to "Syria, Cats. 6–21", "/catalogue/syria.html"
