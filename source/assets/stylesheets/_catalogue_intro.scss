@@ -35,13 +35,13 @@
 .catalogue-region-gaul {
   @extend %catalogue-region;
   background-image: url(image_path("cat3_detail.jpg"));
-  background-position: center center; 
+  background-position: center 20%; 
 }
 
 .catalogue-region-northafrica {
   @extend %catalogue-region;
   background-image: url(image_path("cat5_detail.jpg"));
-  background-position: center top; 
+  background-position: center 20%;
 }
 
 .catalogue-region-syria {
