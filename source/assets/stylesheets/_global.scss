@@ -82,6 +82,7 @@ html { min-height: 100vh; }
 
     @include media($medium-screen-up) {
       bottom: 4rem;
+      display: block;
       position: absolute;
       top: 60px;
       width: 100%;
