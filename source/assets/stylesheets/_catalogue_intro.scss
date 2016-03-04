@@ -6,7 +6,7 @@
   @include justify-content(flex-end);
   background-color: $light-gray;
   border-radius: $base-border-radius;
-  height: 200px;
+  height: 12rem;
   margin-bottom: $base-spacing;
 
   a {
@@ -18,6 +18,10 @@
     &:hover {
       color: #fff;
     }
+  }
+
+  @include media($large-screen-up) {
+    height: 15rem;
   }
 }
 
