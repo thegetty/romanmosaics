@@ -3,7 +3,7 @@ title: Introduction
 author:
  - first_name: Christine
    last_name: Kondoleon
-cover: true
+cover: "cat5_detail.jpg"
 layout: page
 sort_order: 4
 ---

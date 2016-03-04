@@ -1,6 +1,7 @@
 = wrap_layout :application do
   - if current_page.data.cover
-    %header.page-cover
+    - image_url = image_path(current_page.data.cover)
+    %header.page-cover{:style => "background-image: url('#{image_url}')"}
   %article.page
     %header.page-header
       - if current_page.data.cat
