@@ -59,6 +59,7 @@
 .cat-entry-content {
   @extend .body-copy;
   @extend .container;
+  margin-bottom: $base-spacing * 2;
 }
 
 .cat-entry-content-inner {
