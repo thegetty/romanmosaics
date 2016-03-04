@@ -5,12 +5,13 @@
   @include flex-direction(column);
   @include justify-content(flex-end);
   background-color: $light-gray;
+  background-size: cover;
   border-radius: $base-border-radius;
   height: 12rem;
   margin-bottom: $base-spacing;
 
   a {
-    background-color: transparentize(#000, 0.5);
+    background-color: transparentize(#000, 0.25);
     border-radius: 0 0 $base-border-radius $base-border-radius;
     color: transparentize(#fff, 0.35);
     padding: $small-spacing;
@@ -27,16 +28,24 @@
 
 .catalogue-region-italy {
   @extend %catalogue-region;
+  background-image: url(image_path("cat2_detail.jpg"));
+  background-position: center 15%;
 }
 
 .catalogue-region-gaul {
   @extend %catalogue-region;
+  background-image: url(image_path("cat3_detail.jpg"));
+  background-position: center center; 
 }
 
 .catalogue-region-northafrica {
   @extend %catalogue-region;
+  background-image: url(image_path("cat5_detail.jpg"));
+  background-position: center top; 
 }
 
 .catalogue-region-syria {
   @extend %catalogue-region;
+  background-image: url(image_path("cat6_detail.jpg"));
+  background-position: center 65%; 
 }
