@@ -1,13 +1,13 @@
 //= require vendor/photoswipe.min
 //= require vendor/photoswipe-ui-default.min
 
-function lightBox() {
+function lightBox(index) {
   var pswpElement = document.querySelectorAll(".pswp")[0];
 
   // build items array
   var slides  = [];
   var figures = document.querySelectorAll(".inline-figure");
-  var options = { index: 0};
+  var options = { index: index };
 
   // document query selector returns an HTMLCollection, not a true array
   // So we need to proxy a true Array object to get forEach
