@@ -9,7 +9,15 @@ pdf_output: false
   .print-catalogue-intro
 - else
   %ul.catalogue-regions
-    %li.catalogue-region-italy= link_to "Italy, Cats. 1–2", "/catalogue/italy.html"
-    %li.catalogue-region-gaul= link_to "Gaul, Cats. 3–4", "/catalogue/gaul.html"
-    %li.catalogue-region-northafrica= link_to "North Africa, Cat. 5", "/catalogue/northafrica.html"
-    %li.catalogue-region-syria= link_to "Syria, Cats. 6–21", "/catalogue/syria.html"
+    = link_to "/catalogue/italy.html" do
+      %li.catalogue-region-italy
+        %span Italy, Cats. 1-2
+    = link_to "/catalogue/gaul.html" do
+      %li.catalogue-region-gaul
+        %span Gaul, Cats. 3–4
+    = link_to "/catalogue/northafrica.html" do
+      %li.catalogue-region-northafrica
+        %span North Africa, Cat. 5
+    = link_to "/catalogue/syria.html" do
+      %li.catalogue-region-syria
+        %span Syria, Cats. 6–21
