@@ -50,7 +50,7 @@ L.Control.close = function(options) {
 function PopupMap(center, domElement) {
   this.map         = {};
   this.center      = center;
-  this.defaultZoom = 9;
+  this.defaultZoom = 6;
   this.maxZoom     = 12;
   this.minZoom     = 5;
   this.geojson     = geojsonFeature;
