@@ -167,9 +167,9 @@ function popupSetup() {
         marker.bindPopup(mapLocation.properties.custom_name);
         $popup.on("click", function() {
           if (!$popup.find(".popup-content").hasClass("visible")) {
-            map.setView(coords, 10);
+            map.setView(coords, 6);
             $popup.find(".popup-content").addClass("visible");
-            window.setTimeout(function() { map.invalidateSize(); }, 200);
+            window.setTimeout(function() { map.invalidateSize(); }, 250);
           }
         });
       }
