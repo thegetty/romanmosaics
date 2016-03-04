@@ -200,9 +200,14 @@ function popupSetup() {
 function lightBoxSetup() {
   if ($(".inline-figure")) {
     $figures = $(".inline-figure img");
-    $figures.on("click", function() {
-      lightBox();
-      console.log("lightbox called");
+    $figures.on("click", function(e) {
+      var figs = document.querySelectorAll(".inline-figure");
+      var target = _.findIndex(figs, function(figure) {
+        return figure.id == e.target.parentNode.id;
+      });
+
+      console.log(target);
+      lightBox(target);
     });
 
   }
