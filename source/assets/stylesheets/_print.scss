@@ -149,6 +149,14 @@ $light-gray: transparentize($print-text-color, 0.5);
     text-transform: lowercase;
   }
 
+  figure {
+    margin: ($base-spacing * 2) 0;
+  }
+
+  figcaption {
+    line-height: 1.3;
+  }
+
   // Section-specific
   // ---------------------------------------------------------------------------
 
