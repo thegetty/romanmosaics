@@ -2,6 +2,7 @@
   %li
     %strong= " Cat. #{current_cat.cat}"
   %li
+    - current_cat.date_txt[0] = current_cat.date_txt[0].capitalize
     = current_cat.date_txt
     %br
     = "#{current_cat.culture}, #{current_cat.location}"
