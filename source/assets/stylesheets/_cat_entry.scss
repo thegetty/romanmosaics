@@ -68,7 +68,7 @@
 .cat-details-columns {
   @include columns(2 $base-spacing);
 
-  ul.cat-details {
+  .cat-details {
     break-inside: avoid-column;
     -webkit-column-break-inside: avoid;
     font-size: 1.125rem;
