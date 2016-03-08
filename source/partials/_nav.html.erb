@@ -14,7 +14,11 @@
       <div class="navbar-center-info">
         <%= link_to data.book.title.short, "/index.html", { :class => "navbar-site-title"} %>
         <i class="navbar-breadcrumb"></i>
-        <% if current_page.data.cat %>
+        <% if current_page.data.cat.is_a? Array %>
+          <span class="navbar-page-title">
+            <%= "Cats. #{current_page.data.cat.first}&ndash;#{current_page.data.cat.last}" %>
+          </span>
+        <% elsif current_page.data.cat %>
           <span class="navbar-page-title">
             <%= "Cat. #{current_page.data.cat}" %>
           </span>
