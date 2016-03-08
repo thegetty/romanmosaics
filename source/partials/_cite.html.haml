@@ -1,44 +1,32 @@
-- path = current_path.gsub("index.html", "")
-
-- if current_page.data.author and current_page.data.author.size == 2
-  / Page has two authors
-  - citation_authors = "#{current_page.data.author[0].last_name}, #{current_page.data.author[0].first_name} and #{current_page.data.author[1].first_name} #{current_page.data.author[1].last_name}"
-- elsif current_page.data.author and current_page.data.author.size == 1
-  / Page has one author
-  - citation_authors = "#{current_page.data.author[0].last_name}, #{current_page.data.author[0].first_name}"
-- else
-  / Page author is same as book author
-  - citation_authors = "#{data.book.creators.first.last_name}, #{data.book.creators.first.first_name}"
-
-- book_info_chicago = "In <em>#{data.book.title.main}</em>, by #{data.book.creators.first.first_name} #{data.book.creators.first.last_name}. #{data.book.publisher_location}: #{data.book.publisher}, #{data.book.pub_date.year}. <span class='force-wrap'>#{permalink}/#{path}</span>"
-
-- book_info_mla = "<em>#{data.book.title.main}</em>. By #{author_name}. #{data.book.publisher_location}: #{data.book.publisher_short}, #{data.book.pub_date.year}. <span class=\"cite-current-date\">DD Mon. YYYY</span> <<span class='force-wrap'>#{permalink}/#{path}</span>>."
-
 .expander
   %a{ :href => "javascript:void(0);", :class => "expander-trigger" }
     %h5
       Cite this Page
   .expander-content.nav-cite
-    - if current_page.data.cat
-      / Page is catalogue entry
-      - if current_page.data.cat.is_a? Array
-        - entry = lookup_entries(current_page.data.cat).first
-        - entry.cat = "9-19"
-        - entry.title = current_page.data.title
-      -else
-        - entry = lookup_entry(current_page.data.cat)
+    - if current_page.data.cat.is_a? Array
+      / Catalogue page with multiple entries
+      - cat_range = "#{current_page.data.cat.first}–#{current_page.data.cat.last}"
       %h6 Chicago
-      %p
-        #{citation_authors}. “Cat. #{entry.cat}: #{entry.title}.” #{book_info_chicago}
+      %p= "#{citation_author}. “Cats. #{cat_range}: #{current_page.data.title}.”" + |
+          "#{book_info_chicago}"                                                    |
       %h6 MLA
-      %p
-        #{citation_authors}. “Cat. #{entry.cat}: #{entry.title}.” #{book_info_mla}
+      %p= "#{citation_author}. “Cats. #{cat_range}: #{current_page.data.title}.”" + |
+          "#{book_info_mla}"                                                        |
+    - elsif current_page.data.cat
+      / Catalogue page with single entry
+      - entry = lookup_entry(current_page.data.cat)
+      %h6 Chicago
+      %p= "#{citation_author}. “Cat. #{entry.cat}: #{entry.title}.”" + |
+          "#{book_info_chicago}"                                       |
+      %h6 MLA
+      %p= "#{citation_author}. “Cat. #{entry.cat}: #{entry.title}.”" + |
+          "#{book_info_mla}"                                           |
     - else
-      / Page is not catalogue entry
+      / Page is not a catalogue page
       %h6 Chicago
-      %p
-        #{citation_authors}. “#{current_page.data.title}.” #{book_info_chicago}
+      %p= "#{citation_author}. “#{current_page.data.title}.”" + |
+          "#{book_info_chicago}"                                |
       %h6 MLA
-      %p
-        #{citation_authors}. “#{current_page.data.title}.” #{book_info_mla}
-    = link_to "Full Catalogue Citation", "/about.html"
+      %p= "#{citation_author}. “#{current_page.data.title}.”" + |
+          "#{book_info_mla}"                                    |
+  = link_to "Full Catalogue Citation", "/about.html"

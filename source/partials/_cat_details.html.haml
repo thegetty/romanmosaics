@@ -1,25 +1,11 @@
-%table.cat-details
-  %tbody
-    %tr
-      %td
-        %strong Catalogue Number
-      %td
-        %strong= current_cat.cat
-    %tr
-      %td Inventory Number
-      %td= current_cat.inv
-    %tr
-      %td Materials
-      %td= current_cat.material
-    %tr
-      %td Culture
-      %td= current_cat.culture
-    %tr
-      %td Location
-      %td= current_cat.location
-    %tr
-      %td Dimensions
-      %td= "#{current_cat.dimensions[0]} cm x #{current_cat.dimensions[1]} cm"
-    %tr
-      %td Scale
-      %td= partial "partials/cat_scale", :locals => { :current_cat => current_cat }
+%ul.cat-details
+  %li
+    %strong= " Cat. #{current_cat.cat}"
+  %li
+    - current_cat.date_txt[0] = current_cat.date_txt[0].capitalize
+    = current_cat.date_txt
+    %br
+    = "#{current_cat.culture}, #{current_cat.location}"
+  %li= "#{current_cat.material}. #{current_cat.dimensions[0]} cm x #{current_cat.dimensions[1]} cm"
+  %li= current_cat.inv
+  %li= partial "partials/cat_scale", :locals => { :current_cat => current_cat }
