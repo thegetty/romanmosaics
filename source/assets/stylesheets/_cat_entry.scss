@@ -56,6 +56,27 @@
   }
 }
 
+.cat-details {
+  line-height: 1.5;
+  margin-bottom: $base-spacing;
+
+  li {
+    font-size: 0.875em;
+  }
+}
+
+.cat-details-columns {
+  @include columns(2 $base-spacing);
+
+  ul.cat-details {
+    break-inside: avoid-column;
+    -webkit-column-break-inside: avoid;
+    font-size: 1.125rem;
+    margin-bottom: 0;
+    padding-bottom: $base-spacing;
+  }
+}
+
 .cat-entry-content {
   @extend .body-copy;
   @extend .container;
@@ -75,7 +96,8 @@
 }
 
 .cat-entry-scale {
-  width: 100%;
-  vertical-align: middle;
   fill: $light-gray;
+  margin-top: $small-spacing;
+  vertical-align: middle;
+  width: 50%;
 }
