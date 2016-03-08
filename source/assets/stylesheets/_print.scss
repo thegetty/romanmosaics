@@ -257,7 +257,7 @@ $light-gray: transparentize($print-text-color, 0.5);
   // scss-lint:disable NameFormat
   .bleed {
     @extend %full-page-image;
-    page-break-before: left;
+    /* page-break-before: left; */
 
     @for $i from 1 through 21 {
       &[data-catalogue="#{$i}"] {
@@ -280,6 +280,15 @@ $light-gray: transparentize($print-text-color, 0.5);
 
   .cat-entry-header-titlebar {
     position: static;
+  }
+
+  .cat-details-columns {
+    @include columns(1);
+
+    .cat-details {
+      margin-bottom: $base-spacing;
+      padding-bottom: 0;
+    }
   }
 
   .cat-entry-header {
