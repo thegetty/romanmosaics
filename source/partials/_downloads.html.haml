@@ -3,25 +3,38 @@
   - data.book.editions.each do |edition|
     - if edition.name != "Online"
       - if edition.file_size_mb != nil
-        %li <a href="#{edition.link}" target="_blank">#{edition.name}</a> (#{edition.file_size_mb} MB)
+        %li= link_to "#{edition.name} (#{edition.file_size_mb} MB)", edition.link
       - else
-        %li <a href="#{edition.link}" target="_blank">#{edition.name}</a>
-%p Each of these alternative formats includes the complete catalogue text, images, and the map.
+        %li= link_to "#{edition.name}", edition.link
+:markdown
+  Each of these alternative formats includes the complete catalogue text,
+  images, and the map.
+%hr
 %h4 Catalogue Main Images
 %ul
   - data.book.other_resources.each do |resource|
     - if resource.type == "image"
       - if resource.file_size_mb != nil
-        %li <a href="#{resource.link}" target="_blank">#{resource.name}</a> (#{resource.file_size_mb} MB)
+        %li= link_to "#{resource.name} (#{resource.file_size_mb} MB)", resource.link
       - else
-        %li <a href="#{resource.link}" target="_blank">#{resource.name}</a>
-%p Each download includes the main image and caption for each of the catalogue objects, free for unrestricted use. JPGs are 1440px on their longest side. Alternate views and larger sizes are available through the Getty’s Open Content program at <a href="http://www.getty.edu/art/collection/" target="_blank">www.getty.edu/art/collection</a>.
+        %li= link_to "#{resource.name}", resource.link
+:markdown
+  Each download includes the main image and caption for each of the catalogue
+  objects, free for unrestricted use. JPGs are 1440px on their longest side.
+  Alternate views and larger sizes are available through the Getty’s Open
+  Content program at <a href="http://www.getty.edu/art/collection/"
+  target="_blank">www.getty.edu/art/collection</a>.
+%hr
 %h4 Object Data
 %ul
   - data.book.other_resources.each do |resource|
     - if resource.type == "data"
       - if resource.file_size_mb != nil
-        %li <a href="#{resource.link}" target="_blank">#{resource.name}</a> (#{resource.file_size_mb} MB)
+        %li= link_to "#{resource.name} (#{resource.file_size_mb} MB)", resource.link
       - else
-        %li <a href="#{resource.link}" target="_blank">#{resource.name}</a>
-%p The object data, available in two formats, includes key information from each of the catalogue objects, with relevant fields keyed to the Getty’s Art & Architecture Thesaurus (AAT) and Thesaurus of Geographic Names (TGN).
+        %li= link_to "#{resource.name}", resource.link
+:markdown
+  The object data, available in two formats, includes key information from each
+  of the catalogue objects, with relevant fields keyed to the Getty’s Art &
+  Architecture Thesaurus (AAT) and Thesaurus of Geographic Names (TGN).
+%hr
