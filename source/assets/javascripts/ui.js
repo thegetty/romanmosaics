@@ -1,17 +1,22 @@
 function keyboardNav(){
   $(document).keydown(function(event) {
-    var prev, next;
+    var prev, next, photoswipeActive;
     prev = document.getElementById("prev-link");
     next = document.getElementById("next-link");
-    // 37 = left arrow key
-    if (event.which === 37 && prev) {
-      prev.click();
-      event.preventDefault();
-    }
-    // 39 = right arrow key
-    else if (event.which === 39 && next) {
-      next.click();
-      event.preventDefault();
+
+    // Make sure photoswipe is not active
+    photoswipeActive = $(".pswp").hasClass("pswp--visible");
+    if (!(photoswipeActive)) {
+      // 37 = left arrow key
+      if (event.which === 37 && prev) {
+        prev.click();
+        event.preventDefault();
+      }
+      // 39 = right arrow key
+      else if (event.which === 39 && next) {
+        next.click();
+        event.preventDefault();
+      }
     }
   });
 }
