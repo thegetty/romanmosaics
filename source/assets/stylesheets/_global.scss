@@ -19,6 +19,21 @@ html { min-height: 100vh; }
   @include media($large-screen-up) {
     p, ol, ul { font-size: 1.45rem; }
   }
+
+  h2, h3, h4 {
+    margin-top: $small-spacing;
+  }
+
+  blockquote {
+    background-color: $light-gray;
+    border-radius: $base-border-radius;
+    margin: $base-spacing 0;
+    padding: $small-spacing;
+
+    h2, h3, h4 {
+      margin-top: 0;
+    }
+  }
 }
 
 .container {
@@ -28,6 +43,19 @@ html { min-height: 100vh; }
   @include media($large-screen-up) {
     padding: 0;
   }
+}
+
+.copyright,
+.license,
+.publisher,
+.team,
+.loc-cip,
+.credits {
+  h2 { font-size: 1.5rem; }
+  p { font-size: 1rem; margin-bottom: $small-spacing; }
+  p + p { text-indent: 0; }
+  ul { margin-bottom: 1rem; }
+  ul li { font-size: 1rem; }
 }
 
 .footnotes {
