@@ -1,6 +1,8 @@
 %ul.cat-details
   %li
     %strong= " Cat. #{current_cat.cat}"
+  - if current_page.data.cat.is_a? Array
+    %li= current_cat.title
   %li
     - current_cat.date_txt[0] = current_cat.date_txt[0].capitalize
     = current_cat.date_txt
@@ -8,4 +10,6 @@
     = "#{current_cat.culture}, #{current_cat.location}"
   %li= "#{current_cat.material}. #{current_cat.dimensions[0]} cm x #{current_cat.dimensions[1]} cm"
   %li= current_cat.inv
+  - if current_cat.credit
+    %li= current_cat.credit
   %li= partial "partials/cat_scale", :locals => { :current_cat => current_cat }
