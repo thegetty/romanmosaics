@@ -1,4 +1,5 @@
 //= require vendor/leaflet
+//= require vendor/leaflet.label-src
 //= require vendor/underscore-min
 //= require geojson
 
@@ -103,7 +104,7 @@ function GeoMap(center) {
       return feature.properties.catalogue;
     },
     pointToLayer: this.addCatalogueLabels,
-    onEachFeature: this.addPopups,
+    onEachFeature: this.addPopups
   });
 
   this.map.addLayer(catalogueLabels);
@@ -113,9 +114,9 @@ function GeoMap(center) {
 GeoMap.prototype = {
   // Initialize Map
   init: function(center) {
-    this.map = L.map(this.el, { 
-      maxZoom: this.maxZoom, 
-      minZoom: this.minZoom 
+    this.map = L.map(this.el, {
+      maxZoom: this.maxZoom,
+      minZoom: this.minZoom
     }).setView(center, this.defaultZoom);
     this.map.scrollWheelZoom.disable();
   },
@@ -123,12 +124,13 @@ GeoMap.prototype = {
   addTiles: function() {
     L.tileLayer(this.tiles, {
       attribution: this.attribution,
-      errorTileUrl: "/assets/images/empty.png",
+      errorTileUrl: "/assets/images/empty.png"
     }).addTo(this.map);
   },
   // Add Labels
   addCatalogueLabels: function(feature, latlng) {
-    return L.marker(latlng);
+    return L.marker(latlng)
+      .bindLabel(feature.properties.custom_name, { noHide: true });
   },
   // Add Popup content
   addPopups: function(feature, layer) {
