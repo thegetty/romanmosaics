@@ -149,12 +149,28 @@ $light-gray: transparentize($print-text-color, 0.5);
     text-transform: lowercase;
   }
 
-  figure {
+  .inline-figure {
+    /* column-span: all; */
     margin: ($base-spacing * 2) 0;
+    padding: 0;
   }
 
   figcaption {
     line-height: 1.3;
+  }
+
+  .figure-left,
+  .figure-right {
+    float: none;
+    width: 100%;
+  }
+
+  .figure-full-width {
+    column-span: all;
+  }
+
+  .force-break {
+    page-break-before: left;
   }
 
   // Section-specific
