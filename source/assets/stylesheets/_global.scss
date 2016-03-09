@@ -116,6 +116,34 @@ html { min-height: 100vh; }
   .expander--hidden { display: none;}
 }
 
+
+// Inline Figure Styles
+.figure-group {
+  @include media($large-screen-up) {
+    clear: both;
+  }
+}
+
 .inline-figure {
+  @include margin(($base-spacing * 1.5) $small-spacing);
+  @include padding(null $small-spacing);
   cursor: pointer;
+
+  + p { text-indent: $base-spacing; }
+}
+
+.figure-left {
+  @include media($large-screen-up) {
+    float: left;
+    margin-left: 0;
+    width: 48%;
+  }
+}
+
+.figure-right {
+  @include media($large-screen-up) {
+    float: right;
+    margin-right: 0;
+    width: 48%;
+  }
 }
