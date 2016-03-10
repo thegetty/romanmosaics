@@ -129,8 +129,17 @@ GeoMap.prototype = {
   },
   // Add Labels
   addCatalogueLabels: function(feature, latlng) {
-    return L.marker(latlng)
-      .bindLabel(feature.properties.custom_name, { noHide: true });
+    if (feature.properties.ambiguous == true) {
+      return L.circleMarker(latlng, {
+        radius: 8,
+        weight: 0,
+        opacity: 1,
+        fillOpacity: 1
+      }).bindLabel(feature.properties.custom_name, { noHide: true, offset: [16, -15] });
+    } else {
+      return L.marker(latlng)
+        .bindLabel(feature.properties.custom_name, { noHide: true });
+    }
   },
   // Add Popup content
   addPopups: function(feature, layer) {

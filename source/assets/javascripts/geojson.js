@@ -1055,9 +1055,10 @@ var geojsonFeature = {
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": ["38.0000", "35.0000"]
+        "coordinates": ["37", "35.5"]
       },
       "properties": {
+        "ambiguous": true,
         "catalogue": [6, 8, 20, 21],
         "custom_name": "Syria",
         "name": "",
