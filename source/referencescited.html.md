@@ -9,7 +9,7 @@ sort_order: 101
   Aisenberg, Nadya. *Ordinary Heroines: Transforming the Male Myth*. New York: Continuum, 1994.
 
 - <span class="smcaps">Anderson 1985</span><br />
-  Anderson, John Kinloch. *Hunting in the Ancient World*. Berkeley: University of California Press, 1985
+  Anderson, John Kinloch. *Hunting in the Ancient World*. Berkeley: University of California Press, 1985.
 
 - <span class="smcaps">Armstrong 1986</span><br />
   Armstrong, Arthur H. *Classical Mediterranean Spirituality: Egyptian, Greek, Roman*. New York: Crossroad, 1986.
@@ -26,10 +26,10 @@ sort_order: 101
 - <span class="smcaps">Aymard 1937</span><br />
   Aymard, Jacques. “Quelques scènes de chasse sur une mosaïque de l’Antiquarium.” *Mélanges d’archaéologie et d’histoire/École française de Rome* 54 (1937): 42–66.
 
-- <span class="smcaps">Balil 1964</span><br /> 
+- <span class="smcaps">Balil 1964</span><br />
   Balil, Alberto. “Notas iconograficas sobre algunos mosaicos de Sussa.” *Les cahiers de Tunisie* 12, nos. 45–46 (1964): 7–10.
 
-- <span class="smcaps">Ball 1984</span><br /> 
+- <span class="smcaps">Ball 1984</span><br />
   Ball, David. “A Bear Hunt Mosaic.” *J. Paul Getty Museum Journal* 12 (1984): 123–34.
 
 - <span class="smcaps">Balty 1981</span><br />
@@ -75,7 +75,7 @@ sort_order: 101
   Campbell, Sheila. *The Mosaics of Antioch*. Toronto: Pontifical Institute of Mediaeval Studies, 1988.
 
 - <span class="smcaps">Cecchelli 1933</span><br />
-  Cecchelli, Carlo. “Gli edifici e i mosaici paleocristiani nella zona della basilica di Aquileia.” In *La Basilica di Aquileia*, 107–273. Bolonga: N. Zanichelli, 1933.
+  Cecchelli, Carlo. “Gli edifici e i mosaici paleocristiani nella zona della basilica di Aquileia.” In *La Basilica di Aquileia*, 107–273. Bologna: N. Zanichelli, 1933.
 
 - <span class="smcaps">Christou 1964</span><br />
   Christou, Chrysanthos. “Ἀνασκαφικαὶ εἶς περιοχήν τῆς Σπάρτης.” *Deltion* 19, no. 1 (1964): 135–38.
@@ -93,7 +93,7 @@ sort_order: 101
   Clarke, John. *Roman Black-and-White Figural Mosaics*. New York: New York University Press for the College Art Association of America, 1979.
 
 - <span class="smcaps">Clarke 1991</span><br />
-  Clarke, John. *The Houses of Roman Italy 100 BC–AD 250: Ritual, Space, and Decoration*. Berkeley: University of California Press, 1991
+  Clarke, John. *The Houses of Roman Italy 100 BC–AD 250: Ritual, Space, and Decoration*. Berkeley: University of California Press, 1991.
 
 - <span class="smcaps">*Comptes-rendus de l’Academie des inscriptions et belles-lettres* 1900</span><br />
   Comptes-rendus de l’Académie des inscriptions et belles-lettres. “Séance du 20 Avril,” *Comptes-rendus de l’Académie des inscriptions et belles-lettres* 44, no. 2 (1900): 222–28.
@@ -117,7 +117,7 @@ sort_order: 101
   Dauphin, Claudine. “The Development of the Inhabited Scroll in Architectural Sculpture and Mosaic Art from Late Imperial Times to the Seventh Century A.D.” *Levant* 19, no. 1 (1987): 183–213.
 
 - <span class="smcaps">de Villefosse 1899</span><br />
-  de Villefosse, Antoine-Marie Héron. “Mosaïques trouvées a Sainte-Colombe-lès-Vienne.” *Bulletin archéologique* *du Comité des travaux historiques et scientifiques* 17 (1899):102–3.
+  de Villefosse, Antoine-Marie Héron. “Mosaïques trouvées a Sainte-Colombe-lès-Vienne.” *Bulletin archéologique* *du Comité des travaux historiques et scientifiques* 17 (1899): 102–3.
 
 - <span class="smcaps">de Villefosse 1903</span><br />
   de Villefosse, Antoine-Marie Héron. “Rapport,- <span class="smcaps">”</span> *Bulletin archéologique du Comité des travaux historiques et scientifiques* (1903): 109–19.
@@ -159,13 +159,17 @@ sort_order: 101
   Espérandieu, Émile. *Les mosaïques romaines de Nîmes.* Nîmes: Éditions Mëridionales, 1935.
 
 - <span class="smcaps">Evans 1982</span><br />
-  Evans, Helen C. “Nonclassical Sources for the Armenian Mosaic near the Damascus Gate in Jerusalem.” In *East of Byzantium: Syria and Armenia in the Formative Period,* edited by Nina G. Garsoïan, Thomas F. Mathews, and Robert W. Thomson, 217–22. Washington, DC: Dumbarton Oaks, Center for Byzantine Studies, 1982.
+  Evans, Helen C. “Nonclassical Sources for the Armenian Mosaic near the Damascus Gate in Jerusalem.” In *East of Byzantium: Syria and Armenia in the Formative Period*, edited by Nina G. Garsoïan, Thomas F. Mathews, and Robert W. Thomson, 217–22. Washington, DC: Dumbarton Oaks, Center for Byzantine Studies, 1982.
 
 - <span class="smcaps">Evans, Holcomb, and Hallman 2001</span><br />
   Evans, Helen C., Melanie Holcomb, and Robert Hallman. “The Arts of Byzantium.” *Metropolitan Museum of Art Bulletin* 58, no. 4 (2001): 16–17.
 
 - <span class="smcaps">Fabia 1923</span><br />
   Fabia, Philippe. *Mosaïques romaines de museés de Lyon*. Lyon: Museés de Lyon, 1923.
+
+  <span class="smcaps">Famà 1997</span><br />
+  Famà, Maria Luisa. “Il mosaic a ciottoli di Mozia dopo il restauro.” In *Atti del IV colloquio dell'Associazione italiana per lo studio e la conservazione del mosaic Palermo, 9–13 dicembre 1996*, edited by Rosa Maria Bonacasa Carra and Federico Guidobaldi, 147–58. Ravenna: Edizioni del Griasole, 1997.
+
 
 - <span class="smcaps">Ferraro 1982</span><br />
   Ferraro, Salvatore. *La presenza di Virgilio nei graffiti pompeiani*. Naples: Loffredo, 1982.
@@ -177,7 +181,7 @@ sort_order: 101
   Foucher, Louis. *Découvertes archéologiques à Thysdrus en 1960*. Tunisia: Imprimerie La Rapide, 1960.
 
 - <span class="smcaps">Foucher 1960</span>b <br />
-  Foucher, Louis. *Inventaire des mosaïques, feuille no 57 d l’Atlas archéologique: Sousse*. Tunisia: Institut National d’Archéologie et Arts.
+  Foucher, Louis. *Inventaire des mosaïques, feuille no 57 de l’Atlas archéologique: Sousse*. Tunisia: Institut National d’Archéologie et Arts.
 
 - <span class="smcaps">Foucher 1961</span><br />
   Foucher, Louis. *Découvertes archéologiques à Thysdrus en 1961*. Tunisia: Imprimerie du Secréteriat d’État aux Affairs Culturelles et à l’Information, 1961.
@@ -203,6 +207,15 @@ sort_order: 101
 - <span class="smcaps">Gaday et al. 2006</span><br />
   Gaday, Robert, et al. *La Tuilière à Villelaure (Vaucluse), rapport final d’opération diagnostic*. Nîmes: Institut National de Recherches Archéologiques Préventives, 2006.
 
+- <span class="smcaps">Gauckler 1897</span><br />
+  Gauckler, Paul. “Le domaine des Laberii à Uthina.” *Monuments et memoires: Fondation Eugene Piot* 3 (1897): 177–226.
+
+- <span class="smcaps">Gauckler 1901</span><br />
+  Gauckler, Paul. “Note sur quelques mosaïques romaines de Provence.” *Bulletin archéologique du Comité des travaux historiques et scientifiques* (1901): 336–46.
+
+- <span class="smcaps">Gauckler 1910</span><br />
+  Gauckler, Paul. *Inventaire des mosaïques de la Gaule ed de l’Afrique*. Vol. 2, *Afrique Proconsulaire (Tunisie)*. Paris: Ernest Leroux, 1910.
+
 - <span class="smcaps">Gentili 1954</span><br />
   Gentili, Gino Vinicio. *La Villa imperiale di Piazza Armerina*. 2nd ed. Rome: Istituto Poligrafico dello Stato, Libreria dello Stato, 1954.
 
@@ -217,15 +230,6 @@ sort_order: 101
 
 - <span class="smcaps">Geymonat 1987</span><br />
   Geymonat, Mario, ed. *Eneide con episodi significativi di Iliade e Odissea*. Bologna: N. Zanichelli, 1987.
-
-- <span class="smcaps">Gauckler 1897</span><br />
-  Gauckler, Paul. “Le domaine des Laberii à Uthina.” *Monuments et memoires: Fondation Eugene Piot* 3 (1897): 177–226.
-
-- <span class="smcaps">Gauckler 1901</span><br />
-  Gauckler, Paul. “Note sur quelques mosaïques romaines de Provence.” *Bulletin archéologique du Comité des travaux historiques et scientifiques* (1901): 336–46.
-
-- <span class="smcaps">Gauckler 1910</span><br />
-  Gauckler, Paul. *Inventaire des mosaïques de la Gaule ed de l’Afrique*. Vol. 2, *Afrique Proconsulaire (Tunisie)*. Paris: Ernest Leroux, 1910.
 
 - <span class="smcaps">Hachlili 2009</span><br />
   Hachlili, Rachel. *Ancient Mosaic Pavements: Themes, Issues, and Trends*. Boston: Brill, 2009.
@@ -282,7 +286,7 @@ sort_order: 101
   Jwejati, Rafah. “Contribution de la mosaïque syrienne à l’iconographie chrétienne.” In *The Levant: Crossroads of Late Antiquity: History, Religion and Archaeology,* edited by Ellen Bradshaw Aitken and John M. Fossey, 401–22. Leiden: Brill, 2014.
 
 - <span class="smcaps">Kitzinger 1965</span><br />
-  Kitzinger, Ernst. “Stylistic Developments in Pavement Mosaics in the Greek East from the Age of Constantine to the Age of Justinian.” In *La mosaïque gréco-romaine. Paris, 29 août – 3 septembre 1963*, 1:341–52. Paris: Éditions du Centre National de la Richerche Scientifique, 1965.
+  Kitzinger, Ernst. “Stylistic Developments in Pavement Mosaics in the Greek East from the Age of Constantine to the Age of Justinian.” In *La mosaïque gréco-romaine. Paris, 29 août – 3 septembre 1963*, 1:341–52. Paris: Éditions du Centre National de la Recherche Scientifique, 1965.
 
 - <span class="smcaps">Kolling 1982</span><br />
   Kolling, Alfons. *Der römische Palast von Nennig*. Munich: Zurich: Schnell & Steiner, 1982.
@@ -290,11 +294,17 @@ sort_order: 101
 - <span class="smcaps">Kondoleon 2000</span><br />
   Kondoleon, Christine. “Mosaics of Antioch.” In *Antioch: The Lost Ancient City*, edited by Christine Kondoleon, 63–77. Princeton: Princeton University Press, 2000.
 
+- <span class="smcaps">König 2005</span><br />
+  König, Jason. *Athletics and Literature in the Roman Empire.* Cambridge: Cambridge University Press, 2005.
+
 - <span class="smcaps">Labande 1903</span><br />
   Labande, L.-H. “Les mosaïques romaines de Villelaure.” *Bulletin archéologique du Comité des travaux historiques et scientifiques* (1903): 1–13.
 
 - <span class="smcaps">Labande and de Villefosse 1900</span><br />
-  Labande, L.-H., and Héron de Villefosse. “Rapport.” *Bulletin archéologique du Comité des travaux historiques et scientifiques* (1900): 113–14*.*
+  Labande, L.-H., and Héron de Villefosse. “Rapport.” *Bulletin archéologique du Comité des travaux historiques et scientifiques* (1900): 113–14.
+
+- <span class="smcaps">*La dépêche de Lyon* 1913</span><br />
+  *La dépêche de Lyon*, August 2, 1913.
 
 - <span class="smcaps">Lafaye 1901</span><br />
   Lafaye, Georges. “Rapport.” *Bulletin de la Société nationale des antiquaires de France* (1901): 118–22.
@@ -354,19 +364,22 @@ sort_order: 101
   Leader-Newby, Ruth. “Heroes, Lions, and Vandals: Four Late Roman Missoria.” In *The Berthouville Silver Treasure and Roman Luxury*, edited by Kenneth Lapatin, 89–105. Los Angeles: Getty Publications, 2014.
 
 - <span class="smcaps">*Le bien public* 1961</span><br />
-*Le bien public*, 19 April 1961.
-
-- <span class="smcaps">*Le Moniteur viennois* 1903</span><br />
-  “Les Mosaïques de Saint-Romain-en-Gal.” *Le Moniteur viennois*, July 29, 1913, 2.
+  *Le bien public*, April 19, 1961.
 
 - <span class="smcaps">Lefebvre 1981</span><br />
   Lefebvre, L. “Les sculptures gallo-romaines découvertes dans le sous-sol de la Breck à Arlon.” *Bulletin de l’Institut archéologique du Luxembourg Arlon* 57, nos. 1–2 (1981): 34–54.
 
 - <span class="smcaps">Lefebvre 1987</span><br />
-  Lefebvre, Louis “Un scène tirée de l’œuvre de Virgile est représentée sur le mausolée de Vervicius.” *Bulletin de l’Institut archéologique du Luxembourg Arlon* 63, no. 1/2 (1987): 14–17.
+  Lefebvre, Louis. “Un scène tirée de l’œuvre de Virgile est représentée sur le mausolée de Vervicius.” *Bulletin de l’Institut archéologique du Luxembourg Arlon* 63, no. 1/2 (1987): 14–17.
 
 - <span class="smcaps">Leibovitch 1958</span><br />
   Leibovitch, J. “Le Griffon d’Erez et le sens mythologique de Némésis.” *Israel Exploration Journal* 8, no. 3 (1958): 141–48.
+
+- <span class="smcaps">*Le Moniteur viennois* 1903</span><br />
+  “Les Mosaïques de Saint-Romain-en-Gal.” *Le Moniteur Viennois*, July 29, 1913, 2.
+
+- <span class="smcaps">*Le Progrès* 1913</span><br />
+  “Ils en veulent en Angeleterre.” *Le Progrès*, July 25, 1913.
 
 - <span class="smcaps">Levi 1947</span><br />
   Levi, Doro. *Antioch Mosaic Pavements*. Princeton: Princeton University Press, 1947.
@@ -374,8 +387,17 @@ sort_order: 101
 - <span class="smcaps">*LIMC* 1981–2009</span><br />
   *Lexicon Iconographicum Mythologiae Classicae*. Zürich: Artemis Verlag, 1981–2009.
 
+- <span class="smcaps">Ling 1998</span><br />
+  Ling, Roger. *Ancient Mosaics*. Princeton: Princeton University Press, 1998.
+
+- <span class="smcaps">*London News* 1966</span><br />
+  “Pieces for Collectors.” *Illustrated London News*, November 26, 1966.
+
+- <span class="smcaps">*Lyon républicain* 1913</span><br />
+  *Lyon républicain*, July 26, 1913.
+
 - <span class="smcaps">Maguire 1987</span><br />
-  Maguire, Henry. *Earth and Ocean: The Terrestrial World in Early Byzantine Art.* University Park, PA: Pennsylvania State University Press, 1987.
+  Maguire, Henry. *Earth and Ocean: The Terrestrial World in Early Byzantine Art.* University Park: Pennsylvania State University Press, 1987.
 
 - <span class="smcaps">Markoulaki 1987</span><br />
   Markoulaki, Stavroula. “Καστέλλι Κισάμου.” *Deltion* 42, no. 2 (1987): 558–66.
@@ -384,7 +406,7 @@ sort_order: 101
   McWhirr, Alan. *Houses in Roman Cirencester.* Cirencester, England: Cirencester Excavation Committee, Corinium Museum, 1986.
 
 - <span class="smcaps">Merlin 1915</span><br />
-  Merlin, Alfred. *Inventaire des mosaïques de la Gaule et de l’Afrique*. Vol. 2, *Afrique Proconsulaire (Tunisie)*. Paris: Ernest Leroux, 1915.
+  Merlin, Alfred. *Inventaire des mosaïques de la Gaule et de l’Afrique*. Vol. 2, suppl., *Afrique Proconsulaire (Tunisie)*. Paris: Ernest Leroux, 1915.
 
 - <span class="smcaps">Michon 1923</span>a<br />
   Michon, Étienne. *Bulletin de la Société nationale des antiquaires de France* (1923): 109.
@@ -404,7 +426,7 @@ sort_order: 101
 - <span class="smcaps">Ministère de la culture et communication 1981</span><br />
   Ministère de la culture et communication, Commission régionale de Provence-Alpes Côte d’Azur. *Inventaire général des monuments et des richesses artistiques de la France;* *Vaucluse: Cantons Cadenet et Pertuis: Pays d'Aigues*. Paris: Imprimerie Nationale, 1981.
 
-- <span class="smcaps">Moretti and moretti 1977</span><br />
+- <span class="smcaps">Moretti and Sgubini Moretti 1977</span><br />
   Moretti, Mario, and Anna Maria Sgubini Moretti. *La Villa dei Volusii a Lucus Feroniae*. Rome: Autostrade, 1977.
 
 - <span class="smcaps">Neuerburg 1975</span><br />
@@ -447,7 +469,7 @@ sort_order: 101
   Pasqui, Angelo. “Roma: Nuove scoperte di antichità nella città e nel suburbia.” *Notizie degli Scavi* 8 (1911): 338–39.
 
 - <span class="smcaps">Paton 2000</span><br />
-  Paton, S. “The Villa Dionysos at Knossos: A *Domus* and its Décor.” In *Πεπραγμενα Η’ Διεθνούς Κρητολoγικού Συνεδρίου, Ηρακλείου 9–14 σεπτεμβρίoυ* *1996* Α2, 553–62. Herakleion: Eταιρία Kρητικών Iστoρικών Mελετών, 2000.
+  Paton, S. “The Villa Dionysos at Knossos: A *Domus* and Its Décor.” In *Πεπραγμενα Η’ Διεθνούς Κρητολoγικού Συνεδρίου, Ηρακλείου 9–14 σεπτεμβρίoυ* *1996* Α2, 553–62. Herakleion: Eταιρία Kρητικών Iστoρικών Mελετών, 2000.
 
 - <span class="smcaps">Peppard 2014</span><br />
   Peppard, Michael. “Mosaics from a Church in the Diocese of Apamea, Syria (463 CE).” *Zeitschrift für Papyrologie und Epigraphik* 190 (2014): 168–72.
@@ -462,7 +484,7 @@ sort_order: 101
   Piccirillo, Michele. *The Mosaics of Jordan*. Edited by Patricia M. Bikai and Thomas A. Dailey. Amman, Jordan: American Center of Oriental Research, 1993.
 
 - <span class="smcaps">Pisapia 2014</span><br />
-  Pisapia, M. S. “Uno sfortunata mosaico con scene di caccia da Baia.” In *Atti del XIX Colloquio dell’ Associazione italiana per lo studio e la conservazione del mosaico con il patrocinio del Ministero per i beni e le attività culturali (Isernia, 13–16 marzo 2013)*, 109–19. Tivoli, Italy: Scripta Manent, 2014.
+  Pisapia, M. S. “Uno sfortunata mosaico con scene di caccia da Baia.” In *Atti del XIX Colloquio dell’ Associazione italiana per lo studio e la conservazione del mosaico con il patrocinio del Ministero per i beni e le attività culturali (Isernia, 13–16 marzo 2013)*, edited by Claudia Angelelli, 109–19. Tivoli, Italy: Scripta Manent, 2014.
 
 - <span class="smcaps">Poinssot and Lantier 1923</span><br />
   Poinssot, L., and R. Lantier. “Mosaïque de la chasse au sanglier à Carthage.” *Bulletin de la Société nationale des antiquaires de France* 1923, 154–58.
@@ -518,6 +540,9 @@ sort_order: 101
 - <span class="smcaps">Spinazzola 1928</span><br />
   Spinazzola, Vittorio. *Le arti decorative in Pompei e nel Museo nazionale di Napoli*. Milan: Bestetti e Tumminelli, 1928.
 
+- <span class="smcaps">Spink & Son, Ltd. 1966</span><br />
+  Spink & Son, Ltd. *Octagon* 3, no. 4. London: Spink & Son, 1966.
+
 - <span class="smcaps">Stern 1955</span><br />
   Stern, Henri. “La Mosaïque d’Orphée de Blanzy-lès-Fismes (Aisne).” *Gallia* 13 (1955): 41–77.
 
@@ -531,7 +556,7 @@ sort_order: 101
   Strocka, Volker Michael. *Casa del Labirinto (VI 11, 8–10)*. Munich: Hirmer, 1991.
 
 - <span class="smcaps">Talgam 2014</span><br />
-  Talgam, Rina. *Mosaics of Faith: Floors of Pagans, Jews, Samaritans, Christians, and Muslims in the Holy Land.* University Park, PA: Pennsylvania State University Press, 2014.
+  Talgam, Rina. *Mosaics of Faith: Floors of Pagans, Jews, Samaritans, Christians, and Muslims in the Holy Land.* University Park: Pennsylvania State University Press, 2014.
 
 - <span class="smcaps">Talgam and Weiss 2004</span><br />
   Talgam, Rina, and Zeev Weiss. *The Mosaics of the House of Dionysos at Sepphoris*. Jerusalem: Institute of Archaeology, Hebrew University, 2004.
@@ -539,14 +564,17 @@ sort_order: 101
 - <span class="smcaps">Tallah 2004</span><br />
   Tallah, Linda. *Le Luberon et pays d’Apt.* Paris: Académie des Inscriptions et Belles-Lettres, 2004.
 
-- <span class="smcaps">Toynbee</span><br />
+- <span class="smcaps">Toynbee 1973</span><br />
   Toynbee, Jocelyn M. C. *Animals in Roman Life and Art.* Ithaca, NY: Cornell University Press, 1973.
 
 - <span class="smcaps">Trilling 1989</span><br />
   Trilling, James. “The Soul of the Empire: Style and Meaning in the Mosaic Pavement of the Byzantine Imperial Palace in Constantinople.” *Dumbarton Oaks Papers* 43 (1989): 27–72.
 
+- <span class="smcaps">Tusa 1997</span><br />
+  Tusa, Vincenzo. “I mosaic di Mozia.” In *Atti del IV colloquio dell’Associazione italiana per lo studio e la conservazione del mosaic, Palermo, 9–13 dicembre 1996*, edited by Rosa Maria Bonacasa Carra and Federico Guidobaldi, 137–46. Ravenna: Edizioni del Griasole, 1997.
+
 - <span class="smcaps">Vassy and Guy 1913</span><br />
-  Vassy, Albert, and Cl. Guy. “Mise à jour et description de trois mosaïques romaines à Saint-Romain-en-Gal (Rhône) près Vienne (Isère)*.*” *Association française pour l’avancement des sciences* (1913): 628–32.
+  Vassy, Albert, and Claudius Guy. “Mise à jour et description de trois mosaïques romaines à Saint-Romain-en-Gal (Rhône) près Vienne (Isère).” *Association française pour l’avancement des sciences* (1913): 628–32.
 
 - <span class="smcaps">Vermeule and Neuerburg 1973</span><br />
   Vermeule, Cornelius, and Norman Neuerburg. *Catalogue of the Ancient Art in the J. Paul Getty Museum: The Larger Statuary, Wall Paintings, and Mosaics*. Malibu: J. Paul Getty Museum, 1973.
@@ -566,6 +594,9 @@ sort_order: 101
 - <span class="smcaps">Werner 1994</span><br />
   Werner, Klaus. *Mosaiken aus Rom: Polychrome Mosaikpavimente und Emblemata aus Rom und Umgebung*. Würzburg, Germany: CompuTEAM, 1994.
 
+- <span class="smcaps">Westgate 2002</span><br />
+  Westgate, Ruth. “Hellenistic Mosaics.” In *The Hellenistic World: New Perspectives*, edited by Daniel Ogden and Sylvie Le Bohec-Bouhet, 221–51. London: Classical Press of Wales and Duckworth, 2002.
+  
 - <span class="smcaps">Wilson 1982</span><br />
   Wilson, R. J. A. “Roman Mosaics in Sicily: The African Connection.” *American Journal of Archaeology* 86, no. 3 (1982): 413–28.
 
