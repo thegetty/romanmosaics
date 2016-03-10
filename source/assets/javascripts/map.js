@@ -86,7 +86,7 @@ function GeoMap(center) {
   this.el          = 'map';
   this.center      = [37.0, 35.5];
   this.defaultZoom = 7;
-  this.maxZoom     = 12;
+  this.maxZoom     = 11;
   this.minZoom     = 5;
   this.tiles       = "http://pelagios.org/tilesets/imperium/{z}/{x}/{y}.png";
   this.attribution = "Tiles <a href='http://dare.ht.lu.se/'>Pelagios/DARE</a>" +
