@@ -1,7 +1,6 @@
 .expander
   %a{ :href => "javascript:void(0);", :class => "expander-trigger" }
-    %h5
-      Cite this Page
+    %h5 Cite this Page
   .expander-content.nav-cite
     - if current_page.data.cat.is_a? Array
       / Catalogue page with multiple entries
