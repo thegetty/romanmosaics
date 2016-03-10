@@ -24,7 +24,7 @@ function keyboardNav(){
 function mapSetup() {
   if ($("#map").length) {
     // Get Catalogue data
-    $.getJSON("/catalogue.json", function(data){
+    $.getJSON("/mosaics/catalogue.json", function(data){
       // Stash catalogue json data for later use
       window.CATALOGUE = data;
       // Instantiate map
@@ -42,7 +42,7 @@ function mapSetup() {
 function plateSetup() {
   if ($("#plate").length) {
     // Get zoom data
-    $.getJSON("/plates.json", function(data){
+    $.getJSON("/mosaics/plates.json", function(data){
       // stash plates json data for later use
       window.PLATES = data;
       // Instantiate deepZoom
@@ -184,7 +184,7 @@ function popupSetup() {
     } else if ($popup.data("pic")) {
       var picData = JSON.parse($popup.data("pic"));
       var $el     = $("<figure>", {class: "popup-content"});
-      var $img    = $("<img>", {src: "/assets/images/pics/" + picData.file });
+      var $img    = $("<img>", {src: "/mosaics/assets/images/pics/" + picData.file });
       var $figcap = $("<figcaption>");
 
       $figcap.html(
