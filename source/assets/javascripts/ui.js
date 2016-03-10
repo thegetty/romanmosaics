@@ -174,7 +174,7 @@ function popupSetup() {
           if (!$popup.find(".popup-content").hasClass("visible")) {
             map.setView(coords, 6);
             $popup.find(".popup-content").addClass("visible");
-            window.setTimeout(function() { map.invalidateSize(); }, 250);
+            window.setTimeout(function() { map.invalidateSize(); }, 300);
           }
         });
       }
