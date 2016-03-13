@@ -1,4 +1,4 @@
 File Name,Title,Date,Culture,Location,Medium,Dimensions,Museum,Collection Page URL
 <% data.catalogue.entries.each do | entry | %>
-cat<%= entry.cat %>_<%= entry.plate_image_id %>.jpg,<%= entry.title %>,<%= entry.date_txt.gsub("–", "-") %>,<%= entry.culture %>,"<%= entry.location %>",<%= entry.material %>,<%= entry.dimensions_txt %>,"The J. Paul Getty Museum, California",http://www.getty.edu/art/collection/objects/<%= entry.dor_id %>
+cat<%= entry.cat %>_<%= entry.plate_image_id %>.jpg,<%= entry.title %>,<%= entry.date_txt.gsub("–", "-") %>,<%= entry.culture %>,"<%= entry.location %>",<%= entry.material %>,"<%= entry.dimensions[0] %> x <%= entry.dimensions[1] %> cm","The J. Paul Getty Museum, California",http://www.getty.edu/art/collection/objects/<%= entry.dor_id %>
 <% end %>
