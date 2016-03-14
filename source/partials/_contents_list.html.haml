@@ -1,7 +1,7 @@
 - sorted_contents = sort_catalogue_contents
 %ul.toc
   - if environment? :pdf
-    %li.toc-item= link_to "Contents", "../../build/contents/index.html"
+    -# %li.toc-item= link_to "Contents", "../../build/contents/index.html"
     %li.toc-item
       = link_to "Director's Foreword", "../../build/foreword/index.html"
       %span.toc-entry-author Timothy Potts
@@ -18,6 +18,7 @@
     %li.toc-item= link_to "Index", "../../build/bookindex/index.html"
   - else
     - sorted_contents.each do |item|
+      - next if item.data.title == "Table of Contents"
       - if item.data.cat.is_a? Array
         %li.toc-item= link_to "Cats. #{item.data.cat.first}-#{item.data.cat.last}: #{item.data.title}", item
       - elsif item.data.cat
@@ -29,6 +30,8 @@
             %h5.toc-section-intro= link_to item.data.title, item
           - elsif item.data.sort_order == 101
             .toc-section-intro= link_to item.data.title, item
+          - elsif item.data.sidebar_type
+            = link_to item.data.sidebar_type + ": " + item.data.title, item
           - else
             = link_to item.data.title, item
           - if item.data.author and item.data.sidebar_type != "History of the Excavations"
