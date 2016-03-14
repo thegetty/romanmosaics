@@ -9,7 +9,9 @@
     %br
     = "#{current_cat.culture}, #{current_cat.location}"
   %li= "#{current_cat.material}. #{current_cat.dimensions[0]} cm x #{current_cat.dimensions[1]} cm"
-  %li= current_cat.inv
+  %li
+    = current_cat.inv
+    - collection_link(current_cat.cat)
   - if current_cat.credit
     %li= current_cat.credit
   %li= partial "partials/cat_scale", :locals => { :current_cat => current_cat }
