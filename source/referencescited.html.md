@@ -5,7 +5,7 @@ sort_order: 101
 ---
 <div class="references">
 
-- <span class="smcaps">Aisenberg 1994</span><br />
+- ###### Aisenberg 1994
   Aisenberg, Nadya. *Ordinary Heroines: Transforming the Male Myth*. New York: Continuum, 1994.
 
 - <span class="smcaps">Anderson 1985</span><br />
@@ -596,7 +596,7 @@ sort_order: 101
 
 - <span class="smcaps">Westgate 2002</span><br />
   Westgate, Ruth. “Hellenistic Mosaics.” In *The Hellenistic World: New Perspectives*, edited by Daniel Ogden and Sylvie Le Bohec-Bouhet, 221–51. London: Classical Press of Wales and Duckworth, 2002.
-  
+
 - <span class="smcaps">Wilson 1982</span><br />
   Wilson, R. J. A. “Roman Mosaics in Sicily: The African Connection.” *American Journal of Archaeology* 86, no. 3 (1982): 413–28.
 
