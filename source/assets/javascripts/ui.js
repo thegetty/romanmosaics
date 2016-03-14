@@ -1,3 +1,38 @@
+
+// Use this to wrap selectors that contain : characters
+function jq(myid) { return myid.replace( /(:|\.|\[|\]|,)/g, "\\$1" );}
+
+
+function anchorScroll(href) {
+  href = typeof(href) == "string" ? href : $(this).attr("href");
+  var fromTop = 60;
+
+  if(href.indexOf("#") == 0) {
+    var $target = $(href);
+
+    if($target.length) {
+      $("html, body").animate({ scrollTop: $target.offset().top - fromTop });
+      if (history && "pushState" in history) {
+        history.pushState({}, document.title, window.location.pathname + href);
+        return false;
+      }
+    }
+  }
+}
+
+function footnoteScroll() {
+  $(".footnote, .reversefootnote").click(function(event){
+
+    var target = $(this).attr("href");
+    var distance = $(jq(target)).offset().top;
+
+    $("html, body").animate({
+      scrollTop: distance - 60
+    }, 250);
+
+  });
+}
+
 function keyboardNav(){
   $(document).keydown(function(event) {
     var prev, next, photoswipeActive;
@@ -229,4 +264,6 @@ function uiSetup() {
   popupSetup();
   expanderSetup();
   lightBoxSetup();
+  footnoteScroll();
+  anchorScroll(window.location.hash);
 }
