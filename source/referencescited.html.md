@@ -5,7 +5,7 @@ sort_order: 101
 ---
 <div class="references">
 
-- ###### Aisenberg 1994
+- <span class="smcaps">Aisenberg 1994</span><br />
   Aisenberg, Nadya. *Ordinary Heroines: Transforming the Male Myth*. New York: Continuum, 1994.
 
 - <span class="smcaps">Anderson 1985</span><br />
@@ -14,7 +14,7 @@ sort_order: 101
 - <span class="smcaps">Armstrong 1986</span><br />
   Armstrong, Arthur H. *Classical Mediterranean Spirituality: Egyptian, Greek, Roman*. New York: Crossroad, 1986.
 
-- <span class="smcaps">*ARV^^2^*</span><br />
+- <span class="smcaps">*ARV<sup>2</sup>*</span><br />
   Beazley, John Davidson. *Attic Red-Figure Vase-Painters*. 2nd ed. Oxford: Clarendon Press, 1963.
 
 - <span class="smcaps">Aurigemma 1961</span><br />
@@ -322,7 +322,7 @@ sort_order: 101
   Lancha, Janine. *Les mosaïques de Vienne*. Lyon: Presses Universitaires de Lyon, 1990.
 
 - <span class="smcaps">Lancha 1997</span><br />
-  Lancha, Janine. *Mosaïque et culture dans l’Occident romain I^er^–IV^e^s*. Rome: “L’Erma” di Bretschneider, 1997.
+  Lancha, Janine. *Mosaïque et culture dans l’Occident romain I<sup>er</sup>–IV<sup>e</sup>s*. Rome: “L’Erma” di Bretschneider, 1997.
 
 - <span class="smcaps">Langsner 1958</span><br />
   Langsner, Jules. “‘An Astonishing Renascence . . .’ Mosaic: Why the Revival” *Los Angeles Times*, March 30, 1958.
