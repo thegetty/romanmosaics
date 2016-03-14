@@ -142,6 +142,7 @@ class Catalogue < Middleman::Extension
       data.pics.find { |pic| pic.id == pic_id }.to_json
     end
 
+    # --------------------------------------------------------------------------
     # Lookup Catalogue Entry
     # expects a cat number (int)
     # returns a hash of entry data or nil if no entry is found
@@ -156,6 +157,23 @@ class Catalogue < Middleman::Extension
       data.catalogue.find_all { |entry| group.include? entry.cat }
     end
 
+    # --------------------------------------------------------------------------
+    # Collection link method
+    # Expects a cat number (int)
+    # Outputs a HAML tag with link to the Getty collection page for the object
+    def collection_link(cat)
+      url    = "http://www.getty.edu/art/collection/objects/"
+      obj_id = lookup_entry(cat).dor_id
+      return false if obj_id.nil?
+      haml_tag :a, :class  => "collection-link",
+                   :target => "blank",
+                   :title  => "View this item on the Getty's Collection Pages.",
+                   :href   => "#{url}#{obj_id}" do
+                     haml_tag :i, :class => "ion-link"
+                   end
+    end
+
+    # --------------------------------------------------------------------------
     # Previous Chapter Path
     # Does not expect an argument (pulls data from current_page)
     # Returns the path of the previous chapter or false if prev chapter does not
