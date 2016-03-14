@@ -150,6 +150,10 @@ html { min-height: 100vh; }
   @include media($large-screen-up) {
     clear: both;
   }
+  + p {
+    text-indent: $base-spacing;
+    clear: both;
+  }
 }
 
 .inline-figure {
