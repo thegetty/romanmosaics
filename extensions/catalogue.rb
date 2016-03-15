@@ -124,7 +124,7 @@ class Catalogue < Middleman::Extension
     # Expects a term (string)
     # looks for term in the definitions.yml file and returns its definition
     def define_term(term)
-      data.definitions.find { |entry| entry.id == term }.definition
+      data.definitions.find { |entry| entry.id == term }.definition_short
     end
 
     # Location helper method
