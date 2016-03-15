@@ -1,70 +1,114 @@
 ---
 - id: amphora
-  definition: "two-handled storage jar"
+  definition: "a storage vessel usually having a large oval body with a narrow neck and two or more handles extending from the body of the vessel to the rim"
+  definition_short: "two-handled storage jar"
 
 - id: apodyterium
-  definition: "changing room in a Roman bath"
+  definition: "the dressing room of a Roman bath"
+  definition_short: "changing room in a Roman bath"
 
 - id: bouleuterion
-  definition: "assembly hall"
+  definition: "a council building or assembly hall"
+  definition_short: "assembly hall"
+
+- id: caesti
+  definition: "boxing gloves composed of strips of leather weighted with lead or iron and wrapped around the hands and forearms"
 
 - id: caldarium
-  definition: "hot-water pool in a Roman bath"
+  definition: "the hot room in a Roman bath, sometimes containing a hot-water plunge"
+  definition_short: "hot-water pool in a Roman bath"
+
+- id: chlamys
+  definition: "a short cloak or wrap worn by men"
 
 - id: emblema
-  definition: "picture panel"
+  plural: emblemata
+  definition: "the centerpiece of a mosaic; usually a small picture panel with figural representations set into a large floor mosaic"
+  definition_short: "picture panel"
 
 - id: emblemata
-  definition: "picture panels (plural of <em>emblema</em>)"
+  definition_short: "picture panels (plural of <em>emblema</em>)"
 
 - id: frigidarium
-  definition: "cold-water pool in a Roman bath"
+  definition: "the cold room in a Roman bath, sometimes containing a cold-water plunge"
+  definition_short: "cold-water pool in a Roman bath"
 
 - id: guilloche
-  definition: "pattern or border resembling braided or interlacing bands"
+  definition: "a decorative pattern created by two or more twisted bands or lines, often giving the effect of a braid"
+  definition_short: "pattern or border resembling braided or interlacing bands"
 
 - id: kantharoi
-  definition: "two-handled drinking cups (plural of <em>kantharos</em>)"
+  definition_short: "two-handled drinking cups (plural of <em>kantharos</em>)"
 
 - id: kantharos
-  definition: "two-handled drinking cup"
+  plural: kantharoi
+  definition: "a drinking vessel featuring a deep bowl set on a tall stem with two side handles extending from the bottom of the vessel to the rim"
+  definition_short: "two-handled drinking cup"
+
+- id: kerykeion
+  definition: "a herald’s staff or wand with two snakes entwined around it, often crowned by two wings. Also known as a caduceus"
 
 - id: krater
-  definition: "vessel for holding wine"
+  definition: "a large vessel with a wide mouth and two side handles, generally used for mixing wine and water"
+  definition_short: "vessel for holding wine"
 
 - id: missorium
-  definition: "large plate"
+  definition: "a large plate"
+  definition_short: "large plate"
 
 - id: nymphaea
-  definition: "monuments dedicated to the nymphs that served as reservoirs, sanctuaries, and places for leisure (plural of <em>nymphaeum</em>)"
+  definition_short: "monuments dedicated to the nymphs that served as reservoirs, sanctuaries, and places for leisure (plural of <em>nymphaeum</em>)"
+
+- id: nymphaion
+  plural: nymphaea
+  definition: "a monument dedicated to the nymphs. <em>Nymphaea</em> served as reservoirs, sanctuaries, and places of leisure"
 
 - id: odeion
-  definition: "roofed theater for musical performances"
+  definition: "a building or other roofed structure used for musical performances"
+  definition_short: "roofed theater for musical performances"
 
 - id: opus-mixtum
-  definition: "Roman construction technique consisting of a combination of different types of brickwork"
+  definition: "a Roman construction technique that uses a combination of different types of brickwork"
+  definition_short: "Roman construction technique consisting of a combination of different types of brickwork"
 
 - id: opus-sectile
-  definition: "Roman construction technique using larger pieces of cut stone than tesserae"
+  definition: "mosaic technique used to decorate floors and walls in which designs are created by fitting together pieces of stone or glass larger than the small cubes used in <em>tesserae</em>"
+  definition_short: "Roman construction technique using larger pieces of cut stone than tesserae"
 
 - id: opus-signinum
-  definition: "Roman construction technique of mortar pavements mixed with crushed pottery or tile"
+  definition: "a mortar pavement made of concrete mixed with crushed tile or stone chips"
+  definition_short: "Roman construction technique of mortar pavements mixed with crushed pottery or tile"
 
 - id: opus-vermiculatum
-  definition: "Roman construction technique in which tiny pieces of irregular stone were used to create extremely detailed picture mosaics that imitated the effects of painting"
+  definition: "a technique used to decorate floors and walls in which tiny pieces of irregular stone are used to create extremely detailed picture mosaics"
+  definition_short: "Roman construction technique in which tiny pieces of irregular stone were used to create extremely detailed picture mosaics that imitated the effects of painting"
 
-- id: terrazzo
-  definition: "pavement consisting of chips of stone, usually marble, set in concrete and polished to create a smooth surface"
+- id: pilae
+  definition: "pillars composed of stacked tiles; used to raise the floor of a <em>caldarium</em> to allow heating from below"
 
 - id: situla
-  definition: "bucket"
+  definition: "a bucket-shaped vessel, often having handles"
+  definition_short: "bucket"
+
+- id: terrazzo
+  definition: "a concrete mixed with chips of marble or stone; used especially as a decorative surfacing on floors and walls"
+  definition_short: "pavement consisting of chips of stone, usually marble, set in concrete and polished to create a smooth surface"
+
+- id: tesserae
+  definition: "small square or cubed pieces of hand-cut stone, glass, or terracotta used in the making of a mosaic"
+
+- id: thyrsus
+  definition: "a staff of fennel topped with a pinecone and sometimes twined with ivy leaves and vines"
 
 - id: triclinium
-  definition: "dining room"
+  definition: "the dining room of a Roman house"
+  definition_short: "dining room"
 
 - id: venatio
-  definition: "staged animal hunt in the arena"
+  plural: venationes
+  definition: "a type of entertainment held in Roman arenas that involved the staged hunting and killing of wild animals"
+  definition_short: "staged animal hunt in the arena"
 
 - id: venationes
-  definition: "staged animal hunts in the arena (plural for <em>venatio</em>)"
+  definition_short: "staged animal hunts in the arena (plural for <em>venatio</em>)"
 ---
