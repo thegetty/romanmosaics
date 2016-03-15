@@ -5,19 +5,7 @@
   position: relative;
   text-indent: 0;
 
-  &::after {
-    @include transition($base-transition);
-    background-color: #fff;
-    background-position: center center;
-    background-repeat: no-repeat;
-    right: ($small-spacing / 2);
-    padding: ($small-spacing / 2);
-    position: absolute;
-    top: ($small-spacing / 2);
-  }
-
   &:hover {
-    background-color: #fff;
     border-bottom: 2.5px solid tint($action-color, 20%);
   }
 }
@@ -59,18 +47,6 @@
 }
 
 .popup-location {
-  &::after {
-    background-image: url(image_path("icons/map-pin.svg"));
-  }
-
-  &:hover {
-    padding-right: $base-spacing;
-
-    &::after {
-      content: "";
-    }
-  }
-
   .popup-content {
     &.visible {
       height: 300px;
@@ -80,17 +56,6 @@
 }
 
 .popup-pic {
-  &::after {
-    background-image: url(image_path("icons/image-icon.svg"));
-  }
-
-  &:hover {
-    padding-right: $base-spacing;
-
-    &::after {
-      content: "";
-    }
-  }
   // Specificity hack needed to override default img/fig styles
   .popup-content.popup-content {
     margin: 0 0 -30px;
