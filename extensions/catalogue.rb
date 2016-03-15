@@ -121,10 +121,16 @@ class Catalogue < Middleman::Extension
     # YAML data files for future consumption by front-end JS.
 
     # Define Term helper method
-    # Expects a term (string)
-    # looks for term in the definitions.yml file and returns its definition
-    def define_term(term)
-      data.definitions.find { |entry| entry.id == term }.definition_short
+    # Expects a word (string)
+    # looks for term in the definitions.yml file
+    # Returns definition_short if that exists, or else returns full definition
+    # Also returns plural form if that exists
+    def define_term(word)
+      term = data.definitions.find { |entry| entry.id == word }
+      definition = term.definition_short || term.definition
+      definition += " (plural: <em>#{term.plural}</em>)" unless term.plural.nil?
+
+      definition
     end
 
     # Location helper method
