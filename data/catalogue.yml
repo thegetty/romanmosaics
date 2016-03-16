@@ -13,7 +13,7 @@
   - 270.5
   material: Stone tesserae
   culture: Roman
-  location: From Rome, Italy
+  location: from Rome, Italy
 - cat: 2
   title: Mosaic Floor with Bear Hunt
   inv: 72.AH.76.1–.23
@@ -28,7 +28,7 @@
   - 869
   material: Stone tesserae
   culture: Roman
-  location: Near Baiae, Italy
+  location: near Baiae, Italy
 - cat: 3
   title: Mosaic Floor with Orpheus and Animals
   inv: 62.AH.2
@@ -43,7 +43,7 @@
   - 457
   material: Stone and glass tesserae
   culture: Gallo-Roman
-  location: From Saint-Romain-en-Gal, France
+  location: from Saint-Romain-en-Gal, France
 - cat: 4
   title: Mosaic Floor with Combat between Dares and Entellus
   inv: 71.AH.106
@@ -58,7 +58,7 @@
   - 208
   material: Stone and glass tesserae
   culture: Gallo-Roman
-  location: From Villelaure, France
+  location: from Villelaure, France
 - cat: 5
   title: Mosaic of a Lion Attacking an Onager
   inv: 73.AH.75
@@ -73,7 +73,7 @@
   - 160
   material: Stone and glass tesserae
   culture: Roman
-  location: From Hadrumetum (present-day Sousse), Tunisia
+  location: from Hadrumetum (present-day Sousse), Tunisia
 - cat: 6
   title: Mosaic Floor with Achilles and Briseis
   inv: 68.AH.12
@@ -88,7 +88,7 @@
   - 240
   material: Stone and glass tesserae
   culture: Roman
-  location: From Syria
+  location: from Syria
 - cat: 7
   title: Mosaic Floor with Animals
   inv: 70.AH.96
@@ -103,7 +103,7 @@
   - 682.3
   material: Stone tesserae
   culture: Roman
-  location: From Antioch, Syria (present-day Antakya, Turkey)
+  location: from Antioch, Syria (present-day Antakya, Turkey)
 - cat: 8
   title: Mosaic Panel with Griffin
   inv: 71.AH.113
@@ -118,7 +118,7 @@
   - 173.4
   material: Stone and glass tesserae
   culture: Roman
-  location: From Syria, possibly Emesa (present-day Homs)
+  location: from Syria, possibly Emesa (present-day Homs)
 - cat: 9
   title: Mosaic Panel with Peacock Facing Left
   inv: 75.AH.121
@@ -133,7 +133,7 @@
   - 115.5
   material: Stone tesserae
   culture: Roman
-  location: From Syria, possibly Emesa (present-day Homs)
+  location: from Syria, possibly Emesa (present-day Homs)
   credit: Gift of William Wahler
 - cat: 10
   title: Mosaic Panel with Peacock Facing Right
@@ -149,7 +149,7 @@
   - 129.5
   material: Stone tesserae
   culture: Roman
-  location: From Syria, possibly Emesa (present-day Homs)
+  location: from Syria, possibly Emesa (present-day Homs)
   credit: Gift of William Wahler
 - cat: 11
   title: Mosaic Panel with Donkey and Bird
@@ -165,7 +165,7 @@
   - 106.7
   material: Stone tesserae
   culture: Roman
-  location: From Syria, possibly Emesa (present-day Homs)
+  location: from Syria, possibly Emesa (present-day Homs)
   credit: Gift of William Wahler
 - cat: 12
   title: Mosaic Panel with Eagle
@@ -181,7 +181,7 @@
   - 57.2
   material: Stone tesserae
   culture: Roman
-  location: From Syria, possibly Emesa (present-day Homs)
+  location: from Syria, possibly Emesa (present-day Homs)
   credit: Gift of William Wahler
 - cat: 13
   title: Mosaic Panel with Three Birds and a Tree
@@ -197,7 +197,7 @@
   - 97.8
   material: Stone tesserae
   culture: Roman
-  location: From Syria, possibly Emesa (present-day Homs)
+  location: from Syria, possibly Emesa (present-day Homs)
   credit: Gift of William Wahler
 - cat: 14
   title: Mosaic Panel of Bull and Flowers
@@ -213,7 +213,7 @@
   - 109.2
   material: Stone tesserae
   culture: Roman
-  location: From Syria, possibly Emesa (present-day Homs)
+  location: from Syria, possibly Emesa (present-day Homs)
   credit: Gift of William Wahler
 - cat: 15
   title: Mosaic Panel with Stag
@@ -229,7 +229,7 @@
   - 89
   material: Stone tesserae
   culture: Roman
-  location: From Syria, possibly Emesa (present-day Homs)
+  location: from Syria, possibly Emesa (present-day Homs)
   credit: Gift of William Wahler
 - cat: 16
   title: Mosaic Panel with Horse
@@ -245,7 +245,7 @@
   - 146
   material: Stone tesserae
   culture: Roman
-  location: From Syria, possibly Emesa (present-day Homs)
+  location: from Syria, possibly Emesa (present-day Homs)
   credit: Gift of William Wahler
 - cat: 17
   title: Mosaic Panel with Bull
@@ -261,7 +261,7 @@
   - 179.1
   material: Stone tesserae
   culture: Roman
-  location: From Syria, possibly Emesa (present-day Homs)
+  location: from Syria, possibly Emesa (present-day Homs)
   credit: Gift of William Wahler
 - cat: 18
   title: Mosaic Panel with Rabbit
@@ -277,7 +277,7 @@
   - 114.3
   material: Stone tesserae
   culture: Roman
-  location: From Syria, possibly Emesa (present-day Homs)
+  location: from Syria, possibly Emesa (present-day Homs)
   credit: Gift of William Wahler
 - cat: 19
   title: Mosaic Panel with a Lion Chasing a Bull
@@ -293,7 +293,7 @@
   - 149.9
   material: Stone tesserae
   culture: Roman
-  location: From Syria, possibly Emesa (present-day Homs)
+  location: from Syria, possibly Emesa (present-day Homs)
   credit: Gift of Joel Malter
 - cat: 20
   title: Mosaic Panel with Head of a Season
@@ -309,7 +309,7 @@
   - 74.3
   material: Stone and glass tesserae
   culture: Roman
-  location: From Syria (or possibly Jordan)
+  location: from Syria (or possibly Jordan)
 - cat: 21
   title: Mosaic Panel with Two Male Busts
   inv: 78.AH.399
@@ -324,6 +324,6 @@
   - 68
   material: Stone tesserae
   culture: Roman
-  location: From Syria (or possibly Jordan)
+  location: from Syria (or possibly Jordan)
   credit: Gift of Dr. Martin M. Orenstein
 ---
