@@ -107,6 +107,27 @@ function GeoMap(center) {
     onEachFeature: this.addPopups
   });
 
+  var pointsOfInterest = L.geoJson(this.geojson, {
+    filter: function(feature, layer) {
+      return !feature.properties.catalogue;
+    },
+    pointToLayer: this.addPointLabels,
+    onEachFeature: this.addPopups
+  });
+
+  // this.map.addLayer(catalogueLabels);
+  // this.map.addLayer(pointsOfInterest);
+
+  var overlays = {
+    "Points of Interest": pointsOfInterest,
+    "Catalogue Locations": catalogueLabels
+  };
+
+  L.control.layers(null, overlays, {
+    // collapsed: false,
+    position: "topright"
+  }).addTo(this.map);
+
   this.map.addLayer(catalogueLabels);
 }
 
@@ -131,15 +152,26 @@ GeoMap.prototype = {
   addCatalogueLabels: function(feature, latlng) {
     if (feature.properties.ambiguous == true) {
       return L.circleMarker(latlng, {
-        radius: 8,
-        weight: 0,
+        color: "#fff",
+        fillColor: "#2880CA",
+        fillOpacity: 1,
         opacity: 1,
-        fillOpacity: 1
+        radius: 9,
+        weight: 3
       }).bindLabel(feature.properties.custom_name, { noHide: true, offset: [16, -15] });
     } else {
       return L.marker(latlng)
         .bindLabel(feature.properties.custom_name, { noHide: true });
     }
+  },
+  addPointLabels: function(feature, latlng) {
+    return L.circleMarker(latlng, {
+      fillColor: "#2880CA",
+      fillOpacity: 1,
+      opacity: 1,
+      radius: 5,
+      weight: 0
+    });
   },
   // Add Popup content
   addPopups: function(feature, layer) {
