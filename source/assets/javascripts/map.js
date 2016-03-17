@@ -115,9 +115,6 @@ function GeoMap(center) {
     onEachFeature: this.addPopups
   });
 
-  // this.map.addLayer(catalogueLabels);
-  // this.map.addLayer(pointsOfInterest);
-
   var overlays = {
     "Points of Interest": pointsOfInterest,
     "Catalogue Locations": catalogueLabels
@@ -129,6 +126,7 @@ function GeoMap(center) {
   }).addTo(this.map);
 
   this.map.addLayer(catalogueLabels);
+  this.map.addLayer(pointsOfInterest);
 }
 
 // GeoMap Methods
@@ -158,10 +156,11 @@ GeoMap.prototype = {
         opacity: 1,
         radius: 9,
         weight: 3
-      }).bindLabel(feature.properties.custom_name, { noHide: true, offset: [16, -15] });
+      });
+        // .bindLabel(feature.properties.custom_name, { noHide: true, offset: [16, -15] });
     } else {
-      return L.marker(latlng)
-        .bindLabel(feature.properties.custom_name, { noHide: true });
+      return L.marker(latlng);
+        // .bindLabel(feature.properties.custom_name, { noHide: true });
     }
   },
   addPointLabels: function(feature, latlng) {
@@ -208,5 +207,35 @@ GeoMap.prototype = {
       popupMsg += "</ul>";
     }
     layer.bindPopup(popupMsg, popupOptions);
+  },
+  // Add open popup
+  addOpenPopup: function(feature, layer) {
+    var latlng   = layer.getLatLng();
+    var props    = feature.properties;
+    var popupMsg = "<h4 class='feature-name'>" + props.custom_name + "</h4>";
+    var popup    = L.popup().setLatLng(latlng)
+                    .setContent(popupMsg).openOn(RegionMap.map);
+    layer.bindPopup(popupMsg);
+  },
+  // Zoom to a particular point
+  zoomToHash: function() {
+    if (window.location.hash) {
+      var mapLocation = _.find(geojsonFeature.features, function(feature){
+        return feature.properties.id == window.location.hash.slice(1);
+      });
+
+      L.geoJson(mapLocation, {
+        pointToLayer: RegionMap.addPointLabels,
+        onEachFeature: RegionMap.addOpenPopup
+      }).addTo(RegionMap.map);
+
+      var coords = [
+        mapLocation.geometry.coordinates[1],
+        mapLocation.geometry.coordinates[0]
+      ];
+
+      $("html, body").animate({ scrollTop: 0 });
+      RegionMap.map.setView(coords);
+    }
   }
 };

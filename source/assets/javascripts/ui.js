@@ -68,6 +68,10 @@ function mapSetup() {
       if ($("#map").parent().hasClass("cover-map")) {
         regionMap.map.setZoom(5);
       }
+      if (window.location.hash.slice(1, 4) == "loc") {
+        RegionMap.zoomToHash();
+      }
+      window.onhashchange = RegionMap.zoomToHash;
     }).fail(function() {
       console.log("Failed to load catalogue json");
     });
