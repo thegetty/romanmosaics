@@ -1,9 +1,5 @@
 ---
 
-- id: loc_0001
-  dare:
-  custom_name: ‘Ain el-Bad (Syria)
-
 - id: loc_175
   dare: 175
   custom_name: Aix-en-Provence
@@ -56,25 +52,9 @@
   dare: 17070
   custom_name: Corinth
 
-- id: loc_0002
-  dare:
-  custom_name: Dar Zmela (Tunisia)
-
-- id: loc_0003
-  dare:
-  custom_name: Deir el-‘Adas (Syria)
-
-- id: loc_0004
-  dare:
-  custom_name: Deir es-Sleib (Syria)
-
 - id: loc_21634
   dare: 21634
   custom_name: El Kef
-
-- id: loc_0005
-  dare:
-  custom_name: El-Maqerqesh (Israel)
 
 - id: loc_21719
   dare: 21719
@@ -120,17 +100,9 @@
   dare: 15896
   custom_name: Jerusalem
 
-- id: loc_0007
-  dare:
-  custom_name: Khirbet Mukhayyat (Jordan)
-
 - id: loc_27746
   dare: 27746
   custom_name: Kibyra
-
-- id: loc_0008
-  dare:
-  custom_name: Kissufim (Israel)
 
 - id: loc_23373
   dare: 23373
@@ -155,11 +127,7 @@
 - id: loc_21685
   dare: 21685
   custom_name: Lydda
-
-- id: loc_0009
-  dare:
-  custom_name: Ma’arata (Syria. Alternate name Maarata)
-
+  
 - id: loc_21755
   dare: 21755
   custom_name: Madaba
