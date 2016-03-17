@@ -1070,6 +1070,24 @@ var geojsonFeature = {
         "pleiades": "",
         "tgn": 1000140
       }
+    }, {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["34.5667", "31.5667"]
+      },
+      "properties": {
+        "custom_name": "Erez",
+        "name": "Erez",
+        "ancient": "",
+        "province": "",
+        "country": "",
+        "type": "city",
+        "id": "loc_0006",
+        "dare": "",
+        "pleiades": "",
+        "tgn": 1079511
+      }
     }
   ]
 };
