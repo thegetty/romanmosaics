@@ -109,6 +109,7 @@ $rgb-gr-stop2: rgba(0, 0, 0, 0.85);
   margin-top: 1em;
 
   .button {
+    clear: both;
     display: table;
     font-family: $heading-font-family;
     margin: 2em auto;
@@ -122,6 +123,21 @@ $rgb-gr-stop2: rgba(0, 0, 0, 0.85);
     @include shift(1);
 
     p + p { text-indent: 0; }
+  }
+}
+
+.cover-highlights-section {
+  h3,
+  p {
+    font-size: 1.25em;
+  }
+
+  @include media($medium-screen-up) {
+    @include span-columns(6);
+
+    &:last-of-type {
+      @include omega;
+    }
   }
 }
 

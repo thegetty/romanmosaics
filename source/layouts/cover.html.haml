@@ -10,14 +10,42 @@
       %h3.cover-contributors With an #{data.book.author_as_it_appears[1]}, and #{data.book.author_as_it_appears[2]}
       %p
         :markdown
-          In Roman décor, elaborate mosaics transformed entire rooms into spectacular settings of vibrant color, figural imagery, and abstract design. Intricate patterns and figural compositions were created by setting tesserae—small pieces of stone or glass—into floors and walls. The mosaics in the collection of the J. Paul Getty Museum span the second through the sixth centuries AD and reveal the diversity of compositions found throughout the empire during this period. Recovered from various archaeological contexts, these mosaics provide a glimpse into the richly embellished architecture of the ancient world.
+          In Roman décor, elaborate mosaics transformed entire rooms into
+          spectacular settings of vibrant color, figural imagery, and abstract
+          design. Intricate patterns and figural compositions were created by
+          setting tesserae—small pieces of stone or glass—into floors and walls.
+          The mosaics in the collection of the J. Paul Getty Museum span the
+          second through the sixth centuries AD and reveal the diversity of
+          compositions found throughout the empire during this period. Recovered
+          from various archaeological contexts, these mosaics provide a glimpse
+          into the richly embellished architecture of the ancient world.
+
       = link_to 'Contents', '/contents.html', :class => "button"
   .cover-map
     #map.map{:data => {:center => current_page.data.map_center }}
   .cover-highlights
     .cover-highlights-inner
-      %h2 Highlights from the Catalogue
-      %p= lorem.paragraph
+      %h2.centered Highlights from the Catalogue
+      .cover-highlights-section
+        = tag :img, :src => lorem.image("800x400")
+        %h3 About the Excavations
+        %p
+          Several mosaics in the Getty’s collection came from known sites
+          throughout the Roman Empire and survived from antiquity in their
+          original architectural contexts. These intricate designs of glass and
+          stone once decorated villas, baths, and churches. The catalogue presents
+          the archaeological evidence from the ancient sites where the mosaics
+          were excavated as well as new material documenting their modern
+          discoveries.
+      .cover-highlights-section
+        = tag :img, :src => lorem.image("800x400")
+        %h3 About the Exhibition
+        %p
+          This catalogue includes mosaics featured in <em>Roman Mosaics across the
+          Empire.</em> Visitors to the 2016 exhibition at the Getty Villa experience
+          the rare opportunity of viewing two Gallo-Roman mosaics from the same
+          villa near Villelaure, France—the Getty’s Dares and Entellus mosaic and
+          LACMA’s mosaic of Diana and Callisto.
       = link_to 'View the Catalogue', '/catalogue.html', :class => "button"
   .cover-colophon
     .cover-colophon-inner
