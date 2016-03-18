@@ -38,7 +38,7 @@ $navbar-z-index: 9999;
 
 .navbar-center {
   @include display(flex);
-  @include flex(3);
+  @include flex(3 0 auto);
   @include justify-content(center);
   text-align: center;
 }
