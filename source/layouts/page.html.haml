@@ -9,10 +9,10 @@
         %h3.cat-num= current_entry.cat
         %h1.page-title= current_entry.title
         %h4.cat-dates= current_entry.date_txt
-      - if current_page.data.sidebar_type
-        %h3.page-type= current_page.data.sidebar_type
       %h1.page-title= current_page.data.title
-      - if current_page.data.author
+      - if current_page.data.subtitle
+        %h3.page-subtitle= current_page.data.subtitle
+      - if current_page.data.author and current_page.data.subtitle != "History of the Excavations"
         - current_page.data.author.each do |author|
           %h3.page-author= "#{author.first_name} #{author.last_name}"
     %main.page-content

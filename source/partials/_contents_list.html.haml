@@ -18,9 +18,9 @@
     %li.toc-item= link_to "Index", "../../build/bookindex/index.html"
   - else
     - sorted_contents.each do |item|
-      - next if item.data.title == "Table of Contents"
+      - next if item.data.title == "Contents"
       - if item.data.cat.is_a? Array
-        %li.toc-item= link_to "#{item.data.cat.first}-#{item.data.cat.last} #{item.data.title}", item
+        %li.toc-item= link_to "#{item.data.cat.first}-#{item.data.cat.last}. #{item.data.title}", item
       - elsif item.data.cat
         - current_entry = lookup_entry(item.data.cat)
         %li.toc-item= link_to "#{item.data.cat}. #{current_entry.title}", item
@@ -30,10 +30,10 @@
             %h5.toc-section-intro= link_to item.data.title, item
           - elsif item.data.sort_order == 101
             .toc-section-intro= link_to item.data.title, item
-          - elsif item.data.sidebar_type
-            = link_to item.data.sidebar_type + ": " + item.data.title, item
+          - elsif item.data.subtitle
+            = link_to item.data.title + ": " + item.data.subtitle, item
           - else
             = link_to item.data.title, item
-          - if item.data.author and item.data.sidebar_type != "History of the Excavations"
+          - if item.data.author and item.data.subtitle != "History of the Excavations"
             - item.data.author.each do |author|
               %span.toc-entry-author= "#{author.first_name} #{author.last_name}"
