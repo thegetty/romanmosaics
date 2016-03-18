@@ -66,7 +66,7 @@ function mapSetup() {
       var centerPoint = $("#map").data("center");
       RegionMap = new GeoMap(centerPoint);
       if ($("#map").parent().hasClass("cover-map")) {
-        regionMap.map.setZoom(5);
+        RegionMap.map.setZoom(5);
       }
       if (window.location.hash.slice(1, 4) == "loc") {
         RegionMap.zoomToHash();
