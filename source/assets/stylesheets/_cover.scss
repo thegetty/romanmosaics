@@ -127,9 +127,13 @@ $rgb-gr-stop2: rgba(0, 0, 0, 0.85);
 }
 
 .cover-highlights-section {
+  margin-bottom: $base-spacing;
+  margin-top: $base-spacing;
+
   h3,
   p {
     font-size: 1.25em;
+    + p { text-indent: 0; }
   }
 
   @include media($medium-screen-up) {
