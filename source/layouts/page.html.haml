@@ -17,3 +17,5 @@
           %h3.page-author= "#{author.first_name} #{author.last_name}"
     %main.page-content
       = yield
+      -# - if current_page.data.title == "Acknowledgments" and environment? :pdf
+      -#   .bleed{ :data => { :catalogue => "Acknowledgments" }}
