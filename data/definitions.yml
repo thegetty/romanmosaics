@@ -26,9 +26,6 @@
   definition: "the centerpiece of a mosaic; usually a small picture panel with figural representations set into a large floor mosaic"
   definition_short: "picture panel"
 
-- id: emblemata
-  definition_short: "picture panels (plural of <em>emblema</em>)"
-
 - id: frigidarium
   definition: "the cold room in a Roman bath, sometimes containing a cold-water plunge"
   definition_short: "cold-water pool in a Roman bath"
@@ -36,9 +33,6 @@
 - id: guilloche
   definition: "a decorative pattern created by two or more twisted bands or lines, often giving the effect of a braid"
   definition_short: "pattern or border resembling braided or interlacing bands"
-
-- id: kantharoi
-  definition_short: "two-handled drinking cups (plural of <em>kantharos</em>)"
 
 - id: kantharos
   plural: kantharoi
@@ -55,9 +49,6 @@
 - id: missorium
   definition: "a large plate"
   definition_short: "large plate"
-
-- id: nymphaea
-  definition_short: "monuments dedicated to the nymphs that served as reservoirs, sanctuaries, and places for leisure (plural of <em>nymphaeum</em>)"
 
 - id: nymphaion
   plural: nymphaea
@@ -108,7 +99,4 @@
   plural: venationes
   definition: "a type of entertainment held in Roman arenas that involved the staged hunting and killing of wild animals"
   definition_short: "staged animal hunt in the arena"
-
-- id: venationes
-  definition_short: "staged animal hunts in the arena (plural for <em>venatio</em>)"
 ---
