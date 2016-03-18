@@ -188,7 +188,12 @@ GeoMap.prototype = {
     });
 
     if (linkedEntries.length > 0) {
-      locationName = _(linkedEntries[0].location).capitalize();
+      // Cat 6 workaround - uses the Cat 7 location text instead
+      if (linkedEntries[0].cat == 6) {
+        locationName = _(linkedEntries[1].location).capitalize();
+      } else {
+        locationName = _(linkedEntries[0].location).capitalize();
+      }
       popupMsg     = "<h4 class='feature-name'>" + locationName + "</h4>";
       popupMsg     += "<strong>Catalogue Entries:</strong><ul>";
 
