@@ -968,6 +968,7 @@ var geojsonFeature = {
         "coordinates": ["10.706877", "35.296493"]
       },
       "properties": {
+        "custom_name": "Thysdrus",
         "name": "El Djem",
         "ancient": "Thysdrus",
         "province": "Byzacena",
