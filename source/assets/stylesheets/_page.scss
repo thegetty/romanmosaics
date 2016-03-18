@@ -56,8 +56,12 @@
   @extend .body-copy;
 }
 
-.contributor-bios li {
+.contributor-bios li, .glossary li {
   margin-bottom: $small-spacing;
+}
+
+.glossary .term {
+  font-style: italic;
 }
 
 .page-content .references {

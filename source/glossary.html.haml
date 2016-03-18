@@ -1,0 +1,14 @@
+---
+title: Glossary
+layout: page
+sort_order: 102
+---
+%ul.glossary
+  - data.definitions.sort { |a,b| a.id <=> b.id }.each do |term|
+    %li
+      - term.definition[0] = term.definition[0].capitalize
+      %span.term= term.id
+      - if term.plural
+        %span.plural= "(plural <em>#{term.plural}</em>)"
+      %br
+      %span.definition= "#{term.definition}."
