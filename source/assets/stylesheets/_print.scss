@@ -235,9 +235,27 @@ $light-gray: transparentize($print-text-color, 0.5);
   }
   // scss-lint:enable NameFormat
 
+  body.contents {
+    page: no-footer;
+  }
+
+  body.foreword,
+  body.acknowledgments {
+    page: frontmatter
+  }
+
+  body.introduction {
+    counter-reset: page 1;
+    /* page-break-before: right; */
+  }
+
   .contents-page {
     a::after {
       content: leader(dotted) " " target-counter(attr(href, url), page);
+    }
+
+    .frontmatter a::after {
+      content: leader(dotted) " " target-counter(attr(href, url), page, lower-roman);
     }
 
     li {
@@ -278,6 +296,10 @@ $light-gray: transparentize($print-text-color, 0.5);
   .bleed {
     @extend %full-page-image;
     /* page-break-before: left; */
+
+    &[data-catalogue="Acknowledgments"] {
+      background-image: url(image_path("print/introduction.jpg"));
+    }
 
     @for $i from 1 through 21 {
       &[data-catalogue="#{$i}"] {
@@ -333,6 +355,11 @@ $light-gray: transparentize($print-text-color, 0.5);
     }
   }
 
+  ul.glossary {
+    font-size: 8pt;
+    line-height: $print-base-line-height;
+  }
+
   // General content styles
   .introduction .page-content,
   .foreword .page-content,
@@ -343,6 +370,7 @@ $light-gray: transparentize($print-text-color, 0.5);
   .referencescited .page-content,
   .about .page-content,
   .contributors .page-content,
+  .glossary .page-content,
   .cat-entry-content {
     color: $print-text-color;
     column-count: 2;
@@ -382,6 +410,7 @@ $light-gray: transparentize($print-text-color, 0.5);
 
     ul,
     ol {
+      line-height: $print-base-line-height;
       margin-left: 0;
       padding-left: 0;
       text-indent: 0;
