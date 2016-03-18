@@ -181,6 +181,23 @@ class Catalogue < Middleman::Extension
     end
 
     # --------------------------------------------------------------------------
+    # Location Link method
+    # Expects two arguments: first, the desired link text
+    # Second: a url pattern like so: "/catalogue/italy.html#loc_1524"
+    # Where /catalogue/italy.html is the relevant map page
+    # and #loc_xxxx is the location id of the point to appear on the map
+    # as referenced in the geojson file
+    def location_link(text, destination)
+      html = content_tag :sup do
+        tag :i, :class => "ion-ios-location-outline"
+        # link_to "#{destination}", :title => "View this location on the map" do
+          # tag :i, :class => "ion-ios-location-outline"
+        # end
+      end
+      concat_safe_content("#{text}#{html}")
+    end
+
+    # --------------------------------------------------------------------------
     # Previous Chapter Path
     # Does not expect an argument (pulls data from current_page)
     # Returns the path of the previous chapter or false if prev chapter does not
