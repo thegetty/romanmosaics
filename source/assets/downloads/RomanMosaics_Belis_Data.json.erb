@@ -3,7 +3,7 @@
   {
     "Catalogue/Guide Number": <%= entry.cat %>,
     "DOR ID": <%= entry.dor_id %>,
-    "Inventory Number": "<%= entry.inv %>",
+    "Inventory Number": "<%= entry.inv.gsub("–", "-") %>",
     "Artist/Maker": "",
     "Title": "<%= entry.title %>",
     "Group": "",
@@ -14,7 +14,7 @@
     "TGN Web View": "",
     "Begin Date": <% if entry.date[0].nil? %>""<% else %><%= entry.date[0] %><% end %>,
     "End Date": <% if entry.date[1].nil? %>""<% else %><%= entry.date[1] %><% end %>,
-    "Date": "<%= entry.date_txt.gsub("–", "-") %>",
+    "Date": <% if entry.date_txt.nil? %>""<% else %>"<%= entry.date_txt.gsub("–", "-") %>"<% end %>,
     "Classification": "",
     "Typology": "",
     "Object Name": "",
