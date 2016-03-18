@@ -118,7 +118,7 @@
   file: pic_20_lion-mosaic-from-carthage.jpg
   title: Lion Mosaic from Carthage
   source_credit: National Museum of Natural History, Smithsonian Institution
-  url: "http://collections.nmnh.si.edu/search/anth/?ark=ark:/65665/3b7b423b4fd4c496b96cf25f1beb8a1e4"
+  url: "http://n2t.net/ark:/65665/3b7b423b4-fd4c-496b-96cf-25f1beb8a1e4"
 
 - id: pic_21
   file: pic_21_house-of-the-tragic-poet.jpg
@@ -371,5 +371,10 @@
   title: Drinking Contest between Dionysos and Herakles from the Atrium House
   source_credit: © Daderot / Wikimedia Commons
   url: "https://commons.wikimedia.org/wiki/Category:Mosaics_in_the_Worcester_Art_Museum#/media/File:Mosaics,_Worcester_Art_Museum_-_IMG_7580_(cropped).JPG"
+
+- id: pic_67
+  file: pic_67_lhopital-saint-jacques.jpg
+  title: L’hopital Saint-Jacques, Aix-en-Provence
+  source_credit: © Henri Nodet, 1903
 
 ---
