@@ -34,6 +34,11 @@ html { min-height: 100vh; }
       margin-top: 0;
     }
   }
+
+  // superscript map links get weird spacing without this override
+  sup {
+    text-indent: 0;
+  }
 }
 
 .container {

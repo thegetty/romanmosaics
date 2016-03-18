@@ -190,9 +190,9 @@ class Catalogue < Middleman::Extension
     def location_link(text, destination)
       html = content_tag :sup do
         tag :i, :class => "ion-ios-location-outline"
-        # link_to "#{destination}", :title => "View this location on the map" do
-          # tag :i, :class => "ion-ios-location-outline"
-        # end
+        link_to "#{destination}", :title => "View this location on the map" do
+          tag :i, :class => "ion-ios-location-outline"
+        end
       end
       concat_safe_content("#{text}#{html}")
     end
