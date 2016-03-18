@@ -44,7 +44,7 @@ var geojsonFeature = {
         "coordinates": ["36.165318", "36.200663"]
       },
       "properties": {
-        "catalogue": [7],
+        "catalogue": [6, 7],
         "custom_name": "Antioch",
         "name": "Antakya",
         "ancient": "Antiochia/Theoupolis",
@@ -262,7 +262,7 @@ var geojsonFeature = {
         "coordinates": ["36.714401", "34.723414"]
       },
       "properties": {
-        "catalogue": [9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19],
+        "catalogue": [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19],
         "custom_name": "Emesa",
         "name": "Homs",
         "ancient": "Hemesa/Emesa",
@@ -1059,7 +1059,7 @@ var geojsonFeature = {
       },
       "properties": {
         "ambiguous": true,
-        "catalogue": [6, 8, 20, 21],
+        "catalogue": [20, 21],
         "custom_name": "Syria",
         "name": "",
         "ancient": "",
