@@ -188,7 +188,7 @@ class Catalogue < Middleman::Extension
     # and #loc_xxxx is the location id of the point to appear on the map
     # as referenced in the geojson file
     def location_link(text, destination)
-      html = content_tag :sup do
+      html = content_tag :sup, :class => "location-link" do
         tag :i, :class => "ion-ios-location-outline"
         link_to "#{destination}", :title => "View this location on the map" do
           tag :i, :class => "ion-ios-location-outline"
