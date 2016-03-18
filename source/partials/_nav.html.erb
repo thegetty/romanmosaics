@@ -13,19 +13,21 @@
       <% end %>
       <div class="navbar-center-info">
         <%= link_to data.book.title.short, "/index.html", { :class => "navbar-site-title"} %>
-        <i class="navbar-breadcrumb"></i>
-        <% if current_page.data.cat.is_a? Array %>
-          <span class="navbar-page-title">
-            <%= "Cats. #{current_page.data.cat.first}&ndash;#{current_page.data.cat.last}" %>
-          </span>
-        <% elsif current_page.data.cat %>
-          <span class="navbar-page-title">
-            <%= "Cat. #{current_page.data.cat}" %>
-          </span>
-        <% else %>
-          <span class="navbar-page-title">
-            <%= current_page.data.title %>
-          </span>
+        <% unless current_page.data.title == "Cover" %>
+          <i class="navbar-breadcrumb"></i>
+          <% if current_page.data.cat.is_a? Array %>
+            <span class="navbar-page-title">
+              <%= "Cats. #{current_page.data.cat.first}&ndash;#{current_page.data.cat.last}" %>
+            </span>
+          <% elsif current_page.data.cat %>
+            <span class="navbar-page-title">
+              <%= "Cat. #{current_page.data.cat}" %>
+            </span>
+          <% else %>
+            <span class="navbar-page-title">
+              <%= current_page.data.title %>
+            </span>
+          <% end %>
         <% end %>
       </div>
       <% if next_chapter_path %>

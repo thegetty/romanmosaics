@@ -121,10 +121,17 @@ class Catalogue < Middleman::Extension
     # YAML data files for future consumption by front-end JS.
 
     # Define Term helper method
-    # Expects a term (string)
-    # looks for term in the definitions.yml file and returns its definition
-    def define_term(term)
-      data.definitions.find { |entry| entry.id == term }.definition
+    # Expects a word (string)
+    # looks for term in the definitions.yml file
+    # Returns definition_short if that exists, or else returns full definition
+    # Also returns plural form if that exists
+    def define_term(word)
+      term = data.definitions.find { |entry| entry.id == word }
+      term ||= data.definitions.find { |entry| entry.plural == word }
+      definition = term.definition_short || term.definition
+      definition += " (plural: <em>#{term.plural}</em>)" unless term.plural.nil?
+
+      definition
     end
 
     # Location helper method
@@ -142,6 +149,7 @@ class Catalogue < Middleman::Extension
       data.pics.find { |pic| pic.id == pic_id }.to_json
     end
 
+    # --------------------------------------------------------------------------
     # Lookup Catalogue Entry
     # expects a cat number (int)
     # returns a hash of entry data or nil if no entry is found
@@ -156,6 +164,40 @@ class Catalogue < Middleman::Extension
       data.catalogue.find_all { |entry| group.include? entry.cat }
     end
 
+    # --------------------------------------------------------------------------
+    # Collection link method
+    # Expects a cat number (int)
+    # Outputs a HAML tag with link to the Getty collection page for the object
+    def collection_link(cat)
+      url    = "http://www.getty.edu/art/collection/objects/"
+      obj_id = lookup_entry(cat).dor_id
+      return false if obj_id.nil?
+      haml_tag :a, :class  => "collection-link",
+                   :target => "blank",
+                   :title  => "View this item on the Getty's Collection Pages.",
+                   :href   => "#{url}#{obj_id}" do
+                     haml_tag :i, :class => "ion-link"
+                   end
+    end
+
+    # --------------------------------------------------------------------------
+    # Location Link method
+    # Expects two arguments: first, the desired link text
+    # Second: a url pattern like so: "/catalogue/italy.html#loc_1524"
+    # Where /catalogue/italy.html is the relevant map page
+    # and #loc_xxxx is the location id of the point to appear on the map
+    # as referenced in the geojson file
+    def location_link(text, destination)
+      html = content_tag :sup do
+        tag :i, :class => "ion-ios-location-outline"
+        # link_to "#{destination}", :title => "View this location on the map" do
+          # tag :i, :class => "ion-ios-location-outline"
+        # end
+      end
+      concat_safe_content("#{text}#{html}")
+    end
+
+    # --------------------------------------------------------------------------
     # Previous Chapter Path
     # Does not expect an argument (pulls data from current_page)
     # Returns the path of the previous chapter or false if prev chapter does not

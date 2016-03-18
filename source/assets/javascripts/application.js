@@ -1,6 +1,9 @@
 //= require_tree .
 L.Icon.Default.imagePath = '/assets/stylesheets/vendor/leaflet/images';
 
+// Make this available globally
+var RegionMap;
+
 $(document).ready(function() {
   // set up UI
   uiSetup();

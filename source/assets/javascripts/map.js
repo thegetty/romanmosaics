@@ -86,7 +86,7 @@ function GeoMap(center) {
   this.el          = 'map';
   this.center      = [37.0, 35.5];
   this.defaultZoom = 7;
-  this.maxZoom     = 12;
+  this.maxZoom     = 11;
   this.minZoom     = 5;
   this.tiles       = "http://pelagios.org/tilesets/imperium/{z}/{x}/{y}.png";
   this.attribution = "Tiles <a href='http://dare.ht.lu.se/'>Pelagios/DARE</a>" +
@@ -107,7 +107,26 @@ function GeoMap(center) {
     onEachFeature: this.addPopups
   });
 
+  var pointsOfInterest = L.geoJson(this.geojson, {
+    filter: function(feature, layer) {
+      return !feature.properties.catalogue;
+    },
+    pointToLayer: this.addPointLabels,
+    onEachFeature: this.addPopups
+  });
+
+  var overlays = {
+    "Points of Interest": pointsOfInterest,
+    "Catalogue Locations": catalogueLabels
+  };
+
+  L.control.layers(null, overlays, {
+    collapsed: false,
+    position: "topright"
+  }).addTo(this.map);
+
   this.map.addLayer(catalogueLabels);
+  // this.map.addLayer(pointsOfInterest);
 }
 
 // GeoMap Methods
@@ -129,8 +148,29 @@ GeoMap.prototype = {
   },
   // Add Labels
   addCatalogueLabels: function(feature, latlng) {
-    return L.marker(latlng)
-      .bindLabel(feature.properties.custom_name, { noHide: true });
+    if (feature.properties.ambiguous == true) {
+      return L.circleMarker(latlng, {
+        color: "#fff",
+        fillColor: "#2880CA",
+        fillOpacity: 1,
+        opacity: 1,
+        radius: 9,
+        weight: 3
+      });
+        // .bindLabel(feature.properties.custom_name, { noHide: true, offset: [16, -15] });
+    } else {
+      return L.marker(latlng);
+        // .bindLabel(feature.properties.custom_name, { noHide: true });
+    }
+  },
+  addPointLabels: function(feature, latlng) {
+    return L.circleMarker(latlng, {
+      fillColor: "#2880CA",
+      fillOpacity: 1,
+      opacity: 1,
+      radius: 5,
+      weight: 0
+    });
   },
   // Add Popup content
   addPopups: function(feature, layer) {
@@ -167,5 +207,35 @@ GeoMap.prototype = {
       popupMsg += "</ul>";
     }
     layer.bindPopup(popupMsg, popupOptions);
+  },
+  // Add open popup
+  addOpenPopup: function(feature, layer) {
+    var latlng   = layer.getLatLng();
+    var props    = feature.properties;
+    var popupMsg = "<h4 class='feature-name'>" + props.custom_name + "</h4>";
+    var popup    = L.popup().setLatLng(latlng)
+                    .setContent(popupMsg).openOn(RegionMap.map);
+    layer.bindPopup(popupMsg);
+  },
+  // Zoom to a particular point
+  zoomToHash: function() {
+    if (window.location.hash) {
+      var mapLocation = _.find(geojsonFeature.features, function(feature){
+        return feature.properties.id == window.location.hash.slice(1);
+      });
+
+      L.geoJson(mapLocation, {
+        pointToLayer: RegionMap.addPointLabels,
+        onEachFeature: RegionMap.addOpenPopup
+      }).addTo(RegionMap.map);
+
+      var coords = [
+        mapLocation.geometry.coordinates[1],
+        mapLocation.geometry.coordinates[0]
+      ];
+
+      $("html, body").animate({ scrollTop: 0 });
+      RegionMap.map.setView(coords);
+    }
   }
 };
