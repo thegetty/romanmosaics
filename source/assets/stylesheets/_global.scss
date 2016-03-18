@@ -36,7 +36,7 @@ html { min-height: 100vh; }
   }
 
   // superscript map links get weird spacing without this override
-  sup {
+  .location-link {
     text-indent: 0;
   }
 }
