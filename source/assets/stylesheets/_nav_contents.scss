@@ -64,6 +64,12 @@ $sliding-panel-fade-screen-bg: #000;
   }
 }
 
+.nav-sidebar-inner {
+  @include flex(0 1 auto);
+  -webkit-overflow-scrolling: touch;
+  overflow-y: auto;
+}
+
 .nav-sidebar-header {
   margin-top: 2em;
 
@@ -107,7 +113,8 @@ $sliding-panel-fade-screen-bg: #000;
   }
 }
 
-.nav-cite {
+.nav-cite,
+.nav-downloads {
   background-color: $dark-gray;
   font-size: 0.85em;
   padding: $small-spacing;

@@ -1,3 +1,38 @@
+
+// Use this to wrap selectors that contain : characters
+function jq(myid) { return myid.replace( /(:|\.|\[|\]|,)/g, "\\$1" );}
+
+
+function anchorScroll(href) {
+  href = typeof(href) == "string" ? href : $(this).attr("href");
+  var fromTop = 60;
+
+  if(href.indexOf("#") == 0) {
+    var $target = $(href);
+
+    if($target.length) {
+      $("html, body").animate({ scrollTop: $target.offset().top - fromTop });
+      if (history && "pushState" in history) {
+        history.pushState({}, document.title, window.location.pathname + href);
+        return false;
+      }
+    }
+  }
+}
+
+function footnoteScroll() {
+  $(".footnote, .reversefootnote").click(function(event){
+
+    var target = $(this).attr("href");
+    var distance = $(jq(target)).offset().top;
+
+    $("html, body").animate({
+      scrollTop: distance - 60
+    }, 250);
+
+  });
+}
+
 function keyboardNav(){
   $(document).keydown(function(event) {
     var prev, next, photoswipeActive;
@@ -29,10 +64,14 @@ function mapSetup() {
       window.CATALOGUE = data;
       // Instantiate map
       var centerPoint = $("#map").data("center");
-      var regionMap = new GeoMap(centerPoint);
+      RegionMap = new GeoMap(centerPoint);
       if ($("#map").parent().hasClass("cover-map")) {
         regionMap.map.setZoom(5);
       }
+      if (window.location.hash.slice(1, 4) == "loc") {
+        RegionMap.zoomToHash();
+      }
+      window.onhashchange = RegionMap.zoomToHash;
     }).fail(function() {
       console.log("Failed to load catalogue json");
     });
@@ -174,7 +213,7 @@ function popupSetup() {
           if (!$popup.find(".popup-content").hasClass("visible")) {
             map.setView(coords, 6);
             $popup.find(".popup-content").addClass("visible");
-            window.setTimeout(function() { map.invalidateSize(); }, 250);
+            window.setTimeout(function() { map.invalidateSize(); }, 300);
           }
         });
       }
@@ -229,4 +268,6 @@ function uiSetup() {
   popupSetup();
   expanderSetup();
   lightBoxSetup();
+  footnoteScroll();
+  anchorScroll(window.location.hash);
 }

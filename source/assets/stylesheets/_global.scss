@@ -95,6 +95,10 @@ html { min-height: 100vh; }
   text-indent: 0;
 }
 
+.centered {
+  text-align: center;
+}
+
 .smcaps {
   @include font-feature-settings("c2sc", "smcp", "kern");
   font-variant: all-small-caps;
