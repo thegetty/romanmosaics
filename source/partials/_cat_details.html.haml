@@ -2,7 +2,8 @@
   - if current_page.data.cat.is_a? Array
     %li
       %strong= "#{current_cat.cat}. #{current_cat.title}"
-  %li= "#{current_cat.culture}, #{current_cat.location}, #{current_cat.date_txt}"
+  - current_cat.dates= current_cat.date_txt || "AD #{current_cat.date[0]}–#{current_cat.date[1]}"
+  %li= "#{current_cat.culture}, #{current_cat.location}, #{current_cat.dates}"
   %li= "#{current_cat.material}, #{current_cat.dimensions[0]} cm × #{current_cat.dimensions[1]} cm"
   %li
     = current_cat.inv

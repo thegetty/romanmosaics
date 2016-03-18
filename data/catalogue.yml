@@ -7,7 +7,6 @@
   date:
   - 115
   - 150
-  date_txt: AD 115–150
   dimensions:
   - 270.5
   - 270.5
@@ -22,22 +21,20 @@
   date:
   - 300
   - 400
-  date_txt: fourth century AD
   dimensions:
   - 661
   - 869
   material: Stone tesserae
   culture: Roman
-  location: near Baiae, Italy
+  location: from near Baiae, Italy
 - cat: 3
   title: Mosaic Floor with Orpheus and Animals
-  inv: 62.AH.2
+  inv: 62.AH.2.1–.36
   dor_id: 6520
   plate_image_id: "00760601"
   date:
   - 150
   - 200
-  date_txt: AD 150–200
   dimensions:
   - 385.9
   - 457
@@ -52,7 +49,6 @@
   date:
   - 175
   - 200
-  date_txt: AD 175–200
   dimensions:
   - 208
   - 208
@@ -65,9 +61,8 @@
   dor_id: 7069
   plate_image_id: "00816201"
   date:
-  - 175
+  - 150
   - 200
-  date_txt: late second century AD
   dimensions:
   - 98.4
   - 160
@@ -82,7 +77,6 @@
   date:
   - 100
   - 300
-  date_txt: second–third century AD
   dimensions:
   - 231.1
   - 240
@@ -91,7 +85,7 @@
   location: from Syria, possibly Antioch (present-day Antakya, Turkey)
 - cat: 7
   title: Mosaic Floor with Animals
-  inv: 70.AH.96
+  inv: 70.AH.96.1–.5
   dor_id: 6539
   plate_image_id: "00762801"
   date:
@@ -111,8 +105,7 @@
   plate_image_id: "007668T1V1"
   date:
   - 400
-  - 500
-  date_txt: fifth century AD
+  - 600
   dimensions:
   - 160
   - 173.4
@@ -127,7 +120,6 @@
   date:
   - 400
   - 600
-  date_txt: fifth–sixth century AD
   dimensions:
   - 196.9
   - 115.5
@@ -143,7 +135,6 @@
   date:
   - 400
   - 600
-  date_txt: fifth–sixth century AD
   dimensions:
   - 210.2
   - 129.5
@@ -159,7 +150,6 @@
   date:
   - 400
   - 600
-  date_txt: fifth–sixth century AD
   dimensions:
   - 91.4
   - 106.7
@@ -175,7 +165,6 @@
   date:
   - 400
   - 600
-  date_txt: fifth–sixth century AD
   dimensions:
   - 81.3
   - 57.2
@@ -191,7 +180,6 @@
   date:
   - 400
   - 600
-  date_txt: fifth–sixth century AD
   dimensions:
   - 125.1
   - 97.8
@@ -207,7 +195,6 @@
   date:
   - 400
   - 600
-  date_txt: fifth–sixth century AD
   dimensions:
   - 75
   - 109.2
@@ -223,7 +210,6 @@
   date:
   - 400
   - 600
-  date_txt: fifth–sixth century AD
   dimensions:
   - 119.4
   - 89
@@ -239,7 +225,6 @@
   date:
   - 400
   - 600
-  date_txt: fifth–sixth century AD
   dimensions:
   - 147.3
   - 146
@@ -255,7 +240,6 @@
   date:
   - 400
   - 600
-  date_txt: fifth–sixth century AD
   dimensions:
   - 124.5
   - 179.1
@@ -271,7 +255,6 @@
   date:
   - 400
   - 600
-  date_txt: fifth–sixth century AD
   dimensions:
   - 68.6
   - 114.3
@@ -287,7 +270,6 @@
   date:
   - 400
   - 600
-  date_txt: fifth–sixth century AD
   dimensions:
   - 81.3
   - 149.9
@@ -303,7 +285,6 @@
   date:
   - 400
   - 600
-  date_txt: fifth–sixth century AD
   dimensions:
   - 73.7
   - 74.3
@@ -318,7 +299,6 @@
   date:
   - 400
   - 600
-  date_txt: fifth–sixth century AD
   dimensions:
   - 48
   - 68
