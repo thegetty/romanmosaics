@@ -27,16 +27,17 @@
     .cover-highlights-inner
       %h2.centered Highlights from the Catalogue
       .cover-highlights-section
-        = tag :img, :src => lorem.image("800x400")
-        %h3 About the Excavations
+        = tag :img, :src => image_path("fig17_detail.jpg"), :alt => "Antioch Excavation"
+        %h3 Excavating the Past
         %p
-          Several mosaics in the Getty’s collection came from known sites
-          throughout the Roman Empire and survived from antiquity in their
-          original architectural contexts. These intricate designs of glass and
-          stone once decorated villas, baths, and churches. The catalogue presents
-          the archaeological evidence from the ancient sites where the mosaics
-          were excavated as well as new material documenting their modern
-          discoveries.
+          :markdown
+            Several mosaics in the Getty’s collection came from known sites
+            in the Roman Empire and survived from antiquity in their original
+            architectural contexts, having once decorated villas, baths,
+            and churches. Presented here is rich archaeological evidence
+            and new material documenting the mosaics’ modern discoveries,
+            particularly from excavations in [Villelaure](../catalogue/excavations-villelaure/)
+            and [Antioch](../catalogue/excavations-antioch/).
       .cover-highlights-section
         = tag :img, :src => lorem.image("800x400")
         %h3 About the Exhibition
