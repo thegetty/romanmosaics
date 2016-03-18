@@ -3,7 +3,7 @@
   {
     "Catalogue/Guide Number": <%= entry.cat %>,
     "DOR ID": <%= entry.dor_id %>,
-    "Inventory Number": "<%= entry.inv %>",
+    "Inventory Number": "<%= entry.inv.gsub("–", "-") %>",
     "Artist/Maker": "",
     "Title": "<%= entry.title %>",
     "Group": "",
