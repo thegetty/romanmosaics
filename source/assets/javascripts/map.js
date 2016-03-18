@@ -121,12 +121,12 @@ function GeoMap(center) {
   };
 
   L.control.layers(null, overlays, {
-    // collapsed: false,
+    collapsed: false,
     position: "topright"
   }).addTo(this.map);
 
   this.map.addLayer(catalogueLabels);
-  this.map.addLayer(pointsOfInterest);
+  // this.map.addLayer(pointsOfInterest);
 }
 
 // GeoMap Methods
