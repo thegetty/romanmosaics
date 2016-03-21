@@ -17,6 +17,6 @@ describe "search", :type => :feature, js: true do
     page.find("#navbar-search").click
     page.should have_selector ".search-active"
     page.fill_in("search", :with => "Rome")
-    page.should have_selector(".search-results-list-item", :count => 11)
+    page.should have_selector(".search-results-list-item", :count => 12)
   end
 end
