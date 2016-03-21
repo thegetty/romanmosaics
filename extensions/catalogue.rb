@@ -128,8 +128,12 @@ class Catalogue < Middleman::Extension
     def define_term(word)
       term = data.definitions.find { |entry| entry.id == word }
       term ||= data.definitions.find { |entry| entry.plural == word }
-      definition = term.definition_short || term.definition
-      definition += " (plural: <em>#{term.plural}</em>)" unless term.plural.nil?
+      if term.plural.nil?
+        definition = term.definition_short || term.definition
+      else
+        definition = "Plural of the word <em>#{term.id}</em>: "
+        definition += term.definition_short || term.definition
+      end
 
       definition
     end
