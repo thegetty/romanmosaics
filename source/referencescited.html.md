@@ -167,7 +167,7 @@ sort_order: 101
 - **Fabia 1923**<br />
   Fabia, Philippe. *Mosaïques romaines de museés de Lyon*. Lyon: Museés de Lyon, 1923.
 
-  **Famà 1997**<br />
+- **Famà 1997**<br />
   Famà, Maria Luisa. “Il mosaic a ciottoli di Mozia dopo il restauro.” In *Atti del IV colloquio dell'Associazione italiana per lo studio e la conservazione del mosaic Palermo, 9–13 dicembre 1996*, edited by Rosa Maria Bonacasa Carra and Federico Guidobaldi, 147–58. Ravenna: Edizioni del Griasole, 1997.
 
 

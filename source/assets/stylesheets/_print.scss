@@ -128,6 +128,7 @@ $light-gray: transparentize($print-text-color, 0.5);
   .navbar,
   .search-results,
   .nav-sidebar,
+  .page-cover,
   .location-link,
   .sliding-panel-fade-screen {
     display: none;
@@ -162,8 +163,8 @@ $light-gray: transparentize($print-text-color, 0.5);
 
   .figure-print-multicolumn {
     column-span: all;
-    width: 100%;
     margin: ($base-spacing * 2) 0;
+    width: 100%;
   }
 
   .figure-print-reduce {
@@ -181,16 +182,18 @@ $light-gray: transparentize($print-text-color, 0.5);
   .figure-group-right,
   .figure-group-left {
     .inline-figure {
-      margin-top: ($base-spacing * .75);
-      margin-bottom: ($base-spacing * .75);
+      margin-bottom: ($base-spacing * 0.75);
+      margin-top: ($base-spacing * 0.75);
     }
+
     .inline-figure:first-child {
+      margin-bottom: ($base-spacing * 0.75);
       margin-top: ($base-spacing * 1.5);
-      margin-bottom: ($base-spacing * .75);
     }
+
     .inline-figure:last-child {
-      margin-top: ($base-spacing * .75);
       margin-bottom: ($base-spacing * 1.5);
+      margin-top: ($base-spacing * 0.75);
     }
   }
 
@@ -273,8 +276,7 @@ $light-gray: transparentize($print-text-color, 0.5);
   }
 
   body.introduction {
-    counter-reset: page 1;
-    /* page-break-before: right; */
+    counter-reset: page 0;
   }
 
   .contents-page {
@@ -292,7 +294,15 @@ $light-gray: transparentize($print-text-color, 0.5);
     }
   }
 
-  .page-header { margin-bottom: 0.5in; }
+  .page-header {
+    margin-bottom: 0.5in;
+    margin-top: 0;
+  }
+
+  .cat-entry-header-titlebar-inner {
+    margin-top: 0;
+    padding-top: 0;
+  }
 
   .page-author {
     color: $light-gray;
@@ -319,14 +329,27 @@ $light-gray: transparentize($print-text-color, 0.5);
     text-align: center;
   }
 
+  .region-map {
+    background-image: url(image_path("print/base-map.jpg"));
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 4.5in;
+    margin-bottom: $print-base-spacing;
+    width: 100%;
+  }
+
   // Cat entries
   // scss-lint:disable NameFormat
   .bleed {
     @extend %full-page-image;
-    /* page-break-before: left; */
+    // page-break-before: left;
 
-    &[data-catalogue="Acknowledgments"] {
+    &[data-catalogue="introduction"] {
       background-image: url(image_path("print/introduction.jpg"));
+    }
+
+    &[data-catalogue="backmatter"] {
+      background-image: url(image_path("print/backmatter.jpg"));
     }
 
     @for $i from 1 through 21 {
