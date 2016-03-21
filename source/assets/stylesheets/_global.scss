@@ -153,6 +153,11 @@ html { min-height: 100vh; }
 
 
 // Inline Figure Styles
+
+figcaption {
+  margin-top: $small-spacing * .5;
+}
+
 .figure-group {
   @include media($large-screen-up) {
     clear: both;
@@ -171,7 +176,8 @@ html { min-height: 100vh; }
   + p { text-indent: $base-spacing; }
 }
 
-.figure-left {
+.figure-left,
+.figure-group-left {
   @include media($large-screen-up) {
     float: left;
     margin-left: 0;
@@ -179,10 +185,26 @@ html { min-height: 100vh; }
   }
 }
 
-.figure-right {
+.figure-right,
+.figure-group-right {
   @include media($large-screen-up) {
     float: right;
     margin-right: 0;
     width: 48%;
+  }
+}
+
+.figure-group-right,
+.figure-group-left {
+  @include media($large-screen-up) {
+    .inline-figure {
+      @include margin(($base-spacing * .75) $small-spacing);
+    }
+    .inline-figure:first-child {
+      @include margin(($base-spacing * 1.5) $small-spacing ($base-spacing * .75));
+    }
+    .inline-figure:last-child {
+      @include margin(($base-spacing * .75) $small-spacing ($base-spacing * 1.5));
+    }
   }
 }
