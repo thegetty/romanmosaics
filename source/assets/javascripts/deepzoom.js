@@ -8,7 +8,7 @@
 
 // Properties
 function DeepZoom(catnum, zoomData) {
-  this.baseurl = "http://gettypubs.github.io/maptiles/mosaics/";
+  this.baseurl = "http://gettypubs-mosaics.s3-website-us-west-1.amazonaws.com/";
   this.bounds  = {};
   this.cat     = catnum;
   this.layers  = {};
