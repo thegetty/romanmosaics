@@ -151,27 +151,55 @@ $light-gray: transparentize($print-text-color, 0.5);
   }
 
   .inline-figure {
-    /* column-span: all; */
-    margin: ($base-spacing * 2) 0;
+    margin: ($base-spacing * 2) 5%;
     padding: 0;
+    width: 90%;
   }
 
   figcaption {
     line-height: 1.3;
   }
 
-  .figure-left,
-  .figure-right {
-    float: none;
+  .figure-print-multicolumn {
+    column-span: all;
     width: 100%;
+    margin: ($base-spacing * 2) 0;
   }
 
-  .figure-full-width {
-    column-span: all;
+  .figure-print-reduce {
+    margin: ($base-spacing * 2) 17%;
+    width: 66%;
+  }
+
+  .figure-left,
+  .figure-group-left,
+  .figure-right,
+  .figure-group-right {
+    float: none;
+  }
+
+  .figure-group-right,
+  .figure-group-left {
+    .inline-figure {
+      margin-top: ($base-spacing * .75);
+      margin-bottom: ($base-spacing * .75);
+    }
+    .inline-figure:first-child {
+      margin-top: ($base-spacing * 1.5);
+      margin-bottom: ($base-spacing * .75);
+    }
+    .inline-figure:last-child {
+      margin-top: ($base-spacing * .75);
+      margin-bottom: ($base-spacing * 1.5);
+    }
   }
 
   .force-break {
     page-break-before: left;
+  }
+
+  .print-page-break {
+    page-break-after: always;
   }
 
   // Section-specific
