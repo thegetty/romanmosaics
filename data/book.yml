@@ -34,12 +34,17 @@ author_as_it_appears:
   - "Alexis Belis"
   - "introduction by Christine Kondoleon"
   - "contributions by Nicole Budrovich, Kenneth Lapatin, and Sean Leatherbury"
-project_team: |
-  - Nola Butler, *Project Editors*
-  - Rachel Barth and Nola Butler, *Copy Editors*
-  - Elizabeth Chapin Kahn, *Production*
-  - Eric Gardner, *Designer &#38; Developer*
-  - Greg Albers, *Project Manager*
+project_team:
+  - name: Nola Butler
+    role: Project Editor
+  - name: Rachel Barth and Nola Butler
+    role: Copy Editors
+  - name: Elizabeth Chapin Kahn
+    role: Production
+  - name: Eric Gardner
+    role: Designer &#38; Developer
+  - name: Greg Albers
+    role: Project Manager
 editions:
   - name: Online
     type: InteractiveResource
@@ -137,16 +142,14 @@ toc: |
       - "21. Mosaic Panel with Two Male Busts"
   - References Cited
   - Contributors
-library_of_congress_cip_data: |
-  Library of Congress Cataloging-in-Publication Data
-
-  - Names: Belis, Alexis, author. \| J. Paul Getty Museum, issuing body.
-  - Title: Roman mosaics in the J. Paul Getty Museum / Alexis Belis ; with contributions by Nicole Budrovich, Christine Kondoleon, Kenneth Lapatin, and Sean Leatherbury.
-  - Description: Los Angeles : J. Paul Getty Museum, [2016] \| ©2016 \| Includes bibliographical references and index.
-  - Identifiers: LCCN 2016003875 (print) \| LCCN 2016011119 (ebook) \| ISBN 9781606064979 (pbk.) \| ISBN 9781606064986 (epub) \| ISBN 9781606064993 (online)
-  - Subjects: LCSH: Mosaics, Roman&mdash;Catalogs. \| Pavements, Mosaic&mdash;Catalogs. \| J. Paul Getty Museum&mdash;Catalogs. \| Mosaics&mdash;California&mdash;Los Angeles&mdash;Catalogs. \| Pavements, Mosaic&mdash;California&mdash;Los Angeles&mdash;Catalogs.
-  - Classification: LCC NA3770 .J2 2016 (print) \| LCC NA3770 (ebook) \| DDC 738.50937/07479494&mdash;dc23
-  - LC record available at [http://lccn.loc.gov/2016003875](http://lccn.loc.gov/2016003875){:target="_blank"}
+library_of_congress_cip_data:
+  - "Names: Belis, Alexis, author. | J. Paul Getty Museum, issuing body."
+  - "Title: Roman mosaics in the J. Paul Getty Museum / Alexis Belis ; with contributions by Nicole Budrovich, Christine Kondoleon, Kenneth Lapatin, and Sean Leatherbury."
+  - "Description: Los Angeles : J. Paul Getty Museum, [2016] | ©2016 | Includes bibliographical references and index."
+  - "Identifiers: LCCN 2016003875 (print) | LCCN 2016011119 (ebook) | ISBN 9781606064979 (pbk.) | ISBN 9781606064986 (epub) | ISBN 9781606064993 (online)"
+  - "Subjects: LCSH: Mosaics, Roman&mdash;Catalogs. | Pavements, Mosaic&mdash;Catalogs. | J. Paul Getty Museum&mdash;Catalogs. | Mosaics&mdash;California&mdash;Los Angeles&mdash;Catalogs. | Pavements, Mosaic&mdash;California&mdash;Los Angeles&mdash;Catalogs."
+  - "Classification: LCC NA3770 .J2 2016 (print) | LCC NA3770 (ebook) | DDC 738.50937/07479494&mdash;dc23"
+  - "LC record available at <a href=\"http://lccn.loc.gov/2016003875\" target=\"_blank\">http://lccn.loc.gov/2016003875</a>"
 categories:
   - Antiquities
 coverage:
