@@ -264,6 +264,31 @@ function lightBoxSetup() {
   }
 }
 
+// Check to see if the text selection contains popup-content nodes, remove them if so
+// for reference see this: http://jsfiddle.net/m56af0je/8/
+// and http://stackoverflow.com/questions/2026335/how-to-add-extra-info-to-copied-web-text
+// and the Mozilla document.getSelection() docs
+function cleanSelection() {
+  var selection, popupDivs, popupText, newText;
+  selection = document.getSelection();
+  popupDivs = document.getElementsByClassName("popup-content");
+
+  // Listen for copy event
+  document.addEventListener('copy', function(event) {
+    if (selection.toString().length > 0 && popupDivs.length > 0) {
+      [].forEach.call(popupDivs, function(popup) {
+        // Only modify selection if user's selection actually contains a popup
+        if (selection.containsNode(popup)) {
+          event.preventDefault();
+          popupText = popup.innerText;
+          newText   = selection.toString().replace(popupText, "");
+          (event.clipboardData || window.clipboardData).setData("Text", newText);
+        }
+      });
+    }
+  });
+}
+
 // Use this function as "export"
 // Calls all other functions defined here inside of this one
 function uiSetup() {
@@ -278,4 +303,5 @@ function uiSetup() {
   footnoteScroll();
   anchorScroll(window.location.hash);
   citationDate();
+  cleanSelection();
 }
