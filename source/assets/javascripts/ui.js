@@ -20,6 +20,13 @@ function anchorScroll(href) {
   }
 }
 
+// Get today's current date, using Moment JS
+function citationDate() {
+  var today = moment().format("D MMM. YYYY");
+  $(".cite-current-date").empty();
+  $(".cite-current-date").text(today);
+}
+
 function footnoteScroll() {
   $(".footnote, .reversefootnote").click(function(event){
 
@@ -270,4 +277,5 @@ function uiSetup() {
   lightBoxSetup();
   footnoteScroll();
   anchorScroll(window.location.hash);
+  citationDate();
 }
