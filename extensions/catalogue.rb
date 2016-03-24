@@ -17,7 +17,7 @@ class Catalogue < Middleman::Extension
       output  = "source/assets/downloads/RomanMosaics_Belis_Images.zip"
       zf      = ZipFileGenerator.new(input, output)
       zf.write
-      #generate PDF
+      # generate PDF
       generate_pdf if environment? :pdf
     end
   end
