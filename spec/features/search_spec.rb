@@ -5,7 +5,7 @@ describe "search", :type => :feature, js: true do
     visit "/"
   end
 
-  it "search results element exists on page" do
+  it "contains a .search-results element on the page" do
     page.should have_selector ".search-results"
   end
 
