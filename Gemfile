@@ -16,6 +16,7 @@ gem "middleman-sprockets", github: "middleman/middleman-sprockets"
 gem "neat", "~> 1.7"
 gem "sassc", "~> 1.8"
 gem "sanitize"
+gem "rubyzip"
 
 # Experimental: sprockets-es6
 # gem "sprockets-es6"
