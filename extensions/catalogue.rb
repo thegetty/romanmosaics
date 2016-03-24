@@ -10,6 +10,9 @@ class Catalogue < Middleman::Extension
 
   def initialize(app, options_hash = {}, &block)
     super
+    input_path  = "extensions/filelist.txt"
+    output_path = options.output_path
+    flags       = "--no-artificial-fonts"
 
     app.after_build do |builder|
       # zip up plates
@@ -17,19 +20,14 @@ class Catalogue < Middleman::Extension
       output  = "source/assets/downloads/RomanMosaics_Belis_Images.zip"
       zf      = ZipFileGenerator.new(input, output)
       zf.write
-      # generate PDF
-      generate_pdf if environment? :pdf
-    end
-  end
 
-  # Proxy method to call Prince from shell with correct args
-  def generate_pdf
-    input_path  = "extensions/filelist.txt"
-    output_path = options.output_path
-    flags       = "--no-artificial-fonts"
-    # --no-artificial-fonts flag needed to prevent faux italics
-    puts `prince --input-list=#{input_path} -o #{output_path} #{flags}`
-    puts `rm #{input_path}`
+      # generate PDF
+      if environment? :pdf
+        # --no-artificial-fonts flag needed to prevent faux italics
+        puts `prince --input-list=#{input_path} -o #{output_path} #{flags}`
+        puts `rm #{input_path}`
+      end
+    end
   end
 
   def manipulate_resource_list(resources)
