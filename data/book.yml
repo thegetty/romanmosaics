@@ -98,7 +98,7 @@ other_resources:
     link: http://www.getty.edu/publications/romanmosaics/assets/downloads/RomanMosaics_Belis_Images.zip
   - name: PPT
     type: image
-    file_size_mb:
+    file_size_mb: 11.1
     link: http://www.getty.edu/publications/romanmosaics/assets/downloads/RomanMosaics_Belis_Images.ppt
 publisher: Getty Publications
 imprint: J. Paul Getty Museum
