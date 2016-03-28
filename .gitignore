@@ -9,3 +9,4 @@ Gemfile.lock
 *.swp
 .tern-port
 /source/assets/downloads/*.pdf
+/source/assets/downloads/RomanMosaics_Belis_Images.zip
