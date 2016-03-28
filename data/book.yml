@@ -71,7 +71,7 @@ editions:
     type: Text
     format: application/pdf
     isbn: 978-1-60606-497-9
-    file_size_mb:
+    file_size_mb: 8.4
     link: http://www.getty.edu/publications/romanmosaics/assets/downloads/RomanMosaics_Belis.pdf
     additional_description:
   - name: Paperback
@@ -94,7 +94,7 @@ other_resources:
     link: http://www.getty.edu/publications/romanmosaics/assets/downloads/RomanMosaics_Belis_Data.json
   - name: JPG
     type: image
-    file_size_mb:
+    file_size_mb: 9.7
     link: http://www.getty.edu/publications/romanmosaics/assets/downloads/RomanMosaics_Belis_Images.zip
   - name: PPT
     type: image
