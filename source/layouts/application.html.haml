@@ -6,7 +6,7 @@
     %meta{name: "viewport", content: "width=device-width, initial-scale=1"}
     / Book Metadata
     = partial "partials/metadata"
-    %title= current_page.data.title || "The Middleman"
+    %title= page_title
     = stylesheet_link_tag "application"
   %body{class: page_classes}
     %main#main
