@@ -1,5 +1,6 @@
 require_relative "catalogue_resource"
 require_relative "plates_resource"
+require_relative "zip_file_generator"
 
 class Catalogue < Middleman::Extension
   option :catalogue_path, "catalogue.json"
@@ -9,12 +10,19 @@ class Catalogue < Middleman::Extension
 
   def initialize(app, options_hash = {}, &block)
     super
+    input_path  = "extensions/filelist.txt"
     output_path = options.output_path
+    flags       = "--no-artificial-fonts"
 
-    if app.environment? :pdf
-      app.after_build do |builder|
-        input_path  = "extensions/filelist.txt"
-        flags       = "--no-artificial-fonts"
+    app.after_build do |builder|
+      # zip up plates
+      input   = "source/assets/images/plates"
+      output  = "source/assets/downloads/RomanMosaics_Belis_Images.zip"
+      zf      = ZipFileGenerator.new(input, output)
+      zf.write
+
+      # generate PDF
+      if environment? :pdf
         # --no-artificial-fonts flag needed to prevent faux italics
         puts `prince --input-list=#{input_path} -o #{output_path} #{flags}`
         puts `rm #{input_path}`

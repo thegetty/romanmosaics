@@ -60,7 +60,27 @@ html { min-height: 100vh; }
   p { font-size: 1rem; margin-bottom: $small-spacing; }
   p + p { text-indent: 0; }
   ul { margin-bottom: 1rem; }
-  ul li { font-size: 1rem; }
+  li { font-size: 1rem; }
+}
+
+.section-nav {
+  margin: 0 0 $base-spacing;
+
+  @include media($large-screen-up) {
+    margin: 0 0 $base-spacing;
+    text-align: center;
+
+    li {
+      display: inline;
+
+      &::after { content: " | "; }
+
+      &:last-of-type {
+        &::after { content: ""; }
+      }
+    }
+  }
+
 }
 
 .footnotes {

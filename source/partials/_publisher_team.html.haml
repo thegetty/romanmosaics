@@ -5,8 +5,8 @@
     %li 1200 Getty Center Drive, Suite 500
     %li Los Angeles, California 90049-1682
     %li <a href="http://www.getty.edu/publications" target="_blank">www.getty.edu/publications</a>
-%ul.team
-  - data.book.project_team.each do |member|
-    %li
-      #{member.name},
-      %em= "#{member.role}"
+  %ul.team
+    - data.book.project_team.each do |member|
+      %li
+        #{member.name},
+        %em= "#{member.role}"

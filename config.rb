@@ -5,7 +5,7 @@ activate :search
 activate :catalogue
 activate :directory_indexes
 activate :autoprefixer
-activate :sprockets
+# activate :sprockets
 
 set :relative_links, true
 set :css_dir, "assets/stylesheets"
