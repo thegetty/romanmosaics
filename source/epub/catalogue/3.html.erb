@@ -1,0 +1,31 @@
+---
+layout: false
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title><%= data.book.title.short %></title>
+    <link href="assets/styles/epub.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <% data.catalogue.each do | entry | %>
+      <% if entry.cat == 3 %>
+        <% cat = sitemap.find_resource_by_path("catalogue/#{entry.cat}.html") %>
+        <div class="entry">
+          <div class="plate">
+            <img src="<%= image_path("plates/cat#{entry.cat}_#{entry.plate_image_id}.jpg") %>" />
+          </div>
+          <div class="entry-header">
+            <h1 class="object-title"><%= entry.cat %>. <%= entry.title %></h1>
+          </div>
+          <article class="entry-content">
+            <div class="object-details">
+              <%= partial "partials/cat_details", :locals => { :current_cat => entry } %>
+            </div>
+            <%= cat.render(:layout => false ) %>
+          </article>
+        </div>
+      <% end %>
+    <% end %>
+  </body>
+</html>
