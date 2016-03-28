@@ -13,7 +13,7 @@
       <% end %>
       <div class="navbar-center-info">
         <%= link_to data.book.title.short, "/index.html", { :class => "navbar-site-title"} %>
-        <% unless current_page.data.title == "Cover" %>
+        <% unless current_page.data.sort_order == 0 %>
           <i class="navbar-breadcrumb"></i>
           <% if current_page.data.cat.is_a? Array %>
             <span class="navbar-page-title">
