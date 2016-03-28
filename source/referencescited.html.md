@@ -95,7 +95,7 @@ sort_order: 101
 - **Clarke 1991**<br />
   Clarke, John. *The Houses of Roman Italy 100 BC–AD 250: Ritual, Space, and Decoration*. Berkeley: University of California Press, 1991.
 
-- **_Comptes-rendus de l’Academie des inscriptions et belles-lettres_ 1900**<br />
+- **Comptes-rendus de l’Academie des inscriptions et belles-lettres 1900**<br />
   Comptes-rendus de l’Académie des inscriptions et belles-lettres. “Séance du 20 Avril.” *Comptes-rendus de l’Académie des inscriptions et belles-lettres* 44, no. 2 (1900): 222–28.
 
 - **Comstock and Vermeule 1971**<br />
@@ -149,7 +149,7 @@ sort_order: 101
 - **Elia 1962**<br />
   Elia, Olga. “Lo stibadio dionisiaco in pitture pompeiane.” *Mitteilungen des deutschen archäologischen Instituts. Römische Abteilung* 69 (1962): 118–27.
 
-- **_Elvehjem Art Center_ 1972–73**<br />
+- **Elvehjem Art Center 1972–73**<br />
   Elvehjem Art Center. “Part Three. Donors and Acquisitions.” *Elvehjem Art Center Bulletin* (1972–73): 37–47.
 
 - **Espérandieu 1913**<br />
