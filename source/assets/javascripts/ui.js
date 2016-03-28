@@ -28,7 +28,7 @@ function citationDate() {
 }
 
 function footnoteScroll() {
-  $(".footnote, .reversefootnote").click(function(event){
+  $(".footnote, .reversefootnote, .section-link").click(function(event){
 
     var target = $(this).attr("href");
     var distance = $(jq(target)).offset().top;
