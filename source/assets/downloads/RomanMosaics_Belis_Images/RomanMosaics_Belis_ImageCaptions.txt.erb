@@ -8,7 +8,7 @@
 cat<%= entry.cat %>_<%= entry.plate_image_id %>.jpg
 <%= entry.title %>
 <% if entry.date_txt.nil? %>AD <%= entry.date[0] %>-<%= entry.date[1] %><% else %><%= entry.date_txt.gsub("–", "-") %><% end %>, <%= entry.culture %>, <%= entry.location %>
-<%= entry.material %>, "<%= entry.dimensions[0] %> x <%= entry.dimensions[1] %> cm"
+<%= entry.material %>, <%= entry.dimensions[0] %> x <%= entry.dimensions[1] %> cm
 The J. Paul Getty Museum, California
 http://www.getty.edu/art/collection/objects/<%= entry.dor_id %>
 
