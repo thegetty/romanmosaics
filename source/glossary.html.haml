@@ -7,7 +7,7 @@ sort_order: 102
   - data.definitions.sort { |a,b| a.id <=> b.id }.each do |term|
     %li
       - term.definition[0] = term.definition[0].capitalize
-      %span.term= term.id
+      %span.term= term.id.gsub("-", " ")
       - if term.plural
         %span.plural= "(plural <em>#{term.plural}</em>)"
       %br

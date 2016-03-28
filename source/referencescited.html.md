@@ -68,8 +68,8 @@ sort_order: 101
 - **Brett 1947**<br />
   Brett, Gerard. *The Great Palace of the Byzantine Emperors, First Report*. London: Oxford University Press, 1947.
 
-- **Bulletin de la Société nationale des antiquaires de France* 1900**<br />
-  Bulletin de la Société nationale des antiquaires de France. “Séance du 18 Avril,” *Bulletin de la Société nationale des antiquaires de France* (1900): 165–67.
+- **Bulletin de la Société nationale des antiquaires de France 1900**<br />
+  Bulletin de la Société nationale des antiquaires de France. “Séance du 18 Avril.” *Bulletin de la Société nationale des antiquaires de France* (1900): 165–67.
 
 - **Campbell 1988**<br />
   Campbell, Sheila. *The Mosaics of Antioch*. Toronto: Pontifical Institute of Mediaeval Studies, 1988.
@@ -96,7 +96,7 @@ sort_order: 101
   Clarke, John. *The Houses of Roman Italy 100 BC–AD 250: Ritual, Space, and Decoration*. Berkeley: University of California Press, 1991.
 
 - **_Comptes-rendus de l’Academie des inscriptions et belles-lettres_ 1900**<br />
-  Comptes-rendus de l’Académie des inscriptions et belles-lettres. “Séance du 20 Avril,” *Comptes-rendus de l’Académie des inscriptions et belles-lettres* 44, no. 2 (1900): 222–28.
+  Comptes-rendus de l’Académie des inscriptions et belles-lettres. “Séance du 20 Avril.” *Comptes-rendus de l’Académie des inscriptions et belles-lettres* 44, no. 2 (1900): 222–28.
 
 - **Comstock and Vermeule 1971**<br />
   Comstock, Mary, and Cornelius Vermeule. *Greek, Etruscan, and Roman Bronzes in the Museum of Fine Arts, Boston*. Boston: Museum of Fine Arts, Boston, 1971.
@@ -120,7 +120,7 @@ sort_order: 101
   de Villefosse, Antoine-Marie Héron. “Mosaïques trouvées a Sainte-Colombe-lès-Vienne.” *Bulletin archéologique* *du Comité des travaux historiques et scientifiques* 17 (1899): 102–3.
 
 - **de Villefosse 1903**<br />
-  de Villefosse, Antoine-Marie Héron. “Rapport,- **”** *Bulletin archéologique du Comité des travaux historiques et scientifiques* (1903): 109–19.
+  de Villefosse, Antoine-Marie Héron. “Rapport,” *Bulletin archéologique du Comité des travaux historiques et scientifiques* (1903): 109–19.
 
 - **Donceel-Voûte 1988**<br />
   Donceel-Voûte, Pauline. *Les pavements des églises byzantines de Syrie et du Liban: Décor, archéologie et liturgie*. Louvain-la-Neuve: Département d’Archéologie et d’Histoire de l’Art, 1988.
@@ -150,7 +150,7 @@ sort_order: 101
   Elia, Olga. “Lo stibadio dionisiaco in pitture pompeiane.” *Mitteilungen des deutschen archäologischen Instituts. Römische Abteilung* 69 (1962): 118–27.
 
 - **_Elvehjem Art Center_ 1972–73**<br />
-  Elvehjem Art Center. “Part Three. Donors and Acquisitions,” *Elvehjem Art Center Bulletin* (1972–73): 37–47.
+  Elvehjem Art Center. “Part Three. Donors and Acquisitions.” *Elvehjem Art Center Bulletin* (1972–73): 37–47.
 
 - **Espérandieu 1913**<br />
   Espérandieu, Émile. *Recueil général des bas-reliefs, statues et bustes de la Gaule romaine*. Vol. 5, *Belgique*. Paris: Imprimerie Nationale, 1913.
@@ -261,11 +261,11 @@ sort_order: 101
 - **Hornum 1993**<br />
   Hornum, Michael B. *Nemesis, the Roman State and the Games*. New York: E. J. Brill, 1993.
 
-- **Ingholt, Seyrig, and Starcky 1955**<br />
-  Ingholt, Harald, Henri Seyrig, and Jean Starcky. *Recueil des tessères de Palmyre*. Paris: Paul Geuthner, 1955.
-
 - **_IG_ VII**<br />
   Dittenberger, Guilelmus, ed. *Inscriptiones Graecae*. Vol. 7, *Inscriptiones Megaridis et Boeotiae*. Berlin: Walter de Gruyter, 1978.
+
+- **Ingholt, Seyrig, and Starcky 1955**<br />
+  Ingholt, Harald, Henri Seyrig, and Jean Starcky. *Recueil des tessères de Palmyre*. Paris: Paul Geuthner, 1955.
 
 - **Jacquème 1922**<br />
   Jacquème, C. *Histoire de Cadenet*. Part 1. Marseilles: Imprimerie de la Sté du “Petit Marseillais,” 1922.
@@ -313,7 +313,7 @@ sort_order: 101
   Lafaye, Georges. *Inventaire des mosaïques de la Gaule et de l’Afrique*. Vol. 1, *Narbonne et Aquitaine*. Paris: Ernest Leroux, 1909.
 
 - **Lancha 1977**<br />
-  Lancha, Janine. *Mosaïques géométriques: Les ateliers de Vienne (Isère): Leurs modèles et leur originalité dans l'Empire romain.* Rome: “L’Erma” di Bretschneider, 1977.
+  Lancha, Janine. *Mosaïques géométriques: Les ateliers de Vienne (Isère): Leurs modèles et leur originalité dans l’Empire romain.* Rome: “L’Erma” di Bretschneider, 1977.
 
 - **Lancha 1981**<br />
   Lancha, Janine. *Recueil général des mosaïques de la Gaule*. Vol. 2, *Province de Narbonnaise*. Part 2, *Vienne.* Paris: Éditions du Centre National de la Recherche Scientifique, 1981.
@@ -325,7 +325,7 @@ sort_order: 101
   Lancha, Janine. *Mosaïque et culture dans l’Occident romain I<sup>er</sup>–IV<sup>e</sup>s*. Rome: “L’Erma” di Bretschneider, 1997.
 
 - **Langsner 1958**<br />
-  Langsner, Jules. “‘An Astonishing Renascence&#160;…’ Mosaic: Why the Revival” *Los Angeles Times*, March 30, 1958.
+  Langsner, Jules. “‘An Astonishing Renascence&#160;…’ Mosaic: Why the Revival.” *Los Angeles Times*, March 30, 1958.
 
 - **Lapatin 2014**<br />
   Lapatin, Kenneth. “The Getty Bear Hunt Mosaic: Past, Present, and Future.” Abstract of a paper presented at a colloquium organized by the North American branch of the L’Association Internationale pour l’Étude de la Mosaïque Antique, Malibu, California, October 16–18, 2014, http://www.aiema-namerica.org/LAPATIN-MALIBU%20ABSTRACT.pdf.
@@ -375,7 +375,7 @@ sort_order: 101
 - **Leibovitch 1958**<br />
   Leibovitch, J. “Le Griffon d’Erez et le sens mythologique de Némésis.” *Israel Exploration Journal* 8, no. 3 (1958): 141–48.
 
-- **_Le Moniteur viennois_ 1903**<br />
+- **_Le Moniteur Viennois_ 1903**<br />
   “Les Mosaïques de Saint-Romain-en-Gal.” *Le Moniteur Viennois*, July 29, 1913, 2.
 
 - **_Le Progrès_ 1913**<br />
