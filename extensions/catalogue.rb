@@ -74,7 +74,7 @@ class Catalogue < Middleman::Extension
       page    = current_page.data
 
       if page.cat
-        if page.cat.is_a? Range
+        if page.cat.is_a? Array
           "Cats. #{page.cat.first}-#{page.cat.last} | #{title.short}"
         else
           "Cat. #{page.cat} | #{title.short}"
