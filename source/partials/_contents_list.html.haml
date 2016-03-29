@@ -23,13 +23,13 @@
     %li.toc-item= link_to "Antioch and the Bath of Apolausis: History of the Excavations", "../../build/catalogue/excavations-antioch/index.html"
     %li.toc-item= link_to "7. Mosaic Floor with Animals", "../../build/catalogue/7/index.html"
     %li.toc-item= link_to "8. Mosaic Panel with Griffin", "../../build/catalogue/8/index.html"
-    %li.toc-item= link_to "9&ndash;19. Mosaic Panels with Animals", "../../build/catalogue/9-19/index.html"
+    %li.toc-item= link_to "9&ndash;19. Mosaic Panels with Animals", "../../build/catalogue/9-19/index.html#page-title"
     %li.toc-item= link_to "20. Mosaic Panel with Head of a Season", "../../build/catalogue/20/index.html"
-    %li.toc-item= link_to "21. Mosaic Panel with Two Male Busts", "../../build/catalogue/21/index.html"
+    %li.toc-item= link_to "21. Mosaic Panel with Two Male Busts", "../../build/catalogue/21/index.html#page-title"
     %li.toc-item= link_to "References Cited", "../../build/referencescited/index.html#page-title"
     %li.toc-item= link_to "Glossary", "../../build/glossary/index.html"
     %li.toc-item= link_to "Contributors", "../../build/contributors/index.html"
-    %li.toc-item= link_to "Index", "../../build/bookindex/index.html"
+    -# %li.toc-item= link_to "Index", "../../build/bookindex/index.html"
   - else
     - sorted_contents.each do |item|
       - next if item.data.title == "Contents"
