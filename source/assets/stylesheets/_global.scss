@@ -20,9 +20,7 @@ html { min-height: 100vh; }
     p, ol, ul { font-size: 1.45rem; }
   }
 
-  h2, h3, h4 {
-    margin-top: $small-spacing;
-  }
+  h2, h3, h4 { margin-top: $small-spacing; }
 
   blockquote {
     background-color: $light-gray;
@@ -30,37 +28,33 @@ html { min-height: 100vh; }
     margin: $base-spacing 0;
     padding: $small-spacing;
 
-    h2, h3, h4 {
-      margin-top: 0;
-    }
+    h2, h3, h4 { margin-top: 0; }
   }
 
   // superscript map links get weird spacing without this override
-  .location-link {
-    text-indent: 0;
-  }
+  .location-link { text-indent: 0; }
 }
 
 .container {
   @include outer-container;
   padding: 0 $small-spacing;
 
-  @include media($large-screen-up) {
-    padding: 0;
-  }
+  @include media($large-screen-up) { padding: 0; }
 }
 
-.copyright,
-.license,
-.publisher,
-.team,
-.loc-cip,
-.credits {
-  h2 { font-size: 1.5rem; }
-  p { font-size: 1rem; margin-bottom: $small-spacing; }
+.smaller-text {
+  h2 { font-size: 1.5em; }
+  h3 { font-size: 1em; }
+
+  blockquote, li, p {
+    font-size: 1rem;
+    text-indent: 0;
+  }
+
+  p { margin-bottom: 1rem; }
   p + p { text-indent: 0; }
   ul { margin-bottom: 1rem; }
-  li { font-size: 1rem; }
+
 }
 
 .section-nav {
@@ -74,13 +68,11 @@ html { min-height: 100vh; }
       display: inline;
 
       &::after { content: " | "; }
-
       &:last-of-type {
         &::after { content: ""; }
       }
     }
   }
-
 }
 
 .footnotes {
@@ -107,9 +99,7 @@ html { min-height: 100vh; }
 // scss-lint:enable SingleLinePerSelector
 
 .hide-on-mobile {
-  @include media($small-screen) {
-    display: none;
-  }
+  @include media($small-screen) { display: none; }
 }
 
 .entry-author {
@@ -120,9 +110,7 @@ html { min-height: 100vh; }
   text-indent: 0;
 }
 
-.centered {
-  text-align: center;
-}
+.centered { text-align: center; }
 
 .smcaps {
   @include font-feature-settings("c2sc", "smcp", "kern");
@@ -173,19 +161,15 @@ html { min-height: 100vh; }
 
 
 // Inline Figure Styles
-
-figcaption {
-  margin-top: $small-spacing * .5;
-}
+figcaption { margin-top: $small-spacing * 0.5; }
 
 .figure-group {
-  @include media($large-screen-up) {
-    clear: both;
-  }
   + p {
-    text-indent: $base-spacing;
     clear: both;
+    text-indent: $base-spacing;
   }
+
+  @include media($large-screen-up) { clear: both; }
 }
 
 .inline-figure {
@@ -218,13 +202,15 @@ figcaption {
 .figure-group-left {
   @include media($large-screen-up) {
     .inline-figure {
-      @include margin(($base-spacing * .75) $small-spacing);
+      @include margin(($base-spacing * 0.75) $small-spacing);
     }
+
     .inline-figure:first-child {
-      @include margin(($base-spacing * 1.5) $small-spacing ($base-spacing * .75));
+      @include margin(($base-spacing * 1.5) $small-spacing ($base-spacing * 0.75));
     }
+
     .inline-figure:last-child {
-      @include margin(($base-spacing * .75) $small-spacing ($base-spacing * 1.5));
+      @include margin(($base-spacing * 0.75) $small-spacing ($base-spacing * 1.5));
     }
   }
 }
