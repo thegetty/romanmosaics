@@ -153,15 +153,18 @@ class Catalogue < Middleman::Extension
     # Also returns plural form if that exists
     def define_term(word)
       term = data.definitions.find { |entry| entry.id == word }
-      term ||= data.definitions.find { |entry| entry.plural == word }
-      if term.plural.nil?
+      if term
+        # term is singular
         definition = term.definition_short || term.definition
       else
-        definition = "Plural of the word <em>#{term.id}</em>: "
-        definition += term.definition_short || term.definition
+        term = data.definitions.find { |entry| entry.plural == word }
+        unless term.nil?
+          definition = "Plural of the word <em>#{term.id}</em>: "
+          definition += term.definition_short || term.definition
+        end
       end
 
-      definition
+      definition unless definition.nil?
     end
 
     # Location helper method
