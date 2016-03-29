@@ -2,7 +2,7 @@
   - if environment? :pdf
     .region-intro
       %h1.region-intro-title= current_page.data.title
-    .region-map
+    .region-map{:data => { :map => current_page.data.title.slugify }}
   .cat-entry
     %header.cat-entry-header
       = partial "partials/intro_map", :locals => {:center => current_page.data.map_center}
