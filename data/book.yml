@@ -71,7 +71,7 @@ editions:
     type: Text
     format: application/pdf
     isbn: 978-1-60606-497-9
-    file_size_mb:
+    file_size_mb: 8.4
     link: http://www.getty.edu/publications/romanmosaics/assets/downloads/RomanMosaics_Belis.pdf
     additional_description:
   - name: Paperback
@@ -94,11 +94,11 @@ other_resources:
     link: http://www.getty.edu/publications/romanmosaics/assets/downloads/RomanMosaics_Belis_Data.json
   - name: JPG
     type: image
-    file_size_mb:
+    file_size_mb: 9.7
     link: http://www.getty.edu/publications/romanmosaics/assets/downloads/RomanMosaics_Belis_Images.zip
   - name: PPT
     type: image
-    file_size_mb:
+    file_size_mb: 11.1
     link: http://www.getty.edu/publications/romanmosaics/assets/downloads/RomanMosaics_Belis_Images.ppt
 publisher: Getty Publications
 imprint: J. Paul Getty Museum
@@ -113,8 +113,9 @@ license:
     online:
       - "Map tiles courtesy Pelagios and the <a href=\"http://dare.ht.lu.se\" target=\"_blank\">Digital Atlas of the Roman Empire (DARE)</a>. Licensed under a <a href=\"http://creativecommons.org/licenses/by-sa/3.0/\" target=\"_blank\">Creative Commons Attribution-ShareAlike 3.0 License</a>."
     print:
+      - "Map backgrounds are from the Ancient World Mapping Center. Licensed under a <a href=\"http://creativecommons.org/licenses/by-nc/3.0/\" target=\"_blank\">Creative Commons Attribution-NonCommercial 3.0 License</a>."
     both:
-      - "The following figures are excluded from the Creative Commons license: fig. XX: (c) YYYYY; fig. XX: (c) ZZZZZ; [etc.]. All rights reserved."
+      - "The following figures are excluded from the CC BY license: figs. 2–5: Su concessione del Ministero dei Beni e delle Attività Culturali e del Turismo—Soprintendenza per I Beni Archeologici di Napoli; fig. 8: Cliché Musées de Vienne; fig. 10: © The Trustees of the British Museum / Art Resource, NY; fig. 11: © Hemis / Alamy Stock Photo; figs. 15, 16: Inrap (Institut national de recherches archéologiques preventives); figs. 17, 19, 20: Antioch Expedition Archives, Department of Art and Archaeology, Princeton University. All rights reserved."
 description_main:
   "Mosaics decorated domestic and public buildings across the broad expanse of the Roman Empire. Scenes drawn from mythology, daily life, nature, and spectacles in the arena enlivened interior spaces and reflected the cultural ambitions of wealthy patrons. Dating from the second through the sixth centuries AD, the mosaics in the collection of the J. Paul Getty Museum exemplify Roman mosaic production from its center in Italy to major workshops in North Africa, southern Gaul (present-day France), and ancient Syria. In addition to its comprehensive catalogue entries, this publication provides a detailed examination of the contexts in which the mosaics were discovered and excavated. This volume documents all twenty-one mosaics in the J. Paul Getty Museum’s collection, presenting their artistry in new color photography."
 description_short:
