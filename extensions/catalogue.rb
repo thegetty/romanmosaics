@@ -79,10 +79,10 @@ class Catalogue < Middleman::Extension
         else
           "Cat. #{page.cat} | #{title.short}"
         end
-      elsif page.title
-        "#{page.title} | #{title.short}"
-      else
+      elsif page.sort_order == 0
         "#{title.main} | #{authors.first.first_name} #{authors.first.last_name}"
+      else
+        "#{page.title} | #{title.short}"
       end
     end
 
