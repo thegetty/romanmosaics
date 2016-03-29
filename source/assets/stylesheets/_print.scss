@@ -260,6 +260,7 @@ $light-gray: transparentize($print-text-color, 0.5);
     @extend %full-page-image;
     background-image: url(image_path("print/title-b.jpg"));
   }
+  // scss-lint:enable NameFormat
 
   .print-copyright {
     font-family: $heading-font-family;
@@ -268,7 +269,21 @@ $light-gray: transparentize($print-text-color, 0.5);
     page: no-footer;
     page-break-after: always;
   }
-  // scss-lint:enable NameFormat
+
+  .publisher { margin-bottom: $print-base-spacing; }
+  .distribution { margin-bottom: $print-base-spacing;}
+  .team { margin-top: $print-base-spacing;}
+
+  .loc-cip {
+    margin-bottom: $print-base-spacing;
+
+    p { margin-bottom: 0; }
+
+    li {
+      padding-left: $print-base-spacing;
+      text-indent: -$print-base-spacing;
+    }
+  }
 
   body.contents {
     page: no-footer;
@@ -295,6 +310,10 @@ $light-gray: transparentize($print-text-color, 0.5);
     li {
       font-size: 11pt;
       margin-bottom: 0.1125in;
+    }
+
+    .toc-section {
+      font-weight: bold;
     }
   }
 
@@ -333,6 +352,7 @@ $light-gray: transparentize($print-text-color, 0.5);
     text-align: center;
   }
 
+  // scss-lint:disable NameFormat
   .region-map {
     background-image: url(image_path("print/base-map.jpg"));
     background-repeat: no-repeat;
@@ -340,11 +360,11 @@ $light-gray: transparentize($print-text-color, 0.5);
     height: 4.5in;
     margin-bottom: $print-base-spacing;
     width: 100%;
-    
+
     &[data-map="italy"] {
       background-image: url(image_path("print/italy.jpg"));
     }
-    
+
     &[data-map="gaul"] {
       background-image: url(image_path("print/gaul.jpg"));
     }
@@ -359,7 +379,6 @@ $light-gray: transparentize($print-text-color, 0.5);
   }
 
   // Cat entries
-  // scss-lint:disable NameFormat
   .bleed {
     @extend %full-page-image;
     // page-break-before: left;
