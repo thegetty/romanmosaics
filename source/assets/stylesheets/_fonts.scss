@@ -17,6 +17,9 @@
 // Webfont: FreightTextProBook-Regular by GarageFonts
 // URL: http://www.myfonts.com/fonts/garagefonts/freight-text-pro/book/
 //
+// Webfont: FreightTextProBold-Italic by GarageFonts
+// URL: http://www.myfonts.com/fonts/garagefonts/freight-text-pro/bold-italic/
+//
 //
 // License: http://www.myfonts.com/viewlicense?type=web&buildid=3135824
 // Licensed pageviews: 10,000
@@ -34,6 +37,7 @@
 @include font-face("Freight Text Pro", "../fonts/freight-text-pro-book", 400);
 @include font-face("Freight Text Pro", "../fonts/freight-text-pro-book-italic", 400, italic);
 @include font-face("Freight Text Pro", "../fonts/freight-text-pro-bold", 700);
+@include font-face("Freight Text Pro", "../fonts/freight-text-pro-bold-italic", 700, italic);
 
 // Freight Text smallcaps (flattened for non-opentype browsers)
 @include font-face("Freight Text Pro SC", "../fonts/freight-text-pro-book-smallcaps", 400);
