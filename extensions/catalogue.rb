@@ -68,6 +68,24 @@ class Catalogue < Middleman::Extension
       "#{author.first_name} #{author.last_name}"
     end
 
+    def page_title
+      title   = data.book.title
+      authors = data.book.creators
+      page    = current_page.data
+
+      if page.cat
+        if page.cat.is_a? Array
+          "Cats. #{page.cat.first}-#{page.cat.last} | #{title.short}"
+        else
+          "Cat. #{page.cat} | #{title.short}"
+        end
+      elsif page.title
+        "#{page.title} | #{title.short}"
+      else
+        "#{title.main} | #{authors.first.first_name} #{authors.first.last_name}"
+      end
+    end
+
     # --------------------------------------------------------------------------
     # Book info methods
     # Used to build up the complex strings used in the citation partial

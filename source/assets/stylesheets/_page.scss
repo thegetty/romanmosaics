@@ -84,3 +84,23 @@
   }
 
 }
+
+.license p:first-child {
+  margin-bottom: 0;
+}
+
+.loc-cip {
+    margin-bottom: $base-spacing;
+
+    p { margin-bottom: 0; }
+
+    li {
+      padding-left: $base-spacing;
+      text-indent: -$base-spacing;
+    }
+  }
+
+.illustration-credits li {
+  padding-left: $base-spacing;
+  text-indent: -$base-spacing;
+}

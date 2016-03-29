@@ -18,7 +18,7 @@ keywords_list.concat data.book.keywords unless data.book.keywords.nil?
 <link rel="schema.dcterms" href="http://purl.org/dc/terms/">
 <link rel="canonical" href="http://www.getty.edu/publications/terracottas">
 <link rel="publisher" href="http://www.getty.edu">
-<meta name="description" content="<%= data.book.description_short %>">
+<meta name="description" content="<%= data.book.description_main %>">
 <meta name="keywords" content='<%= keywords_list.to_sentence(last_word_connector: ", ") %>'>
 <meta name="dcterms.bibliographicCitation" content="TBD">
 
@@ -37,7 +37,7 @@ keywords_list.concat data.book.keywords unless data.book.keywords.nil?
 
 <% # Date and description %>
 <meta name="dcterms.date" content="<%= data.book.pub_date %>">
-<meta name="dcterms.description" content="<%= data.book.description_short %>">
+<meta name="dcterms.description" content="<%= data.book.description_main %>">
 <% # Editions %>
 <% data.book.editions.each_with_index do |edition, index| %>
   <% if index < 1 %>
