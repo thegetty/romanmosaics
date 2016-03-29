@@ -3,9 +3,9 @@
   = tag :img,
     src: image_path("#{data.book.license.logo}"), class: "cc-logo", alt: "CC License Logo"
   - if data.book.license.exceptions.print == nil and data.book.license.exceptions.both == nil
-    %p This work is licensed under a <a href="#{data.book.license.link}" rel="license">#{data.book.license.type}</a>. To view a copy of this license, visit <a href="#{data.book.license.link}" rel="license">#{data.book.license.type}</a> or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042.
+    %p This work is licensed under a <a href="#{data.book.license.link}" rel="license">#{data.book.license.type}</a>. To view a copy of this license, visit #{data.book.license.link} or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042.
   - if data.book.license.exceptions.print != nil or data.book.license.exceptions.both != nil
-    %p Except where otherwise noted, this work is licensed under a <a href="#{data.book.license.link}" rel="license">#{data.book.license.type}</a>. To view a copy of this license, visit <a href="#{data.book.license.link}" rel="license">#{data.book.license.type}</a> or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042.
+    %p Except where otherwise noted, this work is licensed under a <a href="#{data.book.license.link}" rel="license">#{data.book.license.type}</a>. To view a copy of this license, visit #{data.book.license.link} or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042.
     - if data.book.license.exceptions.print != nil
       - data.book.license.exceptions.print.each do |exception|
         %p= exception
