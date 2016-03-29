@@ -52,7 +52,7 @@ DeepZoom.prototype = {
     L.tileLayer(this.baseurl + this.cat + "/{z}/{x}/{y}.png",
       {
         bounds: this.bounds,
-        errorTileUrl: "/mosaics/assets/images/empty.png",
+        errorTileUrl: "/assets/images/empty.png",
         maxZoom: this.maxZoom,
         minZoom: this.minZoom,
         noWrap: true,
@@ -76,7 +76,7 @@ DeepZoom.prototype = {
       );
       parent.layers[layerName] = L.tileLayer(layerPath, {
         bounds: layerBounds,
-        errorTileUrl: "/mosaics/assets/images/empty.png",
+        errorTileUrl: "/assets/images/empty.png",
         maxZoom: layerData.max_zoom,
         minZoom: layerData.min_zoom,
         noWrap: true,
