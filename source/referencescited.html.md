@@ -177,10 +177,10 @@ sort_order: 101
 - **Flagge 1975**<br />
   Flagge, Ingeborg. *Untersuchungen zur Bedeutung des Greifen*. Sankt Augustin, Germany: Hans Richarz, 1975.
 
-- **Foucher 1960**a <br />
+- **Foucher 1960a** <br />
   Foucher, Louis. *Découvertes archéologiques à Thysdrus en 1960*. Tunisia: Imprimerie La Rapide, 1960.
 
-- **Foucher 1960**b <br />
+- **Foucher 1960b** <br />
   Foucher, Louis. *Inventaire des mosaïques, feuille no 57 de l’Atlas archéologique: Sousse*. Tunisia: Institut National d’Archéologie et Arts.
 
 - **Foucher 1961**<br />
@@ -408,13 +408,13 @@ sort_order: 101
 - **Merlin 1915**<br />
   Merlin, Alfred. *Inventaire des mosaïques de la Gaule et de l’Afrique*. Vol. 2, suppl., *Afrique Proconsulaire (Tunisie)*. Paris: Ernest Leroux, 1915.
 
-- **Michon 1923**a<br />
+- **Michon 1923a**<br />
   Michon, Étienne. *Bulletin de la Société nationale des antiquaires de France* (1923): 109.
 
-- **Michon 1923**b<br />
+- **Michon 1923b**<br />
   Michon, Étienne. Letter (unpublished), February 1923, in Archives du Musée du Louvre, Antiquités Grecques et Romaines, no. A 5, 28 février 1923.
 
-- **Michon 1923**c<br />
+- **Michon 1923c**<br />
   Michon, Étienne. “Rapport.” *Bulletin archéologique du Comité des travaux historiques et scientifiques* (1923): LX.
 
 - **Milnor 2014**<br />
