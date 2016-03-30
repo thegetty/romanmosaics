@@ -1,4 +1,4 @@
-This is the repository for *Roman Mosaics in the J. Paul Getty Museum* by Maria Lucia Ferruzza, published in March 2016 by the J. Paul Getty Museum. It is available online at [http://www.getty.edu/publications/romanmosaics](http://www.getty.edu/publications/romanmosaics) and may be downloaded free of charge in multiple formats.
+This is the repository for *Roman Mosaics in the J. Paul Getty Museum* by Alexis Belis, published in March 2016 by the J. Paul Getty Museum. It is available online at [http://www.getty.edu/publications/romanmosaics](http://www.getty.edu/publications/romanmosaics) and may be downloaded free of charge in multiple formats.
 
 ## About the Book
 
