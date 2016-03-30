@@ -15,7 +15,7 @@ p {
 }
 
 h1 {
-  color: rgb(97, 125, 140);
+  color: #1565c0;
 	font-family: "Fira Sans", Helvetica, Arial, sans-serif;
 	font-size: 2.25em;
 	font-weight: 400;
@@ -35,7 +35,7 @@ article {
 }
 
 h2 {
-  color: rgb(97, 125, 140);
+  color: #1565c0;
 	font-family: "Fira Sans", Helvetica, Arial, sans-serif;
 	font-size: 2.25em;
 	font-weight: 400;
@@ -46,13 +46,15 @@ h2 {
 }
 
 h3 {
-  color: rgb(97, 125, 140);
+  color: #1565c0;
 	font-family: "Fira Sans", Helvetica, Arial, sans-serif;
 	font-size: 1.75em;
 	font-weight: 400;
 	margin: 0;
 	padding: 0;
-	break-after: avoid;
+	-webkit-column-break-after: avoid;
+	   page-break-after: avoid;
+	        break-after: avoid;
 	-epub-hyphens: none;
 }
 
@@ -73,7 +75,7 @@ article + h3 {
 }
 
 h4, h2.object-meta, h3.object-meta {
-  color: rgb(97, 125, 140);
+  color: #1565c0;
 	text-transform: uppercase;
 	font-size: 1.125em;
 	line-height: 150%;
@@ -153,7 +155,7 @@ li {
 }
 
 a,a:visited {
-	color: #617d8c;
+	color: #1565c0;
 	text-decoration: none;
 }
 
@@ -170,11 +172,15 @@ hr {
 }
 
 .break-before {
-	break-before: column;
+	-webkit-column-break-before: column;
+	   page-break-before: column;
+	        break-before: column;
 }
 
 .break-after {
-	break-after: column;
+	-webkit-column-break-after: column;
+	   page-break-after: column;
+	        break-after: column;
 }
 
 .group {
@@ -190,8 +196,8 @@ hr {
 	line-height: 1.5;
 }
 
-.entry-header {
-	text-align: center;
+.entry-header h1 {
+  margin-top: 1em;
 }
 
 .entry h2,.entry h3 {
@@ -269,6 +275,33 @@ hr {
 	background-color: transparent;
 }
 
+ul.cat_details  {
+  padding: 0;
+  margin-top: 1em;
+}
+
+ul.cat_details li {
+  padding: 0;
+  margin: 0;
+}
+
+.object-details ul li {
+  padding: 0;
+  margin: 0;
+}
+
+
+svg {
+  width: 50%;
+  margin-top: 1em;
+  fill: #ddd;
+}
+
+.footnotes {
+  margin-top: 2em;
+  border-top: 1px solid #ddd;
+}
+
 .fullpage-image {
   text-align: center;
 	margin: 0 1%;
@@ -286,7 +319,11 @@ hr {
 }
 
 .plate {
+  background-color: #000;
   height: 80%;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .plate img {
@@ -302,11 +339,9 @@ ul {
 }
 
 figure {
-	width: 35%;
-  max-width: 160px;
-  text-align: center;
-	margin-left: auto;
-  margin-right: auto;
+	width: 80%;
+	margin-left: 10%;
+  margin-right: 10%;
   page-break-inside: avoid;
 }
 
