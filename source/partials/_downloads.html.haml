@@ -3,9 +3,9 @@
   - data.book.editions.each do |edition|
     - if edition.name != "Online"
       - if edition.file_size_mb != nil
-        %li= link_to "#{edition.name} (#{edition.file_size_mb} MB)", edition.link, :target => "blank"
+        %li= link_to "#{edition.name} (#{edition.file_size_mb} MB)", edition.link, :target => "blank", :class => "no-smoothState"
       - else
-        %li= link_to "#{edition.name}", edition.link, :target => "blank"
+        %li= link_to "#{edition.name}", edition.link, :target => "blank", :class => "no-smoothState"
 :markdown
   Each of these alternative formats includes the complete catalogue text,
   all plates and figures, and the regional maps.
@@ -15,9 +15,9 @@
   - data.book.other_resources.each do |resource|
     - if resource.type == "image"
       - if resource.file_size_mb != nil
-        %li= link_to "#{resource.name} (#{resource.file_size_mb} MB)", resource.link, :target => "blank"
+        %li= link_to "#{resource.name} (#{resource.file_size_mb} MB)", resource.link, :target => "blank", :class => "no-smoothState"
       - else
-        %li= link_to "#{resource.name}", resource.link, :target => "blank"
+        %li= link_to "#{resource.name}", resource.link, :target => "blank", :class => "no-smoothState"
 :markdown
   Each download includes the main image and caption for each of the catalogue
   objects, free for unrestricted use. JPGs are 1440px on their longest side.
@@ -30,9 +30,9 @@
   - data.book.other_resources.each do |resource|
     - if resource.type == "data"
       - if resource.file_size_mb != nil
-        %li= link_to "#{resource.name} (#{resource.file_size_mb} MB)", resource.link, :target => "blank"
+        %li= link_to "#{resource.name} (#{resource.file_size_mb} MB)", resource.link, :target => "blank", :class => "no-smoothState"
       - else
-        %li= link_to "#{resource.name}", resource.link, :target => "blank"
+        %li= link_to "#{resource.name}", resource.link, :target => "blank", :class => "no-smoothState"
 :markdown
   The object data, available in two formats, includes key information from each
   of the catalogue objects.
