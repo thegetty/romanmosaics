@@ -164,8 +164,12 @@ coverage:
   - 100-600 AD
 keywords:
 bisac:
-  - code:
-    subject:
+  - code: ART015060
+    subject: "ART / History / Ancient & Classical"
+  - code: ART006000
+    subject: "ART / Collections, Catalogs, Exhibitions / General"
+  - code: SOC003000
+    subject: "SOCIAL SCIENCE / Archaeology"
 revision_history:
   - date: March 30, 2016
     summary:

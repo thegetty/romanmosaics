@@ -16,7 +16,7 @@ keywords_list.concat data.book.keywords unless data.book.keywords.nil?
 %>
 
 <link rel="schema.dcterms" href="http://purl.org/dc/terms/">
-<link rel="canonical" href="http://www.getty.edu/publications/terracottas">
+<link rel="canonical" href="<%= permalink %>">
 <link rel="publisher" href="http://www.getty.edu">
 <meta name="description" content="<%= data.book.description_main %>">
 <meta name="keywords" content='<%= keywords_list.to_sentence(last_word_connector: ", ") %>'>
