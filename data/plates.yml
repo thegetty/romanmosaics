@@ -9,8 +9,8 @@
 - id: 2
   min_zoom: 0
   max_zoom: 6
-  height: 7168
-  width: 9216
+  height: 11766
+  width: 15616
   
 - id: 3
   min_zoom: 0
