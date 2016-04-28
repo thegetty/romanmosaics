@@ -311,10 +311,12 @@ $light-gray: transparentize($print-text-color, 0.5);
     li {
       font-size: 11pt;
       margin-bottom: 0.1125in;
+      padding-left: 0.125in;
     }
 
-    .toc-section {
-      font-weight: bold;
+    .toc-section,
+    .frontmatter {
+      padding-left: 0;
     }
   }
 
