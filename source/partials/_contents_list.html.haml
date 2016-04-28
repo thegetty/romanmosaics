@@ -29,7 +29,7 @@
     %li.toc-item= link_to "References Cited", "../../build/referencescited/index.html#page-title"
     %li.toc-item= link_to "Glossary", "../../build/glossary/index.html"
     %li.toc-item= link_to "Contributors", "../../build/contributors/index.html"
-    -# %li.toc-item= link_to "Index", "../../build/bookindex/index.html"
+    %li.toc-item= link_to "Index", "../../build/bookindex/index.html"
   - else
     - sorted_contents.each do |item|
       - next if item.data.title == "Contents"
