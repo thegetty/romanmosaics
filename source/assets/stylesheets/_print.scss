@@ -451,6 +451,20 @@ $light-gray: transparentize($print-text-color, 0.5);
     line-height: $print-base-line-height;
   }
 
+  .book-index {
+    font-size: 8pt;
+    line-height: $print-base-line-height;
+  }
+
+  .book-index .page-numbers,
+  .book-index .index-note {
+    display: inline;
+  }
+
+  .book-index strong {
+    font-weight: bold;
+  }
+
   // General content styles
   .introduction .page-content,
   .foreword .page-content,
@@ -462,6 +476,7 @@ $light-gray: transparentize($print-text-color, 0.5);
   .about .page-content,
   .contributors .page-content,
   .glossary .page-content,
+  .book-index,
   .cat-entry-content {
     color: $print-text-color;
     column-count: 2;

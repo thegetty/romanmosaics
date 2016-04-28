@@ -104,3 +104,21 @@
   padding-left: $base-spacing;
   text-indent: -$base-spacing;
 }
+
+.book-index {
+  strong {
+    font-weight: normal;
+  }
+  .page-numbers,
+  .index-note {
+    display: none;
+  }
+  li {
+    padding-left: $base-spacing * .5;
+    text-indent: -$base-spacing * .5;
+    ul {
+      padding-left: $base-spacing;
+      text-indent: -$base-spacing;
+    }
+  }
+}
