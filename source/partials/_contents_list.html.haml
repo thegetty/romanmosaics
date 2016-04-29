@@ -32,7 +32,7 @@
     - sorted_contents.each do |item|
       - next if item.data.title == "Contents"
       - if item.data.cat.is_a? Array
-        %li.toc-item= link_to "#{item.data.cat.first}-#{item.data.cat.last}. #{item.data.title}", item
+        %li.toc-item= link_to "#{item.data.cat.first}–#{item.data.cat.last}. #{item.data.title}", item
       - elsif item.data.cat
         - current_entry = lookup_entry(item.data.cat)
         %li.toc-item= link_to "#{item.data.cat}. #{current_entry.title}", item
