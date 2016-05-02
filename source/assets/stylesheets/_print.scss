@@ -456,6 +456,12 @@ $light-gray: transparentize($print-text-color, 0.5);
   .book-index {
     font-size: 8pt;
     line-height: $print-base-line-height;
+
+    ul { font-size: 8pt; }
+  }
+
+  .index-note {
+    font-size: 8pt;
   }
 
   .book-index .page-numbers,
