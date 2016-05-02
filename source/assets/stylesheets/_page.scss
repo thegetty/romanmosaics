@@ -90,15 +90,15 @@
 }
 
 .loc-cip {
-    margin-bottom: $base-spacing;
+  margin-bottom: $base-spacing;
 
-    p { margin-bottom: 0; }
+  p { margin-bottom: 0; }
 
-    li {
-      padding-left: $base-spacing;
-      text-indent: -$base-spacing;
-    }
+  li {
+    padding-left: $base-spacing;
+    text-indent: -$base-spacing;
   }
+}
 
 .illustration-credits li {
   padding-left: $base-spacing;
@@ -106,19 +106,21 @@
 }
 
 .book-index {
-  strong {
-    font-weight: normal;
-  }
+  strong { font-weight: normal; }
+  ul { font-size: 1.25rem; }
+
   .page-numbers,
   .index-note {
     display: none;
   }
+
   li {
-    padding-left: $base-spacing * .5;
-    text-indent: -$base-spacing * .5;
+    padding-left: $base-spacing * 0.5;
+    text-indent: -$base-spacing * 0.5;
+
     ul {
-      padding-left: $base-spacing;
-      text-indent: -$base-spacing;
+      padding-left: $base-spacing * 0.25;
+      text-indent: -$base-spacing * 0.25;
     }
   }
 }
