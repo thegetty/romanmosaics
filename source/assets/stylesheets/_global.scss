@@ -138,7 +138,7 @@ html { min-height: 100vh; }
 }
 
 .force-wrap {
-  @include prefixer(hyphens, auto, webkit moz ms spec);
+  // @include prefixer(hyphens, auto, webkit moz ms spec);
   overflow-wrap: break-word;
   // word-break: break-all;
   -ms-word-break: break-all;
