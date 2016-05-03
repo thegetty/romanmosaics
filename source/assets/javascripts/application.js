@@ -1,5 +1,5 @@
 //= require_tree .
-L.Icon.Default.imagePath = '/romanmosaics/assets/stylesheets/vendor/leaflet/images';
+L.Icon.Default.imagePath = '/assets/stylesheets/vendor/leaflet/images';
 
 // Make this available globally
 var RegionMap;
