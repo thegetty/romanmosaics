@@ -145,7 +145,7 @@ GeoMap.prototype = {
   addTiles: function() {
     L.tileLayer(this.tiles, {
       attribution: this.attribution,
-      errorTileUrl: "/assets/images/empty.png"
+      errorTileUrl: "/romanmosaics/assets/images/empty.png"
     }).addTo(this.map);
   },
   // Add Labels
@@ -202,9 +202,9 @@ GeoMap.prototype = {
       linkedEntries.forEach(function(entry) {
         var entryURL, currentEntry;
         if ( entry.cat < 9 || entry.cat > 19) {
-          entryURL = "/catalogue/" + entry.cat + "/";
+          entryURL = "/romanmosaics/catalogue/" + entry.cat + "/";
         } else {
-          entryURL = "/catalogue/9-19/";
+          entryURL = "/romanmosaics/catalogue/9-19/";
         }
         popupMsg += "<li><a href='" + entryURL + "'>";
         popupMsg += entry.cat + ". ";
