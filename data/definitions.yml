@@ -70,6 +70,9 @@
   definition: "a mortar pavement made of concrete mixed with crushed tile or stone chips"
   definition_short: "Roman construction technique of mortar pavements mixed with crushed pottery or tile"
 
+- id: opus-tessellatum
+  definition: "mosaic technique using small cubes of stone or glass known as <em>tesserae</em> to form ornamental patterns and figural scenes"
+
 - id: opus-vermiculatum
   definition: "a technique used to decorate floors and walls in which tiny pieces of irregular stone are used to create extremely detailed picture mosaics"
   definition_short: "Roman construction technique in which tiny pieces of irregular stone were used to create extremely detailed picture mosaics that imitated the effects of painting"

@@ -2,11 +2,9 @@
 %ul.toc
   - if environment? :pdf
     -# %li.toc-item= link_to "Contents", "../../build/contents/index.html"
-    %li.toc-item.frontmatter
-      = link_to "Director’s Foreword", "../../build/foreword/index.html"
-      %span.toc-entry-author Timothy Potts
+    %li.toc-item.frontmatter= link_to "Director’s Foreword", "../../build/foreword/index.html"
     %li.toc-item.frontmatter= link_to "Acknowledgments", "../../build/acknowledgments/index.html"
-    %li.toc-item
+    %li.toc-item.frontmatter
       = link_to "Introduction", "../../build/introduction/index.html#page-title"
       %span.toc-entry-author Christine Kondoleon
     %li.toc-item.toc-section= link_to "Italy", "../../build/catalogue/italy/index.html"
@@ -26,15 +24,15 @@
     %li.toc-item= link_to "9&ndash;19. Mosaic Panels with Animals", "../../build/catalogue/9-19/index.html#page-title"
     %li.toc-item= link_to "20. Mosaic Panel with Head of a Season", "../../build/catalogue/20/index.html"
     %li.toc-item= link_to "21. Mosaic Panel with Two Male Busts", "../../build/catalogue/21/index.html#page-title"
-    %li.toc-item= link_to "References Cited", "../../build/referencescited/index.html#page-title"
-    %li.toc-item= link_to "Glossary", "../../build/glossary/index.html"
-    %li.toc-item= link_to "Contributors", "../../build/contributors/index.html"
-    -# %li.toc-item= link_to "Index", "../../build/bookindex/index.html"
+    %li.toc-item.toc-section= link_to "References Cited", "../../build/referencescited/index.html#page-title"
+    %li.toc-item.toc-section= link_to "Glossary", "../../build/glossary/index.html"
+    %li.toc-item.toc-section= link_to "Contributors", "../../build/contributors/index.html"
+    %li.toc-item.toc-section= link_to "Index", "../../build/bookindex/index.html"
   - else
     - sorted_contents.each do |item|
       - next if item.data.title == "Contents"
       - if item.data.cat.is_a? Array
-        %li.toc-item= link_to "#{item.data.cat.first}-#{item.data.cat.last}. #{item.data.title}", item
+        %li.toc-item= link_to "#{item.data.cat.first}–#{item.data.cat.last}. #{item.data.title}", item
       - elsif item.data.cat
         - current_entry = lookup_entry(item.data.cat)
         %li.toc-item= link_to "#{item.data.cat}. #{current_entry.title}", item
@@ -48,6 +46,6 @@
             = link_to item.data.title + ": " + item.data.subtitle, item
           - else
             = link_to item.data.title, item
-          - if item.data.author and item.data.subtitle != "History of the Excavations"
+          - if item.data.author and item.data.author_byline == "top"
             - item.data.author.each do |author|
               %span.toc-entry-author= "#{author.first_name} #{author.last_name}"
