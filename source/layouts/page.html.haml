@@ -11,8 +11,12 @@
       %h1#page-title.page-title= current_page.data.title
       - if current_page.data.subtitle
         %h3.page-subtitle= current_page.data.subtitle
-      - if current_page.data.author and current_page.data.subtitle != "History of the Excavations"
+      - if current_page.data.author and current_page.data.author_byline == "top"
         - current_page.data.author.each do |author|
           %h3.page-author= "#{author.first_name} #{author.last_name}"
     %main.page-content
       = yield
+      - if current_page.data.author and current_page.data.author_byline == "bottom"
+        %p
+          - current_page.data.author.each do |author|
+            %span.entry-author= "#{author.first_name} #{author.last_name} <br />#{author.title} <br />#{author.institution}"

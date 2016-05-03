@@ -266,7 +266,7 @@ $light-gray: transparentize($print-text-color, 0.5);
   .print-copyright {
     font-family: $heading-font-family;
     font-size: 8pt;
-    margin-right: 1.25in;
+    margin-right: 1in;
     page: no-footer;
     page-break-after: always;
   }
@@ -311,10 +311,12 @@ $light-gray: transparentize($print-text-color, 0.5);
     li {
       font-size: 11pt;
       margin-bottom: 0.1125in;
+      padding-left: 0.125in;
     }
 
-    .toc-section {
-      font-weight: bold;
+    .toc-section,
+    .frontmatter {
+      padding-left: 0;
     }
   }
 
@@ -451,6 +453,26 @@ $light-gray: transparentize($print-text-color, 0.5);
     line-height: $print-base-line-height;
   }
 
+  .book-index {
+    font-size: 8pt;
+    line-height: $print-base-line-height;
+
+    ul { font-size: 8pt; }
+  }
+
+  .index-note {
+    font-size: 8pt;
+  }
+
+  .book-index .page-numbers,
+  .book-index .index-note {
+    display: inline;
+  }
+
+  .book-index strong {
+    font-weight: bold;
+  }
+
   // General content styles
   .introduction .page-content,
   .foreword .page-content,
@@ -462,6 +484,7 @@ $light-gray: transparentize($print-text-color, 0.5);
   .about .page-content,
   .contributors .page-content,
   .glossary .page-content,
+  .book-index,
   .cat-entry-content {
     color: $print-text-color;
     column-count: 2;
