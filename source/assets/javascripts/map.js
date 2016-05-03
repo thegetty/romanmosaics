@@ -55,7 +55,8 @@ function PopupMap(center, domElement) {
   this.maxZoom     = 12;
   this.minZoom     = 5;
   this.geojson     = geojsonFeature;
-  this.tiles       = "http://pelagios.org/tilesets/imperium/{z}/{x}/{y}.png";
+  this.tiles       = "http://dare.ht.lu.se/tiles/imperium/{z}/{x}/{y}.png";
+  // this.tiles       = "http://pelagios.org/tilesets/imperium/{z}/{x}/{y}.png";
   this.attribution = "Tiles: Pelagios/DARE";
   this.init(center, domElement);
   this.addTiles();
@@ -88,7 +89,8 @@ function GeoMap(center) {
   this.defaultZoom = 7;
   this.maxZoom     = 11;
   this.minZoom     = 5;
-  this.tiles       = "http://pelagios.org/tilesets/imperium/{z}/{x}/{y}.png";
+  this.tiles       = "http://dare.ht.lu.se/tiles/imperium/{z}/{x}/{y}.png";
+  // this.tiles       = "http://pelagios.org/tilesets/imperium/{z}/{x}/{y}.png";
   this.attribution = "Tiles <a href='http://dare.ht.lu.se/'>Pelagios/DARE</a>" +
                      "<a href='http://creativecommons.org/licenses/by-sa/3.0/'>" +
                      "CC-BY-SA 3.0</a>";

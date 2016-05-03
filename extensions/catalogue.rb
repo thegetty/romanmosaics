@@ -98,7 +98,7 @@ class Catalogue < Middleman::Extension
         #{book.publisher_location}:
         #{book.publisher},
         #{book.pub_date.year}.
-        <span class="force-wrap">#{permalink}/#{path}</span>
+        <span class="force-wrap">#{permalink}/#{path}</span>.
       )
     end
 
