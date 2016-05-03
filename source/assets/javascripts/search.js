@@ -22,7 +22,7 @@ var Search = {
     contents: [],
     query: "",
     loaded: false,
-    url: "/romanmosaics/search.json"
+    url: "/publications/romanmosaics/search.json"
   },
   computed: {
     searchResults: function () {
@@ -33,7 +33,7 @@ var Search = {
       SearchIndex.search(query).forEach(function(result) {
         var item = {
           title: contents[result.ref].title,
-          url: "/romanmosaics" + contents[result.ref].url
+          url: "/publications/romanmosaics" + contents[result.ref].url
         };
 
         results.push(item);

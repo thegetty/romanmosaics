@@ -66,7 +66,7 @@ function keyboardNav(){
 function mapSetup() {
   if ($("#map").length) {
     // Get Catalogue data
-    $.getJSON("/romanmosaics/catalogue.json", function(data){
+    $.getJSON("/publications/romanmosaics/catalogue.json", function(data){
       // Stash catalogue json data for later use
       window.CATALOGUE = data;
       // Instantiate map
@@ -88,7 +88,7 @@ function mapSetup() {
 function plateSetup() {
   if ($("#plate").length) {
     // Get zoom data
-    $.getJSON("/romanmosaics/plates.json", function(data){
+    $.getJSON("/publications/romanmosaics/plates.json", function(data){
       // stash plates json data for later use
       window.PLATES = data;
       // Instantiate deepZoom
@@ -230,7 +230,7 @@ function popupSetup() {
     } else if ($popup.data("pic")) {
       var picData = JSON.parse($popup.data("pic"));
       var $el     = $("<figure>", {class: "popup-content"});
-      var $img    = $("<img>", {src: "/romanmosaics/assets/images/pics/" + picData.file });
+      var $img    = $("<img>", {src: "/publications/romanmosaics/assets/images/pics/" + picData.file });
       var $figcap = $("<figcaption>");
 
       $figcap.html(
