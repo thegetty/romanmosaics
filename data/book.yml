@@ -57,21 +57,21 @@ editions:
     type: Text
     format: application/epub+zip
     isbn: 978-1-60606-498-6
-    file_size_mb: 22.5
+    file_size_mb: 21
     link: http://www.getty.edu/publications/romanmosaics/assets/downloads/RomanMosaics_Belis.epub
     additional_description:
   - name: MOBI/KINDLE
     type: Text
     format: application/mobi
     isbn: 978-1-60606-498-6
-    file_size_mb: 54.8
+    file_size_mb: 46
     link: http://www.getty.edu/publications/romanmosaics/assets/downloads/RomanMosaics_Belis.mobi
     additional_description:
   - name: PDF
     type: Text
     format: application/pdf
     isbn: 978-1-60606-497-9
-    file_size_mb: 8.4
+    file_size_mb: 8.2
     link: http://www.getty.edu/publications/romanmosaics/assets/downloads/RomanMosaics_Belis.pdf
     additional_description:
   - name: Paperback
