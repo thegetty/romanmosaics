@@ -389,3 +389,25 @@ figcaption {
   padding-left: 8pt;
   margin: 0;
 }
+
+.book-index strong {
+  font-weight: normal;
+}
+
+.page-numbers {
+  display: none;
+}
+
+.index-note {
+  display: none;
+}
+
+.book-index li {
+  padding-left: 8pt;
+  text-indent: -8pt;
+}
+
+.book-index li ul {
+  padding-left: 4pt;
+  text-indent: -4pt;
+}
