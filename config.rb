@@ -26,8 +26,6 @@ configure :development do
 end
 
 configure :build do
-  # set :http_prefix, "/publications/romanmosaics"
-
   activate :relative_assets
   activate :minify_html
   activate :minify_css
@@ -46,6 +44,14 @@ helpers do
       ""
     elsif environment? :production
       "/publications/romanmosaics"
+    end
+  end
+
+  def og_image_path
+    if environment? :development
+      "assets/images/og_cover.jpg"
+    elsif environment? :production
+      "http://#{baseurl}/assets/images/og_cover.jpg"
     end
   end
 end
