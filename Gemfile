@@ -26,7 +26,6 @@ gem "rubyzip"
 group :test do
   gem "rspec"
   gem "capybara"
-  # Use the qt-fix branch of capybara-webkit until qt5 is available
-  gem "capybara-webkit", git: 'git://github.com/thoughtbot/capybara-webkit.git', branch: 'qt-4.8-fix'
+  gem "capybara-webkit"
   gem "selenium-webdriver"
 end
