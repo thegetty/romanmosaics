@@ -4,6 +4,16 @@
     %meta{charset: "utf-8"}
     %meta{content: "IE=edge,chrome=1", http: {equiv: "X-UA-Compatible"}}
     %meta{name: "viewport", content: "width=device-width, initial-scale=1"}
+    %meta{ name: "apple-mobile-web-app-capable", content: "yes" }
+    %meta{ name: "apple-mobile-web-app-status-bar-style", content: "black" }
+
+    / Open Graph
+    %meta{ property: "og:title", content: data.book.title.main }
+    %meta{ property: "og:url", content: data.book.editions.first.link }
+    %meta{ property: "og:type", content: "website" }
+    %meta{ property: "og:description", content: data.book.description_main }
+    %meta{ property: "og:image", content:  og_image_path }
+
     / Book Metadata
     = partial "partials/metadata"
     %title= page_title
