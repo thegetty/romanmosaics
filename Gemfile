@@ -21,6 +21,7 @@ gem "sassc", "~> 1.8"
 gem "sanitize"
 gem "slugify"
 gem "rubyzip"
+gem "middleman-minify-html"
 
 # Testing
 group :test do
