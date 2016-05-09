@@ -48,10 +48,6 @@ helpers do
   end
 
   def og_image_path
-    if environment? :development
-      "assets/images/og_cover.jpg"
-    elsif environment? :production
-      "http://#{baseurl}/assets/images/og_cover.jpg"
-    end
+    "http://www.getty.edu#{baseurl}/assets/images/og_cover.jpg"
   end
 end
