@@ -5,7 +5,9 @@ activate :search
 activate :catalogue
 activate :directory_indexes
 activate :autoprefixer
-activate :sprockets
+activate :sprockets do |c|
+  c.expose_middleman_helpers = true
+end
 
 set :relative_links, true
 set :css_dir, "assets/stylesheets"
@@ -24,6 +26,8 @@ configure :development do
 end
 
 configure :build do
+  # set :http_prefix, "/publications/romanmosaics"
+
   activate :relative_assets
   activate :minify_html
   activate :minify_css
@@ -34,4 +38,14 @@ end
 activate :deploy do |deploy|
   deploy.build_before = true
   deploy.deploy_method = :git
+end
+
+helpers do
+  def baseurl
+    if environment? :development
+      ""
+    elsif environment? :production
+      "/publications/romanmosaics"
+    end
+  end
 end
