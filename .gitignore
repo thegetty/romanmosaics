@@ -12,3 +12,5 @@ Gemfile.lock
 /source/assets/downloads/RomanMosaics_Belis_Images.zip
 /node_modules
 /*.tmp
+**/freight-text-pro*
+
