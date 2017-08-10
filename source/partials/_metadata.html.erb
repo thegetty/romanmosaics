@@ -11,8 +11,10 @@ data.book.contributors.each do |contributor|
   contributor_names << "#{contributor.first_name} #{contributor.last_name}"
 end
 
-data.book.keywords.each do |keyword|
-  keywords_list << "#{keyword}"
+unless data.book.keywords.nil?
+  data.book.keywords.each do |keyword|
+    keywords_list << "#{keyword}"
+  end
 end
 %>
 
