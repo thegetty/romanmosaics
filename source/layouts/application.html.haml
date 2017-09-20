@@ -6,10 +6,12 @@
     %meta{name: "viewport", content: "width=device-width, initial-scale=1"}
     %meta{ name: "apple-mobile-web-app-capable", content: "yes" }
     %meta{ name: "apple-mobile-web-app-status-bar-style", content: "black" }
-    %link{ rel: "apple-touch-icon", sizes: "57x57", href: "apple-icon-57x57.png" }
-    %link{ rel: "apple-touch-icon", sizes: "72x72", href: "apple-icon-72x72.png" }
-    %link{ rel: "apple-touch-icon", sizes: "114x114", href: "apple-icon-114x114.png" }
-    %link{ rel: "apple-touch-icon", sizes: "144x144", href: "apple-icon-144x144.png" }
+
+    / Apple home screen icons
+    = favicon_tag 'apple-touch-icon-57x57.png', rel: 'apple-touch-icon', type: 'image/png', sizes: '57x57'
+    = favicon_tag 'apple-touch-icon-72x27.png', rel: 'apple-touch-icon', type: 'image/png', sizes: '57x57'
+    = favicon_tag 'apple-touch-icon-114x114.png', rel: 'apple-touch-icon', type: 'image/png', sizes: '114x114'
+    = favicon_tag 'apple-touch-icon-144x144.png', rel: 'apple-touch-icon', type: 'image/png', sizes: '144x144'
 
     / Open Graph
     %meta{ property: "og:title", content: data.book.title.main }
