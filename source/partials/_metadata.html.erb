@@ -11,15 +11,18 @@ data.book.contributors.each do |contributor|
   contributor_names << "#{contributor.first_name} #{contributor.last_name}"
 end
 
-keywords_list << data.book.coverage
-keywords_list.concat data.book.keywords unless data.book.keywords.nil?
+unless data.book.keywords.nil?
+  data.book.keywords.each do |keyword|
+    keywords_list << "#{keyword}"
+  end
+end
 %>
 
 <link rel="schema.dcterms" href="http://purl.org/dc/terms/">
 <link rel="canonical" href="<%= permalink %>">
 <link rel="publisher" href="http://www.getty.edu">
 <meta name="description" content="<%= data.book.description_main %>">
-<meta name="keywords" content='<%= keywords_list.to_sentence(last_word_connector: ", ") %>'>
+<meta name="keywords" content="<%= keywords_list.join(", ") %>">
 <meta name="dcterms.bibliographicCitation" content="TBD">
 
 <% # Loop through terms %>
@@ -56,7 +59,7 @@ keywords_list.concat data.book.keywords unless data.book.keywords.nil?
 
 <% # Subjects %>
 <% unless data.book.categories.nil? %>
-<meta name="dcterms.subject" content="<%= data.book.categories.to_sentence %>">
+<meta name="dcterms.subject" content="<%= data.book.categories.join(", ") %>">
 <% data.book.bisac.each do |item| %>
   <meta name="dcterms.subject" content='<%= item.subject %>'>
 <% end %>

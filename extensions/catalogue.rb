@@ -68,6 +68,11 @@ class Catalogue < Middleman::Extension
       "#{author.first_name} #{author.last_name}"
     end
 
+    def byline
+      authors = data.book.creators
+      authors.map { |a| "#{a.first_name} #{a.last_name}" }.join(' and ')
+    end
+
     def page_title
       title   = data.book.title
       authors = data.book.creators
@@ -94,9 +99,9 @@ class Catalogue < Middleman::Extension
       path = current_path.gsub("index.html", "")
       %(
         In <em>#{book.title.main}</em>,
-        by #{book.creators.first.first_name} #{book.creators.first.last_name}.
+        by #{byline}.
         #{book.publisher_location}:
-        #{book.publisher},
+        #{book.imprint},
         #{book.pub_date.year}.
         <span class="force-wrap">#{permalink}/#{path}</span>.
       )
@@ -105,12 +110,12 @@ class Catalogue < Middleman::Extension
     def book_info_mla
       book = data.book
       path = current_path.gsub("index.html", "")
+      short_permalink = permalink.gsub('http://', '')
       %(
-        <em>#{book.title.main}</em>. By #{author_name}.
-        #{book.publisher_location}:
-        #{book.publisher_short}, #{book.pub_date.year}.
-        <span class="cite-current-date">DD Mon. YYYY</span>
-        <<span class="force-wrap">#{permalink}/#{path}</span>>.
+        <em>#{book.title.main}</em>. By #{byline}.
+        #{book.imprint}, #{book.pub_date.year},
+        <span class="cite-current-date">DD MMMM YYYY</span>,
+        <span class="force-wrap">#{short_permalink}/#{path}</span>.
       )
     end
 

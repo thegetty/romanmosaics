@@ -41,6 +41,8 @@ project_team:
     role: Copy Editors
   - name: Elizabeth Chapin Kahn
     role: Production
+  - name: Stephanie Grimes
+    role: Digital Researcher
   - name: Eric Gardner
     role: Designer and Developer
   - name: Greg Albers
@@ -178,4 +180,8 @@ revision_history:
     summary:
       - Minor text corrections
       - Index added to all formats
+  - date: September 19, 2017
+    summary:
+      - Project team corrected
+      - MLA citation formatting updated
 repository_url: https://www.github.com/gettypubs/romanmosaics

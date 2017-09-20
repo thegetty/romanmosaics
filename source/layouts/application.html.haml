@@ -7,6 +7,12 @@
     %meta{ name: "apple-mobile-web-app-capable", content: "yes" }
     %meta{ name: "apple-mobile-web-app-status-bar-style", content: "black" }
 
+    / Apple home screen icons
+    = favicon_tag 'apple-touch-icon-57x57.png', rel: 'apple-touch-icon', type: 'image/png', sizes: '57x57'
+    = favicon_tag 'apple-touch-icon-72x27.png', rel: 'apple-touch-icon', type: 'image/png', sizes: '57x57'
+    = favicon_tag 'apple-touch-icon-114x114.png', rel: 'apple-touch-icon', type: 'image/png', sizes: '114x114'
+    = favicon_tag 'apple-touch-icon-144x144.png', rel: 'apple-touch-icon', type: 'image/png', sizes: '144x144'
+
     / Open Graph
     %meta{ property: "og:title", content: data.book.title.main }
     %meta{ property: "og:url", content: data.book.editions.first.link }
