@@ -113,7 +113,7 @@ license:
   logo: cc-by.png
   exceptions:
     online:
-      - "Map tiles courtesy Pelagios and the <a href=\"http://dare.ht.lu.se\" target=\"_blank\">Digital Atlas of the Roman Empire (DARE)</a>. Licensed under a <a href=\"http://creativecommons.org/licenses/by-sa/3.0/\" target=\"_blank\">Creative Commons Attribution-ShareAlike 3.0 License</a>."
+      - "Map tiles courtesy Pelagios and the <a href=\"https://dh.gu.se/dare/\" target=\"_blank\">Digital Atlas of the Roman Empire (DARE)</a>. Licensed under a <a href=\"http://creativecommons.org/licenses/by-sa/3.0/\" target=\"_blank\">Creative Commons Attribution-ShareAlike 3.0 License</a>."
     print:
       - "Map backgrounds are from the Ancient World Mapping Center. Licensed under a <a href=\"http://creativecommons.org/licenses/by-nc/3.0/\" target=\"_blank\">Creative Commons Attribution-NonCommercial 3.0 License</a>."
     both:
