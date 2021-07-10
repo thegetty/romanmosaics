@@ -1,0 +1,413 @@
+body {
+  text-align: left;
+	font-family: "Merriweather", serif;
+	line-height: 100%;
+	font-size: 1em;
+}
+
+p {
+	widows: 2;
+	orphans: 2;
+}
+
+.bullets {
+	list-style-type: disc;
+}
+
+h1 {
+  color: #1565c0;
+	font-family: "Fira Sans", Helvetica, Arial, sans-serif;
+	font-size: 2.25em;
+	font-weight: 400;
+	line-height: 110%;
+	padding: 0;
+  margin-top: 2em;
+  margin-bottom: 0;
+	-epub-hyphens: none;
+}
+
+h2.object-meta + h1, h4 + h1 {
+  margin-top: .5em;
+}
+
+article {
+  margin-top: 3em;
+}
+
+h2 {
+  color: #1565c0;
+	font-family: "Fira Sans", Helvetica, Arial, sans-serif;
+	font-size: 2.25em;
+	font-weight: 400;
+	line-height: 110%;
+	padding: 0;
+  margin: 0;
+	-epub-hyphens: none;
+}
+
+h3 {
+  color: #1565c0;
+	font-family: "Fira Sans", Helvetica, Arial, sans-serif;
+	font-size: 1.75em;
+	font-weight: 400;
+	margin: 0;
+	padding: 0;
+	-webkit-column-break-after: avoid;
+	   page-break-after: avoid;
+	        break-after: avoid;
+	-epub-hyphens: none;
+}
+
+h1 + h3 {
+  margin-top: .5em;
+}
+
+article + h3 {
+  font-size: .75em;
+  line-height: 100%;
+  font-weight: normal;
+}
+
+.guide article h3 {
+  margin-top: 1.5em;
+  line-height: 1.3em;
+	margin-bottom: 1em;
+}
+
+h4, h2.object-meta, h3.object-meta {
+  color: #1565c0;
+	text-transform: uppercase;
+	font-size: 1.125em;
+	line-height: 150%;
+	letter-spacing: 1px;
+	margin: 40px 0 0;
+}
+
+h1 + h3.object-meta {
+  margin-top: .25em;
+}
+
+h4+p {
+	margin-top: 10px;
+}
+
+h6 {
+	font-size: .875em;
+	line-height: 200%;
+	margin: 35px 0 100px;
+	padding: 0;
+}
+
+.titlepage {
+  text-align: center;
+}
+
+.titlepage h1 {
+  text-align: center;
+  font-family: "Merriweather", serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 3.25em;
+  line-height: 1.25em;
+  margin-top: 2em;
+}
+
+.titlepage h2 {
+  text-align: center;
+  font-family: "Merriweather", serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.5em;
+  line-height: 1.55em;
+  margin: .5em 0 .65em;
+}
+
+.titlepage h3 {
+  text-align: center;
+}
+
+.titlepage h4 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#logo {
+  margin: 20px auto 0px;
+  width: 50px;
+}
+
+h1 + ul {
+  padding: 0;
+  margin-top: 3em;
+}
+
+p {
+	line-height: 1.6em;
+	-epub-hyphens: none;
+}
+
+ul,ol {
+	padding-left: 1.75em;
+}
+
+li {
+	margin: .8em 0;
+}
+
+a,a:visited {
+	color: #1565c0;
+	text-decoration: none;
+}
+
+hr {
+	border: none;
+	height: 1px;
+	background-color: #282828;
+	width: 60px;
+	margin: 30px auto;
+}
+
+.break {
+	page-break-before: always;
+}
+
+.break-before {
+	-webkit-column-break-before: column;
+	   page-break-before: column;
+	        break-before: column;
+}
+
+.break-after {
+	-webkit-column-break-after: column;
+	   page-break-after: column;
+	        break-after: column;
+}
+
+.group {
+	page-break-inside: avoid;
+}
+
+.catalogue-section h1 {
+  text-align: center;
+  margin-top: 4em;
+}
+
+.entry {
+	line-height: 1.5;
+}
+
+.entry-header h1 {
+  margin-top: 1em;
+}
+
+.entry h2,.entry h3 {
+	margin-top: 1.875rem;
+	margin-bottom: 1.125rem;
+}
+
+.entry p {
+	margin-top: 0;
+	margin-bottom: 0;
+	text-indent: 2rem;
+}
+
+.entry h2+p,.entry h3+p {
+	text-indent: 0;
+}
+
+.entry-content>p:first-of-type {
+	text-indent: 0;
+}
+
+.entry-content blockquote>* {
+	text-indent: 0;
+	padding-left: 2rem;
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+	font-style: italic;
+}
+
+.entry section {
+	margin-bottom: 1.5em;
+}
+
+.entry table {
+	border-top: 1px solid #cbcbcb;
+	border-collapse: collapse;
+	border-spacing: 0;
+	empty-cells: show;
+	font-family: "Fira Sans", Helvetica, Arial, sans-serif;
+	margin-bottom: 1.5em;
+	page-break-inside: avoid;
+	width: 100%;
+}
+
+.entry table caption {
+	color: #000;
+	font: italic 85%/1 arial,sans-serif;
+	padding: 1em 0;
+	text-align: center;
+}
+
+.entry table td,.entry table th {
+	border-width: 0 0 0 1px;
+	font-size: inherit;
+	overflow: visible;
+	padding: .5em 0;
+}
+
+.entry table tr {
+	border-bottom: 1px solid #cbcbcb;
+}
+
+.entry table td:first-child,.entry table th:first-child {
+	border-left-width: 0;
+}
+
+.entry table thead {
+	background-color: #e0e0e0;
+	color: #000;
+	text-align: left;
+	vertical-align: bottom;
+}
+
+.entry table td {
+	background-color: transparent;
+}
+
+ul.cat_details  {
+  padding: 0;
+  margin-top: 1em;
+}
+
+ul.cat_details li {
+  padding: 0;
+  margin: 0;
+}
+
+.object-details ul li {
+  padding: 0;
+  margin: 0;
+}
+
+
+svg {
+  width: 50%;
+  margin-top: 1em;
+  fill: #ddd;
+}
+
+.footnotes {
+  margin-top: 2em;
+  border-top: 1px solid #ddd;
+}
+
+.fullpage-image {
+  text-align: center;
+	margin: 0 1%;
+  width: 98%;
+}
+
+.fullpage-image img {
+  width: 100%;
+}
+
+.plate-group {
+	text-align: center;
+	margin: 0;
+	page-break-inside: avoid;
+}
+
+.plate {
+  background-color: #000;
+  height: 80%;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.plate img {
+	height: 80%;
+}
+
+.plate img {
+	height: 80vh;
+}
+
+ul {
+	list-style-type: none;
+}
+
+figure {
+	width: 80%;
+	margin-left: 10%;
+  margin-right: 10%;
+  page-break-inside: avoid;
+}
+
+figcaption {
+  font-family: "Fira Sans", Helvetica, Arial, sans-serif;
+	font-style: normal;
+	font-size: .75em;
+  line-height: 1.2em;
+}
+
+.abbreviations table {
+  line-height: 2em;
+}
+
+.abbreviations table tr {
+  border-bottom: 1px solid #000;
+}
+
+.footnotes ol li p {
+  text-indent: 0;
+  font-family: "Fira Sans", Helvetica, Arial, sans-serif;
+  font-size: .875em;
+  line-height: 1.3em;
+}
+
+.copyright {
+  font-family: "Fira Sans", Helvetica, Arial, sans-serif;
+  font-size: .875em;
+  line-height: 1.3em;
+}
+
+.loc-cip {
+  margin-bottom: 1em;
+}
+
+.loc-cip p {
+  margin-bottom: 0;
+}
+.loc-cip ul {
+  padding-left: 0;
+  text-indent: -8pt;
+  margin: 0; }
+
+.loc-cip ul li {
+  padding-left: 8pt;
+  margin: 0;
+}
+
+.book-index strong {
+  font-weight: normal;
+}
+
+.page-numbers {
+  display: none;
+}
+
+.index-note {
+  display: none;
+}
+
+.book-index li {
+  padding-left: 8pt;
+  text-indent: -8pt;
+}
+
+.book-index li ul {
+  padding-left: 4pt;
+  text-indent: -4pt;
+}

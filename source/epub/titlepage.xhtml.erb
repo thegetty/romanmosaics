@@ -1,0 +1,18 @@
+---
+layout: false
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title><%= data.book.title.short %></title>
+    <link href="assets/stylesheets/epub.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <section class="titlepage" id="titlepage">
+      <h1>Roman Mosaics in the J. Paul Getty Museum</h1>
+      <h3><%= data.book.creators.first.first_name %> <%= data.book.creators.first.last_name %></h3>
+      <h4>The J. Paul Getty Museum <br />Los Angeles</h4>
+      <img alt="Getty Logo" id="logo" src="<%= image_path("gettylogo.png") %>" />
+    </section>
+  </body>
+</html>

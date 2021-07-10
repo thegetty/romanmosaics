@@ -1,0 +1,16 @@
+---
+layout: false
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title><%= data.book.title.short %></title>
+    <link href="assets/stylesheets/epub.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <section id="table-of-contents">
+      <h1>Contents</h1>
+        <%= partial "partials/contents_list" %>
+		</section>
+  </body>
+</html>
